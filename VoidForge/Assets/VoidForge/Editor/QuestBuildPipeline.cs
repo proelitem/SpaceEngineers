@@ -1,6 +1,8 @@
 using System;
 using System.IO;
+using System.Text.RegularExpressions;
 using UnityEditor;
+using UnityEditor.Android;
 using UnityEditor.Build.Reporting;
 using UnityEngine;
 
@@ -76,7 +78,22 @@ namespace VoidForge.Editor
                     : BuildOptions.None,
             };
 
-            BuildReport report = BuildPipeline.BuildPlayer(options);
+            // Isole aussi les builds par menu d'un GRADLE_USER_HOME hérité d'un autre projet.
+            string previousGradleHome = Environment.GetEnvironmentVariable("GRADLE_USER_HOME");
+            string previousBeeThreads = Environment.GetEnvironmentVariable("BEE_BUILD_THREADS");
+            BuildReport report;
+            try
+            {
+                Environment.SetEnvironmentVariable("GRADLE_USER_HOME", Path.GetFullPath(Path.Combine(Application.dataPath, "../Library/GradleUserHome")));
+                // Évite les échecs LLVM « out of memory » avec vingt compilateurs natifs simultanés.
+                Environment.SetEnvironmentVariable("BEE_BUILD_THREADS", "4");
+                report = BuildPipeline.BuildPlayer(options);
+            }
+            finally
+            {
+                Environment.SetEnvironmentVariable("GRADLE_USER_HOME", previousGradleHome);
+                Environment.SetEnvironmentVariable("BEE_BUILD_THREADS", previousBeeThreads);
+            }
             var summary = report.summary;
 
             if (summary.result == BuildResult.Succeeded)
@@ -89,6 +106,24 @@ namespace VoidForge.Editor
                 Debug.LogError($"[VoidForge] Échec du build : {summary.result}, {summary.totalErrors} erreur(s).");
                 if (batch) EditorApplication.Exit(1);
             }
+        }
+    }
+
+    /// <summary>Limite la concurrence Gradle pour éviter les timeouts AAPT2 observés au premier build.</summary>
+    public sealed class QuestGradleConfigurator : IPostGenerateGradleAndroidProject
+    {
+        public int callbackOrder => 1000;
+
+        public void OnPostGenerateGradleAndroidProject(string path)
+        {
+            string propertiesPath = Path.Combine(Path.GetDirectoryName(path), "gradle.properties");
+            string properties = File.ReadAllText(propertiesPath);
+            const string pattern = @"(?m)^org\.gradle\.workers\.max=.*$";
+            properties = Regex.IsMatch(properties, pattern)
+                ? Regex.Replace(properties, pattern, "org.gradle.workers.max=4")
+                : properties + "\norg.gradle.workers.max=4\n";
+            File.WriteAllText(propertiesPath, properties);
+            Debug.Log("[VoidForge] Gradle limité à 4 workers.");
         }
     }
 }

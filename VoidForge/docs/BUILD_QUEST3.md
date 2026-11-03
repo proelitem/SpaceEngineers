@@ -2,10 +2,10 @@
 
 ## 1. Prérequis (une fois)
 
-1. **Unity Hub** puis **Unity 6.3 LTS** (6000.3.x) avec les modules :
+1. **Unity Hub** puis **Unity 6000.4.0f1** (version retenue pour le J1) avec les modules :
    *Android Build Support*, *Android SDK & NDK Tools*, *OpenJDK*.
-   Si la version exacte de `ProjectSettings/ProjectVersion.txt` n'est pas installée,
-   Unity Hub propose d'ouvrir le projet avec une autre version 6000.3.x : accepte.
+   Installation locale : `D:\Unity\6000.4.0f1\Editor\Unity.exe`.
+   Utiliser la version de `ProjectSettings/ProjectVersion.txt` pour conserver un build reproductible.
 2. **Quest 3 en mode développeur** : application Meta Horizon sur le téléphone →
    casque → Réglages → Mode développeur. Puis brancher le casque en USB-C et accepter
    « Autoriser le débogage USB » dans le casque.
@@ -34,16 +34,35 @@ Après cette première ouverture, Unity a généré les fichiers `.meta` et `Pro
 Linux / macOS :
 
 ```bash
-UNITY_PATH=~/Unity/Hub/Editor/6000.3.0f1/Editor/Unity ./VoidForge/Build/build-quest3.sh
+UNITY_PATH=~/Unity/Hub/Editor/6000.4.0f1/Editor/Unity ./VoidForge/Build/build-quest3.sh
 ```
 
 Windows :
 
 ```powershell
-.\VoidForge\Build\build-quest3.ps1 -UnityPath "C:\Program Files\Unity\Hub\Editor\6000.3.0f1\Editor\Unity.exe"
+.\VoidForge\Build\build-quest3.ps1 -UnityPath "D:\Unity\6000.4.0f1\Editor\Unity.exe"
 ```
 
 Ajoute `--dev` (ou `-Dev`) pour un build développement. Le journal est dans `VoidForge/Logs/build-quest3.log`.
+
+Les scripts et le pipeline isolent `GRADLE_USER_HOME` dans `Library/GradleUserHome`.
+Ils fixent aussi `BEE_BUILD_THREADS=4` pour limiter la compilation C++ native : une
+tentative à vingt compilateurs a échoué avec `LLVM ERROR: out of memory`.
+Le post-traitement Gradle limite les workers à 4 : la première tentative sur cette
+machine avait échoué avec `java.util.concurrent.TimeoutException` pendant le traitement
+des ressources Android ; une reprise avec le cache conservé et cette limite a réussi.
+Le projet utilise uniquement le nouveau Input System (le mode Both est signalé comme
+non supporté par Unity pour Android).
+
+Recette de scène sans casque (sans `-quit`, le test termine lui-même Unity) :
+
+```powershell
+& "D:\Unity\6000.4.0f1\Editor\Unity.exe" -batchmode -nographics -projectPath "G:\Projets\SpaceEngineers\VoidForge" -executeMethod VoidForge.Editor.J1SmokeTest.RunBatch -logFile "G:\Projets\SpaceEngineers\VoidForge\Logs\smoke-j1.log"
+```
+
+Ce test mesure huit secondes de Play, vérifie le rig, le maillage des étoiles orienté
+vers l'intérieur, les astéroïdes et leurs colliders, ainsi que l'actualisation du HUD.
+Il restaure les options Play et le démarrage XR Standalone après la mesure.
 
 ## 4. Installer et lancer
 

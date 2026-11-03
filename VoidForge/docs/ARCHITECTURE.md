@@ -8,7 +8,7 @@ apesanteur, et, en plus du rapport initial, **multijoueur** dès la conception.
 
 | Couche | Choix | Pourquoi |
 |--------|-------|----------|
-| Moteur | Unity 6.3 LTS (6000.3.x), URP | Support Quest 3 officiel, réutilisable pour MyrinoxPrime |
+| Moteur | Unity 6000.4.0f1, URP | Version installée et retenue par Pierre pour le J1 le 2 novembre 2026 ; remplace la cible initiale 6000.3.x |
 | VR | OpenXR Plugin 1.15 + fonctionnalité Meta Quest Support, XR Interaction Toolkit 3 | Pile recommandée par Meta ; pas de SDK propriétaire obligatoire |
 | Entrées | Input System (actions créées en code) | Reproductible sans asset `.inputactions` |
 | Réseau | Netcode for GameObjects 2 + Unity Transport | Officiel, gratuit, hôte sur casque possible, relais ajoutable plus tard |

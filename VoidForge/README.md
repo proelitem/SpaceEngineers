@@ -1,15 +1,24 @@
 # VoidForge VR
 
 Prototype autonome pour **Meta Quest 3** (Android, sans PC), inspiré du gameplay de Space Engineers :
-construction de vaisseaux à blocs, vol en apesanteur, et **multijoueur**. Écrit en **Unity 6.3 LTS**
-avec OpenXR, URP et Netcode for GameObjects.
+construction de vaisseaux à blocs, vol en apesanteur, et **multijoueur**. Écrit en **Unity 6**
+avec OpenXR, URP et Netcode for GameObjects. L'éditeur retenu pour la recette locale J1 est
+**Unity 6000.4.0f1**, autorisé par Pierre le 2 novembre 2026.
 
 > Ce dossier est un projet indépendant sous licence MIT. Il ne contient **aucun** code, modèle,
 > texture ni son de Space Engineers ou de Keen Software House (voir `CREDITS.md`). Il vit pour
 > l'instant dans le dépôt `proelitem/SpaceEngineers` par commodité ; il est prévu de le déplacer
 > dans son propre dépôt, car le reste de ce dépôt est soumis à l'EULA de Keen.
 
-## État : jalon J1 livré (non testé en casque)
+## État : APK J1 construit, installé et lancé sur Quest 3
+
+Recette des 2 et 3 novembre 2026 : packages résolus, compilation C# réussie, configuration
+XR et scène générées. L'APK final développement `Builds/VoidForge-Quest3-dev.apk`
+(versionCode 6) est installé sur le Quest 3 ; lancement et capture de 30 secondes
+sans exception Unity ni erreur AndroidRuntime vérifiés. OpenXR atteint FOCUSED puis
+le casque entre en veille : ce test ne valide pas une session de jeu continue.
+Le test Play relève une exception interne à l'indexeur Search de Unity ; la locomotion,
+le confort, le rendu en casque et le réseau restent à valider par Pierre.
 
 - Projet Unity configuré **entièrement en code** (menu *VoidForge* dans l'éditeur) : Android ARM64,
   IL2CPP, Vulkan, OpenXR avec Meta Quest Support, URP réglé pour le Quest 3.
@@ -23,7 +32,7 @@ Voir `docs/TEST_J1.md` pour la liste des tests à faire et les limites connues.
 
 ## Démarrage rapide
 
-1. Installer Unity 6.3 LTS avec les modules Android (Unity Hub).
+1. Installer Unity 6000.4.0f1 avec les modules Android (Unity Hub).
 2. Ouvrir le dossier `VoidForge/` dans Unity.
 3. Menu **VoidForge > 0. Tout faire** (configure, construit la scène, produit l'APK dans `Builds/`).
 4. `./Build/install-quest3.sh` avec le Quest 3 branché en mode développeur.
@@ -31,6 +40,9 @@ Voir `docs/TEST_J1.md` pour la liste des tests à faire et les limites connues.
 Détails, contrôles et dépannage : `docs/BUILD_QUEST3.md`.
 
 ## Documentation
+
+Index Hermes Works : [`Hermes_Works/README.md`](Hermes_Works/README.md) (architecture,
+jalons, recette et gouvernance ; sources canoniques conservées dans ce dépôt).
 
 | Fichier | Contenu |
 |---------|---------|

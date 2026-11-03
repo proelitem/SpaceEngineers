@@ -59,7 +59,8 @@ namespace VoidForge.World
                 vertices[v]     = center + tangent * size;
                 vertices[v + 1] = center + (-tangent * 0.5f + bitangent * 0.866f) * size;
                 vertices[v + 2] = center + (-tangent * 0.5f - bitangent * 0.866f) * size;
-                triangles[v] = v; triangles[v + 1] = v + 1; triangles[v + 2] = v + 2;
+                // Faces tournées vers l'intérieur : la caméra est au centre de la sphère.
+                triangles[v] = v; triangles[v + 1] = v + 2; triangles[v + 2] = v + 1;
             }
 
             var mesh = new Mesh { name = "Starfield" };

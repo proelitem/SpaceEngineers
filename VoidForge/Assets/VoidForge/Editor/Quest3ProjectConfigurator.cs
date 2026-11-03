@@ -109,16 +109,16 @@ namespace VoidForge.Editor
             Debug.Log("[VoidForge] PlayerSettings Android configurés (IL2CPP, ARM64, Vulkan, minSdk 32).");
         }
 
-        /// <summary>Active le nouveau système d'entrée (« Both » pour garder les API XR héritées disponibles).</summary>
+        /// <summary>Active Input System seul : le mode Both n'est pas supporté sur Android.</summary>
         private static void ConfigureInputSystem()
         {
             var playerSettings = new SerializedObject(Unsupported.GetSerializedAssetInterfaceSingleton("PlayerSettings"));
             var prop = playerSettings.FindProperty("activeInputHandler");
-            if (prop != null && prop.intValue != 2)
+            if (prop != null && prop.intValue != 1)
             {
-                prop.intValue = 2; // 0 = ancien, 1 = Input System, 2 = les deux
+                prop.intValue = 1; // 0 = ancien, 1 = Input System, 2 = les deux
                 playerSettings.ApplyModifiedProperties();
-                Debug.Log("[VoidForge] Active Input Handling = Both (redémarrage de l'éditeur demandé par Unity).");
+                Debug.Log("[VoidForge] Active Input Handling = Input System (redémarrage de l'éditeur demandé par Unity).");
             }
         }
 
@@ -210,7 +210,7 @@ namespace VoidForge.Editor
 
             FeatureHelpers.RefreshFeatures(BuildTargetGroup.Android);
 
-            var quest = openXr.GetFeature<UnityEditor.XR.OpenXR.Features.MetaQuestSupport.MetaQuestFeature>();
+            var quest = openXr.GetFeature<UnityEngine.XR.OpenXR.Features.MetaQuestSupport.MetaQuestFeature>();
             if (quest != null) { quest.enabled = true; EditorUtility.SetDirty(quest); }
             else Debug.LogWarning("[VoidForge] Fonctionnalité « Meta Quest Support » introuvable : vérifie la version du package OpenXR.");
 

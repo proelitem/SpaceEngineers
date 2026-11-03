@@ -1,51 +1,105 @@
-# Jalon J1 : notes de test et limites connues
+# Jalon J1 : recette technique et tests en casque
 
-Date : 30 octobre 2026. Livré par l'agent Fable 5.1 depuis un conteneur cloud **sans éditeur Unity,
-sans compilateur C# et sans casque**. Tout ce qui suit sépare ce qui est vérifié de ce qui ne l'est pas.
+Recette locale des **2 et 3 novembre 2026** (America/Toronto), avec **Unity 6000.4.0f1**,
+version explicitement retenue par Pierre. Le prototype initial du 30 octobre n'avait
+jamais été compilé. Les résultats ci-dessous remplacent cette revue sur sources.
 
-## Vérifié (FAIT)
+## Résultats constatés
 
-- Le dossier `VoidForge/` ne contient aucun fichier provenant du code source ou des assets de Keen.
-- Les scripts sont relus pour la syntaxe C# et les API Unity 6 / XR / Netcode telles que connues de l'agent.
-- Les packages visés : OpenXR 1.15.1 (version recommandée par Meta pour Unity 6, mai 2026), Unity 6.3 LTS.
+- Première ouverture Unity terminée avec code 0 (`Logs/resolve-j1-Dcache.log`).
+- Packages résolus et verrouillés dans `Packages/packages-lock.json` ; URP aligné
+  explicitement sur 17.4.0. OpenXR 1.15.1 et XRI 3.1.2 sont disponibles et installés.
+- `ConfigureBatch` et `MainSceneBuilder.BuildBatch` terminés avec code 0.
+- SDK, NDK 27.2.12479018, OpenJDK et adb utilisés depuis le module Android Unity Hub.
+- Quest 3 USB reconnu et autorisé par adb.
+- Build final terminé avec code 0, installation `Success` et lancement à froid `Status: ok`.
+- Capture Unity d'au moins 30 s : zéro exception, zéro message E/Unity, zéro XR_ERROR.
+  Processus toujours présent à la fin ; aucune erreur AndroidRuntime pour ce processus.
+- Périmètre : projet MIT `VoidForge/` uniquement ; aucun code ni asset Keen réutilisé ou compilé.
 
-## Non vérifié (À TESTER par Pierre)
+## Grille de recette
 
-| À tester | Comment | Résultat attendu |
-|----------|---------|------------------|
-| Compilation | Ouvrir le projet dans Unity 6.3 LTS | Zéro erreur dans la console. Les éventuelles erreurs d'API sont à corriger : les signatures de package peuvent avoir bougé |
-| Versions de packages | Package Manager | Toutes résolues ; sinon prendre la version la plus proche |
-| Configuration | VoidForge > 1 | Journal « Projet configuré pour Quest 3 », OpenXR avec Meta Quest Support et Oculus Touch cochés |
-| Scène | VoidForge > 2 puis Play dans l'éditeur (avec Link) ou sans casque | Étoiles, astéroïdes gris, HUD bleu « i/s, m/s, réseau » |
-| APK | VoidForge > 3, `adb install` | L'application se lance, image stéréo, 72 Hz |
-| Locomotion | Stick gauche | Déplacement dans la direction de la main gauche, inertie, plafond 12 m/s |
-| Freinage | Grip | Arrêt progressif |
-| Rotation | Stick droit gauche/droite | Cran de 30°, sans nausée (pas de rotation continue) |
-| Collisions | Foncer dans un astéroïde | Rebond mou, pas de traversée |
-| Réseau, 2 appareils | Casque A : Menu 1,5 s. Casque B ou éditeur : adresse de A dans NetworkLauncher, puis B 1,5 s | Sur chaque appareil, une tête et deux mains bleues bougent avec l'autre joueur |
-| Performance | Build 3b + Profiler | 72 images/s stables, moins de 100 draw calls |
+| À tester | Comment | Résultat attendu | Résultat |
+|----------|---------|------------------|----------|
+| Compilation | Unity 6000.4.0f1, batch Android | Zéro erreur finale C# | OK : assemblies éditeur et runtime compilés ; compilation C# du Player réussie |
+| Versions de packages | Package Manager et verrou | Toutes résolues | OK : packages-lock.json généré ; URP 17.4.0, OpenXR 1.15.1, Netcode 2.4.0, XRI 3.1.2 |
+| Configuration | ConfigureBatch et assets XR enregistrés | ARM64, IL2CPP, Vulkan, OpenXR Meta Quest + Oculus Touch | OK : code 0 ; réglages enregistrés, init XR au démarrage, single-pass instancié et minSdk 32 vérifiés |
+| Scène | MainSceneBuilder.BuildBatch puis test Play | Rig, étoiles, astéroïdes gris, HUD bleu | Génération OK ; Play : caméra/rig, 2500 étoiles orientées vers le centre, 40 astéroïdes avec colliders et HUD actualisé vérifiés. Recette Play globale KO : exception interne Search de l'éditeur (détails ci-dessous). Aspect visuel à tester par Pierre |
+| APK | BuildBatch -vfDev, puis adb install -r | APK installable et application lancée | OK : build code 0, APK final 86 986 405 octets, ARM64, version 1.0/code 6 ; installation Success, lancement à froid Status: ok |
+| Logcat | Lancement puis adb logcat -s Unity pendant 30 s | Aucune exception Unity au démarrage | OK : capture 30,19 s le 3 novembre à 07 h 22, PID 27496 encore présent, zéro exception/E Unity/XR_ERROR et zéro erreur AndroidRuntime. OpenXR atteint FOCUSED puis veille ; session continue non vérifiée |
+| Locomotion | Stick gauche | Direction de la main gauche, inertie, plafond 12 m/s | À tester par Pierre |
+| Freinage | Grip | Arrêt progressif | À tester par Pierre |
+| Rotation et confort | Stick droit gauche/droite | Cran de 30°, sans nausée | À tester par Pierre |
+| Collisions | Foncer dans un astéroïde | Rebond mou, pas de traversée | À tester par Pierre |
+| Réseau, 2 appareils | Menu 1,5 s sur l'hôte ; IP de l'hôte puis B 1,5 s sur le client | Tête et mains de l'autre joueur synchronisées | À tester par Pierre |
+| Stéréo et performance | Casque, build développement et Profiler | Image stéréo, 72 images/s stables, moins de 100 draw calls | À tester par Pierre |
 
-Merci de noter pour chaque ligne : OK / KO, et le message d'erreur exact si KO.
+## Corrections et compatibilité
+
+1. `ProjectVersion.txt` aligné sur `6000.4.0f1` (`8cf496087c8f`).
+2. `MetaQuestFeature` référencé dans son vrai namespace
+   `UnityEngine.XR.OpenXR.Features.MetaQuestSupport` ; configurateur compilé et exécuté.
+3. URP 17.3.0 initialement demandé remplacé par 17.4.0, version intégrée de l'éditeur.
+   Les mises à niveau transitives imposées par Unity sont conservées dans le verrou.
+4. Les deux erreurs GUID initiales de Shader Graph ont été corrigées automatiquement
+   par l'API Updater Unity dans le cache (8 fichiers migrés), puis recompilées avec succès.
+   Aucun correctif manuel ni package tiers embarqué pour ce point.
+5. Input System seul (`activeInputHandler = 1`) remplace Both, signalé comme non supporté
+   par Unity sur Android ; configuration et scène régénérées après ce changement.
+6. Cache Gradle isolé dans `Library/GradleUserHome` et concurrence limitée à quatre workers.
+   Une tentative initiale a échoué sur `java.util.concurrent.TimeoutException` ; la reprise
+   avec cette limite et le cache conservé a réussi. Le rôle respectif du cache et du nombre
+   de workers dans cette réussite n'a pas été isolé.
+7. Ordre des sommets des étoiles inversé : leurs faces visibles regardent maintenant la
+   caméra au centre, conformément au culling du matériau. Aucun changement du gameplay.
+8. Compilation native limitée à `BEE_BUILD_THREADS=4`, dans les scripts et le pipeline.
+   La reprise à vingt compilateurs a échoué sur trois objets avec `LLVM ERROR: out of memory`
+   et `Allocation failed` (code secondaire `0xC000001D`). Les objets réussis sont conservés.
+
+Les trois risques de la revue initiale sont levés pour cet environnement :
+`CreateDefaultManagerSettingsForBuildTarget` et `OpenXRSettings.GetSettingsForBuildTargetGroup`
+sont publics et ont été exécutés ; `NetworkConfig.Prefabs.Add` et
+`UniversalRenderPipelineAsset.Create(rendererData)` ont fonctionné.
+
+La validation OpenXR du build émet trois recommandations facultatives : nouveau
+PoseControl, nouveau StickControl et latence Prioritize Input Polling. Elles n'ont pas
+bloqué la construction ; leur traitement éventuel reste distinct de la recette en casque.
+
+### Exception dans l'éditeur, distincte du test sur Quest
+
+`J1SmokeTest.RunBatch` termine avec code 1 :
+`ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.`
+La pile pointe vers `UnityEditor.Search.SearchInit.IndexationOnStartup` puis
+`UnityEditor.EditorApplication.Internal_CallDelayFunctions`, sans frame runtime VoidForge.
+Les vérifications de scène ont passé avant le contrôle final des erreurs.
+Un processus neuf, la désactivation temporaire du reload de domaine et un délai de
+démarrage n'ont pas supprimé l'exception. Les recherches sur ce problème d'éditeur
+ont été arrêtées ; aucune modification du moteur Unity ni exclusion d'erreur dans le test.
+Journal : `Logs/smoke-j1-startup.log`. L'initialisation XR Standalone est restaurée.
+Les réglages livrés réactivent le rechargement normal en Play (options 0/0) ; Android
+reste configuré pour initialiser OpenXR au démarrage.
+
+### Avertissements du lancement sur Quest
+
+Le build développement essaie de joindre le Profiler, sans éditeur connecté :
+`Direct connection to host time out`, puis arrêt du Profiler lorsque son tampon atteint
+128 Mio. Le journal contient aussi `XR_META_performance_metrics: Attempted to stop before
+session ready`, `Orientation Listener cannot detect orientation` et un événement Android
+`APP_CMD_LOW_MEMORY` au passage en arrière-plan. Aucune exception ni arrêt du processus
+observé pendant la capture. Aucun budget de mémoire ou de fréquence n'est validé par ce test.
 
 ## Limites connues du J1
 
-- Pas de modèle de main ni de manette : sphères et cylindres.
-- Pas de vignette de confort pendant l'accélération ; à ajouter si inconfort.
-- Le freinage et la poussée sont des valeurs arbitraires (4 m/s², 12 m/s max) à régler en casque.
-- Réseau : adresse IP de l'hôte fixée dans la scène avant build ; pas de découverte automatique,
-  pas de relais Internet. Le rig local n'est pas encore un objet réseau (jalon M1).
-- Pas de son.
-- Le profil de fréquence (72 / 90 / 120 Hz) est laissé au défaut du runtime.
-- `ProjectSettings/` ne contient que la version : Unity génère le reste à la première ouverture,
-  et l'outil VoidForge > 1 applique les réglages importants. À commiter après la première ouverture.
+- Mains et manettes représentées par des primitives ; aucun son.
+- Pas de vignette de confort. Poussée 4 m/s² et plafond 12 m/s à régler en casque.
+- Réseau local par IP fixe ; ni découverte automatique ni relais Internet.
+  Le rig local n'est pas encore un objet réseau (M1).
+- Fréquence de rendu laissée au runtime ; 72/90/120 Hz non mesurés ici.
+- Les .meta, réglages XR, scène, matériaux et prefab générés sont livrés dans Git.
+  APK et caches restent locaux et ignorés.
 
-## Risques identifiés sur le code (à surveiller à la compilation)
+Le cache `Library/PackageCache` est une jonction vers `D:/Temp/VoidForge-PackageCache`,
+explicitement autorisée par Pierre après mesure de fortes attentes disque sur G:.
+Cela ne change pas les chemins des sources ni des livrables.
 
-1. `Quest3ProjectConfigurator.ConfigureXr` : `CreateDefaultManagerSettingsForBuildTarget` et
-   `OpenXRSettings.GetSettingsForBuildTargetGroup` sont des API d'éditeur dont la visibilité a changé
-   selon les versions. En cas d'erreur, faire ces deux réglages à la main dans *Project Settings* et
-   commenter le bloc.
-2. `MainSceneBuilder.BuildNetwork` : `NetworkConfig.Prefabs.Add` ; si l'API diffère, laisser seulement
-   `PlayerPrefab`, Netcode l'enregistre automatiquement.
-3. `UniversalRenderPipelineAsset.Create(rendererData)` : si la signature a changé, créer l'asset URP par
-   *Create > Rendering > URP Asset (with Universal Renderer)* et l'assigner dans *Graphics*.
+Preuves détaillées et journaux : [rapport Hermes J1](../Hermes_Works/Jalons/J1.md).

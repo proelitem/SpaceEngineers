@@ -7,7 +7,7 @@ On s'arrête à chaque jalon pour validation sur le Quest 3 avant de continuer.
 
 | Jalon | Contenu | État |
 |-------|---------|------|
-| **J1** Squelette | Projet Unity, scène VR, locomotion en apesanteur (poussée à la main + rotation par crans), pipeline APK, base réseau (avatars tête/mains) | **Livré, non testé en casque** |
+| **J1** Squelette | Projet Unity, scène VR, locomotion en apesanteur (poussée à la main + rotation par crans), pipeline APK, base réseau (avatars tête/mains) | **APK final construit, installé et lancé sur Quest 3 ; logcat 30 s sans exception le 3 novembre 2026. Exception Search du test éditeur documentée ; validation en casque par Pierre en attente** |
 | J2 Construction | Grille de blocs (armure, cockpit, propulseur, gyroscope, batterie), placer/retirer au contrôleur, rotation, aperçu fantôme | À faire |
 | J3 Vaisseau | Grille → corps rigide, masse et centre de masse, s'asseoir au cockpit, pilotage 6 DDL, HUD (vitesse, énergie) | À faire |
 | J4 Persistance et perf | Sauvegarde/chargement JSON, fusion des maillages (200+ blocs), profilage documenté | À faire |
@@ -17,7 +17,7 @@ On s'arrête à chaque jalon pour validation sur le Quest 3 avant de continuer.
 
 | Jalon | Contenu | Dépend de |
 |-------|---------|-----------|
-| M0 Base | NetworkManager + Unity Transport, hôte/client par IP locale, avatars tête/mains | J1 (**livré**) |
+| M0 Base | NetworkManager + Unity Transport, hôte/client par IP locale, avatars tête/mains | J1 (sources livrées ; test à deux appareils par Pierre en attente) |
 | M1 Joueurs | Rig joueur = objet réseau à autorité propriétaire, noms/couleurs, déconnexion propre | J1 |
 | M2 Construction partagée | Grille répliquée : placements validés par le serveur, diffusion aux clients, arrivée tardive (état complet) | J2 |
 | M3 Vaisseaux partagés | Pilotage avec prédiction côté pilote, réconciliation serveur, passagers | J3 |

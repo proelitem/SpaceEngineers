@@ -1,6 +1,6 @@
 # Build de l'APK Quest 3 en ligne de commande (Windows PowerShell).
-# Prérequis : Unity 6.3 LTS avec le module Android (SDK, NDK, OpenJDK) installé par Unity Hub.
-# Usage : .\Build\build-quest3.ps1 -UnityPath "C:\Program Files\Unity\Hub\Editor\6000.3.0f1\Editor\Unity.exe" [-Dev] [-Output Builds\VoidForge-Quest3.apk]
+# Prérequis : Unity 6000.4.0f1 avec le module Android (SDK, NDK, OpenJDK) installé par Unity Hub.
+# Usage : .\Build\build-quest3.ps1 -UnityPath "D:\Unity\6000.4.0f1\Editor\Unity.exe" [-Dev] [-Output Builds\VoidForge-Quest3.apk]
 param(
     [Parameter(Mandatory = $true)] [string] $UnityPath,
     [switch] $Dev,
@@ -23,6 +23,18 @@ $args = @(
 )
 if ($Dev) { $args += "-vfDev" }
 
-& $UnityPath @args
-if ($LASTEXITCODE -ne 0) { throw "Build Unity en échec (code $LASTEXITCODE). Voir Logs\build-quest3.log." }
+# Évite d'hériter du cache Gradle d'un autre projet présent dans l'environnement.
+$previousGradleUserHome = $env:GRADLE_USER_HOME
+$previousBeeBuildThreads = $env:BEE_BUILD_THREADS
+try {
+    $env:GRADLE_USER_HOME = Join-Path $ProjectDir "Library\GradleUserHome"
+    $env:BEE_BUILD_THREADS = '4'
+    & $UnityPath @args
+    $unityExitCode = $LASTEXITCODE
+}
+finally {
+    $env:GRADLE_USER_HOME = $previousGradleUserHome
+    $env:BEE_BUILD_THREADS = $previousBeeBuildThreads
+}
+if ($unityExitCode -ne 0) { throw "Build Unity en échec (code $unityExitCode). Voir Logs\build-quest3.log." }
 Write-Host "APK : $(Join-Path $ProjectDir $Output)"

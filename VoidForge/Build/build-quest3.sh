@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Build de l'APK Quest 3 en ligne de commande (Linux / macOS).
-# Prérequis : Unity 6.3 LTS avec le module Android (SDK, NDK, OpenJDK) installé par Unity Hub.
+# Prérequis : Unity 6000.4.0f1 avec le module Android (SDK, NDK, OpenJDK) installé par Unity Hub.
 # Usage : UNITY_PATH=/chemin/vers/Unity ./Build/build-quest3.sh [--dev] [sortie.apk]
 set -euo pipefail
 
@@ -17,11 +17,13 @@ for arg in "$@"; do
 done
 
 if [[ -z "$UNITY_PATH" ]]; then
-  echo "Définis UNITY_PATH (ex. ~/Unity/Hub/Editor/6000.3.0f1/Editor/Unity)." >&2
+  echo "Définis UNITY_PATH (ex. ~/Unity/Hub/Editor/6000.4.0f1/Editor/Unity)." >&2
   exit 1
 fi
 
 mkdir -p "$PROJECT_DIR/Logs"
+export GRADLE_USER_HOME="$PROJECT_DIR/Library/GradleUserHome"
+export BEE_BUILD_THREADS=4
 "$UNITY_PATH" \
   -batchmode -nographics -quit \
   -projectPath "$PROJECT_DIR" \
