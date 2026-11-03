@@ -23,6 +23,12 @@
   exactes du profil Space Engineers doivent être sourcées publiquement avant codage.
 - Les ressources tierces et Assets/csc.rsp ne sont pas dans Git : lancer
   Build/import-local-assets.ps1 avant Unity pour activer VF_LOCAL_DIGGER sur une autre machine.
+- Outils : DRILL-R copie sous Assets/ThirdParty/ToolAssets/Ship/DRILL-R ; reproduction par
+  Build/import-drill-r.ps1. Candidats a main et limites dans docs/OUTILS_ASSETS.md ; aucune
+  vraie meuleuse portative identifiee, choix de style a preciser. Aucun outil equipe au joueur.
+- Blender headless : isoler BLENDER_USER_RESOURCES et BLENDER_USER_EXTENSIONS en plus de
+  CONFIG/SCRIPTS (Library/BlenderToolReview). Le profil partiel a tente un nettoyage utilisateur ;
+  impact non etabli, details dans docs/OUTILS_ASSETS.md. Ne pas relancer avec factory-startup seul.
 - Travaux graphiques concurrents dans docs/concepts/ et meshy_output/ : ne pas les inclure
   dans la livraison assets. Worktree de cette livraison : .worktrees/assets-mining-20261103,
   branche codex/voidforge-assets-mining-20261103 ; aucun cache Unity partagé avec lui.

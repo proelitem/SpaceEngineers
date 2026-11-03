@@ -5,6 +5,8 @@ le prototype J1 valide seulement le creusage solo d'un volume isolé avec Digger
 Pierre confirme que le creusage fonctionne et que les performances ressenties sont élevées.
 Les mesures instrumentées restent à relever.
 
+Modèles repérés et copie de DRILL-R : [sélection des ressources d'outils](OUTILS_ASSETS.md).
+
 ## Exigences retenues
 
 | Sujet | Comportement cible | État |

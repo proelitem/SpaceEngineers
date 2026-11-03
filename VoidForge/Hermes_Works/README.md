@@ -10,6 +10,7 @@ d'origine ; Obsidian doit les exposer par liens ou liens symboliques.
 | Livraison active | [J1 : compilation et déploiement Quest 3](Jalons/J1.md) |
 | Extension autorisée | [Assets locaux et prototype de creusage](Jalons/J1_ASSETS.md) |
 | Minage cible | [Formes des astéroïdes, minerais et outils](../docs/MINAGE.md) |
+| Ressources d'outils | [DRILL-R et candidats à main](../docs/OUTILS_ASSETS.md) |
 | Recette | [Grille J1](../docs/TEST_J1.md) |
 | Construction | [Build Quest 3](../docs/BUILD_QUEST3.md) |
 | Provenance | [Crédits](../CREDITS.md) et [licence MIT](../LICENSE) |

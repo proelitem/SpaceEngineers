@@ -29,6 +29,15 @@ L'installation locale et les adaptations de compatibilité sont décrites dans
 [Digger PRO](https://assetstore.unity.com/packages/p/149753),
 [EULA Asset Store](https://unity.com/legal/as-terms).
 
+## Ressources d'outils — 3 novembre 2026
+
+DRILL-R et la tête UT-04-WELDER sont issus des ressources existantes MyrinoxPrime.
+Les candidats SteelPickaxe (Survival Template PRO, origine FBX HQ Survival Pack) et
+SA_Wep_CircularSaw (Simple Apocalypse, Synty Studios) viennent de G:/UnityAssets.
+Modèles, textures, matériaux et métadonnées sont locaux sous Assets/ThirdParty/ToolAssets,
+exclus de Git et non requalifiés en MIT. Sources et état de préparation :
+[OUTILS_ASSETS.md](docs/OUTILS_ASSETS.md). Les scripts de copie propres à VoidForge restent MIT.
+
 ## Packages Unity utilisés
 
 OpenXR Plugin, XR Plug-in Management, XR Interaction Toolkit, XR Core Utilities,
