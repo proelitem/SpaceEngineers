@@ -1,6 +1,7 @@
 # Extension J1 — assets locaux et creusage
 
-État : **recette technique réussie sur Quest 3 ; recette en casque par Pierre en attente**.
+État : **prototype solo validé : recette technique et creusage en casque réussis ;
+performances ressenties élevées confirmées par Pierre le 3 novembre 2026**.
 Demande de Pierre du 3 novembre 2026,
 incluant explicitement un prototype de creusage jouable.
 
@@ -22,8 +23,13 @@ Référence canonique : [bibliothèque et parcours jouable](../../docs/UNITY_ASS
 | APK / installation Quest | OK : Unity code 0, installation Success, lancement COLD Status: ok ; Logs/build-assets-mining-2.log et Logs/install-assets-mining.log |
 | Creusage et collision sur Quest | OK à 12:34:01 le 3 novembre : Add puis Dig, SELFTEST OK, recul collider de 0,649 m ; excavation de 89 ms (une seule mesure) |
 | Logcat | OK : 30,38 s, PID 10367 présent à la fin, zéro exception, zéro E/Unity, zéro XR_ERROR, zéro message AndroidRuntime |
-| Visuel, confort, contrôle à la manette et performances soutenues | À tester par Pierre |
+| Creusage en casque et performances ressenties | OK : Pierre confirme le creusage fonctionnel et des performances élevées le 3 novembre 2026 |
+| Rendu détaillé et performance instrumentée | À consigner ; aucun relevé FPS/draw calls ni durée de session fourni |
 | Réplication réseau et persistance des voxels | Non implémentées ; prototype solo réinitialisé au lancement |
+
+Suite demandée par Pierre : formes des assets d'astéroïdes, veines suivant les paramètres
+de Space Engineers et outils de minage à main et montés sur vaisseau. Ces exigences sont
+décrites dans [MINAGE.md](../../docs/MINAGE.md) ; elles ne sont pas implémentées par ce prototype.
 
 Les changements portent exclusivement sur VoidForge. Aucun fichier suivi supprimé,
 aucun code ni asset Keen importé. Aucun fichier de la bibliothèque source modifié.

@@ -31,6 +31,9 @@ Le protocole commun de coordination Codex reste applicable.
   astéroïdes existants et ajouter un prototype de creusage jouable. Les ressources Asset Store
   restent locales sous Assets/ThirdParty et Assets/Digger, exclues du dépôt MIT ; versionner
   les adaptateurs, les procédures et la provenance. Ne jamais modifier la bibliothèque source.
+- Creusage solo et performances ressenties validés en casque par Pierre. Pour la suite,
+  respecter docs/MINAGE.md : formes des assets, veines selon un profil Space Engineers documenté
+  depuis des sources publiques, outils de minage à main et montés sur vaisseau.
 - Avant d'écrire un système de jeu ou de créer une ressource, consulter
   G:/UnityAssets/asset_manager/store/_jarvis_index.json et les fichiers du pack pertinent.
   Réutiliser les ressources compatibles déjà disponibles ; documenter toute incompatibilité.

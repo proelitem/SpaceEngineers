@@ -76,6 +76,10 @@ En build développement, un test creuse aussi un point au démarrage et exige qu
 constate le recul du collider. Le journal doit contenir `[VoidForge Mining] SELFTEST OK`.
 Une simple apparition d'un trou visuel ne suffit pas à valider la collision.
 
+Pierre a confirmé le 3 novembre 2026 que le creusage fonctionne en casque avec des
+performances élevées. La suite doit utiliser les formes des assets, des veines de minerais
+et des outils à main ou sur vaisseau : voir [MINAGE.md](MINAGE.md).
+
 ## Licences et livraison
 
 Le code propre à VoidForge reste sous MIT. Les ressources Asset Store et leurs dérivés

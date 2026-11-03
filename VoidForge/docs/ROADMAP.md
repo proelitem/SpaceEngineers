@@ -8,7 +8,8 @@ On s'arrête à chaque jalon pour validation sur le Quest 3 avant de continuer.
 | Jalon | Contenu | État |
 |-------|---------|------|
 | **J1** Squelette | Projet Unity, scène VR, locomotion en apesanteur (poussée à la main + rotation par crans), pipeline APK, base réseau (avatars tête/mains) | **APK livré ; contrôles, locomotion, confort et performances validés par Pierre le 3 novembre 2026. Réseau à deux appareils et mesures chiffrées à consigner ; exception Search du test éditeur documentée** |
-| Extension J1 assets et creusage | Astéroïdes de G:/UnityAssets, LOD et volume solo Digger sur support terrain masqué | APK code 8 installé et lancé ; creusage/collider vérifiés sur Quest, logcat sans exception ; [recette en casque par Pierre en attente](../Hermes_Works/Jalons/J1_ASSETS.md) |
+| Extension J1 assets et creusage | Astéroïdes de G:/UnityAssets, LOD et volume solo Digger sur support terrain masqué | APK code 8 livré ; creusage/collider vérifiés, logcat sans exception ; [creusage et performances élevées confirmés en casque par Pierre](../Hermes_Works/Jalons/J1_ASSETS.md) |
+| Suite minage | Formes des assets d'astéroïdes, veines selon les paramètres Space Engineers, outils à main et sur vaisseau | Exigences confirmées par Pierre ; [spécification et recette](MINAGE.md), implémentation à faire |
 | J2 Construction | Grille de blocs (armure, cockpit, propulseur, gyroscope, batterie), placer/retirer au contrôleur, rotation, aperçu fantôme | À faire |
 | J3 Vaisseau | Grille → corps rigide, masse et centre de masse, s'asseoir au cockpit, pilotage 6 DDL, HUD (vitesse, énergie) | À faire |
 | J4 Persistance et perf | Sauvegarde/chargement JSON, fusion des maillages (200+ blocs), profilage documenté | À faire |

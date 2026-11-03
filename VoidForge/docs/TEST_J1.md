@@ -10,6 +10,8 @@ Retour de Pierre du **3 novembre 2026** après essai J1 en casque : tous les con
 ont été testés et fonctionnent ; confort, locomotion et performances jugés bons.
 Cette validation utilisateur ne fournit pas de mesures FPS/draw calls ni la version
 de l'APK testé. Le test réseau à plusieurs appareils reste à réaliser.
+Retour complémentaire du même jour : Pierre confirme explicitement le creusage fonctionnel
+et des performances élevées en casque sur le prototype de creusage.
 
 - Première ouverture Unity terminée avec code 0 (`Logs/resolve-j1-Dcache.log`).
 - Packages résolus et verrouillés dans `Packages/packages-lock.json` ; URP aligné
@@ -122,6 +124,6 @@ et le prototype Digger sont suivis dans [le rapport de cette extension](../Herme
 | Excavation et collision dans l'éditeur | OK : volume isolé créé par Add, puis Dig ; recul du collider de 0,649 m sur données clonées |
 | APK et logcat du prototype | OK : versionCode 8, 96 860 383 octets, Unity code 0 ; installation Success et lancement COLD Status: ok ; 30,38 s sans exception/E Unity/XR_ERROR ni message AndroidRuntime |
 | Excavation et collision sur Quest | OK : SELFTEST à 12:34:01, recul collider 0,649 m, excavation 89 ms ; une mesure, aucun budget de performance validé |
-| Contrôle de creusage, rendu et performances en casque | À tester par Pierre |
-| Locomotion et confort après ajout du prototype | À tester par Pierre |
+| Creusage et performances ressenties en casque | OK : creusage fonctionnel et performances élevées confirmés par Pierre le 3 novembre 2026 ; mesures chiffrées non fournies |
+| Contrôles, locomotion et confort J1 | OK : validés par Pierre dans son retour J1 ; rendu détaillé et mesures instrumentées à consigner |
 | Réseau à plusieurs appareils | À tester par Pierre ; creusage voxel désactivé en réseau, réplication non implémentée |

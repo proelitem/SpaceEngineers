@@ -87,6 +87,11 @@ L'adaptateur est conditionné par `VF_LOCAL_DIGGER` ; les sources tierces resten
 Voir [UNITY_ASSETS.md](UNITY_ASSETS.md). Ce prototype ne convertit pas les FBX décoratifs
 en volumes voxel ; persistance et réplication des excavations restent à concevoir.
 
+La cible de minage confirmée par Pierre utilise les formes des assets existants, des veines
+suivant un profil Space Engineers documenté publiquement, et des outils à main ou de vaisseau.
+La conversion des formes en volumes creusables et le traitement commun matière/minerai/inventaire
+restent à réaliser : [exigences de minage](MINAGE.md).
+
 Hors périmètre du MVP initial : destruction complète des astéroïdes, planètes,
 IA ennemie, grande échelle (plus de 8 joueurs).
 

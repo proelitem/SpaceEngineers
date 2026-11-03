@@ -11,13 +11,16 @@
   Le build et le démarrage sur Quest sont vérifiés séparément ; voir docs/TEST_J1.md.
 - Recette J1 : contrôles, locomotion, confort et performances validés par Pierre le 3 novembre.
   Réseau à deux appareils, collisions et mesures chiffrées restent à consigner dans docs/TEST_J1.md.
-  La version APK testée n'est pas précisée ; ne pas attribuer ce retour au creusage Digger.
+  Pierre a ensuite confirmé explicitement le creusage fonctionnel et des performances élevées.
   L'APK final et les logs détaillés restent locaux, non versionnés ; aucun J2 engagé ici.
 
 - Extension assets et creusage : APK code 8 et test collider validés sur Quest (+0,649 m).
   Voir Hermes_Works/Jalons/J1_ASSETS.md ; Unity est fermé, logs et APK restent locaux.
   G:/UnityAssets est lu uniquement. Digger/ThirdParty/DiggerData et csc.rsp locaux ignorés.
   Astéroïdes décoratifs avec 3 LOD ; volume Digger isolé, pas destruction des FBX.
+- Suite minage : exigences dans docs/MINAGE.md. Les formes voxel issues des assets,
+  veines de minerais et outils à main/vaisseau ne sont pas encore implémentés ; les valeurs
+  exactes du profil Space Engineers doivent être sourcées publiquement avant codage.
 - Les ressources tierces et Assets/csc.rsp ne sont pas dans Git : lancer
   Build/import-local-assets.ps1 avant Unity pour activer VF_LOCAL_DIGGER sur une autre machine.
 - Travaux graphiques concurrents dans docs/concepts/ et meshy_output/ : ne pas les inclure

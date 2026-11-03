@@ -35,7 +35,9 @@ Extension demandée par Pierre le 3 novembre : réutilisation de `G:/UnityAssets
 astéroïdes Dark Anvil avec trois LOD et prototype de creusage solo Digger PRO.
 APK `Builds/VoidForge-Quest3-assets-dev.apk` (code 8) construit, installé et lancé sur Quest :
 test d'excavation/collider réussi (+0,649 m), capture de 30,38 s sans exception.
-Gâchette droite à moins de 8 m pour creuser le volume marqué ; contrôle et visuel à valider en casque.
+Gâchette droite à moins de 8 m pour creuser le volume marqué ; creusage et performances
+élevées confirmés en casque par Pierre. La [suite du minage](docs/MINAGE.md) reprend les formes
+des assets, les veines de minerais et les outils à main ou de vaisseau ; elle reste à réaliser.
 Installation locale, contrôles et limites : [`docs/UNITY_ASSETS.md`](docs/UNITY_ASSETS.md).
 Les ressources Asset Store restent sous leurs licences et sont exclues de Git ; le code
 propre à VoidForge reste MIT. La validation de cette extension est suivie séparément
