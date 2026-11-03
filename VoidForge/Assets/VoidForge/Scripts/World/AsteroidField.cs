@@ -3,9 +3,9 @@ using UnityEngine;
 namespace VoidForge.World
 {
     /// <summary>
-    /// Astéroïdes décoratifs (sphères déformées par l'échelle) générés à partir d'une graine,
-    /// pour donner des repères de distance et des obstacles au jalon J1.
-    /// Les vrais astéroïdes (maillage, voxels) sont hors périmètre du MVP.
+    /// Astéroïdes décoratifs issus de la bibliothèque locale, placés à partir d'une graine.
+    /// Repli sur les primitives J1 si les ressources sous licence ne sont pas installées.
+    /// Les maillages décoratifs ne sont pas des volumes voxel creusables.
     /// </summary>
     public sealed class AsteroidField : MonoBehaviour
     {
@@ -27,6 +27,10 @@ namespace VoidForge.World
         {
             var rng = new System.Random(seed);
             var mat = MaterialLibrary.Rock;
+            var assets = Resources.Load<AsteroidAssetSet>(AsteroidAssetSet.ResourcePath);
+            bool useAssets = assets != null && assets.IsUsable;
+            if (!useAssets)
+                Debug.LogWarning("[VoidForge] Astéroïdes locaux absents : utiliser VoidForge > 4. Importer les astéroïdes UnityAssets. Repli sur les primitives J1.");
 
             for (int i = 0; i < count; i++)
             {
@@ -38,7 +42,7 @@ namespace VoidForge.World
                     guard++;
                 } while (pos.magnitude < clearRadius && guard < 20);
 
-                var go = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                var go = useAssets ? new GameObject() : GameObject.CreatePrimitive(PrimitiveType.Sphere);
                 go.name = $"Asteroid_{i:00}";
                 go.transform.SetParent(transform, false);
                 go.transform.localPosition = pos;
@@ -47,9 +51,10 @@ namespace VoidForge.World
                 go.transform.localScale = new Vector3(s * Range(rng, 0.7f, 1.3f), s * Range(rng, 0.6f, 1.2f), s * Range(rng, 0.7f, 1.3f));
                 go.isStatic = true;
 
-                var renderer = go.GetComponent<Renderer>();
-                renderer.sharedMaterial = mat;
+                if (useAssets) assets.AddVisual(go, i);
+                else go.GetComponent<Renderer>().sharedMaterial = mat;
             }
+            Debug.Log($"[VoidForge] Astéroïdes : {count}, source {(useAssets ? "Asteroid Pack 01, 3 LOD" : "primitives J1")}.");
         }
 
         private static float Range(System.Random rng, float min, float max)

@@ -26,4 +26,11 @@ Le protocole commun de coordination Codex reste applicable.
   Ne pas versionner `Library/`, `Logs/`, `Builds/`, les APK ou les caches.
 - J1 : s'arrêter après la livraison technique et les notes de recette. Locomotion,
   confort, rendu en casque et réseau à plusieurs appareils restent à valider par Pierre.
+- Extension autorisée par Pierre le 3 novembre 2026 : utiliser G:/UnityAssets, intégrer les
+  astéroïdes existants et ajouter un prototype de creusage jouable. Les ressources Asset Store
+  restent locales sous Assets/ThirdParty et Assets/Digger, exclues du dépôt MIT ; versionner
+  les adaptateurs, les procédures et la provenance. Ne jamais modifier la bibliothèque source.
+- Avant d'écrire un système de jeu ou de créer une ressource, consulter
+  G:/UnityAssets/asset_manager/store/_jarvis_index.json et les fichiers du pack pertinent.
+  Réutiliser les ressources compatibles déjà disponibles ; documenter toute incompatibilité.
 - Si une même erreur bloque plus de 20 minutes, arrêter et consigner son message exact.

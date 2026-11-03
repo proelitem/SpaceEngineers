@@ -10,6 +10,11 @@ param(
 $ErrorActionPreference = "Stop"
 $ProjectDir = Resolve-Path (Join-Path $PSScriptRoot "..")
 New-Item -ItemType Directory -Force -Path (Join-Path $ProjectDir "Logs") | Out-Null
+$libraryRoot = if ($env:VF_UNITY_ASSETS_ROOT) { $env:VF_UNITY_ASSETS_ROOT } else { 'G:\UnityAssets' }
+if (-not (Test-Path -LiteralPath (Join-Path $ProjectDir 'Assets\csc.rsp')) -and
+    (Test-Path -LiteralPath (Join-Path $libraryRoot 'asset_manager\store\Digger_PRO_Voxel_Terrain_Sculpting'))) {
+    & (Join-Path $PSScriptRoot 'import-local-assets.ps1') -LibraryRoot $libraryRoot
+}
 
 if ($Dev -and $Output -eq "Builds\VoidForge-Quest3.apk") { $Output = "Builds\VoidForge-Quest3-dev.apk" }
 
@@ -29,8 +34,10 @@ $previousBeeBuildThreads = $env:BEE_BUILD_THREADS
 try {
     $env:GRADLE_USER_HOME = Join-Path $ProjectDir "Library\GradleUserHome"
     $env:BEE_BUILD_THREADS = '4'
-    & $UnityPath @args
-    $unityExitCode = $LASTEXITCODE
+    # Unity.exe est une application graphique : attendre explicitement sa fin sous PowerShell.
+    $quotedArgs = $args | ForEach-Object { '"' + $_.Replace('"', '\"') + '"' }
+    $unityProcess = Start-Process -FilePath $UnityPath -ArgumentList $quotedArgs -WindowStyle Hidden -Wait -PassThru
+    $unityExitCode = $unityProcess.ExitCode
 }
 finally {
     $env:GRADLE_USER_HOME = $previousGradleUserHome

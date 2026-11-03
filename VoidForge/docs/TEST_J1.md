@@ -103,3 +103,19 @@ explicitement autorisée par Pierre après mesure de fortes attentes disque sur 
 Cela ne change pas les chemins des sources ni des livrables.
 
 Preuves détaillées et journaux : [rapport Hermes J1](../Hermes_Works/Jalons/J1.md).
+
+## Extension du 3 novembre : assets et creusage
+
+La recette du J1 initial ci-dessus reste historique. Les modèles de `G:/UnityAssets`
+et le prototype Digger sont suivis dans [le rapport de cette extension](../Hermes_Works/Jalons/J1_ASSETS.md).
+
+| À tester | Résultat |
+|----------|----------|
+| Packages et compilation C# Android avec Digger | OK : AI Navigation 2.0.11, Terrain, Terrain Physics et Unity Web Request résolus ; compilation Player réussie |
+| Catalogue d'astéroïdes | OK : 12 variantes, 36 meshes, 4 matériaux URP, 40 LODGroup et colliders ; textures 1024 ASTC6x6 |
+| Excavation et collision dans l'éditeur | OK : volume isolé créé par Add, puis Dig ; recul du collider de 0,649 m sur données clonées |
+| APK et logcat du prototype | OK : versionCode 8, 96 860 383 octets, Unity code 0 ; installation Success et lancement COLD Status: ok ; 30,38 s sans exception/E Unity/XR_ERROR ni message AndroidRuntime |
+| Excavation et collision sur Quest | OK : SELFTEST à 12:34:01, recul collider 0,649 m, excavation 89 ms ; une mesure, aucun budget de performance validé |
+| Contrôle de creusage, rendu et performances en casque | À tester par Pierre |
+| Locomotion et confort après ajout du prototype | À tester par Pierre |
+| Réseau à plusieurs appareils | À tester par Pierre ; creusage voxel désactivé en réseau, réplication non implémentée |

@@ -9,6 +9,20 @@
 /[Rr]ecordings/
 /.utmp/
 /Build/outputs/
+# Ressources de la bibliothèque locale, sous leurs licences Asset Store (pas MIT).
+/Assets/ThirdParty/
+/Assets/ThirdParty.meta
+/Assets/Digger/
+/Assets/Digger.meta
+/Assets/DiggerData/
+/Assets/DiggerData.meta
+/Assets/StreamingAssets/DiggerData/
+/Assets/StreamingAssets/DiggerData.meta
+/Assets/csc.rsp
+/Assets/csc.rsp.meta
+/Assets/Resources/PerformanceTestRunInfo.json*
+/Assets/Resources/PerformanceTestRunSettings.json*
+/.worktrees/
 *.csproj
 *.sln
 *.user

@@ -23,5 +23,15 @@ namespace VoidForge.Core
                 PlayerRigFactory.Create(spawnPosition);
             }
         }
+
+        private void Start()
+        {
+            var mining = Resources.Load<GameObject>("VoidForge/LocalMiningPrototype");
+            if (mining != null)
+            {
+                Instantiate(mining);
+                Debug.Log("[VoidForge] Prototype voxel local Digger chargé.");
+            }
+        }
     }
 }

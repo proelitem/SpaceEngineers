@@ -55,6 +55,10 @@ namespace VoidForge.Editor
 
         private static void Build(string output, bool development, bool batch)
         {
+#if VF_LOCAL_DIGGER
+            if (!File.Exists(MiningPrototypeBuilder.PrefabPath)) MiningPrototypeBuilder.BuildBatch();
+            else MiningPrototypeBuilder.ValidateBatch();
+#endif
             if (!File.Exists(MainSceneBuilder.ScenePath))
             {
                 Debug.LogError("[VoidForge] Scène absente : lance d'abord VoidForge > 2. Construire la scène principale.");

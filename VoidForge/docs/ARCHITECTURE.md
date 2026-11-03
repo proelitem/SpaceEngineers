@@ -36,6 +36,8 @@ Player/   XRInputActions           actions Input System (sticks, grips, boutons)
 World/    MaterialLibrary          matériaux dans Resources, repli en mémoire
           Starfield                champ d'étoiles procédural suivant la caméra
           AsteroidField            astéroïdes décoratifs à partir d'une graine
+          AsteroidAssetSet         meshes et matériaux locaux, 3 LOD, repli sur primitives
+          MiningPrototype          outil Digger solo, gâchette droite, édition asynchrone bornée
 Net/      NetworkLauncher          héberger / rejoindre / quitter (manettes ou clavier)
           NetworkPlayerAvatar      tête + mains synchronisées (variable réseau propriétaire)
 UI/       DebugHud                 i/s, vitesse, état réseau (texte 3D)
@@ -78,7 +80,15 @@ récepteur). Le joueur ne voit pas son propre avatar.
   (NetworkTransform ou NetworkRigidbody selon les mesures).
 - Plus tard : relais (Unity Relay ou serveur dédié Linux) pour jouer hors réseau local, voix.
 
-Hors périmètre du MVP : voxels destructibles, planètes, IA ennemie, grande échelle (plus de 8 joueurs).
+Extension autorisée le 3 novembre 2026 : prototype local de creusage avec Digger PRO,
+via Add/Dig, avec un Terrain Unity de support masqué et un volume isolé, chargé depuis
+un prefab Resources généré localement.
+L'adaptateur est conditionné par `VF_LOCAL_DIGGER` ; les sources tierces restent hors Git.
+Voir [UNITY_ASSETS.md](UNITY_ASSETS.md). Ce prototype ne convertit pas les FBX décoratifs
+en volumes voxel ; persistance et réplication des excavations restent à concevoir.
+
+Hors périmètre du MVP initial : destruction complète des astéroïdes, planètes,
+IA ennemie, grande échelle (plus de 8 joueurs).
 
 ## Budget de performance Quest 3 (cibles)
 

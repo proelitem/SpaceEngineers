@@ -30,6 +30,16 @@ le confort, le rendu en casque et le réseau restent à valider par Pierre.
 
 Voir `docs/TEST_J1.md` pour la liste des tests à faire et les limites connues.
 
+Extension demandée par Pierre le 3 novembre : réutilisation de `G:/UnityAssets`,
+astéroïdes Dark Anvil avec trois LOD et prototype de creusage solo Digger PRO.
+APK `Builds/VoidForge-Quest3-assets-dev.apk` (code 8) construit, installé et lancé sur Quest :
+test d'excavation/collider réussi (+0,649 m), capture de 30,38 s sans exception.
+Gâchette droite à moins de 8 m pour creuser le volume marqué ; contrôle et visuel à valider en casque.
+Installation locale, contrôles et limites : [`docs/UNITY_ASSETS.md`](docs/UNITY_ASSETS.md).
+Les ressources Asset Store restent sous leurs licences et sont exclues de Git ; le code
+propre à VoidForge reste MIT. La validation de cette extension est suivie séparément
+dans [`Hermes_Works/Jalons/J1_ASSETS.md`](Hermes_Works/Jalons/J1_ASSETS.md).
+
 ## Démarrage rapide
 
 1. Installer Unity 6000.4.0f1 avec les modules Android (Unity Hub).
