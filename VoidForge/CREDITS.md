@@ -34,6 +34,9 @@ L'installation locale et les adaptations de compatibilité sont décrites dans
 DRILL-R et la tête UT-04-WELDER sont issus des ressources existantes MyrinoxPrime.
 Les candidats SteelPickaxe (Survival Template PRO, origine FBX HQ Survival Pack) et
 SA_Wep_CircularSaw (Simple Apocalypse, Synty Studios) viennent de G:/UnityAssets.
+Ces deux candidats ont ensuite été écartés par Pierre. L'alternative de soudeuse portative
+weapon_welder vient de Toon Soldiers 2.1 / Polygon Blacksmith, produit 52220, dans la même
+bibliothèque locale ; FBX, matériau et atlas sont conservés sous leurs licences d'origine.
 Modèles, textures, matériaux et métadonnées sont locaux sous Assets/ThirdParty/ToolAssets,
 exclus de Git et non requalifiés en MIT. Sources et état de préparation :
 [OUTILS_ASSETS.md](docs/OUTILS_ASSETS.md). Les scripts de copie propres à VoidForge restent MIT.

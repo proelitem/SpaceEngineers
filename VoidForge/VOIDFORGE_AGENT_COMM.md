@@ -26,7 +26,8 @@
 - Outils : DRILL-R copie sous Assets/ThirdParty/ToolAssets/Ship/DRILL-R ; reproduction par
   Build/import-drill-r.ps1. Candidats a main et limites dans docs/OUTILS_ASSETS.md ; aucune
   vraie meuleuse portative identifiee. Pierre exige des outils industriels futuristes : pioche
-  et scie ecartees ; le script ne prepare plus que UT-04-WELDER (tete sans poignee).
+  et scie ecartees. Le script prepare UT-04-WELDER (tete sans poignee) et la soudeuse portative
+  Toon Soldiers / weapon_welder (269 triangles, style cartoon, non choisie definitivement).
   MiningTool_01/MiningEmitter_02 et UT-02 sont des equipements de vaisseau, pas des outils a main
   prets a jouer. Minage portatif et vraie meuleuse restent a trouver. Aucun outil equipe au joueur.
 - Blender headless : isoler BLENDER_USER_RESOURCES et BLENDER_USER_EXTENSIONS en plus de

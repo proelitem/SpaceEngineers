@@ -9,10 +9,12 @@ DRILL-R de MyrinoxPrime pour le vaisseau. Cette passe prépare les modèles, san
 | Minage à main | Aucun modèle futuriste portatif approprié identifié | SteelPickaxe écartée par Pierre ; recherche non satisfaite |
 | Meuleuse | Aucune meuleuse futuriste portative identifiée | SA_Wep_CircularSaw écartée par Pierre ; recherche non satisfaite |
 | Soudage | MyrinoxPrime UT-04-WELDER | Candidat : tête de soudeuse, 1 mesh, 4 627 triangles ; poignée et adaptation à la main à préparer |
+| Soudage portatif, alternative stylisée | Toon Soldiers / Polygon Blacksmith, weapon_welder.FBX | Candidat existant avec poignée et réservoir, 1 mesh, 269 triangles ; style cartoon, échelle et URP à adapter |
 
 **Direction confirmée par Pierre le 3 novembre 2026 : outils industriels futuristes,
 sans retenir la pioche et la scie.** Ces deux copies locales de référence ne sont ni sélectionnées
 ni équipées ; le script ne les importe plus. La soudeuse UT-04 reste une piste à adapter.
+L'alternative Toon Soldiers est conservée pour comparaison, sans choix final de style.
 DRILL-R reste retenu pour le vaisseau.
 
 ## DRILL-R : source et vérifications
@@ -40,6 +42,9 @@ Sources conservées pour la provenance :
 - `G:/UnityAssets/asset_manager/store/Simple_Apocalypse_-_Cartoon_Assets/Files/SimpleApocalypse`.
 - `D:/Projets/Trement/MyrinoxPrime/docs/production/ModularFleetV1/motion-parts/UT-04/Meshy/01a122ef-3166-71d3-8e51-1c936c4509cd.fbx`
   et ses textures existantes. Aucune nouvelle génération Meshy n'a été lancée.
+- `G:/UnityAssets/asset_manager/store/Toon_Soldiers/Files/Toon_Soldiers/ToonSoldiers_2/models/weapons/weapon_welder.FBX`,
+  matériau `models/Materials/ToonSoldiers_weapons.mat` et atlas `TS_weapons_texture.tga`.
+  Catalogue local : Toon Soldiers 2.1, Polygon Blacksmith, produit 52220.
 
 Reproduction depuis VoidForge, Unity fermé :
 
@@ -49,8 +54,10 @@ Reproduction depuis VoidForge, Unity fermé :
 ```
 
 Les scripts acceptent des racines source explicites et refusent d'écraser une copie locale différente.
-`stage-hand-tool-candidates.ps1` prépare désormais uniquement les six fichiers existants de la
-tête UT-04-WELDER ; son rapport est `Candidates/WelderHead/copy-report.json`.
+`stage-hand-tool-candidates.ps1` prépare désormais les six fichiers existants de la tête
+UT-04-WELDER et six fichiers Toon Soldiers (FBX, matériau, texture, leurs .meta).
+Son rapport est `Candidates/futuristic-copy-report.json` ; les modèles sont sous
+`Candidates/WelderHead/` et `Candidates/ToonWelder/`.
 Les rapports de copie restent locaux avec les modèles. Les ressources conservent leur provenance
 et leurs licences ; rien sous Assets/ThirdParty n'est requalifié en MIT ni distribué dans Git.
 
@@ -68,8 +75,19 @@ Sci-Fi Heavy Station Kit, Sci-Fi Arsenal et Space Journey, ainsi que les product
   `MiningEmitter_02/spec.json` le remplace par un émetteur monté sur coque. Aucun n'est un outil à main.
 - `UT-02-HEAD` est une tête de découpe à mâchoire, avec interfaces d'axe pour un bras.
   Son visuel source a été examiné ; ce n'est pas une meuleuse à disque portative et elle n'est pas retenue.
-- UT-04-WELDER reste la seule piste de soudage futuriste identifiée ici ; son FBX réel a été
-  examiné lors de la première passe. Une poignée, l'échelle et les points de prise restent à préparer.
+- UT-04-WELDER a été examiné lors de la première passe. Une poignée, l'échelle et les points
+  de prise restent à préparer.
+
+L'inventaire élargi de `G:/UnityAssets` s'est terminé avec **88 565 chemins de modèles/prefabs**
+(animations et variantes incluses), puis recherche par noms avec alias français et anglais.
+Il a révélé la soudeuse Toon Soldiers, absente des résultats de la première passe.
+Son FBX réel a été importé et rendu avec son atlas dans un Blender isolé (code 0) :
+269 triangles, un mesh, dimensions importées 1,215 × 0,690 × 0,198 m avant adaptation.
+La silhouette comporte une poignée et un réservoir ; le style est très simplifié.
+Le matériau Unity source est un ancien fichier binaire ; sa conversion URP reste à vérifier.
+Aperçu local : `Logs/tool_review/toon_welder_textured.png`.
+Cette recherche par noms n'est pas une inspection visuelle exhaustive de tous les modèles.
+Aucune foreuse à main ni vraie meuleuse futuriste appropriée n'a été identifiée.
 
 Les FBX candidats ont été chargés et rendus dans un Blender séparé, avec code 0 ; aperçus
 et métriques locaux dans `Logs/tool_review/`. Import Unity, matériaux URP des candidats,
