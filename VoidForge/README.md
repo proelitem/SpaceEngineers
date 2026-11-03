@@ -17,8 +17,9 @@ XR et scène générées. L'APK final développement `Builds/VoidForge-Quest3-de
 (versionCode 6) est installé sur le Quest 3 ; lancement et capture de 30 secondes
 sans exception Unity ni erreur AndroidRuntime vérifiés. OpenXR atteint FOCUSED puis
 le casque entre en veille : ce test ne valide pas une session de jeu continue.
-Le test Play relève une exception interne à l'indexeur Search de Unity ; la locomotion,
-le confort, le rendu en casque et le réseau restent à valider par Pierre.
+Pierre a validé tous les contrôles J1, la locomotion, le confort et les performances
+en casque le 3 novembre 2026. Les mesures chiffrées et le test réseau à plusieurs appareils
+restent à consigner. Le test Play relève toujours l'exception interne à l'indexeur Search de Unity.
 
 - Projet Unity configuré **entièrement en code** (menu *VoidForge* dans l'éditeur) : Android ARM64,
   IL2CPP, Vulkan, OpenXR avec Meta Quest Support, URP réglé pour le Quest 3.

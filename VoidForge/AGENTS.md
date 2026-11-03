@@ -24,8 +24,9 @@ Le protocole commun de coordination Codex reste applicable.
   aucune question propriétaire, aucune archive des points résolus.
 - Conserver les `.meta`, réglages XR, scène, matériaux et prefab générés dans Git.
   Ne pas versionner `Library/`, `Logs/`, `Builds/`, les APK ou les caches.
-- J1 : s'arrêter après la livraison technique et les notes de recette. Locomotion,
-  confort, rendu en casque et réseau à plusieurs appareils restent à valider par Pierre.
+- J1 : contrôles, locomotion, confort et performances validés par Pierre le 3 novembre 2026.
+  Les tests restants sont dans docs/TEST_J1.md (dont réseau à plusieurs appareils et mesures
+  chiffrées). S'arrêter aux notes de recette ; ne pas engager J2 dans cette intervention.
 - Extension autorisée par Pierre le 3 novembre 2026 : utiliser G:/UnityAssets, intégrer les
   astéroïdes existants et ajouter un prototype de creusage jouable. Les ressources Asset Store
   restent locales sous Assets/ThirdParty et Assets/Digger, exclues du dépôt MIT ; versionner

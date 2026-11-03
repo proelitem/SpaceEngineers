@@ -6,6 +6,11 @@ jamais été compilé. Les résultats ci-dessous remplacent cette revue sur sour
 
 ## Résultats constatés
 
+Retour de Pierre du **3 novembre 2026** après essai J1 en casque : tous les contrôles
+ont été testés et fonctionnent ; confort, locomotion et performances jugés bons.
+Cette validation utilisateur ne fournit pas de mesures FPS/draw calls ni la version
+de l'APK testé. Le test réseau à plusieurs appareils reste à réaliser.
+
 - Première ouverture Unity terminée avec code 0 (`Logs/resolve-j1-Dcache.log`).
 - Packages résolus et verrouillés dans `Packages/packages-lock.json` ; URP aligné
   explicitement sur 17.4.0. OpenXR 1.15.1 et XRI 3.1.2 sont disponibles et installés.
@@ -27,12 +32,13 @@ jamais été compilé. Les résultats ci-dessous remplacent cette revue sur sour
 | Scène | MainSceneBuilder.BuildBatch puis test Play | Rig, étoiles, astéroïdes gris, HUD bleu | Génération OK ; Play : caméra/rig, 2500 étoiles orientées vers le centre, 40 astéroïdes avec colliders et HUD actualisé vérifiés. Recette Play globale KO : exception interne Search de l'éditeur (détails ci-dessous). Aspect visuel à tester par Pierre |
 | APK | BuildBatch -vfDev, puis adb install -r | APK installable et application lancée | OK : build code 0, APK final 86 986 405 octets, ARM64, version 1.0/code 6 ; installation Success, lancement à froid Status: ok |
 | Logcat | Lancement puis adb logcat -s Unity pendant 30 s | Aucune exception Unity au démarrage | OK : capture 30,19 s le 3 novembre à 07 h 22, PID 27496 encore présent, zéro exception/E Unity/XR_ERROR et zéro erreur AndroidRuntime. OpenXR atteint FOCUSED puis veille ; session continue non vérifiée |
-| Locomotion | Stick gauche | Direction de la main gauche, inertie, plafond 12 m/s | À tester par Pierre |
-| Freinage | Grip | Arrêt progressif | À tester par Pierre |
-| Rotation et confort | Stick droit gauche/droite | Cran de 30°, sans nausée | À tester par Pierre |
+| Ensemble des contrôles J1 | Essai en casque | Tous les contrôles fonctionnent | OK : tous testés et fonctionnels selon Pierre, le 3 novembre 2026 |
+| Locomotion | Stick gauche | Direction de la main gauche, inertie, plafond 12 m/s | OK : contrôles et locomotion validés par Pierre ; plafond non mesuré |
+| Freinage | Grip | Arrêt progressif | OK : inclus dans les contrôles J1 testés et fonctionnels selon Pierre |
+| Rotation et confort | Stick droit gauche/droite | Cran de 30°, sans nausée | OK : contrôles et confort validés par Pierre |
 | Collisions | Foncer dans un astéroïde | Rebond mou, pas de traversée | À tester par Pierre |
 | Réseau, 2 appareils | Menu 1,5 s sur l'hôte ; IP de l'hôte puis B 1,5 s sur le client | Tête et mains de l'autre joueur synchronisées | À tester par Pierre |
-| Stéréo et performance | Casque, build développement et Profiler | Image stéréo, 72 images/s stables, moins de 100 draw calls | À tester par Pierre |
+| Stéréo et performance | Casque, build développement et Profiler | Image stéréo, 72 images/s stables, moins de 100 draw calls | Performance jugée bonne par Pierre ; stéréo détaillée et seuils FPS/draw calls non consignés |
 
 ## Corrections et compatibilité
 

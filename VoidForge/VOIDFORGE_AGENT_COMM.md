@@ -9,8 +9,10 @@
 - Exception toujours ouverte dans la recette Play : UnityEditor.Search.SearchInit.IndexationOnStartup,
   ArgumentOutOfRangeException. Recherches arrêtées ; ne pas déclarer ce test réussi.
   Le build et le démarrage sur Quest sont vérifiés séparément ; voir docs/TEST_J1.md.
-- Attendre la recette en casque de Pierre (locomotion, confort, rendu/performance et réseau)
-  avant de démarrer J2. L'APK final et les logs détaillés restent locaux, non versionnés.
+- Recette J1 : contrôles, locomotion, confort et performances validés par Pierre le 3 novembre.
+  Réseau à deux appareils, collisions et mesures chiffrées restent à consigner dans docs/TEST_J1.md.
+  La version APK testée n'est pas précisée ; ne pas attribuer ce retour au creusage Digger.
+  L'APK final et les logs détaillés restent locaux, non versionnés ; aucun J2 engagé ici.
 
 - Extension assets et creusage : APK code 8 et test collider validés sur Quest (+0,649 m).
   Voir Hermes_Works/Jalons/J1_ASSETS.md ; Unity est fermé, logs et APK restent locaux.
