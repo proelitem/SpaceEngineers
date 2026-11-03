@@ -12,7 +12,7 @@ if (-not (Test-Path -LiteralPath $BlenderPath)) { throw "Blender introuvable : $
 $cache = Join-Path $project 'Library\HandToolExportValidation'
 $logs = Join-Path $project 'Logs'
 $report = Join-Path $project 'Art\HandTools\Validation\export-readback.json'
-$profile = @{
+$blenderProfilePaths = @{
     BLENDER_USER_RESOURCES = (Join-Path $cache 'resources')
     BLENDER_USER_CONFIG = (Join-Path $cache 'resources\config')
     BLENDER_USER_SCRIPTS = (Join-Path $cache 'resources\scripts')
@@ -22,10 +22,10 @@ $profile = @{
 }
 $previous = @{}
 try {
-    foreach ($name in $profile.Keys) {
+    foreach ($name in $blenderProfilePaths.Keys) {
         $previous[$name] = [Environment]::GetEnvironmentVariable($name, 'Process')
-        [IO.Directory]::CreateDirectory($profile[$name]) | Out-Null
-        [Environment]::SetEnvironmentVariable($name, $profile[$name], 'Process')
+        [IO.Directory]::CreateDirectory($blenderProfilePaths[$name]) | Out-Null
+        [Environment]::SetEnvironmentVariable($name, $blenderProfilePaths[$name], 'Process')
     }
     [IO.Directory]::CreateDirectory($logs) | Out-Null
     $script = Join-Path $PSScriptRoot 'check-hand-tool-exports.py'
