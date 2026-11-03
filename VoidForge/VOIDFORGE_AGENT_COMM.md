@@ -25,7 +25,10 @@
   Build/import-local-assets.ps1 avant Unity pour activer VF_LOCAL_DIGGER sur une autre machine.
 - Outils : DRILL-R copie sous Assets/ThirdParty/ToolAssets/Ship/DRILL-R ; reproduction par
   Build/import-drill-r.ps1. Candidats a main et limites dans docs/OUTILS_ASSETS.md ; aucune
-  vraie meuleuse portative identifiee, choix de style a preciser. Aucun outil equipe au joueur.
+  vraie meuleuse portative identifiee. Pierre exige des outils industriels futuristes : pioche
+  et scie ecartees ; le script ne prepare plus que UT-04-WELDER (tete sans poignee).
+  MiningTool_01/MiningEmitter_02 et UT-02 sont des equipements de vaisseau, pas des outils a main
+  prets a jouer. Minage portatif et vraie meuleuse restent a trouver. Aucun outil equipe au joueur.
 - Blender headless : isoler BLENDER_USER_RESOURCES et BLENDER_USER_EXTENSIONS en plus de
   CONFIG/SCRIPTS (Library/BlenderToolReview). Le profil partiel a tente un nettoyage utilisateur ;
   impact non etabli, details dans docs/OUTILS_ASSETS.md. Ne pas relancer avec factory-startup seul.

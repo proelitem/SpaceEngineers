@@ -6,12 +6,14 @@ DRILL-R de MyrinoxPrime pour le vaisseau. Cette passe prépare les modèles, san
 | Usage | Ressource | Résultat |
 |-------|-----------|----------|
 | Foreuse de vaisseau | MyrinoxPrime DRILL-R / PL-ORIG-DRILL-R | Retenue selon la demande de Pierre ; paquet visuel autonome copié et vérifié |
-| Minage à main | SteelPickaxe.fbx, Survival Template PRO / Polymind Games | Candidat : pioche métallique, 2 meshes, 2 423 triangles ; style industriel futuriste non établi |
-| Découpe / base pour meuleuse | SA_Wep_CircularSaw.fbx, Simple Apocalypse / Synty Studios | Candidat : scie circulaire, 436 triangles ; aucune vraie meuleuse portative identifiée à l'identique |
+| Minage à main | Aucun modèle futuriste portatif approprié identifié | SteelPickaxe écartée par Pierre ; recherche non satisfaite |
+| Meuleuse | Aucune meuleuse futuriste portative identifiée | SA_Wep_CircularSaw écartée par Pierre ; recherche non satisfaite |
 | Soudage | MyrinoxPrime UT-04-WELDER | Candidat : tête de soudeuse, 1 mesh, 4 627 triangles ; poignée et adaptation à la main à préparer |
 
-Les candidats à main sont conservés pour revue, sans être équipés au joueur. La préférence
-entre ces candidats et un ensemble industriel futuriste reste à préciser.
+**Direction confirmée par Pierre le 3 novembre 2026 : outils industriels futuristes,
+sans retenir la pioche et la scie.** Ces deux copies locales de référence ne sont ni sélectionnées
+ni équipées ; le script ne les importe plus. La soudeuse UT-04 reste une piste à adapter.
+DRILL-R reste retenu pour le vaisseau.
 
 ## DRILL-R : source et vérifications
 
@@ -28,8 +30,10 @@ Rotation mécanique et raccordement au vaisseau restent à implémenter.
 
 ## Candidats à main
 
-Les 32 fichiers copiés et vérifiés par SHA-256 sont sous `Assets/ThirdParty/ToolAssets/Candidates/`,
-sans scripts de jeu tiers. Sources :
+La première recherche avait copié et vérifié 32 fichiers par SHA-256 sous
+`Assets/ThirdParty/ToolAssets/Candidates/`, sans scripts de jeu tiers. Les copies de la pioche
+et de la scie restent des références écartées ; aucun fichier suivi par Git n'a été supprimé.
+Sources conservées pour la provenance :
 
 - `G:/UnityAssets/asset_manager/store/Survival_Template_PRO/Files/PolymindGames/STP/Art/Models/Wieldables/SteelPickaxe`.
   Les métadonnées FBX mentionnent également HQ Survival Pack 1.3, produit 185364.
@@ -45,6 +49,8 @@ Reproduction depuis VoidForge, Unity fermé :
 ```
 
 Les scripts acceptent des racines source explicites et refusent d'écraser une copie locale différente.
+`stage-hand-tool-candidates.ps1` prépare désormais uniquement les six fichiers existants de la
+tête UT-04-WELDER ; son rapport est `Candidates/WelderHead/copy-report.json`.
 Les rapports de copie restent locaux avec les modèles. Les ressources conservent leur provenance
 et leurs licences ; rien sous Assets/ThirdParty n'est requalifié en MIT ni distribué dans Git.
 
@@ -54,6 +60,16 @@ Le catalogue et les noms de fichiers de **200 packs 3D indexés** ont été rech
 alias de drill, grinder, welder et solder. Cela ne garantit pas l'identification de tout objet
 regroupé sous un nom générique. Les foreuses fixes Sci-Fi Base, meules d'atelier et sons de
 perceuse sont écartés. La torch.fbx de Hurricane VR a été inspectée : c'est une lampe torche.
+
+La reprise orientée futuriste examine aussi les inventaires de SciFi Space Base/Colony,
+Sci-Fi Heavy Station Kit, Sci-Fi Arsenal et Space Journey, ainsi que les productions Myrinox :
+
+- `MiningTool_01/spec.json` décrit un module de vaisseau de 4,5 m, sans poignée ;
+  `MiningEmitter_02/spec.json` le remplace par un émetteur monté sur coque. Aucun n'est un outil à main.
+- `UT-02-HEAD` est une tête de découpe à mâchoire, avec interfaces d'axe pour un bras.
+  Son visuel source a été examiné ; ce n'est pas une meuleuse à disque portative et elle n'est pas retenue.
+- UT-04-WELDER reste la seule piste de soudage futuriste identifiée ici ; son FBX réel a été
+  examiné lors de la première passe. Une poignée, l'échelle et les points de prise restent à préparer.
 
 Les FBX candidats ont été chargés et rendus dans un Blender séparé, avec code 0 ; aperçus
 et métriques locaux dans `Logs/tool_review/`. Import Unity, matériaux URP des candidats,
