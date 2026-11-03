@@ -45,6 +45,10 @@ Leurs paramètres de travail (portée, zone d'action, cadence et capacité de co
 restent configurables et seront réglés pendant la recette en casque.
 Le minage final exige un outil ; la brosse directe du J1 reste un moyen de test.
 
+La production des modèles originaux de foreuse portative, meuleuse et soudeuse
+est suivie dans [OUTILS_MAIN.md](OUTILS_MAIN.md). Les modèles préparent les prises,
+points de contact et assemblages mobiles ; les mécanismes décrits ici restent à réaliser.
+
 Préparer l'autorité réseau et la sauvegarde dès la conception : une quantité extraite ne
 peut être créditée qu'une fois, les clients doivent retrouver les mêmes veines et trous,
 et la sauvegarde doit conserver le résultat. Ces mécanismes ne sont pas livrés au J1 ;

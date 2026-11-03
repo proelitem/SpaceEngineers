@@ -41,6 +41,15 @@ Modèles, textures, matériaux et métadonnées sont locaux sous Assets/ThirdPar
 exclus de Git et non requalifiés en MIT. Sources et état de préparation :
 [OUTILS_ASSETS.md](docs/OUTILS_ASSETS.md). Les scripts de copie propres à VoidForge restent MIT.
 
+## Outils à main originaux — 3 novembre 2026
+
+Foreuse portative, meuleuse et soudeuse : géométrie, matériaux et scripts créés pour
+VoidForge avec GPT-Astra dans Blender MCP, sous licence MIT. Le contrat de production
+Modeler3DAgent de Jarvis3D a guidé l'exécution ; aucun de ses fichiers backend n'est
+copié dans le projet. La palette et la direction industrielle de DRILL-R servent de
+référence visuelle. Aucun maillage Keen ni ressource tierce n'entre dans ces trois modèles.
+Sources et contrôles : [OUTILS_MAIN.md](docs/OUTILS_MAIN.md).
+
 ## Packages Unity utilisés
 
 OpenXR Plugin, XR Plug-in Management, XR Interaction Toolkit, XR Core Utilities,

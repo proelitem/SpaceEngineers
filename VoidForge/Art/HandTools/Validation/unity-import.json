@@ -1,0 +1,83 @@
+{
+    "success": true,
+    "unity_version": "6000.4.0f1",
+    "tools": [
+        {
+            "name": "MiningDrill",
+            "triangles": 5520,
+            "meshes": 3,
+            "bounds_m": {
+                "x": 0.21249999105930329,
+                "y": 0.2540000081062317,
+                "z": 0.46000000834465029
+            },
+            "anchors": [
+                "VF_MiningDrill_GripPrimary",
+                "VF_MiningDrill_GripSecondary",
+                "VF_MiningDrill_ToolTip"
+            ],
+            "materials": [
+                "VF_HT_Graphite",
+                "VF_HT_Ceramic",
+                "VF_HT_Safety",
+                "VF_HT_Steel"
+            ],
+            "shaders": [
+                "Standard"
+            ],
+            "success": true
+        },
+        {
+            "name": "Grinder",
+            "triangles": 5064,
+            "meshes": 3,
+            "bounds_m": {
+                "x": 0.23696550726890565,
+                "y": 0.092780202627182,
+                "z": 0.3619999885559082
+            },
+            "anchors": [
+                "VF_Grinder_GripPrimary",
+                "VF_Grinder_GripSecondary",
+                "VF_Grinder_ToolTip"
+            ],
+            "materials": [
+                "VF_HT_Graphite",
+                "VF_HT_Ceramic",
+                "VF_HT_Steel",
+                "VF_HT_Safety"
+            ],
+            "shaders": [
+                "Standard"
+            ],
+            "success": true
+        },
+        {
+            "name": "Welder",
+            "triangles": 4920,
+            "meshes": 3,
+            "bounds_m": {
+                "x": 0.07850000262260437,
+                "y": 0.24400000274181367,
+                "z": 0.3410000205039978
+            },
+            "anchors": [
+                "VF_Welder_GripPrimary",
+                "VF_Welder_GripSecondary",
+                "VF_Welder_ToolTip"
+            ],
+            "materials": [
+                "VF_HT_Graphite",
+                "VF_HT_Ceramic",
+                "VF_HT_Safety",
+                "VF_HT_Steel"
+            ],
+            "shaders": [
+                "Standard"
+            ],
+            "success": true
+        }
+    ],
+    "error": "",
+    "limitations": "Import geometry only; URP appearance, XR and Quest not tested"
+}

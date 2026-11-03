@@ -1,0 +1,2 @@
+# Keep the script bytes recorded in modeler3d_report.json portable on Windows.
+Scripts/*.py text eol=lf

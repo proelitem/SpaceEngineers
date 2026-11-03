@@ -3,6 +3,10 @@
 Demande de Pierre du 3 novembre 2026 : outil de minage à main, meuleuse, soudeuse et
 DRILL-R de MyrinoxPrime pour le vaisseau. Cette passe prépare les modèles, sans nouveau gameplay ni APK.
 
+Après cette recherche, Pierre a demandé la production originale des trois outils à main
+dans Blender MCP avec GPT-Astra. Cette production est suivie dans [OUTILS_MAIN.md](OUTILS_MAIN.md).
+Le tableau ci-dessous conserve les résultats de la recherche dans les ressources existantes.
+
 | Usage | Ressource | Résultat |
 |-------|-----------|----------|
 | Foreuse de vaisseau | MyrinoxPrime DRILL-R / PL-ORIG-DRILL-R | Retenue selon la demande de Pierre ; paquet visuel autonome copié et vérifié |

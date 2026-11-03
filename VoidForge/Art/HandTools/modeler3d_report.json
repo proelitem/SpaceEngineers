@@ -1,0 +1,635 @@
+{
+  "owner": "VoidForge.HandTools.20261103",
+  "agent": "GPT-Astra via Codex native Blender MCP; Jarvis Modeler3D contract reused, paid HTTP endpoint not invoked",
+  "blender": "5.2.1 LTS",
+  "production_ready": false,
+  "source": "Art/HandTools/Source/VoidForge_HandTools.blend",
+  "axes": {
+    "authoring": "metres; +Y forward; +Z up; primary grip root at origin in individual exports",
+    "fbx": "axis_forward=-Z, axis_up=Y, FBX_SCALE_UNITS, units centimetres metadata with metre source; root conversion rotation may be present; bake_space_transform=False",
+    "glb": "glTF standard +Y up; Blender +Y forward maps to -Z; loader performs engine convention conversion"
+  },
+  "models": {
+    "MiningDrill": {
+      "root": "VF_MiningDrill",
+      "triangles": 5520,
+      "dimensions_m": [
+        0.21249999478459358,
+        0.46000000834465027,
+        0.2540000006556511
+      ],
+      "bounds_min_m": [
+        -0.16599999368190765,
+        -0.0949999988079071,
+        -0.09799999743700027
+      ],
+      "bounds_max_m": [
+        0.04650000110268593,
+        0.36500000953674316,
+        0.15600000321865082
+      ],
+      "assemblies": [
+        {
+          "name": "VF_MiningDrill_Body",
+          "role": "Body",
+          "triangles": 4248,
+          "pivot_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material_slots": [
+            "VF_HT_Graphite",
+            "VF_HT_Ceramic",
+            "VF_HT_Safety",
+            "VF_HT_Steel"
+          ],
+          "source_roles": [
+            "MotorSpine",
+            "ArmourL",
+            "SafetyCheek-1",
+            "CoolingSlot-1_0",
+            "CoolingSlot-1_1",
+            "CoolingSlot-1_2",
+            "CoolingSlot-1_3",
+            "ShellFastener",
+            "ShellFastener",
+            "ShellFastener",
+            "ShellFastener",
+            "ArmourR",
+            "SafetyCheek1",
+            "CoolingSlot1_0",
+            "CoolingSlot1_1",
+            "CoolingSlot1_2",
+            "CoolingSlot1_3",
+            "ShellFastener",
+            "ShellFastener",
+            "ShellFastener",
+            "ShellFastener",
+            "TopServiceRail",
+            "ModeSwitch",
+            "Grip",
+            "GripTread0",
+            "GripTread1",
+            "GripTread2",
+            "GripTread3",
+            "GripTread4",
+            "BatteryRail",
+            "PowerPack",
+            "PowerPackCap",
+            "BatteryRelease",
+            "TriggerGuard",
+            "AuxHandleMount",
+            "AuxHandleGrip",
+            "AuxGripTread0",
+            "AuxGripTread1",
+            "AuxGripTread2",
+            "AuxGripTread3",
+            "AuxGripTread4",
+            "AuxHandleEnd",
+            "GearCollar",
+            "FrontSafetyRing"
+          ]
+        },
+        {
+          "name": "VF_MiningDrill_Rotor",
+          "role": "Rotor",
+          "triangles": 1152,
+          "pivot_m": [
+            0.0,
+            0.15700000524520874,
+            0.0989999994635582
+          ],
+          "material_slots": [
+            "VF_HT_Steel",
+            "VF_HT_Graphite"
+          ],
+          "source_roles": [
+            "RotatingChuck",
+            "CutterCore",
+            "HelicalCarbideFlute0",
+            "HelicalCarbideFlute1",
+            "HelicalCarbideFlute2",
+            "CarbidePilot"
+          ]
+        },
+        {
+          "name": "VF_MiningDrill_Trigger.001",
+          "role": "Trigger",
+          "triangles": 120,
+          "pivot_m": [
+            0.0,
+            0.023000000044703484,
+            0.04600000008940697
+          ],
+          "material_slots": [
+            "VF_HT_Safety"
+          ],
+          "source_roles": [
+            "Trigger"
+          ]
+        }
+      ],
+      "attachments": {
+        "GripSecondary": {
+          "name": "VF_MiningDrill_GripSecondary",
+          "position_m": [
+            -0.10999999940395355,
+            0.10300000011920929,
+            0.09200000017881393
+          ]
+        },
+        "GripPrimary": {
+          "name": "VF_MiningDrill_GripPrimary",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "ToolTip": {
+          "name": "VF_MiningDrill_ToolTip",
+          "position_m": [
+            0.0,
+            0.36500000953674316,
+            0.0989999994635582
+          ]
+        }
+      }
+    },
+    "Grinder": {
+      "root": "VF_Grinder",
+      "triangles": 5064,
+      "dimensions_m": [
+        0.23696551471948624,
+        0.3620000034570694,
+        0.09278016909956932
+      ],
+      "bounds_min_m": [
+        -0.16599999368190765,
+        -0.07099999487400055,
+        -0.05299999937415123
+      ],
+      "bounds_max_m": [
+        0.07096552103757858,
+        0.29100000858306885,
+        0.03978016972541809
+      ],
+      "assemblies": [
+        {
+          "name": "VF_Grinder_Body",
+          "role": "Body",
+          "triangles": 4304,
+          "pivot_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material_slots": [
+            "VF_HT_Graphite",
+            "VF_HT_Ceramic",
+            "VF_HT_Steel",
+            "VF_HT_Safety"
+          ],
+          "source_roles": [
+            "RearPalmGrip",
+            "RearGripTread0",
+            "RearGripTread1",
+            "RearGripTread2",
+            "RearGripTread3",
+            "RearGripTread4",
+            "RearGripTread5",
+            "RearGripTread6",
+            "MotorChassis",
+            "MotorArmour-1",
+            "MotorVent-1_0",
+            "MotorVent-1_1",
+            "MotorVent-1_2",
+            "MotorVent-1_3",
+            "MotorFastener",
+            "MotorFastener",
+            "MotorArmour1",
+            "MotorVent1_0",
+            "MotorVent1_1",
+            "MotorVent1_2",
+            "MotorVent1_3",
+            "MotorFastener",
+            "MotorFastener",
+            "SafetyLatch",
+            "GearHead",
+            "HeadCap",
+            "AuxHandleMount",
+            "AuxHandleGrip",
+            "AuxGripTread0",
+            "AuxGripTread1",
+            "AuxGripTread2",
+            "AuxGripTread3",
+            "AuxGripTread4",
+            "AuxHandleEnd",
+            "SpindleBearing",
+            "PartialDiscGuard",
+            "GuardBracket"
+          ]
+        },
+        {
+          "name": "VF_Grinder_Disc",
+          "role": "Disc",
+          "triangles": 644,
+          "pivot_m": [
+            0.0,
+            0.2290000021457672,
+            -0.04500000178813934
+          ],
+          "material_slots": [
+            "VF_HT_Graphite",
+            "VF_HT_Safety",
+            "VF_HT_Steel"
+          ],
+          "source_roles": [
+            "AbrasiveDisc",
+            "DiscLabel",
+            "DiscLockNut",
+            "LabelTick0",
+            "LabelTick1",
+            "LabelTick2",
+            "LabelTick3",
+            "LabelTick4",
+            "LabelTick5"
+          ]
+        },
+        {
+          "name": "VF_Grinder_Trigger",
+          "role": "Trigger",
+          "triangles": 116,
+          "pivot_m": [
+            0.0,
+            0.03200000151991844,
+            -0.019999999552965164
+          ],
+          "material_slots": [
+            "VF_HT_Safety"
+          ],
+          "source_roles": [
+            "PaddleTrigger"
+          ]
+        }
+      ],
+      "attachments": {
+        "GripSecondary": {
+          "name": "VF_Grinder_GripSecondary",
+          "position_m": [
+            -0.10999999940395355,
+            0.20000000298023224,
+            0.012000000104308128
+          ]
+        },
+        "GripPrimary": {
+          "name": "VF_Grinder_GripPrimary",
+          "position_m": [
+            0.0,
+            -1.5199184133507515e-09,
+            0.0
+          ]
+        },
+        "ToolTip": {
+          "name": "VF_Grinder_ToolTip",
+          "position_m": [
+            0.0,
+            0.29100000858306885,
+            -0.04500000178813934
+          ]
+        }
+      }
+    },
+    "Welder": {
+      "root": "VF_Welder",
+      "triangles": 4920,
+      "dimensions_m": [
+        0.07850000262260437,
+        0.3410000130534172,
+        0.24399999529123306
+      ],
+      "bounds_min_m": [
+        -0.039000000804662704,
+        -0.07800000160932541,
+        -0.09799999743700027
+      ],
+      "bounds_max_m": [
+        0.039500001817941666,
+        0.2630000114440918,
+        0.1459999978542328
+      ],
+      "assemblies": [
+        {
+          "name": "VF_Welder_Body",
+          "role": "Body",
+          "triangles": 3808,
+          "pivot_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material_slots": [
+            "VF_HT_Graphite",
+            "VF_HT_Ceramic",
+            "VF_HT_Safety",
+            "VF_HT_Steel"
+          ],
+          "source_roles": [
+            "PowerSpine",
+            "InsulatedArmour-1",
+            "WarningCheek-1",
+            "InverterVent-1_0",
+            "InverterVent-1_1",
+            "InverterVent-1_2",
+            "InverterVent-1_3",
+            "ShellFastener",
+            "ShellFastener",
+            "ShellFastener",
+            "InsulatedArmour1",
+            "WarningCheek1",
+            "InverterVent1_0",
+            "InverterVent1_1",
+            "InverterVent1_2",
+            "InverterVent1_3",
+            "ShellFastener",
+            "ShellFastener",
+            "ShellFastener",
+            "Grip",
+            "GripTread0",
+            "GripTread1",
+            "GripTread2",
+            "GripTread3",
+            "GripTread4",
+            "BatteryRail",
+            "PowerPack",
+            "PowerPackCap",
+            "BatteryRelease",
+            "TriggerGuard",
+            "CurrentSelector",
+            "CurrentSelectorLever",
+            "TorchCollar",
+            "CollarInsulator",
+            "CollarInsulator",
+            "CollarInsulator"
+          ]
+        },
+        {
+          "name": "VF_Welder_Nozzle",
+          "role": "Nozzle",
+          "triangles": 992,
+          "pivot_m": [
+            0.0,
+            0.14399999380111694,
+            0.0820000022649765
+          ],
+          "material_slots": [
+            "VF_HT_Steel",
+            "VF_HT_Safety"
+          ],
+          "source_roles": [
+            "TorchNeck",
+            "NozzleHeatSink",
+            "CoolingFin",
+            "CoolingFin",
+            "CoolingFin",
+            "ShieldingCup",
+            "ContactTip",
+            "WeldingWire"
+          ]
+        },
+        {
+          "name": "VF_Welder_Trigger.001",
+          "role": "Trigger",
+          "triangles": 120,
+          "pivot_m": [
+            0.0,
+            0.023000000044703484,
+            0.04600000008940697
+          ],
+          "material_slots": [
+            "VF_HT_Safety"
+          ],
+          "source_roles": [
+            "Trigger"
+          ]
+        }
+      ],
+      "attachments": {
+        "GripPrimary": {
+          "name": "VF_Welder_GripPrimary",
+          "position_m": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "ToolTip": {
+          "name": "VF_Welder_ToolTip",
+          "position_m": [
+            0.0,
+            0.2630000114440918,
+            0.05400000140070915
+          ]
+        },
+        "GripSecondary": {
+          "name": "VF_Welder_GripSecondary",
+          "position_m": [
+            0.0,
+            0.07199999690055847,
+            0.0820000022649765
+          ]
+        }
+      }
+    }
+  },
+  "materials": [
+    {
+      "name": "VF_HT_Ceramic",
+      "base_color_linear": [
+        0.6600000262260437,
+        0.6800000071525574,
+        0.6299999952316284,
+        1.0
+      ],
+      "metallic": 0.2800000011920929,
+      "roughness": 0.30000001192092896
+    },
+    {
+      "name": "VF_HT_Graphite",
+      "base_color_linear": [
+        0.023000000044703484,
+        0.028999999165534973,
+        0.032999999821186066,
+        1.0
+      ],
+      "metallic": 0.15000000596046448,
+      "roughness": 0.47999998927116394
+    },
+    {
+      "name": "VF_HT_Steel",
+      "base_color_linear": [
+        0.36000001430511475,
+        0.41999998688697815,
+        0.46000000834465027,
+        1.0
+      ],
+      "metallic": 0.8999999761581421,
+      "roughness": 0.23000000417232513
+    },
+    {
+      "name": "VF_HT_Safety",
+      "base_color_linear": [
+        0.8999999761581421,
+        0.4300000071525574,
+        0.03500000014901161,
+        1.0
+      ],
+      "metallic": 0.25,
+      "roughness": 0.3100000023841858
+    }
+  ],
+  "exports": [
+    {
+      "path": "Assets/VoidForge/Art/HandTools/MiningDrill/VF_MiningDrill.fbx",
+      "bytes": 174844,
+      "sha256": "4b332afd094470459106d58d812909d0af2093c9d9edb48820d3154262f65768"
+    },
+    {
+      "path": "Assets/VoidForge/Art/HandTools/MiningDrill/VF_MiningDrill.glb",
+      "bytes": 256100,
+      "sha256": "a3496b95ae876ef9dedafbcd357ba1c82016488aaa721afd2a21c07797e19a63"
+    },
+    {
+      "path": "Assets/VoidForge/Art/HandTools/Grinder/VF_Grinder.fbx",
+      "bytes": 147868,
+      "sha256": "02d9265f2e7903854a22668922c20ddca87c83045b449e3af0fcde059eefdb11"
+    },
+    {
+      "path": "Assets/VoidForge/Art/HandTools/Grinder/VF_Grinder.glb",
+      "bytes": 225508,
+      "sha256": "3319c2660185200351faa4502dd102de05656b004cf886ba55ba5236d8a1a3fd"
+    },
+    {
+      "path": "Assets/VoidForge/Art/HandTools/Welder/VF_Welder.fbx",
+      "bytes": 160428,
+      "sha256": "c3e344092294455195d990bcba340dd1e295e0bca1cf4aaeb09353e11b2b20f9"
+    },
+    {
+      "path": "Assets/VoidForge/Art/HandTools/Welder/VF_Welder.glb",
+      "bytes": 222176,
+      "sha256": "b98aa751c0838ec121b0ca89c66272e4f8fb7a21b257cc2a2e032909f4e68c19"
+    }
+  ],
+  "inspection": [
+    "Live scene and initial viewport inspected before mutation",
+    "Three-quarter assembly views",
+    "Opposite drill and grinder view",
+    "Front welder bore close-up",
+    "Guard/disc clearance and handle seating corrected after visual inspection",
+    "Final native studio gallery and three individual PNGs rendered and visually inspected"
+  ],
+  "limitations": [
+    "Not integrated into Unity, XR or Quest; visual asset delivery only",
+    "No animations, colliders, LODs, lightmap UVs or gameplay scripts",
+    "Solid PBR factors, no bitmap texture or texture baking required; FBX material interpretation still needs Unity URP verification",
+    "Original ship DRILL-R was only visually referenced; not imported, recreated or modified"
+  ],
+  "source_files": [
+    {
+      "path": "Art/HandTools/Source/VoidForge_HandTools.blend",
+      "bytes": 362135,
+      "sha256": "95fc0999da5bc776ce455ae308980304bc5e0bf208121d718495e9067f4ee2d6"
+    },
+    {
+      "path": "Art/HandTools/Source/VoidForge_HandTools_Authoring.blend",
+      "bytes": 172039,
+      "sha256": "6919012e4fc87908eda9eeffa22d689cb7bf7a32e14654b76e89be73416918c0"
+    }
+  ],
+  "previews": [
+    {
+      "path": "Art/HandTools/Previews/grinder.png",
+      "bytes": 1041624,
+      "sha256": "13d324802d5e8e0c35d7052d9d9b58e5cc1e95091d1a665528762798fd0289bc"
+    },
+    {
+      "path": "Art/HandTools/Previews/hand_tools.png",
+      "bytes": 1127890,
+      "sha256": "f14f896a7cee7175e3c46a9b3f53c182d0b0171b700030b44602053e501fdb21"
+    },
+    {
+      "path": "Art/HandTools/Previews/miningdrill.png",
+      "bytes": 1085824,
+      "sha256": "b899fafc5d0601d9f1b1fda674514a7337f827806d4cad3654f1844c947b4eea"
+    },
+    {
+      "path": "Art/HandTools/Previews/welder.png",
+      "bytes": 1078380,
+      "sha256": "9df9be153fa04e3fc6877576d4d3c35fa5c8af16f749cb0f4159416d01f85286"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "Art/HandTools/Scripts/build_hand_tools.py",
+      "bytes": 15201,
+      "sha256": "a90677cd3d2a6621b898e6e0880d1e71b23f0dedc223691834e741f616c3ffb1"
+    },
+    {
+      "path": "Art/HandTools/Scripts/checkpoint_hand_tools.py",
+      "bytes": 495,
+      "sha256": "3558608c374c003859a707d2771ca6973fde8ee9ba8f2680a36e6c0c2092476b"
+    },
+    {
+      "path": "Art/HandTools/Scripts/finalize_manifest.py",
+      "bytes": 3209,
+      "sha256": "4051c2db1f9ba4b9c675073ed2178c159fa1bf710a218741a3d998e849892836"
+    },
+    {
+      "path": "Art/HandTools/Scripts/inspect_hand_tools.py",
+      "bytes": 1680,
+      "sha256": "d2f2be95ab36feb610c34709f3ffd8e49cfa4a9860516ea633416d0746c7eccc"
+    },
+    {
+      "path": "Art/HandTools/Scripts/package_hand_tools.py",
+      "bytes": 10031,
+      "sha256": "e93e0943300634ecfb946dc5dad7ad7e1ab53f2db5805038eeed55ef007ad15d"
+    },
+    {
+      "path": "Art/HandTools/Scripts/refine_hand_tools.py",
+      "bytes": 1521,
+      "sha256": "00c0fca37a9dbfff903109babb769416361e64f46d86c1e9ac6959e35b647b65"
+    },
+    {
+      "path": "Art/HandTools/Scripts/render_hand_tools.py",
+      "bytes": 4817,
+      "sha256": "2aa813e644a3d5b917c1775a33e522a874cffbabed824aa8b344d37e83948af8"
+    }
+  ],
+  "independent_readback": {
+    "success": true,
+    "evidence": "Art/HandTools/Validation/export-readback.json",
+    "method": "Independent FBX/GLB import in an isolated background Blender",
+    "checked_exports": 6
+  },
+  "native_session_incident": {
+    "message": "Connection to Blender lost: [WinError 10054] An existing connection was forcibly closed by the remote host",
+    "observed_trace": "blender.crash.txt: EXCEPTION_ACCESS_VIOLATION (0xc0000005), library_foreach_ID_link / deg_update_eval_copy_datablock",
+    "recovery": "Recreated owned scene from authored script, saved authoring checkpoint, changed compilation to resolve original bpy.data.materials IDs instead of temporary evaluated mesh material IDs; compilation and all six exports subsequently succeeded. Exact causal attribution not independently proven."
+  },
+  "unity_import": {
+    "success": true,
+    "unity_version": "6000.4.0f1",
+    "evidence": "Art/HandTools/Validation/unity-import.json",
+    "scope": "Isolated geometry import; main gameplay scene not modified",
+    "shaders": [
+      "Standard"
+    ],
+    "limitations": "URP material conversion, XR interaction and Quest performance remain unverified"
+  },
+  "parent_scene_check": {
+    "scene": "VF_HandTools_20261103",
+    "objects_observed": 169,
+    "viewport_screenshot_error": "WinError 10054 on final parent screenshot request; subsequent get_scene_info succeeded, models remained present. Saved native studio previews inspected instead."
+  }
+}

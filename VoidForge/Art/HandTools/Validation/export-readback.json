@@ -1,0 +1,251 @@
+{
+  "success": true,
+  "blender_version": "5.2.1 LTS",
+  "method": "Independent FBX/GLB import in an isolated background Blender",
+  "exports": [
+    {
+      "path": "Assets/VoidForge/Art/HandTools/MiningDrill/VF_MiningDrill.fbx",
+      "bytes": 174844,
+      "triangles": 5520,
+      "mesh_count": 3,
+      "bounds_m": [
+        0.21249999105930328,
+        0.46000003814697266,
+        0.2540000081062317
+      ],
+      "materials": [
+        "VF_HT_Ceramic",
+        "VF_HT_Graphite",
+        "VF_HT_Safety",
+        "VF_HT_Steel"
+      ],
+      "anchors": [
+        "VF_MiningDrill_GripPrimary",
+        "VF_MiningDrill_GripSecondary",
+        "VF_MiningDrill_ToolTip",
+        "VF_MiningDrill"
+      ],
+      "pieces": [
+        {
+          "name": "VF_MiningDrill_Body",
+          "triangles": 4248
+        },
+        {
+          "name": "VF_MiningDrill_Rotor",
+          "triangles": 1152
+        },
+        {
+          "name": "VF_MiningDrill_Trigger.001",
+          "triangles": 120
+        }
+      ],
+      "zero_area_triangles": 0,
+      "problems": [],
+      "success": true
+    },
+    {
+      "path": "Assets/VoidForge/Art/HandTools/MiningDrill/VF_MiningDrill.glb",
+      "bytes": 256100,
+      "triangles": 5520,
+      "mesh_count": 3,
+      "bounds_m": [
+        0.21249999105930328,
+        0.46000000834465027,
+        0.2540000081062317
+      ],
+      "materials": [
+        "VF_HT_Ceramic",
+        "VF_HT_Graphite",
+        "VF_HT_Safety",
+        "VF_HT_Steel"
+      ],
+      "anchors": [
+        "VF_MiningDrill",
+        "VF_MiningDrill_GripPrimary",
+        "VF_MiningDrill_GripSecondary",
+        "VF_MiningDrill_ToolTip"
+      ],
+      "pieces": [
+        {
+          "name": "VF_MiningDrill_Body",
+          "triangles": 4248
+        },
+        {
+          "name": "VF_MiningDrill_Rotor",
+          "triangles": 1152
+        },
+        {
+          "name": "VF_MiningDrill_Trigger.001",
+          "triangles": 120
+        }
+      ],
+      "zero_area_triangles": 0,
+      "problems": [],
+      "success": true
+    },
+    {
+      "path": "Assets/VoidForge/Art/HandTools/Grinder/VF_Grinder.fbx",
+      "bytes": 147868,
+      "triangles": 5064,
+      "mesh_count": 3,
+      "bounds_m": [
+        0.23696550726890564,
+        0.3619999885559082,
+        0.09278017282485962
+      ],
+      "materials": [
+        "VF_HT_Ceramic",
+        "VF_HT_Graphite",
+        "VF_HT_Safety",
+        "VF_HT_Steel"
+      ],
+      "anchors": [
+        "VF_Grinder_GripPrimary",
+        "VF_Grinder_GripSecondary",
+        "VF_Grinder_ToolTip",
+        "VF_Grinder"
+      ],
+      "pieces": [
+        {
+          "name": "VF_Grinder_Body",
+          "triangles": 4304
+        },
+        {
+          "name": "VF_Grinder_Disc",
+          "triangles": 644
+        },
+        {
+          "name": "VF_Grinder_Trigger",
+          "triangles": 116
+        }
+      ],
+      "zero_area_triangles": 0,
+      "problems": [],
+      "success": true
+    },
+    {
+      "path": "Assets/VoidForge/Art/HandTools/Grinder/VF_Grinder.glb",
+      "bytes": 225508,
+      "triangles": 5064,
+      "mesh_count": 3,
+      "bounds_m": [
+        0.23696550726890564,
+        0.3619999885559082,
+        0.09278017282485962
+      ],
+      "materials": [
+        "VF_HT_Ceramic",
+        "VF_HT_Graphite",
+        "VF_HT_Safety",
+        "VF_HT_Steel"
+      ],
+      "anchors": [
+        "VF_Grinder",
+        "VF_Grinder_GripPrimary",
+        "VF_Grinder_GripSecondary",
+        "VF_Grinder_ToolTip"
+      ],
+      "pieces": [
+        {
+          "name": "VF_Grinder_Body",
+          "triangles": 4304
+        },
+        {
+          "name": "VF_Grinder_Disc",
+          "triangles": 644
+        },
+        {
+          "name": "VF_Grinder_Trigger",
+          "triangles": 116
+        }
+      ],
+      "zero_area_triangles": 0,
+      "problems": [],
+      "success": true
+    },
+    {
+      "path": "Assets/VoidForge/Art/HandTools/Welder/VF_Welder.fbx",
+      "bytes": 160428,
+      "triangles": 4920,
+      "mesh_count": 3,
+      "bounds_m": [
+        0.07850000262260437,
+        0.3410000205039978,
+        0.24399998784065247
+      ],
+      "materials": [
+        "VF_HT_Ceramic",
+        "VF_HT_Graphite",
+        "VF_HT_Safety",
+        "VF_HT_Steel"
+      ],
+      "anchors": [
+        "VF_Welder_GripPrimary",
+        "VF_Welder_GripSecondary",
+        "VF_Welder_ToolTip",
+        "VF_Welder"
+      ],
+      "pieces": [
+        {
+          "name": "VF_Welder_Body",
+          "triangles": 3808
+        },
+        {
+          "name": "VF_Welder_Nozzle",
+          "triangles": 992
+        },
+        {
+          "name": "VF_Welder_Trigger.001",
+          "triangles": 120
+        }
+      ],
+      "zero_area_triangles": 0,
+      "problems": [],
+      "success": true
+    },
+    {
+      "path": "Assets/VoidForge/Art/HandTools/Welder/VF_Welder.glb",
+      "bytes": 222176,
+      "triangles": 4920,
+      "mesh_count": 3,
+      "bounds_m": [
+        0.07850000262260437,
+        0.3410000205039978,
+        0.24399998784065247
+      ],
+      "materials": [
+        "VF_HT_Ceramic",
+        "VF_HT_Graphite",
+        "VF_HT_Safety",
+        "VF_HT_Steel"
+      ],
+      "anchors": [
+        "VF_Welder",
+        "VF_Welder_GripPrimary",
+        "VF_Welder_GripSecondary",
+        "VF_Welder_ToolTip"
+      ],
+      "pieces": [
+        {
+          "name": "VF_Welder_Body",
+          "triangles": 3808
+        },
+        {
+          "name": "VF_Welder_Nozzle",
+          "triangles": 992
+        },
+        {
+          "name": "VF_Welder_Trigger.001",
+          "triangles": 120
+        }
+      ],
+      "zero_area_triangles": 0,
+      "problems": [],
+      "success": true
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "No Unity import or Quest performance test in this check"
+  ]
+}

@@ -95,6 +95,14 @@ restent à réaliser : [exigences de minage](MINAGE.md).
 Hors périmètre du MVP initial : destruction complète des astéroïdes, planètes,
 IA ennemie, grande échelle (plus de 8 joueurs).
 
+## Ressources visuelles des outils à main
+
+Les modèles des outils à main possèdent une source éditable sous `Art/HandTools/`
+et des exports individuels sous `Assets/VoidForge/Art/HandTools/`. Les pièces mobiles
+sont séparées du corps et les ancrages de prise/contact sont nommés, pour préparer
+le raccordement XR et les comportements définis dans [MINAGE.md](MINAGE.md).
+La livraison visuelle et ses contrôles sont décrits dans [OUTILS_MAIN.md](OUTILS_MAIN.md).
+
 ## Budget de performance Quest 3 (cibles)
 
 - 72 Hz minimum, viser 90 Hz ; une image = 11 à 14 ms.
