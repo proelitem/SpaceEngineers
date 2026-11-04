@@ -61,9 +61,9 @@ namespace VoidForge.Editor
                     Require(Mathf.Abs(tool.transform.lossyScale.magnitude-scale)<.001f && Mathf.Abs(Vector3.Distance(tool.primaryGrip.position,tool.tip.position)-length)<.001f, "grab changes physical tool size");
                     Require(player.GetComponent<PlayerInputProvider>().RightGripConsumed, "grip ownership while held");
                     Require(Vector3.Distance(tool.primaryGrip.position, right.position) < .0001f, "primary grip alignment: " + tool.kind);
-                    Require(Quaternion.Angle(tool.primaryGrip.rotation, right.rotation) < .01f, "primary grip orientation");
-                    Require(Vector3.Dot(tool.tip.forward, right.forward) > .99f, "tool tip does not aim along controller: " + tool.kind);
-                    Require(Vector3.Dot((tool.tip.position - tool.primaryGrip.position).normalized, right.forward) > .7f,
+                    Require(Quaternion.Angle(tool.primaryGrip.rotation, right.rotation*equipment.astronaut.PalmCorrection) < .01f, "primary grip orientation");
+                    Require(Vector3.Dot(tool.tip.forward, (right.rotation*equipment.astronaut.PalmCorrection*Vector3.forward)) > .99f, "tool tip does not aim along controller: " + tool.kind);
+                    Require(Vector3.Dot((tool.tip.position - tool.primaryGrip.position).normalized, (right.rotation*equipment.astronaut.PalmCorrection*Vector3.forward)) > .7f,
                         "visible tool geometry does not extend forward: " + tool.kind + " delta=" + (tool.tip.position - tool.primaryGrip.position));
                     Require(tool.GetComponent<Rigidbody>().isKinematic && tool.GetComponent<Collider>().isTrigger, "tool collision policy");
                     tool.Operate(1); Require(tool.IsOperating, "trigger");
@@ -146,7 +146,7 @@ namespace VoidForge.Editor
                 Vector3 direction = (Bone(equipment.astronaut.avatar, "RMiddleFinger1").position - wrist.position).normalized;
                 Vector3 thumb = Bone(equipment.astronaut.avatar, "RThumb1").position - wrist.position;
                 Vector3 dorsal = -Vector3.Cross(direction, thumb).normalized;
-                Require(Vector3.Dot(direction, right.forward) > .95f && Vector3.Dot(dorsal, right.right) > .95f,
+                Require(Vector3.Dot(direction, (right.rotation*equipment.astronaut.PalmCorrection*Vector3.forward)) > .95f && Vector3.Dot(dorsal, (right.rotation*equipment.astronaut.PalmCorrection*Vector3.right)) > .95f,
                     "controller grip wrist basis");
                 ValidateCurl(equipment.astronaut.avatar);
                 result.anatomicalCurl = true;
@@ -165,7 +165,7 @@ namespace VoidForge.Editor
                 Require(Vector3.Dot(screenNormal, palm) > .99f, "screen must face the palm side after VRIK");
                 Require(Vector3.Dot(deck.screen.bounds.center - leftWrist.position, palm) > .04f, "screen must sit in front of inner sleeve");
                 result.palmSideScreen = true;
-                left.localRotation = Quaternion.Euler(-30,0,75);
+                left.localRotation = Quaternion.Euler(15,0,75);
                 equipment.astronaut.UpdatePose(true);
                 for (int i = 0; i < 10; i++) solver.GetType().GetMethod("Update", Type.EmptyTypes).Invoke(solver, null);
                 mount.Refresh();
@@ -177,7 +177,7 @@ namespace VoidForge.Editor
                 Require(Vector3.Distance(equipment.astronaut.headTarget.position, camera.TransformPoint(equipment.astronaut.headFromView)) < .0001f, "recenter visor view anchor");
                 Require(equipment.astronaut.headFromView.z < -.04f, "tracked view must be outside the front visor");
                 result.visorView = true;
-                Require(Vector3.Distance(equipment.astronaut.rightTarget.position, right.TransformPoint(equipment.astronaut.wristFromController)) < .0001f, "recenter wrist target");
+                Require(Vector3.Distance(equipment.astronaut.rightTarget.position, right.position+right.rotation*equipment.astronaut.PalmCorrection*equipment.astronaut.wristFromController) < .0001f, "recenter wrist target");
                 result.recenter = true;
 
                 var catalogue = AssetDatabase.LoadAssetAtPath<BlockCatalogue>(IntegrationWorkshop.Output + "/BlockCatalogue.asset");
@@ -195,8 +195,8 @@ namespace VoidForge.Editor
                     Require(GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(entry.prefab) == 0, "missing block script");
                 }
                 result.occupiedTestCells = grid.OccupiedCount;
-                Directory.CreateDirectory("Logs");
-                File.WriteAllText("Logs/integration-validation.json", JsonUtility.ToJson(result, true));
+                Directory.CreateDirectory("Hermes_Works/Preuves/INTEGRATION_04");
+                File.WriteAllText("Hermes_Works/Preuves/INTEGRATION_04/equipment-validation.json", JsonUtility.ToJson(result, true));
                 Debug.Log("VF_INTEGRATION_PASS " + JsonUtility.ToJson(result));
             }
             finally

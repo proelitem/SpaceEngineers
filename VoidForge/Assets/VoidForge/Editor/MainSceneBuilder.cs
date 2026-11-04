@@ -38,6 +38,7 @@ namespace VoidForge.Editor
             var sun = new GameObject("Sun");
             var light = sun.AddComponent<Light>();
             light.type = LightType.Directional;
+            RenderSettings.sun=light;
             light.color = new Color(1f, 0.96f, 0.9f);
             light.intensity = 1.6f;
             light.shadows = LightShadows.Soft;

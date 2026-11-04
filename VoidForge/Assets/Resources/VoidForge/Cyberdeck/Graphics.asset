@@ -613,6 +613,14 @@ MonoBehaviour:
       y: 0.1307815
       width: 0.9298246
       height: 0.7432217
+  - id: ui-module
+    texture: {fileID: 2800000, guid: 5035d67edcca28141ae25c30fe7fd9ac, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.054678693
+      y: 0.12401353
+      width: 0.89064264
+      height: 0.7395716
   font: {fileID: 12800000, guid: 28bd53ed5e975c9499a6878b1b1a666a, type: 3}
   textStyle: 0
   glyphMaterial: {fileID: 2100000, guid: f3f4ee7c17dcc614d8146829e17ebbbd, type: 2}

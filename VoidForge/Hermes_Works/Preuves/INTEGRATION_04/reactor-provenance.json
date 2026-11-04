@@ -1,0 +1,107 @@
+{
+  "source": "G:\\UnityAssets\\asset_manager\\store\\Sci-Fi_base\\Files\\Sci-Fi Base",
+  "prefab": "Prefabs/Generator_01.prefab",
+  "license": "Asset Store; ignored local derivative only",
+  "legacy_adaptation": {
+    "3202a9e6d9c81a640a5fa4bc85f56971": "Missing No Name material remap on physics-only FBX; cleared locally",
+    "da692e001514ec24dbc4cca1949ff7e8": "Obsolete URP editor material-version MonoBehaviour; removed locally, material texture properties preserved"
+  },
+  "files": [
+    {
+      "path": "Models\\Generator_01_Body.fbx",
+      "sha256": "46ced825ee13128cdff1dffba1b10bff85aed2eabd3fc35b388cfbe15a626f1b"
+    },
+    {
+      "path": "Models\\Generator_01_Body_L1.fbx",
+      "sha256": "47425c27cc2708a4681196ec408db2ebea9a5ba1172c547d1ba8eed28e2e1291"
+    },
+    {
+      "path": "Models\\Generator_01_Body_L2.fbx",
+      "sha256": "59042a3e3204906eefe690f482211a4a6522577786ce55b6e671ab5a7260e294"
+    },
+    {
+      "path": "Models\\Generator_01_Body_L3.fbx",
+      "sha256": "50848912e3336623b2a0c90eee933b5d8f594c0c3b398948db37923b7cc20fea"
+    },
+    {
+      "path": "Models\\Generator_01_Body_Phys.fbx",
+      "sha256": "e73c57e02391e47100cdb85ab11e17ad283748da8b8f5e4b4690a6543e3a4089"
+    },
+    {
+      "path": "Models\\Generator_01_Fan1.fbx",
+      "sha256": "8d9e9e3f56022c1d85a08a826b2c4314caa3828d08d7f25b855acf8fbad4864a"
+    },
+    {
+      "path": "Models\\Generator_01_Fan1_L1.fbx",
+      "sha256": "fee3630da0ec331d00fedab0a75d9fe0acef4d61aa3dab68dfa79357d624f0d9"
+    },
+    {
+      "path": "Models\\Generator_01_Fan1_L2.fbx",
+      "sha256": "0d297ba4c7dade94bab7e5e612f434433e83b45b63219132afa0f9bc87efe7ff"
+    },
+    {
+      "path": "Models\\Materials\\Generator_Panels_a.mat",
+      "sha256": "dab81514b4588e7a30a1a94be8db992f12b142186bf8f6620dd0255f93aa7c73"
+    },
+    {
+      "path": "Models\\Materials\\Grid_02_a.mat",
+      "sha256": "325d80d19070a82f5b01a3696b8648f636fcab5d4fa714bc42b84307b2acb9f9"
+    },
+    {
+      "path": "Models\\Materials\\Props_Base1_a.mat",
+      "sha256": "4985e50693c6b409831fbebf74ad20107817708c983c06dc335e21cc0e00cd78"
+    },
+    {
+      "path": "Prefabs\\Generator_01.prefab",
+      "sha256": "eed2be6b4f3a5e2165817d39ef6551fd39f7b63d53ab38c56a33dab3565777e3"
+    },
+    {
+      "path": "Textures\\Detail_Metal_HDRP.tif",
+      "sha256": "ee99ee84d99728125934ef7a4b7c1d309a569cd1127f55517a7d76c8e5a2ca6c"
+    },
+    {
+      "path": "Textures\\Generator_Panels_a.tif",
+      "sha256": "c58924abc7f4f26f35b63c3dd4cb0b163dcdf81ea6d0327082964cde3f1465cd"
+    },
+    {
+      "path": "Textures\\Generator_Panels_e.png",
+      "sha256": "37cb52e6a8e9f1abd46e78d4b4a5fe29d90293ade7c631293624e7bad4a6e138"
+    },
+    {
+      "path": "Textures\\Generator_Panels_mask.tif",
+      "sha256": "c23aca7ee8cc3dd0d77187fa51e5191978b2aeb3ac5d1f592f43e34fdc479835"
+    },
+    {
+      "path": "Textures\\Generator_Panels_n.tif",
+      "sha256": "f5fa51b7b60a5bd18cd7d8d6e5e7fec7dd27f5ffe95c29bf8c0a615bd6fc7f56"
+    },
+    {
+      "path": "Textures\\Grid_02_a.tif",
+      "sha256": "9e996f203300441640f89a5f1ec6e97ace40668293d368f54899c63ea3d66b3c"
+    },
+    {
+      "path": "Textures\\Grid_02_mask.tif",
+      "sha256": "7260a82fdfc764b3c6f7c5cdbd9a7404379e48dc96a2e04b82dfdf69beedf5bb"
+    },
+    {
+      "path": "Textures\\Grid_02_n.tif",
+      "sha256": "0be2ce9be8d7ef8e887aa9f4f5a1510205f914de2f84e2bf422e4df2d9d5441d"
+    },
+    {
+      "path": "Textures\\Props_Base1_a.tif",
+      "sha256": "e5790c8ea58a2bfbf22d71e8762705049f7b17f3911abeeb67248e4d6e997a2d"
+    },
+    {
+      "path": "Textures\\Props_Base1_e.tif",
+      "sha256": "427ad48e498e9bc2c4e02f77b72550a7423ec70e6a8597146c11c7c4808220b2"
+    },
+    {
+      "path": "Textures\\Props_Base1_mask.tif",
+      "sha256": "60b1fa8d5ce86db008bbb0cc5cf172c3c653f872130ee17b402cb95dfa5df8c6"
+    },
+    {
+      "path": "Textures\\Props_Base1_n.tif",
+      "sha256": "cdee6a5ac29b7872c4bc0aac411ff2b398bf26dd00395d3de644eff1fe36acaf"
+    }
+  ]
+}

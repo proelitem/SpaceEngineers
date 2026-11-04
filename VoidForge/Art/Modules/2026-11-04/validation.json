@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Cargo",
+    "blenderBounds": [
+      [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      [
+        0.5,
+        0.5,
+        0.5
+      ]
+    ],
+    "triangles": 5084,
+    "singleMaterialPerMesh": true,
+    "finiteVertices": true
+  },
+  {
+    "name": "Refinery",
+    "blenderBounds": [
+      [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      [
+        0.5,
+        0.5,
+        1.5
+      ]
+    ],
+    "triangles": 11376,
+    "singleMaterialPerMesh": true,
+    "finiteVertices": true
+  },
+  {
+    "name": "Assembler",
+    "blenderBounds": [
+      [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      [
+        1.5,
+        0.5,
+        0.5
+      ]
+    ],
+    "triangles": 13844,
+    "singleMaterialPerMesh": true,
+    "finiteVertices": true
+  }
+]

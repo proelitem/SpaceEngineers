@@ -71,3 +71,18 @@ La licence propre à chaque package est indiquée dans ses fichiers de licence.
 
 Toute ressource ajoutée aux jalons suivants (sons, modèles, textures) doit être
 listée ici avec son auteur, sa source et sa licence (CC0 ou MIT de préférence).
+
+## Recette 04 — modèles, logo et ressources réutilisées
+
+- Cargo, Refinery et Assembler : géométrie originale GPT-Astra Modeler3D via Blender MCP,
+  d’après les références 2D locales. Sources, manifeste et validation sous
+  `Art/Modules/2026-11-04`, FBX sous `Assets/VoidForge/Art/Modules/2026-11-04` ; MIT.
+- Pictogramme Module : création ImageGen, source sous
+  `Art/UI/Cyberdeck/2026-11-04-module`, ressource sous `Assets/VoidForge/Art/UI/Cyberdeck`.
+- Sci-Fi Arsenal, Archanor : SparksYellow/SparksBlue et leurs textures, dérivés URP en boucle.
+  Asset Store, local uniquement sous `Assets/ThirdParty/SciFiArsenal`, exclu du dépôt MIT.
+- Sci-Fi Base : boîtier Generator_01 réutilisé pour le réacteur, dérivé local sous
+  `Assets/ThirdParty/VoidForgeReactor`, exclu du dépôt MIT. Aucun modèle original de réacteur
+  n’est revendiqué. Les scripts de stage consignent les fichiers sources et leurs hashes.
+- Le dérivé local HVR/astronaute reconstruit des dessous de plaques sur la peau existante ;
+  sa licence source reste applicable. Aucun original de la banque n’est modifié.

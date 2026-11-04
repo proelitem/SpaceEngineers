@@ -26,6 +26,7 @@ namespace VoidForge.Economy
         public void RefreshWorldInstances() => SyncWorld();
         public void DetachInterface() => Detach();
         public bool Seated => seat!=null;
+        public EconomyBlock SeatedBlock=>seat;
         public bool NetworkLocked => NetworkManager.Singleton!=null&&NetworkManager.Singleton.IsListening;
         public Vector3 gridOrigin=new Vector3(-5,-2,0);
         public bool saveEnabled=true;
@@ -39,7 +40,8 @@ namespace VoidForge.Economy
         Transform grid;
         EconomyBlock seat;
         Rigidbody body;
-        Vector3 exitPosition;
+        Vector3 exitPosition,seatPosition;
+        Quaternion seatRotation;
         bool collisions, locomotionEnabled, turnEnabled;
         ZeroGLocomotion locomotion;
         SnapTurn turn;
@@ -71,7 +73,7 @@ namespace VoidForge.Economy
             catch(Exception e){Debug.LogException(e);Tell("SAUVEGARDE INCOMPATIBLE OU ILLISIBLE • FICHIER CONSERVÉ");yield break;}
             var prototype=FindFirstObjectByType<BlockGrid>();if(prototype!=null)prototype.gameObject.SetActive(false);
             gameObject.AddComponent<EconomyMiningAdapter>();
-            Debug.Log("[VoidForge Economy] Live inventory, 35 production recipes, 11 one-metre blocks and persistent finite deposits ready.");
+            Debug.Log("[VoidForge Economy] Live inventory, 35 production recipes, 12 one-metre blocks and persistent finite deposits ready.");
         }
         public void Initialize(EconomyDefinition definition,BlockCatalogue catalogue,string path)
         {
@@ -215,7 +217,7 @@ namespace VoidForge.Economy
         {
             if(grid==null)return;
             var ids=new HashSet<string>(World.Blocks.Select(b=>b.uid));
-            foreach(var pair in Instances.Where(x=>!ids.Contains(x.Key)).ToArray()){Destroy(pair.Value);Instances.Remove(pair.Key);}
+            foreach(var pair in Instances.Where(x=>!ids.Contains(x.Key)).ToArray()){pair.Value.SetActive(false);Destroy(pair.Value);Instances.Remove(pair.Key);}
             foreach(var b in World.Blocks)
             {
                 if(Instances.ContainsKey(b.uid))continue;
@@ -260,7 +262,7 @@ namespace VoidForge.Economy
             if(player==null)player=FindFirstObjectByType<PlayerInputProvider>();
             if(!CanCommand()||cockpit==null||cockpit.type!="Cockpit"||Seated||player==null||Camera.main==null)return false;
             if(Vector3.Distance(Camera.main.transform.position,cockpit.transform.position)>3.5f)return false;
-            seat=cockpit;exitPosition=player.transform.position;body=player.GetComponent<Rigidbody>();
+            seat=cockpit;exitPosition=player.transform.position;seatPosition=cockpit.transform.position;seatRotation=cockpit.transform.rotation;body=player.GetComponent<Rigidbody>();
             locomotion=player.GetComponent<ZeroGLocomotion>();turn=player.GetComponent<SnapTurn>();
             if(locomotion!=null){locomotionEnabled=locomotion.enabled;locomotion.enabled=false;}if(turn!=null){turnEnabled=turn.enabled;turn.enabled=false;}
             if(body!=null){collisions=body.detectCollisions;body.linearVelocity=Vector3.zero;body.angularVelocity=Vector3.zero;body.detectCollisions=false;}
@@ -271,7 +273,7 @@ namespace VoidForge.Economy
         {if(Camera.main==null)return;var nearest=Instances.Values.Select(g=>g.GetComponent<EconomyBlock>()).Where(b=>b.type=="Cockpit").OrderBy(b=>Vector3.SqrMagnitude(Camera.main.transform.position-b.transform.position)).FirstOrDefault();if(!EnterSeat(nearest))Tell("APPROCHER UN COCKPIT • A / E POUR S’ASSEOIR");}
         public void ExitSeat()
         {
-            if(!Seated)return;seat=null;
+            if(!Seated)return;exitPosition=seat.transform.position+seat.transform.rotation*Quaternion.Inverse(seatRotation)*(exitPosition-seatPosition);seat=null;
             if(player!=null)player.transform.position=exitPosition;
             if(body!=null){body.linearVelocity=Vector3.zero;body.detectCollisions=collisions;}
             if(locomotion!=null)locomotion.enabled=locomotionEnabled;if(turn!=null)turn.enabled=turnEnabled;

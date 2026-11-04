@@ -1,0 +1,190 @@
+{
+  "authoring": "GPT-Astra Modeler3D via live Blender MCP; original geometry from approved local 2D reference images",
+  "blender_version": "5.2.1 LTS",
+  "license": "MIT (original geometry and script); no Asset Store geometry copied",
+  "reference_directory": "Art/UI/Cyberdeck/2026-11-03-v1/blocs",
+  "library_review": "_jarvis_index.json; Sci-Fi_base manifest/container and SciFi_Space_Base container inventories inspected. Existing Asset Store props are not the exact approved silhouettes and are not redistributable as MIT; authored new reference-matching geometry at user request.",
+  "coordinates": "Blender X right, +Y front, +Z up. FBX -Z forward / +Y up, bake_space_transform=True. Unity intended front -Z, root origin base-cell centre, import Scale Factor=1, Convert Units=true. Verify importer orientation against bounds before prefab.",
+  "materials": {
+    "VF04_Ivory": {
+      "baseColorLinear": [
+        0.67,
+        0.62,
+        0.51,
+        1
+      ],
+      "metallic": 0.28,
+      "roughness": 0.36,
+      "emissionStrength": 0,
+      "emissionColorLinear": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "VF04_Graphite": {
+      "baseColorLinear": [
+        0.035,
+        0.046,
+        0.059,
+        1
+      ],
+      "metallic": 0.62,
+      "roughness": 0.32,
+      "emissionStrength": 0,
+      "emissionColorLinear": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "VF04_Steel": {
+      "baseColorLinear": [
+        0.23,
+        0.28,
+        0.32,
+        1
+      ],
+      "metallic": 0.8,
+      "roughness": 0.26,
+      "emissionStrength": 0,
+      "emissionColorLinear": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "VF04_Orange": {
+      "baseColorLinear": [
+        1,
+        0.18,
+        0.003,
+        1
+      ],
+      "metallic": 0.38,
+      "roughness": 0.28,
+      "emissionStrength": 0,
+      "emissionColorLinear": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "VF04_Amber": {
+      "baseColorLinear": [
+        1,
+        0.2,
+        0.003,
+        1
+      ],
+      "metallic": 0.15,
+      "roughness": 0.28,
+      "emissionStrength": 1.5,
+      "emissionColorLinear": [
+        1,
+        0.2,
+        0.003,
+        1
+      ]
+    },
+    "VF04_Cyan": {
+      "baseColorLinear": [
+        0.008,
+        0.72,
+        0.8,
+        1
+      ],
+      "metallic": 0.1,
+      "roughness": 0.25,
+      "emissionStrength": 2,
+      "emissionColorLinear": [
+        0.008,
+        0.72,
+        0.8,
+        1
+      ]
+    }
+  },
+  "models": [
+    {
+      "name": "VF_Cargo",
+      "triangles": 5084,
+      "meshes": 5,
+      "materials": [
+        "VF04_Ivory",
+        "VF04_Graphite",
+        "VF04_Steel",
+        "VF04_Orange",
+        "VF04_Cyan"
+      ],
+      "unity_bounds": {
+        "min": [
+          -0.5,
+          -0.5,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "fbx": "Assets/VoidForge/Art/Modules/2026-11-04/VF_Cargo.fbx"
+    },
+    {
+      "name": "VF_Refinery",
+      "triangles": 11376,
+      "meshes": 5,
+      "materials": [
+        "VF04_Ivory",
+        "VF04_Graphite",
+        "VF04_Steel",
+        "VF04_Orange",
+        "VF04_Amber"
+      ],
+      "unity_bounds": {
+        "min": [
+          -0.5,
+          -0.5,
+          -0.5
+        ],
+        "max": [
+          0.5,
+          1.5,
+          0.5
+        ]
+      },
+      "fbx": "Assets/VoidForge/Art/Modules/2026-11-04/VF_Refinery.fbx"
+    },
+    {
+      "name": "VF_Assembler",
+      "triangles": 13844,
+      "meshes": 6,
+      "materials": [
+        "VF04_Ivory",
+        "VF04_Graphite",
+        "VF04_Steel",
+        "VF04_Orange",
+        "VF04_Amber",
+        "VF04_Cyan"
+      ],
+      "unity_bounds": {
+        "min": [
+          -0.5,
+          -0.5,
+          -0.5
+        ],
+        "max": [
+          1.5,
+          0.5,
+          0.5
+        ]
+      },
+      "fbx": "Assets/VoidForge/Art/Modules/2026-11-04/VF_Assembler.fbx"
+    }
+  ]
+}

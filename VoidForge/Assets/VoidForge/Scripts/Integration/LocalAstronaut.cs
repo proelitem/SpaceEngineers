@@ -13,6 +13,9 @@ namespace VoidForge.Integration
         public Vector3 restHead;
         public Vector3 headFromView;
         public Quaternion headRotation, leftRotation, rightRotation;
+        // Quest controller grip is pitched relative to the anatomical palm. XR aim stays unchanged.
+        public Vector3 controllerPalmEuler = new Vector3(-45,0,0);
+        public Quaternion PalmCorrection => Quaternion.Euler(controllerPalmEuler);
         public Vector3 wristFromController = new Vector3(.025f, -.015f, -.07f);
         Transform head, left, right;
         Behaviour solver;
@@ -65,8 +68,8 @@ namespace VoidForge.Integration
             avatar.position = head.position - avatar.rotation * restHead;
             headTarget.SetPositionAndRotation(head.TransformPoint(headFromView), head.rotation * headRotation);
             var leftOffset = wristFromController; leftOffset.x = -leftOffset.x;
-            leftTarget.SetPositionAndRotation(left.TransformPoint(leftOffset), left.rotation * leftRotation);
-            rightTarget.SetPositionAndRotation(right.TransformPoint(wristFromController), right.rotation * rightRotation);
+            leftTarget.SetPositionAndRotation(left.position+left.rotation*PalmCorrection*leftOffset, left.rotation * PalmCorrection * leftRotation);
+            rightTarget.SetPositionAndRotation(right.position+right.rotation*PalmCorrection*wristFromController, right.rotation * PalmCorrection * rightRotation);
             if (solver != null) solver.enabled = visible;
             if (renderers != null) foreach (var renderer in renderers) renderer.enabled = visible;
         }

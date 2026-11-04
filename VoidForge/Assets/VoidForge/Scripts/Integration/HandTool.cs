@@ -17,9 +17,11 @@ namespace VoidForge.Integration
         Quaternion homeRotation;
         Quaternion movingRest;
         float phase;
+        HandToolEffects effects;
 
         public void RememberHome()
         {
+            effects=GetComponent<HandToolEffects>()??gameObject.AddComponent<HandToolEffects>();effects.Bind(this);
             home = transform.parent;
             homePosition = transform.localPosition;
             homeScale = transform.localScale;
@@ -38,7 +40,7 @@ namespace VoidForge.Integration
 
         public void ReturnHome()
         {
-            IsHeld = IsOperating = false;
+            IsHeld = IsOperating = false;effects?.SetRunning(false);
             transform.SetParent(home, false);
             transform.localScale = homeScale;
             transform.SetLocalPositionAndRotation(homePosition, homeRotation);
@@ -47,7 +49,7 @@ namespace VoidForge.Integration
 
         public void Operate(float trigger)
         {
-            IsOperating = IsHeld && trigger > .55f;
+            IsOperating = IsHeld && trigger > .55f;effects?.SetRunning(IsOperating);
             if (!IsOperating || movingPart == null || kind == HandToolKind.Welder) return;
             phase = (phase + Time.deltaTime * 1440f) % 360f;
             SetRotationPhase(phase);

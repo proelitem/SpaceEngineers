@@ -164,3 +164,22 @@ rig XR et réseau. Les dépendances locales absentes gardent le repli du rig J1.
 La tranche reste solo, avec grilles statiques et économie globale. Les paramètres
 numériques de veines sont originaux ; l'équivalence Space Engineers reste non certifiée.
 Contrats, dépendances, limites et procédure : [SURVIE.md](SURVIE.md).
+
+## Recette 04 — extension solo autorisée le 4 novembre 2026
+
+La version courante de cette tranche est décrite dans [RECETTE_04.md](RECETTE_04.md).
+`ConstructionSystem` conserve les composants installés des plans ; seuls les blocs complets
+entrent dans le registre opérationnel. `ModuleSystems` possède un registre de soute/production
+et une réserve énergétique par grille, avec un sac personnel partagé par référence.
+`ModuleMotion` applique des forces à des corps rigides de masse calculée, la base initiale
+restant ancrée. Les entrées VR et la sauvegarde atomique restent sous l’autorité de
+`SurvivalSession`. Son événement `WorldReady` est émis avant le premier tick de production.
+
+`WristHousingSeat` suit la peau déformée et `WristHudAttachment` suit la dalle en mètres du
+monde. `AsteroidSurfaceBinding` partage l’identité de matériau entre source et Digger.
+`HandToolEffects` réutilise des particules locales Sci-Fi Arsenal.
+
+Ces adaptateurs sont suspendus en session réseau. Ils ne clôturent ni la réplication de
+construction ni la physique complète des jalons J2/J3. Les documents précédents décrivant
+une économie globale, des grilles toutes statiques ou des machines procédurales sont dépassés
+pour cette tranche ; les preuves historiques restent conservées.

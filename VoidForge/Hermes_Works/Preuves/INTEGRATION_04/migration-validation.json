@@ -1,0 +1,29 @@
+{
+    "success": true,
+    "error": "",
+    "originalFormat": 1,
+    "blocks": 8,
+    "migratedBlocks": 9,
+    "plans": 6,
+    "excavations": 58,
+    "starterPowerProvisioned": true,
+    "checks": [
+        "World restoration and voxel replay report no fault",
+        "Original Quest envelope actually loaded",
+        "All original constructed block identities preserved",
+        "Only the explicit one-time starter solar may be added to a depleted legacy base",
+        "Every existing blueprint identity preserved",
+        "Personal stock preserved exactly by migration",
+        "Primary cargo stock preserved exactly by migration",
+        "All existing excavation identities preserved without duplicate credit",
+        "Existing construction grids preserved",
+        "Version 1 unpaid welding progress migrates to unbuilt, without inventing components",
+        "Atomic format 2 save includes per-module state",
+        "Starter solar grant has a durable migration marker",
+        "World restoration and voxel replay report no fault",
+        "Second load of migrated save preserves all player and cargo stock",
+        "Second voxel replay and blueprint restore preserve counts",
+        "Reload cannot duplicate the migration solar or its components"
+    ],
+    "errors": []
+}

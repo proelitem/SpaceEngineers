@@ -34,7 +34,8 @@ namespace VoidForge.Editor
             {
                 var entry=new BlockCatalogue.Entry{id=block.id,size=new Vector3Int(block.x,block.y,block.z)};
                 var existing=source.Find(block.id);
-                if(existing!=null&&existing.Available)entry.prefab=existing.prefab;
+                if(block.id=="Reactor")entry.prefab=Recette04Workshop.ImportReactor();
+                else if(existing!=null&&existing.Available)entry.prefab=existing.prefab;
                 else
                 {
                     var go=EconomyBlockModels.Create(block.id,entry.size);
@@ -59,8 +60,8 @@ namespace VoidForge.Editor
             if(catalogue==null){catalogue=ScriptableObject.CreateInstance<BlockCatalogue>();AssetDatabase.CreateAsset(catalogue,Root+"/Blocks.asset");}
             catalogue.entries=entries.ToArray();EditorUtility.SetDirty(catalogue);AssetDatabase.SaveAssets();
             var graphics=AssetDatabase.LoadAssetAtPath<CyberdeckAssets>("Assets/Resources/VoidForge/Cyberdeck/Graphics.asset");
-            if(graphics==null||graphics.icons.Length!=75||graphics.icons.Any(x=>x.texture==null))CyberdeckWorkshop.Build();
-            Debug.Log("[VoidForge Economy] 11 functional construction definitions and 75 individual Cyberdeck graphics generated.");
+            if(graphics==null||graphics.icons.Length<75||graphics.icons.Any(x=>x.texture==null))CyberdeckWorkshop.Build();
+            Debug.Log("[VoidForge Economy] 12 functional construction definitions and Module-extended Cyberdeck graphics generated.");
         }
         public static void RunBatch(){readyAt=EditorApplication.timeSinceStartup+2;EditorApplication.update+=Begin;}
         static void Begin()
@@ -85,8 +86,8 @@ namespace VoidForge.Editor
                 var hud=hudGo.GetComponent<CyberdeckHud>();hud.Initialize();runtime.Attach(hud.State);runtime.AddWaypoints(hud.State);
                 hud.BlockAvailable=runtime.BlockSupported;hud.BlockSize=runtime.BlockSize;
                 report.icons=hud.assets.icons.Length;report.recipes=definition.recipes.Length;report.blocks=definition.blocks.Length;
-                Check(report.icons==75&&hud.assets.icons.All(x=>x.texture!=null),"75 native Texture2D icons resolve");
-                Check(report.recipes==35&&report.blocks==11,"complete live production and construction catalogue");
+                Check(report.icons>=75&&hud.assets.icons.All(x=>x.texture!=null),"all native Texture2D icons resolve");
+                Check(report.recipes==35&&report.blocks==12,"complete live production and construction catalogue");
                 Check(!hud.State.preview&&hud.State.items.Any(x=>x.id=="tool-drill"),"HUD shows actual backpack, not preview values");
                 hud.Show(DeckPage.Refinery);Check(!hud.Controls.ContainsKey("refinery-power"),"industry controls locked outside cockpit");
                 hud.Show(DeckPage.Inventory);hud.Invoke("cargo-source");Check(hud.Controls.ContainsKey("cargo-source-backpack")&&hud.Controls.ContainsKey("cargo-source-cargo"),"two actual storage sources exposed");

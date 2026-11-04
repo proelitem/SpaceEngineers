@@ -1,0 +1,69 @@
+{
+  "source": "G:\\Projets\\SpaceEngineers\\VoidForge\\meshy_output\\astronaut-20261103\\VoidForge_Astronaut_Rigged.blend",
+  "source_unchanged": true,
+  "hands": [
+    {
+      "side": "L",
+      "thumb_before": [
+        0.460980087518692,
+        0.0026443481910973787,
+        0.9880331158638
+      ],
+      "thumb_after": [
+        0.460980087518692,
+        -0.014644348062574863,
+        0.9880331158638
+      ],
+      "wrist": [
+        0.421999990940094,
+        -0.006000000052154064,
+        1.0180000066757202
+      ],
+      "vertices": 1469,
+      "thumb_lateral_with_forward_palm": true
+    },
+    {
+      "side": "R",
+      "thumb_before": [
+        -0.460980087518692,
+        0.002644355408847332,
+        0.9880331158638
+      ],
+      "thumb_after": [
+        -0.460980087518692,
+        -0.01464435551315546,
+        0.9880331158638
+      ],
+      "wrist": [
+        -0.421999990940094,
+        -0.006000000052154064,
+        1.0180000066757202
+      ],
+      "vertices": 1469,
+      "thumb_lateral_with_forward_palm": true
+    }
+  ],
+  "plate_contact": [
+    {
+      "side": "L",
+      "source_footprints": 7,
+      "skin_faces": 238,
+      "plate_vertices": 286,
+      "plate_thickness_m": 0.0015,
+      "contact_gap_min_m": 0.0,
+      "contact_gap_max_m": 0.0,
+      "skinning": "extruded donor skin topology; copied exact deformation weights"
+    },
+    {
+      "side": "R",
+      "source_footprints": 7,
+      "skin_faces": 238,
+      "plate_vertices": 286,
+      "plate_thickness_m": 0.0015,
+      "contact_gap_min_m": 0.0,
+      "contact_gap_max_m": 0.0,
+      "skinning": "extruded donor skin topology; copied exact deformation weights"
+    }
+  ],
+  "source_sha256": "e601dcec5293bd685c596e417721a237b762c24e79cf938aa9a464c1b56d2e1f"
+}

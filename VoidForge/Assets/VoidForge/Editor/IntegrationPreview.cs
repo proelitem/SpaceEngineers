@@ -5,13 +5,14 @@ using UnityEditor;
 using UnityEngine;
 using VoidForge.Integration;
 using VoidForge.Player;
+using VoidForge.UI.Cyberdeck;
 using Object = UnityEngine.Object;
 
 namespace VoidForge.Editor
 {
     public static class IntegrationPreview
     {
-        public const string Output = "Builds/IntegrationPreview03";
+        public const string Output = "Builds/IntegrationPreview04";
         public static void BuildAndReviewBatch()
         {
             IntegrationWorkshop.BuildBatch();
@@ -25,7 +26,7 @@ namespace VoidForge.Editor
             var hmd = player.GetComponentInChildren<Camera>();
             var left = hmd.transform.parent.Find("LeftHand"); var right = hmd.transform.parent.Find("RightHand");
             left.localPosition = new Vector3(-.28f,-.35f,.3f);
-            left.localRotation = Quaternion.Euler(-30,0,75); // Turn the inner wrist towards the eyes.
+            left.localRotation = Quaternion.Euler(15,0,75); // Turn the inner wrist towards the eyes.
             right.localPosition = new Vector3(.28f,-.35f,.35f);
             equipment.Bind(player.GetComponent<PlayerInputProvider>());
             equipment.astronaut.UpdatePose(true);
@@ -40,6 +41,7 @@ namespace VoidForge.Editor
             var fingers = avatar.GetComponents<MonoBehaviour>().First(c => c.GetType().FullName == "VoidForge.Avatars.AstronautFingerPose");
             fingers.GetType().GetMethod("ApplyPose").Invoke(fingers, null);
             equipment.GetComponentInChildren<WristDisplayMount>().Refresh();
+            equipment.GetComponentInChildren<WristHousingSeat>().Refresh();
             RenderSettings.ambientLight = new Color(.45f,.45f,.45f);
             var sun = new GameObject("PreviewSun").AddComponent<Light>(); sun.type = LightType.Directional;
             sun.intensity = 2f; sun.transform.rotation = Quaternion.Euler(35,-40,0);
@@ -62,6 +64,8 @@ namespace VoidForge.Editor
             Capture(camera, new Vector3(.7f,-.12f,.65f), new Vector3(.28f,-.35f,.5f), 45, "grinder-disc-90");
             equipment.Held.gameObject.SetActive(false);
             var deck = equipment.GetComponentInChildren<CyberdeckSurface>();
+            var hudGo=Object.Instantiate(Resources.Load<GameObject>("VoidForge/Cyberdeck/Hud"));var hud=hudGo.GetComponent<CyberdeckHud>();hud.Initialize();hud.State.LoadPreview();
+            WristHudAttachment.Attach(hud,deck);Canvas.ForceUpdateCanvases();
             var screen = deck.screen.bounds.center;
             var filter = deck.screen.GetComponent<MeshFilter>();
             Vector3 screenNormal = filter.transform.TransformDirection(filter.sharedMesh.normals[0]).normalized;
@@ -73,7 +77,7 @@ namespace VoidForge.Editor
             fingers.GetType().GetMethod("ApplyPose").Invoke(fingers,null);
             Capture(camera,new Vector3(.9f,-.55f,.8f),new Vector3(.3f,-.72f,.05f),50,"right-thigh");
             Capture(camera,hmd.transform.position,hmd.transform.position+hmd.transform.forward,90,"visor-view");
-            Object.DestroyImmediate(player); Object.DestroyImmediate(camera.gameObject); Object.DestroyImmediate(sun.gameObject);
+            Object.DestroyImmediate(hudGo);Object.DestroyImmediate(player); Object.DestroyImmediate(camera.gameObject); Object.DestroyImmediate(sun.gameObject);
             Debug.Log("VF_INTEGRATION_PREVIEWS " + Output);
         }
 

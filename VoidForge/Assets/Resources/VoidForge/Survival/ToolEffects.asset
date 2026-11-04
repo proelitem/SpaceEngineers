@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e418c72ecc1a03c4e909ea3eeb6ba00b, type: 3}
+  m_Name: ToolEffects
+  m_EditorClassIdentifier: Assembly-CSharp::VoidForge.Integration.ToolEffectLibrary
+  cuttingSparks: {fileID: 4523735726642609834, guid: 76d178a2e9a77634ab35bbc244e7f158, type: 3}
+  weldingSparks: {fileID: 5402112166675013944, guid: f20047bece98caf43bff5e1ebbc47465, type: 3}

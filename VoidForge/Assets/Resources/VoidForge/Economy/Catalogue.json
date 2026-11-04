@@ -1471,6 +1471,38 @@
       ],
       "batteryKwh": 0,
       "solarKw": 40
+    },
+    {
+      "id": "Reactor",
+      "name": "Réacteur",
+      "icon": "component-reactor",
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "components": [
+        {
+          "id": "component-plates",
+          "amount": "8"
+        },
+        {
+          "id": "component-reactor",
+          "amount": "4"
+        },
+        {
+          "id": "component-construction",
+          "amount": "2"
+        },
+        {
+          "id": "component-circuits",
+          "amount": "2"
+        },
+        {
+          "id": "component-display",
+          "amount": "1"
+        }
+      ],
+      "batteryKwh": 0,
+      "solarKw": 0
     }
   ]
 }

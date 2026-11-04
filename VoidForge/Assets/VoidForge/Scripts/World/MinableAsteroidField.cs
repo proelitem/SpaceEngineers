@@ -29,6 +29,8 @@ namespace VoidForge.World
         public bool Busy { get; private set; }
         public bool Faulted { get; private set; }
         float nextAction;
+        AsteroidSurfaceBinding surfaces;
+        public AsteroidSurfaceBinding Surfaces=>surfaces;
 
         void Awake()
         {
@@ -60,6 +62,7 @@ namespace VoidForge.World
                 marker.original.transform.localScale=Vector3.one*size;assets.AddVisual(marker.original,marker.variant);
                 Asteroids.Add(marker);
             }
+            surfaces=gameObject.AddComponent<AsteroidSurfaceBinding>();surfaces.Initialize(this);
             HideTerrain();
             Debug.Log($"[VoidForge Survival] {count} asset-shaped asteroids registered; all convertible/minable, profile {AsteroidOreProfile.Version}.");
         }
@@ -114,7 +117,7 @@ namespace VoidForge.World
                 await Awaitable.MainThreadAsync();
                 if(this==null)return;
                 asteroid.original.SetActive(false);
-                asteroid.voxelReady=true;HideTerrain();Physics.SyncTransforms();
+                asteroid.voxelReady=true;surfaces.RefreshChunks();HideTerrain();Physics.SyncTransforms();
                 Debug.Log($"[VoidForge Survival] Asteroid {index} voxel collider ready; source variant {asteroid.variant}, veins {asteroid.veins.Length}.");
             }
             catch(Exception error){await Awaitable.MainThreadAsync();if(this!=null)Fail(error.ToString());}
@@ -126,6 +129,7 @@ namespace VoidForge.World
             operation.operation.Params=new ModificationParameters { Position=point,Brush=BrushType.Sphere,Action=ActionType.Dig,Opacity=1,Size=Vector3.one*radius,TextureIndex=0,PaintWhileDigging=false };
             await system.Modify(operation,true);
             await Awaitable.MainThreadAsync();
+            surfaces.RefreshChunks();
             return operation;
         }
         public async Task<bool> Dig(int asteroid,Vector3 point,float radius)

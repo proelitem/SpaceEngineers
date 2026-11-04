@@ -1,0 +1,17 @@
+{
+  "generator": "OpenAI ImageGen",
+  "date": "2026-11-04",
+  "purpose": "Module navigation pictogram",
+  "format": "opaque black/white luminance mask; no postprocessing",
+  "size": [
+    1774,
+    887
+  ],
+  "uv": {
+    "x": 0.05467869222096956,
+    "y": 0.12401352874859076,
+    "w": 0.8906426155580609,
+    "h": 0.7395715896279594
+  },
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a19f23-5c07-7ae0-b03e-a99ccf78b2a2\\exec-1477d231-bb7d-4ccc-b96d-e1e9198dd986.png"
+}

@@ -24,3 +24,7 @@ Les approbations propriétaire sont réservées au coffre :
 `G:/hermes/Vault/Jarvis3D/Projets/VoidForge/APPROBATIONS.md`.
 Aucune copie locale divergente ni question technique dans ce fichier.
 Le choix de Unity `6000.4.0f1` a été explicitement autorisé par Pierre dans le chat.
+
+Recette active du 4 novembre : [équipement, construction et modules](../docs/RECETTE_04.md),
+[résultats et APK](Jalons/INTEGRATION_04.md). Les décisions techniques restent dans le dépôt ;
+aucune nouvelle approbation propriétaire n’est requise pour cette tranche autorisée.

@@ -28,6 +28,7 @@ namespace VoidForge.UI.Cyberdeck
         public int quantity;
         [Range(0, 1)] public float progress;
     }
+    [Serializable] public sealed class DeckSystem { public string uid,name,status; public bool enabled; public float kilowatts; }
     [Serializable] public sealed class DeckWaypoint
     {
         public string id, name, category, icon;
@@ -42,7 +43,7 @@ namespace VoidForge.UI.Cyberdeck
     {
         public bool preview;
         public bool cargoConnected, cockpitConnected, refineryAvailable, assemblerAvailable;
-        public string cargoName = "AUCUNE SOUTE CONNECTÉE", shipName = "VAISSEAU";
+        public string cargoName = "AUCUNE SOUTE CONNECTÉE", shipName = "MODULE";
         public float usedLitres, capacityLitres, battery = -1;
         public bool refineryPowered, refineryPaused, assemblyPaused, outputBlocked;
         public float refineryProgress, refineryKw;
@@ -62,6 +63,13 @@ namespace VoidForge.UI.Cyberdeck
         public bool transferAvailable;
         public bool[] toolsAvailable;
         public float refineryBatch;
+        public int moduleId;
+        public float moduleEnergy,moduleCapacity,moduleGeneration,moduleLoad,moduleDryMass,moduleCargoMass;
+        public List<DeckSystem> systems=new List<DeckSystem>();
+        public event Action<int,string> RenameRequested;
+        public event Action<string> SystemToggleRequested;
+        public void Rename(int id,string value)=>RenameRequested?.Invoke(id,value);
+        public void ToggleSystem(string uid)=>SystemToggleRequested?.Invoke(uid);
         public Func<string, int, bool> AssemblyCommand;
         public Func<string, List<DeckIngredient>> BlockIngredients;
         public event Action<string> StorageRequested, TransferRequested, CancelAssemblyRequested, RefineryOreRequested;
@@ -82,7 +90,7 @@ namespace VoidForge.UI.Cyberdeck
             if (preview) { equippedTool = tool; Publish(); }
             else EquipRequested?.Invoke(tool);
         }
-        public void SelectBlock(string id) { selectedBlock = id; Notify("BLOC SÉLECTIONNÉ • " + id.ToUpperInvariant()); BlockRequested?.Invoke(id); }
+        public void SelectBlock(string id) { selectedBlock = selectedBlock==id?null:id; Notify(selectedBlock==null?"CONSTRUCTION DÉSÉLECTIONNÉE":"BLOC SÉLECTIONNÉ • " + id.ToUpperInvariant()); BlockRequested?.Invoke(selectedBlock); }
         public void SelectStorage(string id) => StorageRequested?.Invoke(id);
         public void Transfer(string id) => TransferRequested?.Invoke(id);
         public void CancelAssembly(string id) => CancelAssemblyRequested?.Invoke(id);

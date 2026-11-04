@@ -150,7 +150,7 @@ namespace VoidForge.Economy
         public readonly EconomyDefinition Definition;
         public readonly ResourceStock Backpack, Cargo;
         public readonly List<BuiltBlock> Blocks = new List<BuiltBlock>();
-        public readonly List<ProductionJob> Assembly = new List<ProductionJob>();
+        public readonly List<ProductionJob> Assembly;
         public readonly Dictionary<string, DepositState> Deposits = new Dictionary<string, DepositState>();
         public readonly List<Excavation> Excavations=new List<Excavation>();
         readonly HashSet<string> committedMining = new HashSet<string>();
@@ -161,16 +161,20 @@ namespace VoidForge.Economy
         public string RefiningRecipe {get; private set;}
         public event Action Changed;
         public int Revision {get;private set;}
-        public EconomyWorld(EconomyDefinition definition)
+        public Func<string,bool> MachineAvailable;
+        public Func<string,float,bool> EnergyConsumer;
+        public bool ExternalEnergyManaged;
+        public EconomyWorld(EconomyDefinition definition, ResourceStock sharedBackpack=null, ResourceStock sharedCargo=null, List<ProductionJob> sharedAssembly=null)
         {
-            definition.Validate();Definition=definition;Backpack=new ResourceStock(definition,400);Cargo=new ResourceStock(definition,1000);
+            definition.Validate();Definition=definition;Backpack=sharedBackpack??new ResourceStock(definition,400);
+            Cargo=sharedCargo??new ResourceStock(definition,1000);Assembly=sharedAssembly??new List<ProductionJob>();
         }
         void Publish() {Revision++;Changed?.Invoke();}
         public int Count(string type) => Blocks.Count(x=>x.type==type);
         public float MaxEnergy => Blocks.Sum(b=>Definition.Block(b.type).batteryKwh);
         public float SolarKw => Blocks.Sum(b=>Definition.Block(b.type).solarKw);
         public decimal AssemblyReservedLitres => Assembly.Sum(j=>j.remaining*j.reservedPerUnit.Sum(x=>x.Value*Definition.Item(x.id).Litres));
-        public bool HasMachine(string type) => Count(type)>0 && Count("Cargo")>0;
+        public bool HasMachine(string type) => (MachineAvailable?.Invoke(type)??Count(type)>0) && Count("Cargo")>0;
         public ResourceAmount[] BuildCosts(string type) => Definition.Block(type)?.components;
         public decimal ConstructionStock(string id,bool cargoAccess) => Backpack.Get(id)+(cargoAccess?Cargo.Get(id):0);
         public bool CanAfford(string type,bool cargoAccess) => BuildCosts(type) is ResourceAmount[] costs && costs.All(x=>ConstructionStock(x.id,cargoAccess)>=x.Value);
@@ -274,7 +278,7 @@ namespace VoidForge.Economy
             if(ReadOnly||seconds<=0||float.IsNaN(seconds)||float.IsInfinity(seconds))return;
             // No offline catch-up and no huge completion bursts after a pause.
             seconds=Math.Min(seconds,.25f);OutputBlocked=false;
-            float max=MaxEnergy;EnergyKwh=Math.Min(max,EnergyKwh+SolarKw*seconds/3600);
+            if(!ExternalEnergyManaged){float max=MaxEnergy;EnergyKwh=Math.Min(max,EnergyKwh+SolarKw*seconds/3600);}
             if(HasMachine("Refinery")&&RefineryPower&&!RefineryPaused)
             {
                 var candidates=Definition.recipes.Where(x=>x.machine=="refinery"&&Cargo.CanTake(x.inputs));
@@ -284,7 +288,7 @@ namespace VoidForge.Economy
                 if(recipe!=null)
                 {
                     if(!FitsAfterRefining(recipe)){OutputBlocked=true;}
-                    else if(UseEnergy(120*seconds/3600))
+                    else if(UseEnergy("Refinery",120*seconds/3600))
                     {
                         RefineryProgress+=seconds/recipe.seconds;
                         if(RefineryProgress>=1){Cargo.Take(recipe.inputs);Cargo.Add(recipe.outputs);RefineryProgress=0;Publish();}
@@ -299,21 +303,21 @@ namespace VoidForge.Economy
                 {
                     if(Cargo.Add(recipe.outputs)){job.remaining--;job.progress=0;if(job.remaining==0)Assembly.RemoveAt(0);Publish();}else OutputBlocked=true;
                 }
-                else if(Cargo.CanAdd(recipe.outputs)&&UseEnergy(50*seconds/3600))job.progress=Math.Min(1,job.progress+seconds/recipe.seconds);
+                else if(Cargo.CanAdd(recipe.outputs)&&UseEnergy("Assembler",50*seconds/3600))job.progress=Math.Min(1,job.progress+seconds/recipe.seconds);
                 else if(!Cargo.CanAdd(recipe.outputs))OutputBlocked=true;
             }
             Status=OutputBlocked?"SORTIE SATURÉE":EnergyKwh<=.00001f?"ÉNERGIE INSUFFISANTE":null;
         }
         bool FitsAfterRefining(ProductionRecipe recipe) => Cargo.Used-recipe.inputs.Sum(x=>x.Value*Definition.Item(x.id).Litres)+recipe.outputs.Sum(x=>x.Value*Definition.Item(x.id).Litres)<=Cargo.Capacity;
-        bool UseEnergy(float amount){if(EnergyKwh+1e-8f<amount)return false;EnergyKwh=Math.Max(0,EnergyKwh-amount);return true;}
+        bool UseEnergy(string type,float amount){if(EnergyConsumer!=null)return EnergyConsumer(type,amount);if(EnergyKwh+1e-8f<amount)return false;EnergyKwh=Math.Max(0,EnergyKwh-amount);return true;}
         public EconomySave Snapshot() => new EconomySave {definitionVersion=Definition.version,assemblerEfficiency=Definition.assemblerEfficiency,backpack=Backpack.Snapshot(),cargo=Cargo.Snapshot(),blocks=Blocks.ToArray(),assembly=Assembly.ToArray(),deposits=Deposits.Values.OrderBy(x=>x.id,StringComparer.Ordinal).ToArray(),energyKwh=EnergyKwh,refineryPower=RefineryPower,refineryPause=RefineryPaused,assemblyPause=AssemblyPaused,priorityOre=PriorityOre,committedMining=committedMining.ToArray(),excavations=Excavations.ToArray()};
-        public static EconomyWorld Restore(EconomyDefinition definition,EconomySave save)
+        public static EconomyWorld Restore(EconomyDefinition definition,EconomySave save,ResourceStock sharedBackpack=null)
         {
             if(save==null||save.format!=1||save.definitionVersion!=definition.version||save.assemblerEfficiency!=definition.assemblerEfficiency)throw new InvalidOperationException("Incompatible economy save; preserve it for migration");
-            var world=new EconomyWorld(definition);
-            if(save.blocks==null||save.blocks.Length==0||save.blocks.Length>512||save.blocks.Select(x=>x.uid).Distinct().Count()!=save.blocks.Length)throw new InvalidOperationException("Invalid saved grid");
+            var world=new EconomyWorld(definition,sharedBackpack);
+            if(save.blocks==null||save.blocks.Length>512||save.blocks.Select(x=>x.uid).Distinct().Count()!=save.blocks.Length)throw new InvalidOperationException("Invalid saved grid");
             foreach(var b in save.blocks){if(string.IsNullOrEmpty(b.uid)||!world.CanPlace(b.type,b.cell,b.rotation,false))throw new InvalidOperationException("Invalid saved block");world.Blocks.Add(b);}
-            world.Cargo.SetCapacity(1000m*world.Count("Cargo"));world.Backpack.Restore(save.backpack);world.Cargo.Restore(save.cargo);
+            world.Cargo.SetCapacity(1000m*world.Count("Cargo"));if(sharedBackpack==null)world.Backpack.Restore(save.backpack);world.Cargo.Restore(save.cargo);
             if(save.assembly!=null)foreach(var j in save.assembly)
             {
                 var r=definition.Recipe(j.recipe);var cost=r==null?null:definition.Inputs(r);

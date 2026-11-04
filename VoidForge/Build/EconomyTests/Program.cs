@@ -21,7 +21,7 @@ static class Program
     static void Main(string[] args)
     {
         definition=JsonSerializer.Deserialize<EconomyDefinition>(File.ReadAllText(args[0]),json);definition.Validate();
-        Check(definition.items.Length==46&&definition.recipes.Length==35&&definition.blocks.Length==11,"complete live catalogue: 46 items,35 recipes,11 blocks");
+        Check(definition.items.Length==46&&definition.recipes.Length==35&&definition.blocks.Length==12,"complete live catalogue: 46 items,35 recipes,12 blocks");
         var buffered=World();buffered.Blocks.Add(new BuiltBlock("Cargo",new GridCell(6,0,0),0));buffered.Cargo.SetCapacity(2000);buffered.Cargo.Add(new[]{A("ingot-iron",10000)});
         Check(buffered.Maximum(definition.Recipe("craft-component-plates"))==396&&!buffered.Enqueue("craft-component-plates",397)&&buffered.Cargo.Get("ingot-iron")==10000,"assembler input buffer bounds reservations without consuming rejected work");
         var stock=new ResourceStock(definition,10);
@@ -58,6 +58,21 @@ static class Program
         restored.ReadOnly=true;Check(!restored.Enqueue("craft-component-plates",1)&&!restored.Transfer(true,"ingot-iron",1)&&restored.Mine("iron",1)==0,"read-only network guard rejects resource commands");
         var corrupt=JsonSerializer.Deserialize<EconomySave>(serialized,json);corrupt.assembly[0].reservedPerUnit[0].amount="1";Reject(()=>EconomyWorld.Restore(definition,corrupt),"tampered reservation rejected on load");
         var x3=JsonSerializer.Deserialize<EconomyDefinition>(JsonSerializer.Serialize(definition,json),json);x3.assemblerEfficiency=3;Check(x3.Inputs(x3.Recipe("craft-component-plates"))[0].Value==7,"x3 assembly consumes7kg iron per plate");
+        var moduleA=World();moduleA.Backpack.Add(new[]{A("component-plates",3)});
+        var moduleB=new EconomyWorld(definition,moduleA.Backpack);
+        Check(ReferenceEquals(moduleA.Backpack,moduleB.Backpack)&&!ReferenceEquals(moduleA.Cargo,moduleB.Cargo),"module worlds share only the player backpack");
+        moduleA.Cargo.Add(new[]{A("ore-iron",10)});moduleA.MachineAvailable=type=>false;Tick(moduleA,30);
+        Check(moduleA.Cargo.Get("ore-iron")==10&&!moduleA.HasMachine("Refinery"),"disabled module systems cannot process stock");
+        moduleA.MachineAvailable=type=>moduleA.Count(type)>0;moduleA.EnergyConsumer=(type,amount)=>false;Tick(moduleA,30);
+        Check(moduleA.Cargo.Get("ore-iron")==10,"module power refusal prevents production despite legacy reservoir");
+        moduleA.EnergyConsumer=(type,amount)=>true;Tick(moduleA,30);
+        Check(moduleA.Cargo.Get("ingot-iron")==7,"authoritative module power admits exactly one refining batch");
+        moduleA.Blocks.Add(new BuiltBlock("SolarPanel",new GridCell(8,0,0),0));moduleA.ExternalEnergyManaged=true;moduleA.EnergyKwh=0;Tick(moduleA);
+        Check(moduleA.EnergyKwh==0,"external solar accounting is not duplicated by the legacy ledger");
+        var empty=new EconomyWorld(definition);empty.Cargo.SetCapacity(0);var emptySave=empty.Snapshot();
+        Check(EconomyWorld.Restore(definition,emptySave).Blocks.Count==0,"fully dismantled worlds remain valid saves");
+        var otherSave=moduleB.Snapshot();var recoveredModule=EconomyWorld.Restore(definition,otherSave,moduleA.Backpack);
+        Check(ReferenceEquals(recoveredModule.Backpack,moduleA.Backpack)&&moduleA.Backpack.Get("component-plates")==3,"secondary module restore cannot overwrite the shared player backpack");
         string report=args.Length>1?args[1]:Path.Combine(Path.GetDirectoryName(args[0]),"core-validation.json");Directory.CreateDirectory(Path.GetDirectoryName(Path.GetFullPath(report)));File.WriteAllText(report,JsonSerializer.Serialize(new{success=true,count=checks.Count,checks},new JsonSerializerOptions{WriteIndented=true}));Console.WriteLine("PASS "+checks.Count+" economy checks");
     }
 }

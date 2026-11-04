@@ -195,3 +195,31 @@ Procédure : [SURVIE.md](SURVIE.md), preuves : [jalon 03](../Hermes_Works/Jalons
 | Confort et performance de cette tranche | À tester par Pierre ; aucun FPS Quest certifié par le Play éditeur |
 | Réseau à plusieurs appareils | À tester par Pierre ; économie et excavations de cette tranche suspendues en session réseau |
 | Équivalence numérique des veines avec SE | Non certifiée ; profil original documenté, aucun fichier Keen utilisé |
+
+## Recette INTEGRATION_04 — 4 novembre 2026
+
+Le retour de Pierre invalide les anciennes conclusions de contact sur les plaques et le
+HUD. Cette nouvelle passe distingue les vérifications automatiques de la recette portée.
+Voir [RECETTE_04.md](RECETTE_04.md) et [jalon 04](../Hermes_Works/Jalons/INTEGRATION_04.md).
+
+| À tester | Résultat |
+|---|---|
+| Compilation et packages | OK : Unity 6000.4.0f1 ; module Particle System intégré ajouté ; génération sortie 0 |
+| Trois machines selon références 2D | OK : GPT-Astra / Blender MCP ; meshes relus, URP et bornes Unity vérifiés ; raffinerie 1 × 2 × 1 |
+| Bon asset pour chaque blueprint | OK : douze entrées, identité des meshes comparée au prefab réel, aucun repli armure |
+| Sélection / désélection du même bloc | OK dans le vrai HUD de Main ; second clic annule la sélection |
+| Soudage, composants et bloc opérationnel | OK : prélèvement progressif, panneau installé/requis, fin à 100 %, prefab normal seulement une fois complet |
+| Broyage, disparition et récupération | OK : composants réellement installés rendus au sac, bloc/plan à zéro supprimé, doublon de récupération refusé ; soute pleine et file réservée protégées |
+| Plaques des mains et compensation manettes | Géométrie et rendus ouverts/fermés vérifiés ; contact et angle réel à tester par Pierre |
+| Cyberdeck et HUD collés | Semelle conformée et HUD à 0,15 mm vérifiés dans Unity ; rendu relu ; postures réelles à tester par Pierre |
+| Textures stables à l’approche | OK pour l’identité et le shader des surfaces avec géométrie ; projection source/Digger commune ; perception en casque à tester par Pierre |
+| Renommer un module | OK : module proche/en construction, nom sauvegardé et rechargé ; clavier natif fourni |
+| Module / Systèmes / énergie | OK : pictogramme ImageGen, systèmes non structurels, ON/OFF, charge conservée, solaire orienté/occulté et combustible réel du réacteur |
+| Masse et freinage | OK : masses de composants/soute/réservations, vérification physique native du rapport force/masse ; pilotage et ressenti à tester par Pierre |
+| Effets et gâchette maintenue | OK : trois outils, boucles Sci-Fi Arsenal et arrêt d’émission au relâchement ; rendu et ressenti en casque à tester par Pierre |
+| Registre, Main et persistance | OK : 62 contrôles .NET et 120 assertions Unity, deux chargements et aucune exception capturée |
+| Migration du monde existant | OK sur copie Quest : 8 blocs d’origine, 6 plans, 58 excavations et stocks conservés ; ajout unique d’un solaire de démarrage, 9 blocs après migration |
+| APK, installation et logcat 04 | OK : APK 13, 144 899 137 octets, ARM64 min 32/cible 36 ; installation Success, deux démarrages COLD, captures 35,356 s et 35,972 s sans exception/E-F Unity/AndroidRuntime/XR_ERROR ; format 2, 9 blocs/6 plans/58 excavations conservés. Casque porté non vérifié |
+| Locomotion et confort | À tester par Pierre sur cette version |
+| Performance en casque porté | À tester par Pierre ; aucun FPS certifié par les tests éditeur |
+| Réseau à plusieurs appareils | À tester par Pierre ; cette économie solo reste suspendue en réseau |

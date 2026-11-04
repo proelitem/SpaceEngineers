@@ -1,4 +1,4 @@
-param()
+param([string]$Report='Hermes_Works/Preuves/INTEGRATION_04/core-validation.json')
 $ErrorActionPreference='Stop'
 $projectRoot=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 $testRoot=Join-Path $projectRoot 'Library/EconomyCoreTests'
@@ -13,5 +13,5 @@ $env:DOTNET_CLI_HOME=Join-Path $projectRoot 'Library/EconomyDotnet'
 $env:DOTNET_CLI_TELEMETRY_OPTOUT='1'
 $env:DOTNET_GENERATE_ASPNET_CERTIFICATE='false'
 $env:DOTNET_SKIP_FIRST_TIME_EXPERIENCE='1'
-& dotnet run --project (Join-Path $testRoot 'EconomyTests.csproj') -- (Join-Path $projectRoot 'Assets/Resources/VoidForge/Economy/Catalogue.json') (Join-Path $projectRoot 'docs/validation/economy-2026-11-03/core-validation.json')
+& dotnet run --project (Join-Path $testRoot 'EconomyTests.csproj') -- (Join-Path $projectRoot 'Assets/Resources/VoidForge/Economy/Catalogue.json') (Join-Path $projectRoot $Report)
 exit $LASTEXITCODE

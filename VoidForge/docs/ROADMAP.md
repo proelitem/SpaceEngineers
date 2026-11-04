@@ -40,3 +40,11 @@ Cette tranche prépare la construction ; elle ne clôt pas J2 ni les jalons rés
 APK 12 installé sur Quest : deux captures de plus de 35 s sans défaut relevé et
 persistance des huit blocs/stocks vérifiée. L'essai porté de cette nouvelle tranche
 reste à suivre dans [INTEGRATION_03](../Hermes_Works/Jalons/INTEGRATION_03.md).
+
+## Extension de recette du 4 novembre 2026
+
+Pierre autorise la tranche [Recette 04](RECETTE_04.md) : contact de l’équipement, trois
+machines Astra conformes aux références, composants de construction récupérables, onglet
+Module/Systèmes, énergie locale, masse, textures d’astéroïdes stables et effets d’outils.
+Le suivi vérifiable est dans [INTEGRATION_04](../Hermes_Works/Jalons/INTEGRATION_04.md).
+Il s’agit d’un prototype solo partiel ; les jalons complets J2/J3 et M2/M3 restent ouverts.

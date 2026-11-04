@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "unity": "6000.4.0f1",
+  "versionCode": 13,
+  "package": "com.proelitem.voidforge",
+  "abi": "arm64-v8a",
+  "minSdk": 32,
+  "targetSdk": 36,
+  "apkBytes": 144899137,
+  "sha256": "A7DBF00DD9010CA17FEB2E5D61E1EEDFAA04CCC9BC4F48DF482A54C02E959BE4",
+  "reportedBuildSeconds": 1767,
+  "log": "Logs/quest3-integration04-build.log",
+  "isolatedGradleCache": "Library/GradleUserHome",
+  "beeBuildThreads": 4
+}

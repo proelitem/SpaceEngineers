@@ -21,7 +21,10 @@ namespace VoidForge.Integration
     }
     [Serializable] public sealed class SurvivalSave
     {
-        public int format = 1;
+        public int format = 2;
+        public ModuleLedgerSave[] modules;
+        public ModuleSystemState[] systems;
+        public bool starterPowerProvisioned;
         public string oreProfile = World.AsteroidOreProfile.Version;
         public int seed;
         public string ledger;
@@ -37,6 +40,7 @@ namespace VoidForge.Integration
     public sealed class SurvivalSession : MonoBehaviour
     {
         public static SurvivalSession Active { get; private set; }
+        public static event Action<SurvivalSession> WorldReady;
         public static SurvivalSave Loaded { get; private set; }
         public static string ValidationSaveOverride;
         public static string SavePath { get; private set; }
@@ -47,8 +51,11 @@ namespace VoidForge.Integration
         public EquipmentRig equipment { get; private set; }
         public ConstructionSystem construction { get; private set; }
         public SurvivalDeckAdapter deck { get; private set; }
+        public ModuleSystems modules { get; private set; }
+        public ModuleMotion motion {get;private set;}
         public bool Ready { get; private set; }
         public bool Faulted { get; private set; }
+        bool starterPowerProvisioned;
         public readonly List<AsteroidExcavation> Excavations = new List<AsteroidExcavation>();
         Transform ledgerGrid;
         VoidForge.Player.PlayerInputProvider input;
@@ -74,7 +81,8 @@ namespace VoidForge.Integration
                 if (File.Exists(SavePath))
                 {
                     Loaded = JsonUtility.FromJson<SurvivalSave>(File.ReadAllText(SavePath));
-                    if (Loaded == null || Loaded.format != 1 || Loaded.oreProfile != World.AsteroidOreProfile.Version ||
+                    if(Loaded!=null&&Loaded.format==2&&(Loaded.modules==null||Loaded.systems==null))throw new InvalidDataException("Survival format 2 module state missing; save preserved.");
+                    if (Loaded == null || (Loaded.format != 1 && Loaded.format != 2) || Loaded.oreProfile != World.AsteroidOreProfile.Version ||
                         string.IsNullOrEmpty(Loaded.ledger) || Loaded.seed != Resources.Load<SurvivalSettings>(SurvivalSettings.Resource).seed)
                         throw new InvalidDataException("Survival save/profile incompatible; original file preserved.");
                     File.WriteAllText(boot,Loaded.ledger);
@@ -114,14 +122,21 @@ namespace VoidForge.Integration
             else if (Loaded.excavations != null) Excavations.AddRange(Loaded.excavations);
             construction = gameObject.AddComponent<ConstructionSystem>();
             construction.Initialize(this,ledgerGrid,Loaded);
+            modules=gameObject.AddComponent<ModuleSystems>();modules.Initialize(this,Loaded);
+            motion=gameObject.AddComponent<ModuleMotion>();motion.Initialize(this);
             Sync();
             deck = gameObject.AddComponent<SurvivalDeckAdapter>();
             deck.session = this;
             Ready = true;
+            starterPowerProvisioned=Loaded?.starterPowerProvisioned??false;
+            if(Loaded?.format==1&&modules.World(0).Count("SolarPanel")==0&&modules.World(0).Count("Reactor")==0&&modules.Available(0)<.01f)
+                starterPowerProvisioned=construction.ProvisionLegacyStarterSolar();
+            WorldReady?.Invoke(this);
             if (Loaded != null && equipment != null && Loaded.selectedTool >= 0 && Loaded.selectedTool < equipment.tools.Length)
                 equipment.SelectTool(equipment.tools[Loaded.selectedTool]);
             Save();
             Debug.Log("[VoidForge Survival] Four-block starter base, blueprint/welding loop and unified solo save ready.");
+            Debug.Log("[VoidForge Recette04] Component construction and per-module systems ready; save format 2.");
         }
         void SeedBase()
         {
@@ -142,6 +157,8 @@ namespace VoidForge.Integration
         public void Sync()
         {
             economy.RefreshWorldInstances();
+            modules?.Refresh();
+            motion?.Refresh();
             construction?.ApplyPhysicalPoses();
             revision = Ledger.Revision;
             deck?.Publish(true);
@@ -151,7 +168,7 @@ namespace VoidForge.Integration
             if (!Ready) return;
             Ledger.ReadOnly = economy.NetworkLocked || Faulted;
             if(economy.NetworkLocked&&economy.Seated)economy.ExitSeat();
-            if (!Ledger.ReadOnly) Ledger.Tick(Time.unscaledDeltaTime);
+            if (!Ledger.ReadOnly) modules.Tick(Time.unscaledDeltaTime);
             if(CanAct&&Application.isFocused&&input?.Actions!=null&&input.Actions.RightPrimary.WasPressedThisFrame()&&deck!=null&&!deck.PointerBusy&&
                 (economy.Seated||deck.Hud!=null&&deck.Hud.page!=DeckPage.Construction))
             {
@@ -166,9 +183,9 @@ namespace VoidForge.Integration
             if (revision != Ledger.Revision) Sync();
             if (Time.unscaledTime >= nextSave) { nextSave = Time.unscaledTime + 5; Save(); }
         }
-        public void Tell(string text) { if (deck != null && deck.State != null) deck.State.Notify(text); }
+        public void Tell(string text) { if (deck != null && deck.State != null && deck.State.Notice != text) deck.State.Notify(text); }
         public bool CanAct => Ready && !Faulted && !economy.NetworkLocked && !Ledger.ReadOnly;
-        public bool CargoAccess => economy.HasCargoAccess;
+        public bool CargoAccess => modules!=null&&modules.Access(modules.ContextId);
         public bool OwnTool(int uiIndex) => economy.ToolOwned(uiIndex);
 
         public void CreditExcavation(AsteroidExcavation excavation,double[] quantities)
@@ -196,7 +213,7 @@ namespace VoidForge.Integration
         {
             if (!Ready || Faulted || economy.NetworkLocked || string.IsNullOrEmpty(SavePath)) return;
             var settings = Resources.Load<SurvivalSettings>(SurvivalSettings.Resource);
-            var save = new SurvivalSave { seed = settings.seed, ledger = JsonUtility.ToJson(Ledger.Snapshot()),
+            var save = new SurvivalSave { starterPowerProvisioned=starterPowerProvisioned,modules=modules.SaveLedgers(),systems=modules.States.ToArray(),seed = settings.seed, ledger = JsonUtility.ToJson(Ledger.Snapshot()),
                 grids = construction.Grids.ToArray(), plans = construction.Plans.ToArray(), mappedBlocks = construction.Mappings.ToArray(),
                 excavations = Excavations.ToArray(), selectedTool = equipment == null ? 0 : Array.IndexOf(equipment.tools,equipment.Selected) };
             Directory.CreateDirectory(Path.GetDirectoryName(SavePath));

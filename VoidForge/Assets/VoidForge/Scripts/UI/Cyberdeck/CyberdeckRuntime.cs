@@ -72,6 +72,7 @@ namespace VoidForge.UI.Cyberdeck
             Vector2 safe = Field(surface, "safeMeters") is Vector2 size ? size : new Vector2(.2f, .08571429f);
             wristScale = Mathf.Min(safe.x / CyberdeckHud.Width, safe.y / CyberdeckHud.Height);
             SetWristScale(wristScale);
+            if(surface is VoidForge.Integration.CyberdeckSurface physical)VoidForge.Integration.WristHudAttachment.Attach(hud,physical);
             hud.GetComponent<Canvas>().worldCamera = Camera.main;
             equipment = Find("VoidForge.Integration.EquipmentRig");
             hud.State.EquipRequested += Equip;
@@ -84,7 +85,7 @@ namespace VoidForge.UI.Cyberdeck
             pointer.rightController = Property(equipment, "RightController") as Transform;
             AddWorldEntities();
             hud.State.Publish();
-            Debug.Log("[VoidForge Cyberdeck] Five native 2D views attached to left wrist, inside the 200 mm safe area.");
+            Debug.Log("[VoidForge Cyberdeck] Six native 2D views attached to left wrist, inside the 200 mm safe area.");
         }
         object CatalogueEntry(string id)
         {
@@ -145,10 +146,7 @@ namespace VoidForge.UI.Cyberdeck
             }
             else
             {
-                hud.transform.SetParent(wrist, false);
-                hud.transform.position = wrist.position + wrist.forward * .0008f;
-                hud.transform.localRotation = Quaternion.Euler(0, 180, 0);
-                SetWristScale(wristScale);
+                if(surface is VoidForge.Integration.CyberdeckSurface physical)VoidForge.Integration.WristHudAttachment.Attach(hud,physical);
             }
         }
         void SetWristScale(float metresPerPixel)

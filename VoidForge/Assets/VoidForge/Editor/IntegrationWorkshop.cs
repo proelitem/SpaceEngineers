@@ -150,6 +150,7 @@ namespace VoidForge.Editor
                 deck.transform.SetParent(forearm, true);
                 var surface = deck.AddComponent<CyberdeckSurface>();
                 surface.hudAnchor = Suffix(deck.transform, "HUDAnchor");
+                surface.hudAnchor.position=screenTransform.GetComponent<Renderer>().bounds.center;
                 Vector3 screenNormal = screenTransform.TransformDirection(screenMesh.normals[0]).normalized;
                 surface.hudAnchor.rotation = Quaternion.LookRotation(screenNormal,
                     Vector3.Cross(screenNormal, ScreenHorizontal(screenTransform, screenMesh)));
@@ -161,6 +162,11 @@ namespace VoidForge.Editor
                 mount.housingDepth = depth;
                 mount.sleeveSamples = sleeveSamples;
                 mount.Refresh();
+                var seat=new GameObject("Conforming housing • no straps",typeof(MeshFilter),typeof(MeshRenderer));seat.transform.SetParent(deck.transform,false);
+                seat.GetComponent<MeshRenderer>().sharedMaterial=deck.GetComponentsInChildren<Renderer>().SelectMany(r=>r.sharedMaterials).First(m=>m!=null&&m.name.Contains("Graphite"));
+                seat.AddComponent<WristHousingSeat>().Configure(mount);
+                string seatPath=Local+"/WristHousingSeat.asset";var seatMesh=seat.GetComponent<MeshFilter>().sharedMesh;var existingSeat=AssetDatabase.LoadAssetAtPath<Mesh>(seatPath);
+                if(existingSeat==null)AssetDatabase.CreateAsset(seatMesh,seatPath);else{EditorUtility.CopySerialized(seatMesh,existingSeat);Object.DestroyImmediate(seatMesh);seat.GetComponent<MeshFilter>().sharedMesh=existingSeat;}
 
                 string[] ids = { "MiningDrill", "Grinder", "Welder" };
                 equipment.tools = new HandTool[ids.Length];

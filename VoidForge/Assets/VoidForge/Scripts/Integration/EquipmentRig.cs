@@ -38,6 +38,7 @@ namespace VoidForge.Integration
             RightController = tracking.Find("RightHand");
             socket = new GameObject("RightToolGrip").transform;
             socket.SetParent(RightController, false);
+            socket.localRotation=astronaut.PalmCorrection;
             foreach (var tool in tools) tool.RememberHome();
             astronaut.Bind(head, left, RightController);
             Ready = true;
@@ -91,8 +92,8 @@ namespace VoidForge.Integration
                 messageSet = true; lastInstruction = Held;
                 string action = Held == null ? "" : Held.kind == HandToolKind.MiningDrill
                     ? "FOREUSE — gâchette : creuser (pointe à moins de 1 m)"
-                    : Held.kind == HandToolKind.Grinder ? "MEULEUSE — gâchette : rotation / démontage à venir"
-                    : "SOUDEUSE — prise prête / soudage à venir";
+                    : Held.kind == HandToolKind.Grinder ? "MEULEUSE — gâchette : rotation / démontage continu"
+                    : "SOUDEUSE — gâchette : soudage continu";
                 instructions.text = Held == null
                     ? "CEINTURE — approcher la main droite\nMaintenir grip : prendre / relâcher : ranger"
                     : action + "\nGrip gauche : freiner / relâcher grip droit : ranger";

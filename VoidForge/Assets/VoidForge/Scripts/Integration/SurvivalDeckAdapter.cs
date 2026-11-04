@@ -49,38 +49,42 @@ namespace VoidForge.Integration
             State.BlockRequested+=Block;
             State.SeatExitRequested+=Leave;
             State.BlockIngredients=Ingredients;
+            State.RenameRequested+=Rename;State.SystemToggleRequested+=Toggle;
             if(session.equipment.Selected!=null)State.selectedTool=ToolIndex(session.equipment.Selected);
             Hud.ActionInvoked+=Action;
             State.Changed+=RelabelWorkshop;
             Publish(true);
         }
+        EconomyWorld World=>session.modules.ContextWorld;
         bool Workshop => session.CanAct&&session.CargoAccess;
         void Commit(string text){session.Sync();session.Save();session.Tell(text);}
         bool Queue(string id,int count)
-        {bool ok=Workshop&&session.Ledger.Enqueue(id,count);if(ok)Commit("FABRICATION AJOUTÉE • MATIÈRES RÉSERVÉES");else session.Tell("APPROCHER L’ATELIER • ASSEMBLEUR ET MATIÈRES NÉCESSAIRES");return ok;}
-        void Cancel(string id){if(Workshop&&session.Ledger.Cancel(id))Commit("FILE ANNULÉE • MATIÈRES RESTITUÉES");}
-        void Power(bool on){if(Workshop){session.Ledger.RefineryPower=on;Commit(on?"RAFFINERIE EN MARCHE":"RAFFINERIE ARRÊTÉE");}}
-        void PauseRefinery(bool pause){if(Workshop){session.Ledger.RefineryPaused=pause;Commit(pause?"RAFFINAGE EN PAUSE":"RAFFINAGE REPRIS");}}
-        void PauseAssembly(bool pause){if(Workshop){session.Ledger.AssemblyPaused=pause;Commit(pause?"ASSEMBLAGE EN PAUSE":"ASSEMBLAGE REPRIS");}}
-        void Ore(string id){if(Workshop){session.Ledger.PriorityOre=id;session.Ledger.RefineryProgress=0;Commit("MINERAI PRIORITAIRE SÉLECTIONNÉ");}}
+        {bool ok=Workshop&&World.Enqueue(id,count);if(ok)Commit("FABRICATION AJOUTÉE • MATIÈRES RÉSERVÉES");else session.Tell("APPROCHER L’ATELIER • ASSEMBLEUR ET MATIÈRES NÉCESSAIRES");return ok;}
+        void Cancel(string id){if(Workshop&&World.Cancel(id))Commit("FILE ANNULÉE • MATIÈRES RESTITUÉES");}
+        void Power(bool on){if(Workshop){foreach(var b in World.Blocks.Where(b=>b.type=="Refinery"&&session.modules.Enabled(b.uid)!=on))session.modules.Toggle(b.uid);World.RefineryPower=on;Commit(on?"RAFFINERIE EN MARCHE":"RAFFINERIE ARRÊTÉE");}}
+        void PauseRefinery(bool pause){if(Workshop){World.RefineryPaused=pause;Commit(pause?"RAFFINAGE EN PAUSE":"RAFFINAGE REPRIS");}}
+        void PauseAssembly(bool pause){if(Workshop){World.AssemblyPaused=pause;Commit(pause?"ASSEMBLAGE EN PAUSE":"ASSEMBLAGE REPRIS");}}
+        void Ore(string id){if(Workshop){World.PriorityOre=id;World.RefineryProgress=0;Commit("MINERAI PRIORITAIRE SÉLECTIONNÉ");}}
         void Storage(string id){State.selectedStorage=id=="cargo"&&session.CargoAccess?"cargo":"backpack";Publish(true);}
-        void Block(string id){session.Tell("A : POSER LE PLAN BLEU • X : TOURNER • SOUDEUSE : TERMINER");}
+        void Block(string id){if(id==null)return;session.Tell("A : POSER LE PLAN BLEU • X : TOURNER • SOUDEUSE : TERMINER");}
         void Leave(){if(session.economy.Seated)session.economy.ExitSeat();else Hud.Show(DeckPage.Inventory);}
         void Transfer(string id)
         {
             if(!Workshop)return;
             bool fromCargo=State.selectedStorage=="cargo";
-            var source=fromCargo?session.Ledger.Cargo:session.Ledger.Backpack;
+            var source=fromCargo?World.Cargo:World.Backpack;
             decimal quantity=source.Get(id);
             if(!fromCargo&&session.equipment.Selected!=null&&id==EconomyRuntime.ToolId(session.equipment.Selected.kind))quantity=Math.Max(0,quantity-1);
-            if(session.Ledger.Transfer(fromCargo,id,quantity))Commit("TRANSFERT EFFECTUÉ");else session.Tell("TRANSFERT REFUSÉ • CAPACITÉ OU OUTIL SÉLECTIONNÉ");
+            if(World.Transfer(fromCargo,id,quantity))Commit("TRANSFERT EFFECTUÉ");else session.Tell("TRANSFERT REFUSÉ • CAPACITÉ OU OUTIL SÉLECTIONNÉ");
         }
+        void Rename(int grid,string name){if(!session.modules.Rename(grid,name))session.Tell("RENOMMAGE REFUSÉ • APPROCHER LE MODULE");}
+        void Toggle(string uid){session.modules.Toggle(uid);}
         List<DeckIngredient> Ingredients(string id)
         {
-            return (session.Ledger.BuildCosts(id)??Array.Empty<ResourceAmount>()).Select(a=>Ingredient(a,session.Ledger.ConstructionStock(a.id,session.CargoAccess))).ToList();
+            return (World.BuildCosts(id)??Array.Empty<ResourceAmount>()).Select(a=>Ingredient(a,World.ConstructionStock(a.id,session.CargoAccess))).ToList();
         }
         DeckIngredient Ingredient(ResourceAmount a,decimal stock)
-        {var item=session.Ledger.Definition.Item(a.id);return new DeckIngredient{id=a.id,name=item.name.ToUpperInvariant(),icon=item.icon,unit=item.unit,perUnit=(float)a.Value,stock=(float)stock};}
+        {var item=World.Definition.Item(a.id);return new DeckIngredient{id=a.id,name=item.name.ToUpperInvariant(),icon=item.icon,unit=item.unit,perUnit=(float)a.Value,stock=(float)stock};}
         void Update()
         {
             if(Hud==null)return;
@@ -91,24 +95,28 @@ namespace VoidForge.Integration
         public void Publish(bool force)
         {
             if(State==null||!session.Ready||pointer!=null&&pointer.IsInteracting)return;
-            var world=session.Ledger;bool access=session.CargoAccess;
+            var world=World;bool access=session.CargoAccess;
             if(Camera.main!=null)State.playerPosition=Camera.main.transform.position;
             State.equippedTool=ToolIndex(session.equipment.Held);
             State.preview=false;
             if(State.selectedStorage!="cargo"||!access)State.selectedStorage="backpack";
-            int next=world.Revision*397^(access?1:0)^(session.economy.NetworkLocked?2:0)^State.selectedStorage.GetHashCode()^
+            int next=session.modules.Revision*65537^session.modules.ContextId*32749^world.Revision*397^(access?1:0)^(session.economy.NetworkLocked?2:0)^State.selectedStorage.GetHashCode()^
                 Mathf.FloorToInt(world.RefineryProgress*10)^Mathf.FloorToInt(world.EnergyKwh*25)^(int)Hud.page*65521^State.equippedTool*8191^(session.economy.Seated?128:0);
             if(Hud.page==DeckPage.Map)next^=Vector3Int.FloorToInt(State.playerPosition).GetHashCode();
             if(world.Assembly.Count>0)next^=Mathf.FloorToInt(world.Assembly[0].progress*10)*8191;
             if(!force&&next==signature)return;signature=next;
-            State.storages=new List<DeckStorage>{new DeckStorage{id="backpack",name="SAC PERSONNEL",available=true},new DeckStorage{id="cargo",name="BASE • SOUTE",available=access}};
+            State.storages=new List<DeckStorage>{new DeckStorage{id="backpack",name="SAC PERSONNEL",available=true},new DeckStorage{id="cargo",name=session.modules.ContextName+" • SOUTE",available=access}};
             var stock=State.selectedStorage=="cargo"?world.Cargo:world.Backpack;
-            State.cargoConnected=true;State.cargoName=State.selectedStorage=="cargo"?"BASE DE DÉPART":"SAC PERSONNEL";
-            State.shipName="BASE DE DÉPART";State.usedLitres=(float)stock.Used;State.capacityLitres=(float)stock.Capacity;
-            State.transferAvailable=Workshop;State.cockpitConnected=Workshop;
-            State.refineryAvailable=world.HasMachine("Refinery");State.assemblerAvailable=world.HasMachine("Assembler");
-            State.refineryPowered=world.RefineryPower;State.refineryPaused=world.RefineryPaused;State.assemblyPaused=world.AssemblyPaused;State.outputBlocked=world.OutputBlocked;
-            State.battery=world.MaxEnergy>0?world.EnergyKwh/world.MaxEnergy:0;State.refineryProgress=world.RefineryProgress;State.refineryKw=world.RefiningRecipe!=null&&world.RefineryPower&&!world.RefineryPaused?120:0;
+            State.cargoConnected=true;State.cargoName=State.selectedStorage=="cargo"?session.modules.ContextName:"SAC PERSONNEL";
+            State.shipName=session.modules.ContextName;State.moduleId=session.modules.ContextId;
+            State.systems=session.modules.Snapshot(State.moduleId);
+            State.moduleEnergy=session.modules.Available(State.moduleId);State.moduleCapacity=session.modules.Capacity(State.moduleId);
+            State.moduleGeneration=session.modules.Generation(State.moduleId);State.moduleLoad=session.modules.Load(State.moduleId);
+            State.moduleDryMass=session.modules.DryMass(State.moduleId);State.moduleCargoMass=session.modules.CargoMass(State.moduleId);State.usedLitres=(float)stock.Used;State.capacityLitres=(float)stock.Capacity;
+            State.transferAvailable=Workshop;State.cockpitConnected=session.CanAct&&session.modules.Near(State.moduleId);
+            State.refineryAvailable=world.Count("Refinery")>0;State.assemblerAvailable=world.Count("Assembler")>0;
+            State.refineryPowered=world.Blocks.Any(b=>b.type=="Refinery"&&session.modules.Enabled(b.uid));State.refineryPaused=world.RefineryPaused;State.assemblyPaused=world.AssemblyPaused;State.outputBlocked=world.OutputBlocked;
+            State.battery=State.moduleCapacity>0?State.moduleEnergy/State.moduleCapacity:0;State.refineryProgress=world.RefineryProgress;State.refineryKw=world.RefiningRecipe!=null&&State.refineryPowered&&!world.RefineryPaused&&session.modules.Load(State.moduleId)>=120?120:0;
             State.items=stock.Snapshot().Select(a=>{var item=world.Definition.Item(a.id);return new DeckItem(a.id,item.name.ToUpperInvariant(),item.icon,(float)a.Value,item.family!="minerais"&&item.family!="recyclage",item.unit);}).ToList();
             State.toolsAvailable=new[]{session.OwnTool(0),session.OwnTool(1),session.OwnTool(2)};
             State.recipes=world.Definition.recipes.Where(r=>r.machine=="assembler").Select(r=>new DeckRecipe{id=r.id,name=r.name.ToUpperInvariant(),icon=r.icon,available=true,maxCraftable=world.Maximum(r),ingredients=world.Definition.Inputs(r).Select(a=>Ingredient(a,world.Cargo.Get(a.id))).ToList()}).ToList();
@@ -123,7 +131,8 @@ namespace VoidForge.Integration
             foreach(var grid in session.construction.Grids)
             {
                 string id="construction-grid-"+grid.id;
-                if(!State.waypoints.Any(w=>w.id==id))State.waypoints.Add(new DeckWaypoint{id=id,name=grid.id==0?"BASE DE DÉPART":"CONSTRUCTION "+grid.id,category="BASES",icon="map-outpost",target=session.construction.TargetForGrid(grid.id)});
+                var existing=State.waypoints.Find(w=>w.id==id);if(existing!=null)existing.name=grid.name;
+                if(existing==null)State.waypoints.Add(new DeckWaypoint{id=id,name=grid.name,category="BASES",icon="map-outpost",target=session.construction.TargetForGrid(grid.id)});
             }
             if(!mapReady)
             {
@@ -155,12 +164,7 @@ namespace VoidForge.Integration
             if(action!="expand"&&action!="collapse")return;
             if(Hud.Expanded&&Camera.main!=null)
             {Hud.transform.SetParent(Camera.main.transform,false);Hud.transform.localPosition=new Vector3(0,-.08f,.62f);Hud.transform.localRotation=Quaternion.identity;Hud.transform.localScale=Vector3.one*(.62f/CyberdeckHud.Width);}
-            else if(surface!=null)
-            {
-                Hud.transform.SetParent(surface.hudAnchor,false);Hud.transform.localPosition=new Vector3(0,0,.0008f);Hud.transform.localRotation=Quaternion.Euler(0,180,0);
-                float scale=Mathf.Min(surface.safeMeters.x/CyberdeckHud.Width,surface.safeMeters.y/CyberdeckHud.Height);var parent=surface.hudAnchor.lossyScale;
-                Hud.transform.localScale=new Vector3(scale/Mathf.Abs(parent.x),scale/Mathf.Abs(parent.y),scale/Mathf.Abs(parent.z));
-            }
+            else if(surface!=null)WristHudAttachment.Attach(Hud,surface);
         }
     }
 }

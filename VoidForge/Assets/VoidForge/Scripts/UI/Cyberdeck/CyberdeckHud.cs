@@ -7,10 +7,10 @@ using UnityEngine.UI;
 
 namespace VoidForge.UI.Cyberdeck
 {
-    public enum DeckPage { Inventory, Construction, Refinery, Assembly, Map }
+    public enum DeckPage { Inventory, Construction, Refinery, Assembly, Map, Systems }
 
     [RequireComponent(typeof(Canvas), typeof(CyberdeckSession))]
-    public sealed class CyberdeckHud : MonoBehaviour
+    public sealed partial class CyberdeckHud : MonoBehaviour
     {
         public const float Width = 1914, Height = 822;
         public CyberdeckAssets assets;
@@ -38,9 +38,9 @@ namespace VoidForge.UI.Cyberdeck
         static readonly Color Ink = Hex("041116"), Panel = Hex("06313A"), Low = Hex("02161D"),
             Cyan = Hex("58D9E8"), Edge = Hex("3D9BAC"), White = Hex("F5F3EA"), Amber = Hex("FFB329"), Black = Hex("061116");
         static readonly CultureInfo French = CultureInfo.GetCultureInfo("fr-FR");
-        static readonly string[] BlockIds = { "Gyroscope", "Battery", "ArmorCube", "Cockpit", "Thruster", "Refinery", "Assembler", "Cargo", "ArmorSlope", "ArmorCorner", "SolarPanel" };
-        static readonly string[] BlockNames = { "GYROSCOPE", "BATTERIE", "ARMURE", "COCKPIT", "PROPULSEUR", "RAFFINERIE", "ASSEMBLEUR", "SOUTE", "ARMURE INCLINÉE", "COIN D’ARMURE", "PANNEAU SOLAIRE" };
-        static readonly string[] BlockIcons = { "block-gyroscope", "block-battery", "block-armor", "block-cockpit", "block-thruster", "block-refinery", "block-assembler", "block-cargo", "block-armor", "block-armor", "component-solar-cell" };
+        static readonly string[] BlockIds = { "Gyroscope", "Battery", "ArmorCube", "Cockpit", "Thruster", "Refinery", "Assembler", "Cargo", "ArmorSlope", "ArmorCorner", "SolarPanel", "Reactor" };
+        static readonly string[] BlockNames = { "GYROSCOPE", "BATTERIE", "ARMURE", "COCKPIT", "PROPULSEUR", "RAFFINERIE", "ASSEMBLEUR", "SOUTE", "ARMURE INCLINÉE", "COIN D’ARMURE", "PANNEAU SOLAIRE", "RÉACTEUR" };
+        static readonly string[] BlockIcons = { "block-gyroscope", "block-battery", "block-armor", "block-cockpit", "block-thruster", "block-refinery", "block-assembler", "block-cargo", "block-armor", "block-armor", "component-solar-cell", "component-reactor" };
 
         void Awake() => Initialize();
         public void Initialize()
@@ -92,8 +92,10 @@ namespace VoidForge.UI.Cyberdeck
                     else if (page == DeckPage.Refinery) Refinery(); else Assembly();
                     break;
                 case DeckPage.Map: Map(); break;
+                case DeckPage.Systems: ShipTabs();Systems();break;
             }
             Navigation();
+            if(renaming)RenameKeyboard();
             if (State.preview) Label(sheet, "APERÇU • DONNÉES DE RECETTE", 38, 798, 900, 22, 16, Cyan);
             else if (!string.IsNullOrEmpty(State.Notice)) Label(sheet, State.Notice, 38, 798, 1470, 22, 16, Cyan);
             Click("expand", "", 1790, 795, 84, 24, () => SetExpanded(!Expanded), false, null, Expanded ? "ui-minus" : "ui-plus", 16);
@@ -105,11 +107,11 @@ namespace VoidForge.UI.Cyberdeck
             Label(sheet, "/", 149, 3, 37, 62, 51, White);
             Label(sheet, title, 188, 3, 1125, 62, 49, White);
             Line(sheet, 48, 69, 1828, 3, Cyan);
-            if (page == DeckPage.Refinery || page == DeckPage.Assembly)
+            if (page == DeckPage.Refinery || page == DeckPage.Assembly || page == DeckPage.Systems)
             {
                 Icon(sheet, "ui-seat", 1395, 11, 58, 45, White);
                 Line(sheet, 1475, 13, 3, 43, Cyan);
-                Label(sheet, State.cockpitConnected ? "COCKPIT CONNECTÉ" : "COCKPIT DÉCONNECTÉ", 1495, 7, 379, 53, 33, White, TextAnchor.MiddleRight);
+                Label(sheet, State.cockpitConnected ? "MODULE CONNECTÉ" : "MODULE HORS PORTÉE", 1495, 7, 379, 53, 33, White, TextAnchor.MiddleRight);
             }
             else
             {
@@ -121,9 +123,9 @@ namespace VoidForge.UI.Cyberdeck
         void Navigation()
         {
             string[] ids = { "inventory", "construction", "ship", "map" };
-            string[] names = { "INVENTAIRE", "CONSTRUIRE", "VAISSEAU", "GPS / CARTE" };
-            string[] icons = { "ui-inventory", "ui-construction", "ui-ship", "ui-gps" };
-            DeckPage[] pages = { DeckPage.Inventory, DeckPage.Construction, DeckPage.Refinery, DeckPage.Map };
+            string[] names = { "INVENTAIRE", "CONSTRUIRE", "MODULE", "GPS / CARTE" };
+            string[] icons = { "ui-inventory", "ui-construction", "ui-module", "ui-gps" };
+            DeckPage[] pages = { DeckPage.Inventory, DeckPage.Construction, DeckPage.Systems, DeckPage.Map };
             int active = page == DeckPage.Inventory ? 0 : page == DeckPage.Construction ? 1 : page == DeckPage.Map ? 3 : 2;
             for (int i = 0; i < 4; i++)
             {
@@ -239,7 +241,7 @@ namespace VoidForge.UI.Cyberdeck
                 Click("block-cost", "COÛT • DÉTAILS", 1078, 579, 310, 61, () => { costOpen = !costOpen; Rebuild(); }, false, null, null, 29);
             else Label(sheet, "COÛT À DÉFINIR", 1088, 581, 293, 53, 28, White);
             bool available = State.preview ? BlockIndex < 5 : BlockAvailable != null && BlockAvailable(BlockIds[BlockIndex]);
-            Click("select-block", available ? "SÉLECTIONNER" : "INDISPONIBLE", 1425, 570, 450, 77,
+            Click("select-block", available ? State.selectedBlock==BlockIds[BlockIndex]?"DÉSÉLECTIONNER":"SÉLECTIONNER" : "INDISPONIBLE", 1425, 570, 450, 77,
                 () => State.SelectBlock(BlockIds[BlockIndex]), true, available, null, 42);
             if (blockFilterOpen)
             {
@@ -270,11 +272,12 @@ namespace VoidForge.UI.Cyberdeck
         }
         void ShipTabs()
         {
-            Click("ship-refinery", "RAFFINERIE", 39, 90, 470, 64, () => Show(DeckPage.Refinery), page == DeckPage.Refinery, null, null, 40);
-            Click("ship-assembly", "ASSEMBLAGE", 525, 90, 454, 64, () => Show(DeckPage.Assembly), page == DeckPage.Assembly, null, null, 40);
-            if (State.cockpitConnected && !State.preview) Click("seat-exit", "SORTIR DU COCKPIT", 1350, 90, 530, 64, State.LeaveSeat, false, null, "ui-seat", 29);
+            Click("ship-systems", "SYSTÈMES", 39, 90, 350, 64, () => Show(DeckPage.Systems), page==DeckPage.Systems, null, null, 36);
+            Click("ship-refinery", "RAFFINERIE", 405, 90, 365, 64, () => Show(DeckPage.Refinery), page == DeckPage.Refinery, null, null, 40);
+            Click("ship-assembly", "ASSEMBLAGE", 787, 90, 365, 64, () => Show(DeckPage.Assembly), page == DeckPage.Assembly, null, null, 40);
+            if (State.cockpitConnected && !State.preview) Click("seat-exit", "SORTIR / RETOUR", 1360, 90, 520, 64, State.LeaveSeat, false, null, "ui-seat", 29);
         }
-        void LockedShip() => Empty("APPROCHER UN COCKPIT • A / E POUR S’ASSEOIR", "ui-seat", 30, 178, 1855, 474);
+        void LockedShip() => Empty("APPROCHER LE MODULE POUR UTILISER SES SYSTÈMES", "ui-seat", 30, 178, 1855, 474);
         void Refinery()
         {
             Box(sheet, 28, 177, 452, 477);

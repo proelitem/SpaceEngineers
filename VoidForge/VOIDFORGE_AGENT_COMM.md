@@ -31,3 +31,5 @@
   équipements réseau, réseaux électriques séparés et équivalence numérique exacte des
   veines avec Space Engineers restent hors de la tranche livrée. Les grilles sont statiques.
   Pour la recette portée de cette nouvelle version, suivre Hermes_Works/Jalons/INTEGRATION_03.md.
+
+- Recette 04 : l APK 13 est installe ; generation et procedure canonique dans docs/RECETTE_04.md. Les dependances locales ignorees Arsenal/Reactor/HVR/FinalIK restent necessaires. Le worktree prive assets-mining-20261103 contient un ancien resultat core-validation.json modifie par nos tests mais volontairement exclu de la livraison ; utiliser Hermes_Works/Preuves/INTEGRATION_04/core-validation.json. Ne pas restaurer ni committer les suppressions inconnues de preuves INTEGRATION_03 du dossier principal.

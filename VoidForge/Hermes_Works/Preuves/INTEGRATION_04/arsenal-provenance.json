@@ -1,0 +1,42 @@
+{
+  "source": "G:\\UnityAssets\\asset_manager\\store\\Sci-Fi_Arsenal\\Files\\Archanor\\Sci-Fi Arsenal",
+  "license": "Asset Store; local ignored derivatives only",
+  "files": [
+    {
+      "path": "Sci-Fi Effects\\Materials\\Misc\\blast_modular.mat",
+      "sha256": "f9bfec09fe73f654dd470976ef203651629e0407d5725e6ac127b718db79ff39"
+    },
+    {
+      "path": "Sci-Fi Effects\\Materials\\Muzzleflash\\muzzle_smallfire_blue.mat",
+      "sha256": "800fe98e6ac7adf6b53485f3004d5dc855f0bbd17636b4c1fc9ec14d69be90bf"
+    },
+    {
+      "path": "Sci-Fi Effects\\Materials\\Muzzleflash\\muzzle_smallfire_yellow.mat",
+      "sha256": "a706a758c086339bdf88ef5f50ec709213dc6be53ef516cd24ea5db418b2a70e"
+    },
+    {
+      "path": "Sci-Fi Effects\\Prefabs\\Environment\\Sparks\\SparksBlue.prefab",
+      "sha256": "12d80293d8dd8bf688e3c468c868706d5e2e7027d6df1116b3ee7bb1ff5f54c5"
+    },
+    {
+      "path": "Sci-Fi Effects\\Prefabs\\Environment\\Sparks\\SparksYellow.prefab",
+      "sha256": "cd2ca0e0e2d7906b56ab70b7cb0ff9696e8a014814ae729820b7e7736f8897f6"
+    },
+    {
+      "path": "Sci-Fi Effects\\Textures\\blast_modular.png",
+      "sha256": "acc6b8c8cfc1e9f471e66e0c137957008a789ebc5660e98c433536c3d4565104"
+    },
+    {
+      "path": "Sci-Fi Effects\\Textures\\muzzle_smallfire_blue.png",
+      "sha256": "e97ce7f13fcbf1d134a6ec49e129959184c6df0d03aec5c4e12d1e76ae2f1a03"
+    },
+    {
+      "path": "Sci-Fi Effects\\Textures\\muzzle_smallfire_yellow.png",
+      "sha256": "8b548fc1079e15cc469d88f95fd2e1f5076e77506f0447a43923d8e222ff4ea2"
+    }
+  ],
+  "builtInShaderGuids": [
+    "0000000000000000f000000000000000"
+  ],
+  "unresolvedExternalGuids": []
+}
