@@ -858,7 +858,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c768bccd67e1d374992b72819334e032, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::VoidForge.Integration.EquipmentRig
   tools:
   - {fileID: 3441232786402195149}
@@ -876,7 +876,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2a8f6c78a68e484c934141fd292d82c, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::VoidForge.Integration.LocalAstronaut
   avatar: {fileID: 4418575530534230689}
   headTarget: {fileID: 2300382007702806940}
@@ -2725,7 +2725,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41ebed3943fda1b44b16ffa5658ab973, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::VoidForge.Integration.HandTool
   kind: 1
   primaryGrip: {fileID: 2975259055141268313}
@@ -2825,7 +2825,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6574de2f23e49444f9e6ef214c0e042e, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::VoidForge.Avatars.AstronautFinalIK
   headTarget: {fileID: 2300382007702806940}
   leftHandTarget: {fileID: 1395073313530185663}
@@ -2840,7 +2840,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a43bbbb9e87c6f48bcd9b459ee4f953, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::VoidForge.Avatars.AstronautFingerPose
   readControllers: 0
   leftCurl:
@@ -3046,7 +3046,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfac4fa329d1f4f23814af71a247c14b, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::RootMotion.FinalIK.VRIK
   fixTransforms: 1
   references:
@@ -4524,7 +4524,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41ebed3943fda1b44b16ffa5658ab973, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::VoidForge.Integration.HandTool
   kind: 2
   primaryGrip: {fileID: 8949970310104921481}
@@ -4810,7 +4810,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c3daf630c0ed09d4286b68c6ddbaca4c, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::VoidForge.Integration.CyberdeckSurface
   hudAnchor: {fileID: 27860156931684340}
   screen: {fileID: 1571109065463129531}
@@ -5213,7 +5213,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41ebed3943fda1b44b16ffa5658ab973, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::VoidForge.Integration.HandTool
   kind: 0
   primaryGrip: {fileID: 2937026680190195925}
