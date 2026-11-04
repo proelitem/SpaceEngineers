@@ -103,6 +103,20 @@ sont séparées du corps et les ancrages de prise/contact sont nommés, pour pr�
 le raccordement XR et les comportements définis dans [MINAGE.md](MINAGE.md).
 La livraison visuelle et ses contrôles sont décrits dans [OUTILS_MAIN.md](OUTILS_MAIN.md).
 
+## Première intégration locale des ressources
+
+`Integration/` raccorde l'astronaute VRIK aux poses XR, le cyberdeck à l'avant-bras
+gauche et les outils aux prises manette. `EquipmentRig` consomme le grip droit pendant
+une prise ; `PlayerInputProvider.RightGripConsumed` évite de freiner avec cette même
+entrée. Le grip gauche conserve le freinage. `IntegrationBootstrap` charge les prefabs
+Resources depuis `GameBootstrap` ; l'absence de dépendances locales conserve le rig J1.
+
+`BlockCatalogue` réserve les identifiants des blocs disponibles et en production.
+`BlockGrid` vérifie l'occupation entière et les rotations de grille avant instanciation.
+L'assemblage de démonstration demeure local ; les RPC de construction, la physique de
+vaisseau et l'avatar réseau complet restent à réaliser. Contrats, limites et procédure :
+[INTEGRATION.md](INTEGRATION.md).
+
 ## Budget de performance Quest 3 (cibles)
 
 - 72 Hz minimum, viser 90 Hz ; une image = 11 à 14 ms.

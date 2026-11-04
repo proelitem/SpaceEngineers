@@ -8,6 +8,7 @@ namespace VoidForge.Player
     public sealed class PlayerInputProvider : MonoBehaviour
     {
         public XRInputActions Actions { get; private set; }
+        public bool RightGripConsumed { get; set; }
 
         private void Awake()
         {

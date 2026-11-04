@@ -43,6 +43,16 @@ Les ressources Asset Store restent sous leurs licences et sont exclues de Git ; 
 propre à VoidForge reste MIT. La validation de cette extension est suivie séparément
 dans [`Hermes_Works/Jalons/J1_ASSETS.md`](Hermes_Works/Jalons/J1_ASSETS.md).
 
+Première intégration des ressources : astronaute VRIK local, cyberdeck au poignet gauche,
+trois outils rangeables et huit blocs sur une grille d'essai. La foreuse à main commande
+le creusage ; soudage, démontage, pilotage et interfaces finales restent à réaliser.
+Les dépendances locales de l'astronaute/FinalIK sont nécessaires. Procédure et limites :
+[`docs/INTEGRATION.md`](docs/INTEGRATION.md),
+[`recette Hermes`](Hermes_Works/Jalons/INTEGRATION_01.md).
+APK local de cette passe : `Builds/VoidForge-Quest3-integration-dev.apk` (code 9),
+installé et démarré sur Quest 3 ; initialisation et logcat vérifiés. Ergonomie et
+performances de cette nouvelle intégration à tester par Pierre.
+
 ## Démarrage rapide
 
 1. Installer Unity 6000.4.0f1 avec les modules Android (Unity Hub).

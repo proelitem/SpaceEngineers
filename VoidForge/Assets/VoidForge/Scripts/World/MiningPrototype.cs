@@ -17,6 +17,7 @@ namespace VoidForge.World
         public TextMesh label;
         private PlayerInputProvider _input;
         private Transform _hand;
+        private VoidForge.Integration.EquipmentRig _equipment;
         private LineRenderer _beam;
         private bool _busy;
         private bool _testing;
@@ -30,6 +31,7 @@ namespace VoidForge.World
         private async void Start()
         {
             _input = FindFirstObjectByType<PlayerInputProvider>();
+            _equipment = FindFirstObjectByType<VoidForge.Integration.EquipmentRig>();
             if (_input != null)
                 foreach (var child in _input.GetComponentsInChildren<Transform>())
                     if (child.name == "RightHand") { _hand = child; break; }
@@ -63,8 +65,15 @@ namespace VoidForge.World
                 if (networked && label != null) label.text = "ZONE VOXEL — prototype solo\nQuitter le réseau pour creuser";
                 return;
             }
-            var ray = new Ray(_hand.position, _hand.forward);
-            bool hitZone = Physics.Raycast(ray, out var hit, 8f, ~0, QueryTriggerInteraction.Ignore) &&
+            var tool = _equipment != null ? _equipment.Held : null;
+            if (_equipment != null && (!_equipment.HasTrackedRightHand || tool == null ||
+                tool.kind != VoidForge.Integration.HandToolKind.MiningDrill))
+            {
+                _beam.enabled = false;
+                return;
+            }
+            var ray = tool != null ? new Ray(tool.tip.position, tool.tip.forward) : new Ray(_hand.position, _hand.forward);
+            bool hitZone = Physics.Raycast(ray, out var hit, tool != null ? 1f : 8f, ~0, QueryTriggerInteraction.Ignore) &&
                 hit.collider.transform.IsChildOf(transform);
             _beam.enabled = hitZone;
             if (hitZone)
@@ -124,7 +133,9 @@ namespace VoidForge.World
 
         private void UpdateLabel()
         {
-            if (label != null) label.text = $"ASTÉROÏDE CREUSABLE\nGâchette droite : creuser (8 m)\nPrototype solo / {_edits} excavation(s)\nRedémarrer pour réinitialiser";
+            if (label != null) label.text = $"ASTÉROÏDE CREUSABLE\n" +
+                (_equipment != null ? "Foreuse à main + gâchette (1 m depuis la pointe)" : "Gâchette droite : creuser (8 m)") +
+                $"\nPrototype solo / {_edits} excavation(s)\nRedémarrer pour réinitialiser";
         }
 
         public void HideSupportTerrain()

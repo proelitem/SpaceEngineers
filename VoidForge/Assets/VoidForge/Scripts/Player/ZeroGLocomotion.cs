@@ -70,7 +70,8 @@ namespace VoidForge.Player
                 _body.AddForce(thrust * thrustAcceleration, ForceMode.Acceleration);
             }
 
-            float brake = Mathf.Max(a.LeftGrip.ReadValue<float>(), a.RightGrip.ReadValue<float>());
+            float brake = Mathf.Max(a.LeftGrip.ReadValue<float>(),
+                _input.RightGripConsumed ? 0f : a.RightGrip.ReadValue<float>());
             if (brake > 0.1f)
             {
                 _body.linearVelocity = Vector3.MoveTowards(

@@ -127,3 +127,24 @@ et le prototype Digger sont suivis dans [le rapport de cette extension](../Herme
 | Creusage et performances ressenties en casque | OK : creusage fonctionnel et performances élevées confirmés par Pierre le 3 novembre 2026 ; mesures chiffrées non fournies |
 | Contrôles, locomotion et confort J1 | OK : validés par Pierre dans son retour J1 ; rendu détaillé et mesures instrumentées à consigner |
 | Réseau à plusieurs appareils | À tester par Pierre ; creusage voxel désactivé en réseau, réplication non implémentée |
+
+## Première intégration : avatar, poignet, outils et blocs
+
+Extension demandée après le J1, recette du 3 novembre 2026. La validation en casque du
+J1 précédent ne valide pas automatiquement les nouveaux modèles et prises.
+Procédure et preuves : [INTEGRATION.md](INTEGRATION.md),
+[rapport Hermes](../Hermes_Works/Jalons/INTEGRATION_01.md).
+
+| À tester | Résultat |
+| --- | --- |
+| Compilation | OK : éditeur et Player Android compilés avec Unity 6000.4.0f1 ; dépendances locales de l'astronaute et FinalIK |
+| Prises et rangement | OK en scénario contrôlé : 3 ancrages calibrés, axes physiques, activation, rangement, grip rendu au freinage ; pertes/reprises de tracking et focus simulées |
+| Avatar et recentrage | OK dans l'éditeur : véritable VRIK, résidus tête/main inférieurs à 1 µm dans la pose contrôlée, cibles maintenues après déplacement/rotation du référentiel |
+| Cyberdeck et matériaux | OK : avant-bras gauche, normale/UV et repère HUD calibrés, dalle dégagée de l'armure dans l'aperçu contrôlé ; shaders URP de l'équipement vérifiés |
+| Blocs | OK : 8 prefabs avec colliders, 3 entrées futures indisponibles, rotation de pièce multi-cellules, rejet du chevauchement et des rotations hors grille |
+| APK et lancement Quest | OK : Unity code 0 ; version 9, 118 731 913 octets, ARM64, minSdk 32/target 36 ; adb install Success, lancement COLD Status: ok |
+| Logcat et initialisation Player | OK : capture au moins 30 s, fenêtre hôte 32,91 s, 0 exception/E Unity/AndroidRuntime/XR_ERROR ; raccordement XR, 35 cellules et SELFTEST collider +0,649 m confirmés ; réveils ADB périodiques, port du casque non vérifié |
+| Portée, doigts, prise et nouvelle commande de freinage | À tester par Pierre sur cette version : grip droit pour tenir, gauche pour freiner pendant une prise |
+| Avatar et cyberdeck en casque | À tester par Pierre : proportions, confort, occlusion, tracking, recentrage, orientation et future lisibilité |
+| Nouvelle intégration et performance | À tester par Pierre ; aucune mesure CPU/GPU/FPS ou mémoire sur casque porté pour cette passe |
+| Réseau et fonctions des blocs/outils | À tester par Pierre pour le réseau J1 ; équipement non répliqué. Soudage, démontage, menus de construction et physique de vaisseau non implémentés |

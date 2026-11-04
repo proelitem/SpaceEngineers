@@ -1,0 +1,307 @@
+{
+  "assets": [
+    {
+      "id": "ArmorCube",
+      "source": "meshy_output/voidforge-kit-20261103-v2/exports/armor_cube_precision.glb",
+      "sha256": "ff07b0bd5c0be42836223bdd50769484271319543697cdb4a30d5bf7998d9787",
+      "materials": [
+        {
+          "name": "ArmorCube_VFv2_Ivory",
+          "color": [
+            0.68668532371521,
+            0.637596845626831,
+            0.5520114302635193,
+            1.0
+          ],
+          "metallic": 0.11999999731779099,
+          "roughness": 0.47999998927116394,
+          "texture": "",
+          "unlit": false
+        },
+        {
+          "name": "ArmorCube_VFv2_Graphite",
+          "color": [
+            0.03560131415724754,
+            0.04373503103852272,
+            0.05126945674419403,
+            1.0
+          ],
+          "metallic": 0.699999988079071,
+          "roughness": 0.3499999940395355,
+          "texture": "",
+          "unlit": false
+        },
+        {
+          "name": "ArmorCube_VFv2_Amber",
+          "color": [
+            0.6938717365264893,
+            0.30054378509521484,
+            0.009721217676997185,
+            1.0
+          ],
+          "metallic": 0.20000000298023224,
+          "roughness": 0.41999998688697815,
+          "texture": "",
+          "unlit": false
+        }
+      ]
+    },
+    {
+      "id": "ArmorSlope",
+      "source": "meshy_output/voidforge-kit-20261103-v2/exports/armor_slope_precision.glb",
+      "sha256": "251e5b3a97ef79d35bd30830244be2e6b102d20a2bf6634f953f74b0cd09461a",
+      "materials": [
+        {
+          "name": "ArmorSlope_VFv2_Ivory",
+          "color": [
+            0.68668532371521,
+            0.637596845626831,
+            0.5520114302635193,
+            1.0
+          ],
+          "metallic": 0.11999999731779099,
+          "roughness": 0.47999998927116394,
+          "texture": "",
+          "unlit": false
+        },
+        {
+          "name": "ArmorSlope_VFv2_Graphite",
+          "color": [
+            0.03560131415724754,
+            0.04373503103852272,
+            0.05126945674419403,
+            1.0
+          ],
+          "metallic": 0.699999988079071,
+          "roughness": 0.3499999940395355,
+          "texture": "",
+          "unlit": false
+        },
+        {
+          "name": "ArmorSlope_VFv2_Amber",
+          "color": [
+            0.6938717365264893,
+            0.30054378509521484,
+            0.009721217676997185,
+            1.0
+          ],
+          "metallic": 0.20000000298023224,
+          "roughness": 0.41999998688697815,
+          "texture": "",
+          "unlit": false
+        }
+      ]
+    },
+    {
+      "id": "ArmorCorner",
+      "source": "meshy_output/voidforge-kit-20261103-v2/exports/armor_corner_precision.glb",
+      "sha256": "840c8dd1371f55c4e711c9a8fee4814414b4cb5bf3f8204562518533ced4e80a",
+      "materials": [
+        {
+          "name": "ArmorCorner_VFv2_Ivory",
+          "color": [
+            0.68668532371521,
+            0.637596845626831,
+            0.5520114302635193,
+            1.0
+          ],
+          "metallic": 0.11999999731779099,
+          "roughness": 0.47999998927116394,
+          "texture": "",
+          "unlit": false
+        },
+        {
+          "name": "ArmorCorner_VFv2_Amber",
+          "color": [
+            0.6938717365264893,
+            0.30054378509521484,
+            0.009721217676997185,
+            1.0
+          ],
+          "metallic": 0.20000000298023224,
+          "roughness": 0.41999998688697815,
+          "texture": "",
+          "unlit": false
+        },
+        {
+          "name": "ArmorCorner_VFv2_Graphite",
+          "color": [
+            0.03560131415724754,
+            0.04373503103852272,
+            0.05126945674419403,
+            1.0
+          ],
+          "metallic": 0.699999988079071,
+          "roughness": 0.3499999940395355,
+          "texture": "",
+          "unlit": false
+        }
+      ]
+    },
+    {
+      "id": "Gyroscope",
+      "source": "meshy_output/voidforge-kit-20261103-v2/exports/gyroscope_clean.glb",
+      "sha256": "1ebc845d67f31abff6139d234b135f8a151bfff6479606460aada3eedb253dc8",
+      "materials": [
+        {
+          "name": "Gyroscope_VFv2_Amber",
+          "color": [
+            0.6938717365264893,
+            0.30054378509521484,
+            0.009721217676997185,
+            1.0
+          ],
+          "metallic": 0.20000000298023224,
+          "roughness": 0.41999998688697815,
+          "texture": "",
+          "unlit": false
+        },
+        {
+          "name": "Gyroscope_VFv2_Graphite",
+          "color": [
+            0.03560131415724754,
+            0.04373503103852272,
+            0.05126945674419403,
+            1.0
+          ],
+          "metallic": 0.699999988079071,
+          "roughness": 0.3499999940395355,
+          "texture": "",
+          "unlit": false
+        },
+        {
+          "name": "Gyroscope_VFv2_Ivory",
+          "color": [
+            0.68668532371521,
+            0.637596845626831,
+            0.5520114302635193,
+            1.0
+          ],
+          "metallic": 0.11999999731779099,
+          "roughness": 0.47999998927116394,
+          "texture": "",
+          "unlit": false
+        }
+      ]
+    },
+    {
+      "id": "Cyberdeck",
+      "source": "meshy_output/voidforge-kit-20261103-v2/exports/cyberdeck_clean_blank.glb",
+      "sha256": "dcec7e62fdea543ce50ca68d30cfb0fe268fb915b1419f037f8deaa09722d8a7",
+      "materials": [
+        {
+          "name": "Cyberdeck_VFv2_Graphite",
+          "color": [
+            0.03560131415724754,
+            0.04373503103852272,
+            0.05126945674419403,
+            1.0
+          ],
+          "metallic": 0.699999988079071,
+          "roughness": 0.3499999940395355,
+          "texture": "",
+          "unlit": false
+        },
+        {
+          "name": "Cyberdeck_VFv2_Amber",
+          "color": [
+            0.6938717365264893,
+            0.30054378509521484,
+            0.009721217676997185,
+            1.0
+          ],
+          "metallic": 0.20000000298023224,
+          "roughness": 0.41999998688697815,
+          "texture": "",
+          "unlit": false
+        },
+        {
+          "name": "Cyberdeck_VFv2_ScreenBlank_Unlit",
+          "color": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "metallic": 1.0,
+          "roughness": 1.0,
+          "texture": "",
+          "unlit": true
+        },
+        {
+          "name": "Cyberdeck_VFv2_Ivory",
+          "color": [
+            0.68668532371521,
+            0.637596845626831,
+            0.5520114302635193,
+            1.0
+          ],
+          "metallic": 0.11999999731779099,
+          "roughness": 0.47999998927116394,
+          "texture": "",
+          "unlit": false
+        }
+      ]
+    },
+    {
+      "id": "Cockpit",
+      "source": "meshy_output/voidforge-kit-20261103/fitted/cockpit/cockpit.glb",
+      "sha256": "f565c6387d2e33d61991a992b86d1ae2c6741eba178c5f787c200300647d66d2",
+      "materials": [
+        {
+          "name": "Cockpit_Material_0",
+          "color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.5,
+          "texture": "Cockpit_56828fef.png",
+          "unlit": false
+        }
+      ]
+    },
+    {
+      "id": "Thruster",
+      "source": "meshy_output/voidforge-kit-20261103/fitted/thruster/thruster.glb",
+      "sha256": "d65fe74e81cc08493b923833bc1673e47562ef714f1e35cd5196e19fc03beae2",
+      "materials": [
+        {
+          "name": "Thruster_Material_0",
+          "color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.5,
+          "texture": "Thruster_b26d63bf.png",
+          "unlit": false
+        }
+      ]
+    },
+    {
+      "id": "Battery",
+      "source": "meshy_output/voidforge-kit-20261103/fitted/battery/battery.glb",
+      "sha256": "3749287bc8190faf366f926dbbfc517baf3b94d12cd05c3f573d74ee9972e3fd",
+      "materials": [
+        {
+          "name": "Battery_Material_0",
+          "color": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "metallic": 0.0,
+          "roughness": 0.5,
+          "texture": "Battery_e18b122b.png",
+          "unlit": false
+        }
+      ]
+    }
+  ]
+}

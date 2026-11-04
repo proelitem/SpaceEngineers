@@ -32,7 +32,9 @@
   Suite autorisee : trois outils originaux produits avec GPT-Astra/Blender MCP ; voir
   docs/OUTILS_MAIN.md et Hermes_Works/Jalons/J1_OUTILS_MAIN.md. Sources Art/HandTools,
   exports Assets/VoidForge/Art/HandTools ; relectures Blender et import Unity isole reussis.
-  Materiaux FBX Standard a remapper URP, XR/colliders/jeu/Quest non integres. Aucun outil equipe.
+  Premiere integration URP/prises/colliders realisee, avec foreuse reliee au prototype Digger :
+  docs/INTEGRATION.md et Hermes_Works/Jalons/INTEGRATION_01.md. Rendu et prises en casque
+  restent a valider ; soudage/demontage et equipement reseau ne sont pas implementes.
 - Blender headless : isoler BLENDER_USER_RESOURCES et BLENDER_USER_EXTENSIONS en plus de
   CONFIG/SCRIPTS (Library/BlenderToolReview). Le profil partiel a tente un nettoyage utilisateur ;
   impact non etabli, details dans docs/OUTILS_ASSETS.md. Ne pas relancer avec factory-startup seul.
@@ -43,3 +45,12 @@
 - Travaux graphiques concurrents dans docs/concepts/ et meshy_output/ : ne pas les inclure
   dans la livraison assets. Worktree de cette livraison : .worktrees/assets-mining-20261103,
   branche codex/voidforge-assets-mining-20261103 ; aucun cache Unity partagé avec lui.
+
+- Integration 01 : APK code 9 installe ; liaison XR, 3 outils, 8 blocs/35 cellules et
+  SELFTEST Digger verifies sur Quest, sans exception au demarrage. Voir le jalon INTEGRATION_01.
+  Le corps/poignet local charge Resources/VoidForge/Integration/Equipment ; garder les
+  dependances locales de l'astronaute/FinalIK et leurs .meta. Les fichiers producteurs
+  encore inconnus (avatar, manifest/verrou, Art/UI, meshy_output, ROADMAP) restent hors
+  du commit de cette passe. La recompilation initiale a pris 4056 s ; conserver Library/Bee.
+  CyberdeckSurface expose la dalle/repere HUD ; Refinery/Assembler/Cargo restent indisponibles.
+  Unity principal ferme. Prises/confort/rendu/performance de cette version a tester par Pierre.

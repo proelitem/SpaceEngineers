@@ -13,6 +13,7 @@ d'origine ; Obsidian doit les exposer par liens ou liens symboliques.
 | Ressources d'outils | [DRILL-R et candidats à main](../docs/OUTILS_ASSETS.md) |
 | Outils à main originaux | [Production Blender / GPT-Astra](../docs/OUTILS_MAIN.md) et [recette de livraison](Jalons/J1_OUTILS_MAIN.md) |
 | Recette | [Grille J1](../docs/TEST_J1.md) |
+| Première intégration | [Avatar, poignet, outils et blocs](../docs/INTEGRATION.md) et [preuves](Jalons/INTEGRATION_01.md) |
 | Construction | [Build Quest 3](../docs/BUILD_QUEST3.md) |
 | Provenance | [Crédits](../CREDITS.md) et [licence MIT](../LICENSE) |
 | Gouvernance | [Consignes](../AGENTS.md) |

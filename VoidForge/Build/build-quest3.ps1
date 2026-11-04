@@ -4,6 +4,7 @@
 param(
     [Parameter(Mandatory = $true)] [string] $UnityPath,
     [switch] $Dev,
+    [switch] $IntegrateAssets,
     [string] $Output = "Builds\VoidForge-Quest3.apk"
 )
 
@@ -17,12 +18,13 @@ if (-not (Test-Path -LiteralPath (Join-Path $ProjectDir 'Assets\csc.rsp')) -and
 }
 
 if ($Dev -and $Output -eq "Builds\VoidForge-Quest3.apk") { $Output = "Builds\VoidForge-Quest3-dev.apk" }
+$buildMethod = if ($IntegrateAssets) { "VoidForge.Editor.IntegrationWorkshop.BuildQuestBatch" } else { "VoidForge.Editor.QuestBuildPipeline.BuildBatch" }
 
 $args = @(
     "-batchmode", "-nographics", "-quit",
     "-projectPath", "$ProjectDir",
     "-buildTarget", "Android",
-    "-executeMethod", "VoidForge.Editor.QuestBuildPipeline.BuildBatch",
+    "-executeMethod", $buildMethod,
     "-vfOutput", $Output,
     "-logFile", (Join-Path $ProjectDir "Logs\build-quest3.log")
 )

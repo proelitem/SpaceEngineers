@@ -1,0 +1,133 @@
+using System;
+using System.IO;
+using System.Linq;
+using UnityEditor;
+using UnityEditor.SceneManagement;
+using UnityEngine;
+using VoidForge.Integration;
+using VoidForge.Player;
+using Object = UnityEngine.Object;
+
+namespace VoidForge.Editor
+{
+    public static class IntegrationValidation
+    {
+        [Serializable] class Report
+        {
+            public string unity;
+            public int handTools, availableBlocks, pendingBlocks, occupiedTestCells;
+            public bool gripAlignment, tipForward, returnToHolster, urpMaterials, wristMount, recenter, finalIK, simulatedTrackingSafety;
+            public float rightHandErrorMeters, headErrorMeters;
+        }
+        static void Require(bool value, string message) { if (!value) throw new InvalidOperationException("Integration validation: " + message); }
+        static Transform Bone(Transform root, string name) => root.GetComponentsInChildren<Transform>(true).First(t => t.name == name);
+
+        public static void Run()
+        {
+            var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
+            var player = PlayerRigFactory.Create(Vector3.zero);
+            var equipment = Object.Instantiate(AssetDatabase.LoadAssetAtPath<GameObject>(IntegrationWorkshop.Output + "/Equipment.prefab"), player.transform).GetComponent<EquipmentRig>();
+            var result = new Report { unity = Application.unityVersion };
+            try
+            {
+                var camera = player.GetComponentInChildren<Camera>().transform;
+                camera.localPosition = new Vector3(0,.02f,0);
+                var left = camera.parent.Find("LeftHand"); var right = camera.parent.Find("RightHand");
+                left.localPosition = new Vector3(-.25f,-.25f,.3f);
+                right.localPosition = new Vector3(.25f,-.25f,.3f);
+                equipment.Bind(player.GetComponent<PlayerInputProvider>());
+                result.handTools = equipment.tools.Length;
+                Require(result.handTools == 3, "three tools required");
+                foreach (var tool in equipment.tools)
+                {
+                    var parent = tool.transform.parent; var position = tool.transform.localPosition; var rotation = tool.transform.localRotation;
+                    equipment.Take(tool);
+                    Require(player.GetComponent<PlayerInputProvider>().RightGripConsumed, "grip ownership while held");
+                    Require(Vector3.Distance(tool.primaryGrip.position, right.position) < .0001f, "primary grip alignment: " + tool.kind);
+                    Require(Quaternion.Angle(tool.primaryGrip.rotation, right.rotation) < .01f, "primary grip orientation");
+                    Require(Vector3.Dot(tool.tip.forward, right.forward) > .99f, "tool tip does not aim along controller: " + tool.kind);
+                    Require(Vector3.Dot((tool.tip.position - tool.primaryGrip.position).normalized, right.forward) > .7f,
+                        "visible tool geometry does not extend forward: " + tool.kind + " delta=" + (tool.tip.position - tool.primaryGrip.position));
+                    Require(tool.GetComponent<Rigidbody>().isKinematic && tool.GetComponent<Collider>().isTrigger, "tool collision policy");
+                    tool.Operate(1); Require(tool.IsOperating, "trigger");
+                    equipment.Release();
+                    Require(!player.GetComponent<PlayerInputProvider>().RightGripConsumed, "grip ownership released");
+                    Require(!tool.IsOperating && !tool.IsHeld && tool.transform.parent == parent &&
+                        Vector3.Distance(tool.transform.localPosition, position) < .0001f && Quaternion.Angle(tool.transform.localRotation, rotation) < .01f, "release to holster");
+                }
+                result.gripAlignment = result.tipForward = result.returnToHolster = true;
+                Vector3 savedRight = right.position;
+                right.position = equipment.tools[0].primaryGrip.position;
+                equipment.ProcessInput(true, true, 1, 1, 0);
+                Require(equipment.Held == equipment.tools[0], "proximity grab");
+                equipment.ProcessInput(false, true, 1, 1, 0);
+                Require(equipment.Held == null, "tracking loss releases tool");
+                equipment.ProcessInput(true, true, 1, 1, 0);
+                Require(equipment.Held == null, "tracking recovery must require fresh squeeze");
+                equipment.ProcessInput(true, true, 0, 0, 0);
+                equipment.ProcessInput(true, true, 1, 1, 0);
+                Require(equipment.Held != null, "fresh squeeze after recovery");
+                equipment.ProcessInput(true, false, 1, 1, 0);
+                Require(equipment.Held == null, "focus loss releases tool");
+                right.position = savedRight;
+                result.simulatedTrackingSafety = true;
+                var deck = equipment.GetComponentInChildren<CyberdeckSurface>();
+                Require(deck != null && deck.transform.parent.name == "LeftForeArm" && deck.hudAnchor != null && deck.screen != null, "left wrist mount");
+                Require(Mathf.Abs(deck.activeMeters.x / deck.activeMeters.y - 21f/9) < .001f, "screen ratio");
+                var screenFilter = deck.screen.GetComponent<MeshFilter>();
+                Require(Vector3.Dot(deck.hudAnchor.forward,
+                    screenFilter.transform.TransformDirection(screenFilter.sharedMesh.normals[0]).normalized) > .99f, "HUD anchor must face out of the screen");
+                result.wristMount = true;
+                foreach (var renderer in equipment.GetComponentsInChildren<Renderer>())
+                foreach (var material in renderer.sharedMaterials)
+                    Require(material != null && (material.shader.name.StartsWith("Universal Render Pipeline/", StringComparison.Ordinal) || material.shader.name.Contains("GUI/Text")), "non-URP equipment material: " + material?.name);
+                result.urpMaterials = true;
+
+                equipment.astronaut.UpdatePose(true);
+                var bridge = equipment.astronaut.avatar.GetComponents<MonoBehaviour>().First(c => c.GetType().FullName == "VoidForge.Avatars.AstronautFinalIK");
+                var component = bridge.GetType().GetProperty("SolverComponent").GetValue(bridge);
+                var solver = component.GetType().GetField("solver").GetValue(component);
+                solver.GetType().GetMethod("Initiate", new[] { typeof(Transform) }).Invoke(solver, new object[] { equipment.astronaut.avatar });
+                for (int i = 0; i < 10; i++) solver.GetType().GetMethod("Update", Type.EmptyTypes).Invoke(solver, null);
+                result.rightHandErrorMeters = Vector3.Distance(Bone(equipment.astronaut.avatar, "RightHand").position, equipment.astronaut.rightTarget.position);
+                result.headErrorMeters = Vector3.Distance(Bone(equipment.astronaut.avatar, "Head").position, equipment.astronaut.headTarget.position);
+                Require(result.rightHandErrorMeters < .03f && result.headErrorMeters < .03f, $"VRIK residual hand={result.rightHandErrorMeters}, head={result.headErrorMeters}");
+                result.finalIK = true;
+                var wrist = Bone(equipment.astronaut.avatar, "RightHand");
+                Vector3 direction = (Bone(equipment.astronaut.avatar, "RMiddleFinger1").position - wrist.position).normalized;
+                Vector3 thumb = Bone(equipment.astronaut.avatar, "RThumb1").position - wrist.position;
+                Vector3 dorsal = -Vector3.Cross(direction, thumb).normalized;
+                Require(Vector3.Dot(direction, right.forward) > .95f && Vector3.Dot(dorsal, right.right) > .95f,
+                    "controller grip wrist basis");
+                player.transform.SetPositionAndRotation(new Vector3(2,3,4), Quaternion.Euler(0,90,0));
+                equipment.astronaut.UpdatePose(true);
+                Require(Vector3.Distance(equipment.astronaut.headTarget.position, camera.position) < .0001f, "recenter head target");
+                Require(Vector3.Distance(equipment.astronaut.rightTarget.position, right.TransformPoint(equipment.astronaut.wristFromController)) < .0001f, "recenter wrist target");
+                result.recenter = true;
+
+                var catalogue = AssetDatabase.LoadAssetAtPath<BlockCatalogue>(IntegrationWorkshop.Output + "/BlockCatalogue.asset");
+                result.availableBlocks = catalogue.entries.Count(e => e.Available);
+                result.pendingBlocks = catalogue.entries.Count(e => !e.Available);
+                Require(result.availableBlocks == 8 && result.pendingBlocks == 3, "catalogue availability");
+                var grid = new GameObject("TestGrid").AddComponent<BlockGrid>(); grid.catalogue = catalogue;
+                Require(grid.TryPlace("Thruster", Vector3Int.zero, Quaternion.Euler(0,90,0), out _), "rotated multi-cell placement");
+                Require(!grid.TryPlace("ArmorCube", Vector3Int.right, Quaternion.identity, out _), "occupied cell accepted");
+                Require(!grid.TryPlace("ArmorCube", new Vector3Int(3,0,0), Quaternion.Euler(0,45,0), out _), "off-grid rotation accepted");
+                Require(!grid.TryPlace("Refinery", new Vector3Int(3,0,0), Quaternion.identity, out _), "pending block accepted");
+                foreach (var entry in catalogue.entries.Where(e => e.Available))
+                {
+                    Require(entry.prefab.GetComponentsInChildren<Collider>().Length > 0, "missing block collider: " + entry.id);
+                    Require(GameObjectUtility.GetMonoBehavioursWithMissingScriptCount(entry.prefab) == 0, "missing block script");
+                }
+                result.occupiedTestCells = grid.OccupiedCount;
+                Directory.CreateDirectory("Logs");
+                File.WriteAllText("Logs/integration-validation.json", JsonUtility.ToJson(result, true));
+                Debug.Log("VF_INTEGRATION_PASS " + JsonUtility.ToJson(result));
+            }
+            finally
+            {
+                foreach (var root in scene.GetRootGameObjects()) Object.DestroyImmediate(root);
+            }
+        }
+    }
+}

@@ -50,6 +50,18 @@ copié dans le projet. La palette et la direction industrielle de DRILL-R serven
 référence visuelle. Aucun maillage Keen ni ressource tierce n'entre dans ces trois modèles.
 Sources et contrôles : [OUTILS_MAIN.md](docs/OUTILS_MAIN.md).
 
+## Première intégration des ressources — 3 novembre 2026
+
+| Ressource | Provenance et stockage |
+| --- | --- |
+| Armures cube/pente/coin, gyro, cyberdeck v2 ; cockpit, propulseur, batterie v1 | Ressources produites pour VoidForge avec Meshy et corrections Blender, livraisons locales `meshy_output/voidforge-kit-20261103*`. Conversions créées par cette intégration dans `Assets/VoidForge/Art/Kit`, empreintes des GLB sources dans `kit-materials.json`. Aucune nouvelle génération payante |
+| Astronaute hybride et mains HVR | Livraison locale de l'astronaute, `docs/ASTRONAUTE.md` ; modèles hybrides et maillage local sans tête sous `Assets/ThirdParty`, non redistribués en MIT |
+| FinalIK 2.5 | RootMotion, bibliothèque locale `G:/UnityAssets/asset_manager/store/Final_IK` ; Asset Store EULA, runtime sous `Assets/ThirdParty`, exclu de Git |
+| Adaptateurs XR, grille locale, configurateurs et matériaux URP d'outils | Créés pour VoidForge, MIT |
+
+Les sources graphiques encore en production et leurs scripts ne sont pas inclus par
+la livraison d'intégration. Contrats et limites : [INTEGRATION.md](docs/INTEGRATION.md).
+
 ## Packages Unity utilisés
 
 OpenXR Plugin, XR Plug-in Management, XR Interaction Toolkit, XR Core Utilities,

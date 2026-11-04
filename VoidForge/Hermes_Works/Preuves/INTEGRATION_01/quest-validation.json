@@ -1,0 +1,38 @@
+{
+  "milestone": "INTEGRATION_01",
+  "dateLocal": "2026-11-03",
+  "unity": "6000.4.0f1",
+  "buildExitCode": 0,
+  "buildSeconds": 4056,
+  "apk": "Builds/VoidForge-Quest3-integration-dev.apk",
+  "apkBytes": 118731913,
+  "apkSha256": "B2D64BC4999AC739BC6C972A3DAFCE3926F50ABD306C9F92E2C63D3227E6E48F",
+  "package": "com.proelitem.voidforge",
+  "versionCode": 9,
+  "versionName": "1.0",
+  "abi": "arm64-v8a",
+  "minSdk": 32,
+  "targetSdk": 36,
+  "device": "Meta Quest 3 / USB",
+  "installation": "Success",
+  "launch": "Status: ok / COLD",
+  "minimumCaptureSeconds": 30,
+  "hostCaptureWindowSeconds": 32.9097127,
+  "wakeProtocol": "15 x KEYCODE_WAKEUP and 2-second intervals; no permanent setting changed",
+  "exceptionOrErrorCount": 0,
+  "appAliveAfterCapture": true,
+  "runtimeMarkers": [
+    "XR equipment bound: astronaut, left wrist, 3 hand tools",
+    "Local block display: 35 occupied cells",
+    "Digger SELFTEST: collider excavation 0.649 m, 54 ms"
+  ],
+  "headsetWearValidated": false,
+  "ergonomicsValidated": false,
+  "fpsValidated": false,
+  "multiplayerEquipmentImplemented": false,
+  "warnings": [
+    "Profiler connection timed out; 128 MiB profiler buffer filled",
+    "XR_META_performance_metrics: Attempted to stop before session ready",
+    "Orientation Listener cannot detect orientation"
+  ]
+}

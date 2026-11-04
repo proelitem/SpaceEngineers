@@ -26,6 +26,7 @@ namespace VoidForge.Core
 
         private void Start()
         {
+            VoidForge.Integration.IntegrationBootstrap.Create(FindFirstObjectByType<PlayerInputProvider>());
             var mining = Resources.Load<GameObject>("VoidForge/LocalMiningPrototype");
             if (mining != null)
             {
