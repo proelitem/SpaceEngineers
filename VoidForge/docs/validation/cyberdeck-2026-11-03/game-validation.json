@@ -1,0 +1,23 @@
+{
+    "success": true,
+    "headsetTested": false,
+    "unityVersion": "6000.4.0f1",
+    "error": "",
+    "widthMetres": 0.19958290457725526,
+    "heightMetres": 0.08571429550647736,
+    "normalDot": -0.9999998807907105,
+    "mapEntities": 40,
+    "tools": 3,
+    "checks": [
+        "runtime binding to delivered CyberdeckSurface",
+        "safe area in actual FBX hierarchy",
+        "outward readable Canvas orientation",
+        "no illustrative inventory or cockpit in game",
+        "cockpit lock",
+        "live armor catalogue",
+        "pending refinery locked",
+        "three actual tools",
+        "actual asteroid positions",
+        "native device preview captured"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "ui-ore",
+  "label": "Repère de minerai",
+  "family": "interface",
+  "file": "interface/ui-ore.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-d19d8e67-d1b0-4d9e-871e-437a1788a3d8.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": true
+}

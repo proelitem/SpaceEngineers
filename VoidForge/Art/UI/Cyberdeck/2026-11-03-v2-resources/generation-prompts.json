@@ -1,0 +1,330 @@
+{
+  "mode": "built-in",
+  "date": "2026-11-03",
+  "entries": [
+    {
+      "id": "ore-cobalt",
+      "label": "Minerai de cobalt",
+      "family": "minerais",
+      "file": "minerais/ore-cobalt.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: Cobalt-bearing ore sample, one angular dark charcoal rock with clearly visible cobalt-blue crystalline mineral veins and small steel-gray flecks, raw unprocessed natural rock, no glow.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "ore-magnesium",
+      "label": "Minerai de magnésium",
+      "family": "minerais",
+      "file": "minerais/ore-magnesium.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One angular pale chalky beige-gray ore rock with silver-white crystalline inclusions, porous fractured surface, coarse magnesium-bearing mineral, raw natural rock, no glow.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "ore-silver",
+      "label": "Minerai d’argent",
+      "family": "minerais",
+      "file": "minerais/ore-silver.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One angular dark slate ore rock with branching bright silver native metallic veins and sparkling white facets, raw silver-bearing mineral. Not an ingot, not gold.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "ore-gold",
+      "label": "Minerai d’or",
+      "family": "minerais",
+      "file": "minerais/ore-gold.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One angular dark basalt rock with irregular rich warm yellow gold metallic veins, gold embedded in raw black ore, no glow.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "ore-platinum",
+      "label": "Minerai de platine",
+      "family": "minerais",
+      "file": "minerais/ore-platinum.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One compact angular deep graphite ore rock with broad dense pale platinum-white metallic nodules and a subtle cool blue metallic sheen, raw unprocessed ore, distinct from gold and silver veins.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "ore-uranium",
+      "label": "Minerai d’uranium",
+      "family": "minerais",
+      "file": "minerais/ore-uranium.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One angular near-black pitchblende ore rock with restrained olive-yellow mineral crust in a few deep fissures, heavy raw rock, no cartoon radioactive green glow, no symbols.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "ore-stone",
+      "label": "Pierre brute",
+      "family": "minerais",
+      "file": "minerais/ore-stone.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One angular unprocessed rough gray basalt stone with neutral medium gray mineral grain, fractured surfaces, no colored metal veins, distinguishable simple low-value raw rock.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "ore-ice",
+      "label": "Glace",
+      "family": "minerais",
+      "file": "minerais/ore-ice.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: A single compact cluster of three adjoining broken pale cyan water-ice chunks, frosted edges, transparent ice cores, crisp chunky facets, visible silhouette, no water puddle, no snow background.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "ingot-nickel",
+      "label": "Lingot de nickel",
+      "family": "produits",
+      "file": "produits/ingot-nickel.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: Two short stacked cast nickel ingots, rounded trapezoid bars, brushed warm silver with subtle pale champagne cast, small industrial casting recess but no markings, clean solid refined metal.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "ingot-cobalt",
+      "label": "Lingot de cobalt",
+      "family": "produits",
+      "file": "produits/ingot-cobalt.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: Two short stacked cast cobalt ingots, chunky trapezoid bars, dark steel blue metal with a subtle satin blue sheen, small casting recess but no markings, refined solid metal, no rocks.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "wafer-silicon",
+      "label": "Plaquettes de silicium",
+      "family": "produits",
+      "file": "produits/wafer-silicon.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: Three offset thin circular semiconductor silicon wafers, charcoal blue mirror surfaces with a restrained violet iridescent reflection and subtle etched grid, one flat notch, no text, clearly flat refined wafer discs, not rock.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "powder-magnesium",
+      "label": "Poudre de magnésium",
+      "family": "produits",
+      "file": "produits/powder-magnesium.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: A small shallow open charcoal industrial sample cup filled with fine pale silver magnesium powder, a tiny coherent spill of sparkling powder against cup lip, no floating loose dust, material focus, no labels.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "ingot-silver",
+      "label": "Lingot d’argent",
+      "family": "produits",
+      "file": "produits/ingot-silver.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: Two stacked chunky cast silver ingots, brilliant cool white silver clean reflective metal, trapezoid shape with unmarked casting recess, no gold tint, refined solid metal.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "ingot-gold",
+      "label": "Lingot d’or",
+      "family": "produits",
+      "file": "produits/ingot-gold.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: Two stacked chunky cast gold ingots, rich warm yellow gold metal, trapezoid shape with unmarked casting recess, premium believable brushed gold metal, no embossing.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "ingot-platinum",
+      "label": "Lingot de platine",
+      "family": "produits",
+      "file": "produits/ingot-platinum.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: Two stacked dense refined platinum ingots, crisp beveled rectangular bars slightly longer and flatter than conventional casting bars, pale cool platinum satin finish, no markings, no gold tint.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "ingot-uranium",
+      "label": "Pastilles d’uranium",
+      "family": "produits",
+      "file": "produits/ingot-uranium.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: A coherent compact cluster of three short dense refined uranium fuel cylinders in a small graphite holder with one restrained amber safety latch, dark metallic charcoal satin surface, original industrial fuel product, no labels or symbols, no radioactive glow.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "gravel",
+      "label": "Gravier",
+      "family": "produits",
+      "file": "produits/gravel.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: A compact mound of crushed medium gray stone aggregate, many small angular uniform gravel pebbles, clearly processed crushed rock, strong compact silhouette, no container, no large raw ore boulder.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "scrap-metal",
+      "label": "Ferraille",
+      "family": "recyclage",
+      "file": "recyclage/scrap-metal.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: A compact pile of three bent torn steel offcuts, one curled metal strip and a dented bracket, weathered gray metal with a little ochre rust, salvaged scrap, no intact manufactured component or background.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "component-construction",
+      "label": "Éléments de construction",
+      "family": "recettes",
+      "file": "recettes/component-construction.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: Original industrial construction fastener assembly: two short machined steel mounting brackets joined by three chunky bolts and one clamp, ivory protective collar with tiny amber detail, simple readable solid silhouette, no labels.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "component-interior-plate",
+      "label": "Plaque intérieure",
+      "family": "recettes",
+      "file": "recettes/component-interior-plate.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: Two offset thin ivory enamel interior wall panels, shallow beveled corners, one subtle inset rib and visible thin steel edge, small amber corner tab, clearly lighter thinner panels than raw heavy armor steel plate.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "component-large-tube",
+      "label": "Grand tube",
+      "family": "recettes",
+      "file": "recettes/component-large-tube.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One large hollow steel conduit section with thick wide circular bore facing diagonally toward viewer, machined flange collar and a thin ivory band with one amber latch, large diameter, not a group of thin pipes.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "component-metal-grid",
+      "label": "Grille métallique",
+      "family": "recettes",
+      "file": "recettes/component-metal-grid.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One square industrial heavy expanded steel reinforcement grid panel, thick charcoal steel lattice diamond openings within a stout silver rim, tiny ivory corner braces with amber screws, holes genuinely transparent.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "component-motor",
+      "label": "Moteur électrique",
+      "family": "recettes",
+      "file": "recettes/component-motor.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One compact cylindrical industrial electric motor, charcoal ribbed barrel, silver shaft projecting diagonally toward viewer, ivory end housing, tiny amber connector cover, visible copper winding detail at back, original compact assembly.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "component-display",
+      "label": "Écran",
+      "family": "recettes",
+      "file": "recettes/component-display.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One compact rectangular blank display component, wide horizontal black glass screen in slim ivory beveled industrial frame, graphite back casing and small amber corner latch, screen completely empty, no HUD, no letters.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "component-girder",
+      "label": "Poutrelle",
+      "family": "recettes",
+      "file": "recettes/component-girder.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One short steel I-beam girder segment diagonally oriented, clearly readable capital-I cross section at one end, dark brushed industrial steel, sharp intact flanges, one tiny amber end safety stripe, no text.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "component-glass",
+      "label": "Verre renforcé",
+      "family": "recettes",
+      "file": "recettes/component-glass.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: Three offset thick square sheets of reinforced transparent glass, pale cyan beveled edges, subtle transparent gray blue tint, no frame, no reflective background, clear overlapping glass layers and compact silhouette.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "component-reactor",
+      "label": "Composant de réacteur",
+      "family": "recettes",
+      "file": "recettes/component-reactor.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One original compact reactor core component: short armored graphite cylinder with ivory segmented outer collar and three thick silver connector studs, small recessed amber ceramic insulators, clean modular industrial part, no radioactive symbols or glow.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "component-thruster",
+      "label": "Composant de propulsion",
+      "family": "recettes",
+      "file": "recettes/component-thruster.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One original engine ion acceleration component, stout silver concentric metal rings surrounding a compact charcoal cylindrical core with visible copper coil, ivory mounting lugs and a tiny amber connector, no flame, a component rather than complete thruster block.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "component-gravity",
+      "label": "Composant gravitationnel",
+      "family": "recettes",
+      "file": "recettes/component-gravity.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One original heavy gravitic field component, nested graphite toroidal rings around a dense silver spherical center, supported in an ivory triangular open mounting bracket, tiny amber connector, no floating magical effects, readable compact ring assembly.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "component-medical",
+      "label": "Composant médical",
+      "family": "recettes",
+      "file": "recettes/component-medical.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One original compact life-support medical cartridge, ivory rounded rectangular housing with three small clear cyan fluid chambers, graphite couplings, one amber retaining clip, functional sci-fi industrial component, no cross symbol, no text.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "component-radio",
+      "label": "Composant radio",
+      "family": "recettes",
+      "file": "recettes/component-radio.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One original radio communications component: small charcoal rectangular electronics box with silver coaxial connectors, short copper wound coil and one ivory finned plate, amber connector clip, no antenna mast, no labels.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "component-detector",
+      "label": "Composant de détection",
+      "family": "recettes",
+      "file": "recettes/component-detector.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One compact original sensor component, ivory hexagonal housing around a single dark cyan optical lens, graphite rear connector and small amber edge clip, distinct readable large circular lens, not a camera scene or full block.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "component-explosives",
+      "label": "Charge explosive",
+      "family": "recettes",
+      "file": "recettes/component-explosives.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One sealed original industrial mining explosive cartridge, squat dark graphite rectangular canister with ivory ribbed sides and amber locking cap, two small recessed connectors, safe inert item icon, no wires extending beyond silhouette, no symbols or text.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "component-solar-cell",
+      "label": "Cellule solaire",
+      "family": "recettes",
+      "file": "recettes/component-solar-cell.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One small rectangular photovoltaic cell component, deep navy blue silicon divided into a clean 3 by 4 grid with fine silver contacts, thin silver edge and ivory back plate, no support legs, one component not a complete solar array.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "component-power-cell",
+      "label": "Cellule énergétique",
+      "family": "recettes",
+      "file": "recettes/component-power-cell.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One original compact high-capacity power cell component: paired squat graphite cylinders in an ivory open cradle, two copper terminal contacts, narrow amber separator strip, no glowing energy, distinct from a complete battery block.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    },
+    {
+      "id": "component-superconductor",
+      "label": "Supraconducteur",
+      "family": "recettes",
+      "file": "recettes/component-superconductor.png",
+      "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game art. Subject: One original superconducting coil component: tight flat spiral of silver ribbon conductor wound around a charcoal spool, gold terminal contacts and tiny ivory ceramic spacers, small amber latch, no glow, clear metallic winding silhouette.",
+      "tool": "image_gen.imagegen",
+      "transparent_background": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "block-battery",
+  "label": "Batterie",
+  "family": "blocs",
+  "file": "blocs/block-battery.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-4c7de033-8356-4cb2-887e-669d6b6c2658.png",
+  "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/02-construction.png",
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": true
+}

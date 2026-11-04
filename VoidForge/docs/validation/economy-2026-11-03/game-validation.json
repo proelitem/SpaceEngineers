@@ -1,0 +1,23 @@
+{
+    "success": true,
+    "headsetTested": false,
+    "unityVersion": "6000.4.0f1",
+    "error": "",
+    "widthMetres": 0.19958287477493287,
+    "heightMetres": 0.08571429550647736,
+    "normalDot": -0.9999997019767761,
+    "mapEntities": 53,
+    "tools": 3,
+    "checks": [
+        "runtime binding to delivered CyberdeckSurface",
+        "safe area in actual FBX hierarchy",
+        "outward readable Canvas orientation",
+        "real backpack and initial cockpit lock",
+        "functional refinery catalogue",
+        "24 assembler recipes and75 icons",
+        "three actual tools",
+        "actual asteroid and deposit positions",
+        "actual Digger callback credits exactly one persisted excavation",
+        "native device preview captured with live state"
+    ]
+}

@@ -1,0 +1,15 @@
+﻿recette,entree,kg_entree,sortie,kg_sortie,source
+refine-Fe,ore-iron,1000,ingot-iron,700.0,https://spaceengineers.wiki.gg/wiki/Refinery
+refine-Ni,ore-nickel,1000,ingot-nickel,400.0,https://spaceengineers.wiki.gg/wiki/Refinery
+refine-Co,ore-cobalt,1000,ingot-cobalt,300.0,https://spaceengineers.wiki.gg/wiki/Refinery
+refine-Si,ore-silicon,1000,wafer-silicon,700.0,https://spaceengineers.wiki.gg/wiki/Refinery
+refine-Mg,ore-magnesium,1000,powder-magnesium,7.0,https://spaceengineers.wiki.gg/wiki/Refinery
+refine-Ag,ore-silver,1000,ingot-silver,100.0,https://spaceengineers.wiki.gg/wiki/Refinery
+refine-Au,ore-gold,1000,ingot-gold,10.0,https://spaceengineers.wiki.gg/wiki/Refinery
+refine-Pt,ore-platinum,1000,ingot-platinum,5.0,https://spaceengineers.wiki.gg/wiki/Refinery
+refine-U,ore-uranium,1000,ingot-uranium,10.0,https://spaceengineers.wiki.gg/wiki/Refinery
+refine-stone,ore-stone,1000,gravel,14,https://spaceengineers.wiki.gg/wiki/Refinery
+refine-stone,ore-stone,1000,ingot-iron,30,https://spaceengineers.wiki.gg/wiki/Refinery
+refine-stone,ore-stone,1000,ingot-nickel,2.4,https://spaceengineers.wiki.gg/wiki/Refinery
+refine-stone,ore-stone,1000,wafer-silicon,4,https://spaceengineers.wiki.gg/wiki/Refinery
+recycle-scrap,scrap-metal,1000,ingot-iron,800,https://spaceengineers.wiki.gg/wiki/Refinery

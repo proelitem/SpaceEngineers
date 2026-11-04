@@ -1,0 +1,11 @@
+{
+  "id": "ui-ship",
+  "label": "Vaisseau",
+  "family": "interface-masks",
+  "file": "interface-masks/ui-ship.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-f4eb7054-cf6b-4515-a1c3-aebc706235c7.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": false,
+  "coverage": "rgb-luminance"
+}

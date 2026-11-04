@@ -1,0 +1,11 @@
+{
+  "id": "ui-seat",
+  "label": "Assis au cockpit",
+  "family": "interface-masks",
+  "file": "interface-masks/ui-seat.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-6f8991af-bd3d-4f44-b576-d9359586aa33.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": false,
+  "coverage": "rgb-luminance"
+}

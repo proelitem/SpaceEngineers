@@ -1,0 +1,11 @@
+{
+  "id": "ui-check",
+  "label": "Validation / équipé",
+  "family": "interface-masks",
+  "file": "interface-masks/ui-check.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-8abf9172-ea93-4070-ac6c-3c473e92bed0.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": false,
+  "coverage": "rgb-luminance"
+}

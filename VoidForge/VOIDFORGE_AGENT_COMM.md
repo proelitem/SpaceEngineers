@@ -59,3 +59,5 @@
   Unity principal ferme. Portee/prises/lisibilite/confort/performance a retester par Pierre.
   Exception Digger a la sortie Play ouverte : get_internalHeightmapResolution can only be
   called from the main thread (Logs/cyberdeck-game-1.log) ; absente de la capture Quest.
+
+- Producteur Economie/Cyberdeck : profil solo 1 m dans Assets/Resources/VoidForge/Economy ; 35 recettes, 11 blocs, 75 graphiques et sauvegarde. 55 controles purs, 27 Unity et 10 Main reussis : docs/ECONOMIE_CYBERDECK.md et docs/validation/economy-2026-11-03. Aucun APK produit ici, stabilisation et build confies par Pierre a son autre processus. Ne pas remplacer Integration/Avatar ni leurs dependances locales depuis ce lot.

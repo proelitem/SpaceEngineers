@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "checks": [
+    "54 unique item IDs",
+    "32 recipes and 11 refining/recycling routes",
+    "all ingredient and icon references resolve",
+    "x1/x3/x10 scale once",
+    "raw routes supply all refined ingredients including credited stone coproducts",
+    "steel plate x1=30 kg ore, x3=10 kg ore",
+    "motor x1 nickel ore=12.5 kg"
+  ],
+  "runtime_balance_modified": false
+}

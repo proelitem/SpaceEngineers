@@ -1,0 +1,10 @@
+{
+  "id": "ui-energy",
+  "label": "Puissance électrique",
+  "family": "interface",
+  "file": "interface/ui-energy.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-5ce029cd-26a9-4704-b551-01c9c7ca9e22.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": true
+}

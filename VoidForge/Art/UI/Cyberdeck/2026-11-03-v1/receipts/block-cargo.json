@@ -1,0 +1,10 @@
+{
+  "id": "block-cargo",
+  "label": "Soute",
+  "family": "blocs",
+  "file": "blocs/block-cargo.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-db1c2aad-fed9-4348-933e-6f927928894e.png",
+  "reference": "D:/Projets/Trement/MyrinoxPrime/docs/Top-Down-Concept/38fb3e62-2df6-4d9f-b610-e7c5c1515db5.png",
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": true
+}

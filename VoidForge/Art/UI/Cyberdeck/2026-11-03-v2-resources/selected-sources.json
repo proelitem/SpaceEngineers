@@ -1,0 +1,146 @@
+[
+  {
+    "id": "ore-cobalt",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-77fceb89-a24c-41e3-86db-e080937e1a83.png"
+  },
+  {
+    "id": "ore-magnesium",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-ae18f512-a1d8-4fd4-86f6-3a9edfe008ac.png"
+  },
+  {
+    "id": "ore-silver",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-8ab82655-c449-4f81-a479-2e5d19fdba72.png"
+  },
+  {
+    "id": "ore-platinum",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-a7fd22cf-02c3-4285-a63a-1e4460be45a7.png"
+  },
+  {
+    "id": "ore-gold",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-382e8052-250b-4c04-96ea-ff5712ae089e.png"
+  },
+  {
+    "id": "ore-uranium",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-e5b2e9ce-7cea-4a9d-bb7b-a049d6ace458.png"
+  },
+  {
+    "id": "ore-stone",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-2815e2c9-37cd-4bb8-821a-26ccb281ea67.png"
+  },
+  {
+    "id": "ore-ice",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-9802dd05-f3f7-40f4-97c3-ce13e7be80e5.png"
+  },
+  {
+    "id": "wafer-silicon",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-f2d19e5d-ca6d-41bf-bbbf-44ccae47fdda.png"
+  },
+  {
+    "id": "ingot-nickel",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-65de2594-6eba-4323-8bde-7fe04b956dc4.png"
+  },
+  {
+    "id": "powder-magnesium",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-8da4491e-0f47-4c36-86b5-3803b5e0bc7f.png"
+  },
+  {
+    "id": "ingot-silver",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-5e81d4ba-bf2e-41f4-8d9f-bf17c4757296.png"
+  },
+  {
+    "id": "ingot-cobalt",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-db0ec78d-64cf-476b-9cb1-0215af7d6305.png"
+  },
+  {
+    "id": "ingot-gold",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-1621e6d6-fe79-4f72-b996-d0f6a65404e5.png"
+  },
+  {
+    "id": "ingot-platinum",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-8b66180e-5170-43e1-b016-2fa93a19812a.png"
+  },
+  {
+    "id": "gravel",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-60a3512b-6c08-4138-be86-2d558ebe14d3.png"
+  },
+  {
+    "id": "ingot-uranium",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-fcd1a6fb-2cbd-48eb-82ca-65b1575f51a5.png"
+  },
+  {
+    "id": "scrap-metal",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-316f411b-23b7-46b1-a2db-c13c34acbd29.png"
+  },
+  {
+    "id": "component-interior-plate",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-e4dfec87-62f2-48ef-a804-7576e2ccae36.png"
+  },
+  {
+    "id": "component-construction",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-6c892ea8-4987-423f-8586-1701b28916dd.png"
+  },
+  {
+    "id": "component-metal-grid",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-1adcac8a-2729-4a13-bf2b-a912227a2ec3.png"
+  },
+  {
+    "id": "component-large-tube",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-2633453e-adaf-4a48-8f24-93c03d9c6afb.png"
+  },
+  {
+    "id": "component-display",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-d29880fa-3602-4ffd-9714-ebd21e567939.png"
+  },
+  {
+    "id": "component-motor",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-fd507741-29e8-4f57-a78c-5c1b08873a59.png"
+  },
+  {
+    "id": "component-girder",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-6d4c400c-b40d-42bb-bd1b-974640880e90.png"
+  },
+  {
+    "id": "component-glass",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-d8042a34-d95f-476c-8b67-eb84629fc4af.png"
+  },
+  {
+    "id": "component-thruster",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-38d24cb9-ac15-4078-937f-a975be706f7f.png"
+  },
+  {
+    "id": "component-reactor",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-39085152-7a27-4c1a-a522-9f677d53bbb0.png"
+  },
+  {
+    "id": "component-medical",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-0946024e-fdd7-419b-b38d-7e643b29c8e2.png"
+  },
+  {
+    "id": "component-gravity",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-a330cea2-ab21-4dd8-b4c4-618596ec29ad.png"
+  },
+  {
+    "id": "component-radio",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-353f74b6-384f-4173-bb68-12ddece8ed1e.png"
+  },
+  {
+    "id": "component-solar-cell",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-8568c71e-84d3-498c-9baa-eda5b4f3d9d8.png"
+  },
+  {
+    "id": "component-detector",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-0c6b636e-5f20-4624-a99c-3f0d07f7b607.png"
+  },
+  {
+    "id": "component-explosives",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-7100c9e8-8900-4b03-8242-311aba7c4b7b.png"
+  },
+  {
+    "id": "component-power-cell",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-66072980-1bbd-4fef-8a41-99fe937f1a15.png"
+  },
+  {
+    "id": "component-superconductor",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-29c267ef-2688-4347-bffc-a8254fc7e4a9.png"
+  }
+]

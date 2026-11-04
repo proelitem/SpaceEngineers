@@ -1,0 +1,411 @@
+[
+  {
+    "id": "ore-iron",
+    "label": "Minerai de fer",
+    "family": "minerais",
+    "file": "minerais/ore-iron.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-8ce6a28d-cce2-478f-afa8-075f9f5a9546.png",
+    "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "ore-nickel",
+    "label": "Minerai de nickel",
+    "family": "minerais",
+    "file": "minerais/ore-nickel.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-a940dd25-49ff-4711-aaeb-40c002dc65df.png",
+    "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "ore-silicon",
+    "label": "Minerai de silicium",
+    "family": "minerais",
+    "file": "minerais/ore-silicon.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-9b84d273-1304-4ba6-9323-a02e206d4d69.png",
+    "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "ingot-iron",
+    "label": "Lingots de fer",
+    "family": "produits",
+    "file": "produits/ingot-iron.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-8e1aaea9-81d3-422e-8be9-aa4bc694771a.png",
+    "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "component-plates",
+    "label": "Plaques métalliques",
+    "family": "recettes",
+    "file": "recettes/component-plates.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-71d09814-60a8-4f19-9cbe-936a5af634ce.png",
+    "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "component-tubes",
+    "label": "Tubes",
+    "family": "recettes",
+    "file": "recettes/component-tubes.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-065a6707-899e-464e-84eb-e3c81e366199.png",
+    "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "component-circuits",
+    "label": "Circuits",
+    "family": "recettes",
+    "file": "recettes/component-circuits.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-dc73a6b9-53ab-43c6-972f-45b0c6e5f5f6.png",
+    "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "tool-drill",
+    "label": "Drill",
+    "family": "outils",
+    "file": "outils/tool-drill.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-7d22bc53-ac1c-4827-8431-80ede7dd8941.png",
+    "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "tool-welder",
+    "label": "Welder",
+    "family": "outils",
+    "file": "outils/tool-welder.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-66eba220-34f4-4105-b297-638e2f0908f7.png",
+    "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "tool-grinder",
+    "label": "Grinder",
+    "family": "outils",
+    "file": "outils/tool-grinder.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-561193c8-20be-47fb-8418-e8bb2e79f13a.png",
+    "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "block-armor",
+    "label": "Armure",
+    "family": "blocs",
+    "file": "blocs/block-armor.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-ef5556ad-c5eb-41e5-94e7-f580b142f1b0.png",
+    "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/02-construction.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "block-gyroscope",
+    "label": "Gyroscope",
+    "family": "blocs",
+    "file": "blocs/block-gyroscope.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-8dfee8f1-cc73-4a09-82a3-c09c1f1dc417.png",
+    "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/02-construction.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "block-battery",
+    "label": "Batterie",
+    "family": "blocs",
+    "file": "blocs/block-battery.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-4c7de033-8356-4cb2-887e-669d6b6c2658.png",
+    "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/02-construction.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "block-cockpit",
+    "label": "Cockpit",
+    "family": "blocs",
+    "file": "blocs/block-cockpit.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-3a40bcf8-5d84-4131-95dc-b0f73703af17.png",
+    "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/02-construction.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "block-thruster",
+    "label": "Propulseur",
+    "family": "blocs",
+    "file": "blocs/block-thruster.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-f2c366ad-68d6-4261-bea1-7af900812aa0.png",
+    "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/02-construction.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "block-refinery",
+    "label": "Raffinerie",
+    "family": "blocs",
+    "file": "blocs/block-refinery.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-747028d5-7dbf-4cdc-9ccb-23380f11b8f4.png",
+    "reference": "D:/Projets/Trement/MyrinoxPrime/docs/Top-Down-Concept/16a86187-6a27-4899-bf86-c16197a650c0.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "block-assembler",
+    "label": "Assembleur",
+    "family": "blocs",
+    "file": "blocs/block-assembler.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-10e262d9-47a5-4b51-b23a-c948f7141c7d.png",
+    "reference": "D:/Projets/Trement/MyrinoxPrime/docs/Top-Down-Concept/Module-Assemblers.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "block-cargo",
+    "label": "Soute",
+    "family": "blocs",
+    "file": "blocs/block-cargo.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-db1c2aad-fed9-4348-933e-6f927928894e.png",
+    "reference": "D:/Projets/Trement/MyrinoxPrime/docs/Top-Down-Concept/38fb3e62-2df6-4d9f-b610-e7c5c1515db5.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "map-asteroid",
+    "label": "Astéroïde",
+    "family": "carte",
+    "file": "carte/map-asteroid.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-8d1de25b-40d9-4a7a-86c7-4c85bbd73425.png",
+    "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/04-gps-carte.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "map-ship",
+    "label": "Vaisseau joueur",
+    "family": "carte",
+    "file": "carte/map-ship.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-052ae3ff-88d0-4ad6-91d2-7963099a4b54.png",
+    "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/04-gps-carte.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "map-outpost",
+    "label": "Avant-poste",
+    "family": "carte",
+    "file": "carte/map-outpost.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-54613ba5-45ed-4c08-a279-d002cab9604b.png",
+    "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/04-gps-carte.png",
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": true
+  },
+  {
+    "id": "ui-inventory",
+    "label": "Inventaire / soute",
+    "family": "interface-masks",
+    "file": "interface-masks/ui-inventory.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-b01eafc9-b017-49d2-aecf-d6ce389d9f89.png",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": false,
+    "coverage": "rgb-luminance",
+    "prompt": "Create a BRAND NEW production single-channel icon MASK IMAGE, flat 2D vector-style graphics. Square 1024 x 1024. Background is EXACT UNIFORM SOLID PURE BLACK #000000 covering the entire opaque canvas. Foreground is EXACT SOLID PURE WHITE #FFFFFF, no ivory or gradients. One isometric wireframe cube with three faces, bold even straight edges, pure black holes inside the three faces and a central Y junction. No background detail inside the cube. This is a luminance mask texture: white is the icon coverage and black is the empty space. Absolutely no alpha transparency, checkerboard, shadows, lighting, gradients, grain, noise, texture, glow, border or text. Only one white geometric symbol on a perfectly black canvas. Sharp precise vector-like edges, anti aliasing only at boundary, equal generous 18 percent margins. It must be a clean untextured digital glyph, not a drawing or a photograph."
+  },
+  {
+    "id": "ui-construction",
+    "label": "Construire",
+    "family": "interface-masks",
+    "file": "interface-masks/ui-construction.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-f98ac4ac-61d2-46f4-b282-1a9c0ca75e51.png",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": false,
+    "coverage": "rgb-luminance"
+  },
+  {
+    "id": "ui-ship",
+    "label": "Vaisseau",
+    "family": "interface-masks",
+    "file": "interface-masks/ui-ship.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-f4eb7054-cf6b-4515-a1c3-aebc706235c7.png",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": false,
+    "coverage": "rgb-luminance"
+  },
+  {
+    "id": "ui-gps",
+    "label": "GPS / repère",
+    "family": "interface-masks",
+    "file": "interface-masks/ui-gps.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-f7134011-6d9f-4eb3-ac84-fc50916a2c2c.png",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": false,
+    "coverage": "rgb-luminance"
+  },
+  {
+    "id": "ui-battery",
+    "label": "Énergie du cyberdeck",
+    "family": "interface-masks",
+    "file": "interface-masks/ui-battery.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-8d0f1d02-f7b2-4649-9c29-d18cb1d1a720.png",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": false,
+    "coverage": "rgb-luminance"
+  },
+  {
+    "id": "ui-chevron",
+    "label": "Menu déroulant / carrousel",
+    "family": "interface-masks",
+    "file": "interface-masks/ui-chevron.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-a6077c8a-e02a-47c3-8301-a06e7b49a42e.png",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": false,
+    "coverage": "rgb-luminance"
+  },
+  {
+    "id": "ui-plus",
+    "label": "Augmenter / zoom avant",
+    "family": "interface-masks",
+    "file": "interface-masks/ui-plus.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-5571af10-f5f0-4eb5-b77f-38d8e664d559.png",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": false,
+    "coverage": "rgb-luminance"
+  },
+  {
+    "id": "ui-minus",
+    "label": "Diminuer / zoom arrière",
+    "family": "interface-masks",
+    "file": "interface-masks/ui-minus.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-a75bcc88-577a-4e13-b48e-96eb4b2d94c8.png",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": false,
+    "coverage": "rgb-luminance"
+  },
+  {
+    "id": "ui-recenter",
+    "label": "Recentrer / cibler",
+    "family": "interface-masks",
+    "file": "interface-masks/ui-recenter.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-cb7b1c5e-ee2f-4afd-8452-7f37c99d8740.png",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": false,
+    "coverage": "rgb-luminance"
+  },
+  {
+    "id": "ui-power",
+    "label": "Alimentation",
+    "family": "interface-masks",
+    "file": "interface-masks/ui-power.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-c2b621f5-4f91-4af1-bfbf-0518d6204589.png",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": false,
+    "coverage": "rgb-luminance"
+  },
+  {
+    "id": "ui-pause",
+    "label": "Pause",
+    "family": "interface-masks",
+    "file": "interface-masks/ui-pause.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-03623941-2ffd-49e7-a91e-a9f09d5e3d77.png",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": false,
+    "coverage": "rgb-luminance"
+  },
+  {
+    "id": "ui-check",
+    "label": "Validation / équipé",
+    "family": "interface-masks",
+    "file": "interface-masks/ui-check.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-8abf9172-ea93-4070-ac6c-3c473e92bed0.png",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": false,
+    "coverage": "rgb-luminance"
+  },
+  {
+    "id": "ui-energy",
+    "label": "Puissance électrique",
+    "family": "interface-masks",
+    "file": "interface-masks/ui-energy.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-2b074f7e-7ece-46fe-9d68-6992e2ffcc17.png",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": false,
+    "coverage": "rgb-luminance"
+  },
+  {
+    "id": "ui-seat",
+    "label": "Assis au cockpit",
+    "family": "interface-masks",
+    "file": "interface-masks/ui-seat.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-6f8991af-bd3d-4f44-b576-d9359586aa33.png",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": false,
+    "coverage": "rgb-luminance"
+  },
+  {
+    "id": "ui-base",
+    "label": "Repère de base",
+    "family": "interface-masks",
+    "file": "interface-masks/ui-base.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-642df5a2-19d5-460f-83d5-451322360446.png",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": false,
+    "coverage": "rgb-luminance"
+  },
+  {
+    "id": "ui-ore",
+    "label": "Repère de minerai",
+    "family": "interface-masks",
+    "file": "interface-masks/ui-ore.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-92671804-b7ff-4ad7-8a2b-b46d777a91d2.png",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": false,
+    "coverage": "rgb-luminance"
+  },
+  {
+    "id": "ui-beacon",
+    "label": "Balise / cible de carte",
+    "family": "interface-masks",
+    "file": "interface-masks/ui-beacon.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-1966dbb9-49dc-4f4f-8340-4920c60c926a.png",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": false,
+    "coverage": "rgb-luminance"
+  },
+  {
+    "id": "ui-arrow",
+    "label": "Flux de recette / direction",
+    "family": "interface-masks",
+    "file": "interface-masks/ui-arrow.png",
+    "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-a7f3a3bb-bdc4-4ca8-8f55-d5569a63081b.png",
+    "reference": null,
+    "tool": "image_gen.imagegen",
+    "transparent_background_requested": false,
+    "coverage": "rgb-luminance"
+  }
+]

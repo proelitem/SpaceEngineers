@@ -1,0 +1,10 @@
+{
+  "id": "ui-minus",
+  "label": "Diminuer / zoom arrière",
+  "family": "interface",
+  "file": "interface/ui-minus.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-27bdb0d7-08f4-43c0-8864-eb29e709e554.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": true
+}

@@ -1,0 +1,57 @@
+{
+  "status": "concept_visual_only",
+  "screen_mm": [
+    216,
+    92.5714286
+  ],
+  "safe_area_mm": [
+    200,
+    85.7142857
+  ],
+  "target_aspect": [
+    21,
+    9
+  ],
+  "images": [
+    {
+      "file": "01-inventaire.png",
+      "width": 1914,
+      "height": 822,
+      "bytes": 1612154,
+      "sha256": "76cdd57f99895378323cf616fde9683341cc6f4509873c9d69dd2cd3d81f5db2",
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-1c03a545-50ba-48de-817d-d4489c5dab17.png"
+    },
+    {
+      "file": "02-construction.png",
+      "width": 1914,
+      "height": 822,
+      "bytes": 1713204,
+      "sha256": "3e55fafe8c128e7e3179eb84154a7039ad117c7f67bfb157a425f88ac9132eb2",
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-9a7d14f7-eff2-4cec-bc34-0da304dec688.png"
+    },
+    {
+      "file": "03a-vaisseau-raffinerie.png",
+      "width": 1914,
+      "height": 822,
+      "bytes": 1641017,
+      "sha256": "278b321197ffd8c5befcf46bd473a6ffec745f485ebe9e7fdfb4148049f7d565",
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-6b8ff0ac-3469-4530-a19e-728d282c7410.png"
+    },
+    {
+      "file": "03b-vaisseau-assemblage.png",
+      "width": 1914,
+      "height": 822,
+      "bytes": 1649193,
+      "sha256": "1cb234c6b67387dc1a259a03ffccdee02f2642a7a654c77c0aab31934f98bd74",
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-c5d26eb2-bd2c-4382-8ba0-d0271106c0c2.png"
+    },
+    {
+      "file": "04-gps-carte.png",
+      "width": 1914,
+      "height": 822,
+      "bytes": 1631469,
+      "sha256": "5863105b4918b23fc1b6f16890b6912892c25c48af7a7b6e2c923e2ac75c1fa1",
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-50c02937-62a9-452c-a2e1-62e36063236b.png"
+    }
+  ]
+}

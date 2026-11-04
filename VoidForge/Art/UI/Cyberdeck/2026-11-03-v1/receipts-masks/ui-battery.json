@@ -1,0 +1,11 @@
+{
+  "id": "ui-battery",
+  "label": "Énergie du cyberdeck",
+  "family": "interface-masks",
+  "file": "interface-masks/ui-battery.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-8d0f1d02-f7b2-4649-9c29-d18cb1d1a720.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": false,
+  "coverage": "rgb-luminance"
+}

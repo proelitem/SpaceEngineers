@@ -1,0 +1,10 @@
+{
+  "id": "block-thruster",
+  "label": "Propulseur",
+  "family": "blocs",
+  "file": "blocs/block-thruster.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-f2c366ad-68d6-4261-bea1-7af900812aa0.png",
+  "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/02-construction.png",
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": true
+}

@@ -1,0 +1,47 @@
+{
+  "generated_final_assets": 39,
+  "all_files_present": true,
+  "all_square_minimum_1024": true,
+  "rgba_sprites_alpha_range_verified": 21,
+  "opaque_luminance_masks_black_corners_verified": 18,
+  "unique_sha256": 39,
+  "all_final_assets_visually_inspected": true,
+  "source_pngs_edited": false,
+  "rejected_alpha_glyphs_excluded": true,
+  "unity_shader_check": {
+    "success": false,
+    "completed": false,
+    "unityVersion": "6000.4.0f1",
+    "renderPipelinePackage": "17.4.0",
+    "shader": "VoidForge/UI/Glyph Luminance Mask",
+    "shader_import_observed": true,
+    "shader_errors": null,
+    "final_ShaderUtil_check_executed": false,
+    "reason": "Auxiliary cold URP project import did not finish its startup within the bounded check. Isolated editor stopped; no gameplay scene changed.",
+    "log": "Logs/hud-mask-import-2.log",
+    "editor_exit_after_stop": -1,
+    "xr_tested": false
+  },
+  "xr_headset_validation": false,
+  "gallery_chrome_render": {
+    "dark": {
+      "file": "qa-gallery-dark.png",
+      "size": [
+        1680,
+        1450
+      ]
+    },
+    "light_masks_64px": {
+      "file": "qa-gallery-light.png",
+      "size": [
+        1680,
+        1450
+      ]
+    },
+    "visually_inspected": true,
+    "filter_and_mask_tint_rendered": true
+  },
+  "final_sha256_recheck": 39,
+  "recipe_icon_references_resolved": 5,
+  "revised_refinery_concept_saved": true
+}

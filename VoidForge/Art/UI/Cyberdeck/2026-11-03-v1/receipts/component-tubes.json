@@ -1,0 +1,10 @@
+{
+  "id": "component-tubes",
+  "label": "Tubes",
+  "family": "recettes",
+  "file": "recettes/component-tubes.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-065a6707-899e-464e-84eb-e3c81e366199.png",
+  "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png",
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": true
+}

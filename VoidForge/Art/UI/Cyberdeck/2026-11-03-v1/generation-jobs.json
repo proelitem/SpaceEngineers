@@ -1,0 +1,288 @@
+{
+  "date": "2026-11-03",
+  "tool": "image_gen.imagegen",
+  "transparent_background": true,
+  "job_count": 39,
+  "jobs": [
+    {
+      "id": "ore-iron",
+      "label": "Minerai de fer",
+      "family": "minerais",
+      "detail": "An irregular chunky dark charcoal iron ore rock with visible rusty ochre iron seams and a few exposed metallic grey facets. Rock, not a metal ingot. Match the FER ore thumbnail in the reference.",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Match the selected icon's appearance in the supplied wrist inventory image, using it only as a visual style and subject reference; isolate and freshly render the specified one item, never reproduce the screen or text. An irregular chunky dark charcoal iron ore rock with visible rusty ochre iron seams and a few exposed metallic grey facets. Rock, not a metal ingot. Match the FER ore thumbnail in the reference.",
+      "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+    },
+    {
+      "id": "ore-nickel",
+      "label": "Minerai de nickel",
+      "family": "minerais",
+      "detail": "A compact jagged nickel ore rock, distinct silhouette from the iron rock, silvery pewter grey metallic granular inclusions within darker grey matrix, subtle cool desaturated sheen. No orange rust or gold. Match the NICKEL rock in reference.",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Match the selected icon's appearance in the supplied wrist inventory image, using it only as a visual style and subject reference; isolate and freshly render the specified one item, never reproduce the screen or text. A compact jagged nickel ore rock, distinct silhouette from the iron rock, silvery pewter grey metallic granular inclusions within darker grey matrix, subtle cool desaturated sheen. No orange rust or gold. Match the NICKEL rock in reference.",
+      "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+    },
+    {
+      "id": "ore-silicon",
+      "label": "Minerai de silicium",
+      "family": "minerais",
+      "detail": "One pale smoky grey crystalline silicon-bearing ore cluster, broad angular translucent grey-white facets, a few darker mineral edges, clearly different from dark iron and nickel rocks. No blue gem fantasy glow. Match the SILICIUM thumbnail in reference.",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Match the selected icon's appearance in the supplied wrist inventory image, using it only as a visual style and subject reference; isolate and freshly render the specified one item, never reproduce the screen or text. One pale smoky grey crystalline silicon-bearing ore cluster, broad angular translucent grey-white facets, a few darker mineral edges, clearly different from dark iron and nickel rocks. No blue gem fantasy glow. Match the SILICIUM thumbnail in reference.",
+      "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+    },
+    {
+      "id": "ingot-iron",
+      "label": "Lingots de fer",
+      "family": "produits",
+      "detail": "Exactly three silver-grey cast iron ingots stacked in a small stable pyramid, trapezoidal foundry shapes, flat sloping sides, fine realistic brushed cast-metal grain. No text stamps.",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Match the selected icon's appearance in the supplied wrist inventory image, using it only as a visual style and subject reference; isolate and freshly render the specified one item, never reproduce the screen or text. Exactly three silver-grey cast iron ingots stacked in a small stable pyramid, trapezoidal foundry shapes, flat sloping sides, fine realistic brushed cast-metal grain. No text stamps.",
+      "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+    },
+    {
+      "id": "component-plates",
+      "label": "Plaques métalliques",
+      "family": "recettes",
+      "detail": "A stack of exactly three rectangular machined silver steel construction plates, slightly beveled corners, broad flat faces, very subtle brushed-metal scratches. Compact clear silhouette, no bolts or symbols.",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Match the selected icon's appearance in the supplied wrist inventory image, using it only as a visual style and subject reference; isolate and freshly render the specified one item, never reproduce the screen or text. A stack of exactly three rectangular machined silver steel construction plates, slightly beveled corners, broad flat faces, very subtle brushed-metal scratches. Compact clear silhouette, no bolts or symbols.",
+      "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+    },
+    {
+      "id": "component-tubes",
+      "label": "Tubes",
+      "family": "recettes",
+      "detail": "Exactly three short thick-walled hollow steel pipes in a triangular bundle, visible dark circular bores at their front ends, silvery brushed steel, cut ends polished, no hoses or wires.",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Match the selected icon's appearance in the supplied wrist inventory image, using it only as a visual style and subject reference; isolate and freshly render the specified one item, never reproduce the screen or text. Exactly three short thick-walled hollow steel pipes in a triangular bundle, visible dark circular bores at their front ends, silvery brushed steel, cut ends polished, no hoses or wires.",
+      "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+    },
+    {
+      "id": "component-circuits",
+      "label": "Circuits",
+      "family": "recettes",
+      "detail": "A single compact dark emerald green futuristic circuit board seen at three-quarter view with one black square processor, restrained gold contacts and fine silver components. Strong simple silhouette, no legible text, no brand.",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Match the selected icon's appearance in the supplied wrist inventory image, using it only as a visual style and subject reference; isolate and freshly render the specified one item, never reproduce the screen or text. A single compact dark emerald green futuristic circuit board seen at three-quarter view with one black square processor, restrained gold contacts and fine silver components. Strong simple silhouette, no legible text, no brand.",
+      "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+    },
+    {
+      "id": "tool-drill",
+      "label": "Drill",
+      "family": "outils",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. A compact futuristic handheld mining drill: charcoal rear pistol grip and upper grab handle, amber industrial housing, large spiral conical silver drill bit pointing right. Original powered space engineering tool. Match DRILL in reference.",
+      "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+    },
+    {
+      "id": "tool-welder",
+      "label": "Welder",
+      "family": "outils",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. A compact futuristic handheld welding tool: charcoal pistol grip, amber central housing, two parallel short front electrode prongs pointing right and a curved black insulated top cable. Match WELDER in reference.",
+      "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+    },
+    {
+      "id": "tool-grinder",
+      "label": "Grinder",
+      "family": "outils",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. A futuristic handheld angle grinder: black rear grip, amber industrial housing and a large clearly visible circular grey abrasive disk with protective curved guard facing the viewer at three-quarter angle. Match GRINDER in reference.",
+      "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+    },
+    {
+      "id": "block-armor",
+      "label": "Armure",
+      "family": "blocs",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One cubic light armor construction block: ivory flat joining faces, restrained beveled seams, charcoal reinforced corner plates, no exposed machinery. Match the central ARMURE cube in reference. Cubic grid-based building block.",
+      "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/02-construction.png"
+    },
+    {
+      "id": "block-gyroscope",
+      "label": "Gyroscope",
+      "family": "blocs",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One cubic gyroscope construction block: charcoal open squared frame, thick inset amber gimbal ring with nested dark metal pivot rings and central spherical rotor, flat cubic mounting faces, match GYROSCOPE in reference.",
+      "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/02-construction.png"
+    },
+    {
+      "id": "block-battery",
+      "label": "Batterie",
+      "family": "blocs",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One cubic battery construction block with charcoal main housing, amber structural corner frame and inset top, two vertical cyan power cell windows in front; flat cubic joining faces. Match BATTERIE in reference.",
+      "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/02-construction.png"
+    },
+    {
+      "id": "block-cockpit",
+      "label": "Cockpit",
+      "family": "blocs",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One compact block-buildable pilot cockpit with angular sloped smoked cyan glass canopy, ivory armor exterior, charcoal base, amber restraint stripe. Isolated cockpit block only, no ship, no astronaut. Match COCKPIT in reference.",
+      "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/02-construction.png"
+    },
+    {
+      "id": "block-thruster",
+      "label": "Propulseur",
+      "family": "blocs",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One original compact axial spacecraft thruster block, cylindrical charcoal engine core in squared ivory mounting casing, small amber shell accents, broad circular front nozzle with restrained cyan light at center; no exhaust plume. Match PROPULSEUR in reference.",
+      "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/02-construction.png"
+    },
+    {
+      "id": "block-refinery",
+      "label": "Raffinerie",
+      "family": "blocs",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. A COMPACT RECTANGULAR GRID BUILDING BLOCK refinery, tall cuboid ivory and charcoal housing, proportions roughly one cell wide and two cells high. Two vertical smelting canisters visible recessed inside front service opening, a few enclosed amber-lit process pipes, flat continuous top/bottom/side mounting faces so other blocks can be stacked flush. Use the compact ivory orange refinery thumbnail in the old Myrinox reference for industrial visual ideas, simplified and recomposed into an original VoidForge block. No sprawling platform, factory complex, base floor, chimney outside its box, scene or pedestrian railings.",
+      "reference": "D:/Projets/Trement/MyrinoxPrime/docs/Top-Down-Concept/16a86187-6a27-4899-bf86-c16197a650c0.png"
+    },
+    {
+      "id": "block-assembler",
+      "label": "Assembleur",
+      "family": "blocs",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One COMPACT ENCLOSED RECTANGULAR GRID BUILDING BLOCK assembler, squat cuboid ivory charcoal casing roughly two cells wide and one cell high, large dark inset front service bay with one compact robotic fabrication arm and empty metal work bed INSIDE the casing. Amber mechanism accents, small cyan blank status strip. Flat top and side mounting faces, no part protrudes beyond the cuboid block envelope. Inspired by the industrial fabrication machinery in Myrinox reference but recompose into one original VoidForge stackable block. No entire platform, gantry outside the box, factory, loose output items or surrounding scene.",
+      "reference": "D:/Projets/Trement/MyrinoxPrime/docs/Top-Down-Concept/Module-Assemblers.png"
+    },
+    {
+      "id": "block-cargo",
+      "label": "Soute",
+      "family": "blocs",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One COMPACT CUBIC CARGO STORAGE GRID BLOCK, closed heavy ivory cuboid shell, charcoal reinforced corner rails, broad flat recessed front hatch with central amber latch, tiny cyan empty status strip; flat top, bottom and side mounting faces. Match the solid compact storage crates in the Myrinox reference, refined into an original VoidForge cargo block. No whole cargo platform, no racks of many crates, no base or scene. Single one-cell cube.",
+      "reference": "D:/Projets/Trement/MyrinoxPrime/docs/Top-Down-Concept/38fb3e62-2df6-4d9f-b610-e7c5c1515db5.png"
+    },
+    {
+      "id": "map-asteroid",
+      "label": "Astéroïde",
+      "family": "carte",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One irregular grey charcoal asteroid rock, boulder shape with a few broad crater-like pits and fracture planes, no ore veins or glow, strong asymmetrical silhouette. Simplified but natural map diorama miniature. Match plain rocks in GPS reference.",
+      "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/04-gps-carte.png"
+    },
+    {
+      "id": "map-ship",
+      "label": "Vaisseau joueur",
+      "family": "carte",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One small original space mining utility ship seen in three-quarter isometric view, stout long charcoal body, ivory armored top, two parallel amber rear engine pods, small cyan cockpit front. No weaponry, trail, ground, engine plume or scene. Match player spacecraft in GPS reference.",
+      "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/04-gps-carte.png"
+    },
+    {
+      "id": "map-outpost",
+      "label": "Avant-poste",
+      "family": "carte",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One small original modular space outpost miniature, squat charcoal cuboid facility with ivory armor panels, two amber accent blocks, one short antenna tower and enclosed docking porch, sparse cyan windows. Compact single map object with no landscape, asteroid or surrounding base. Match AVANT-POSTE in GPS reference.",
+      "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/04-gps-carte.png"
+    },
+    {
+      "id": "ui-inventory",
+      "label": "Inventaire / soute",
+      "family": "interface",
+      "prompt": "Create ONE standalone monochrome HUD pictogram for VoidForge Odyssey. Square 1024x1024 TRANSPARENT background with real alpha. SINGLE centered flat warm-white #F0ECE3 glyph, solid perfectly even color, crisp clean silhouette, thick consistent geometrical strokes, readable at 24 pixels. Occupy central 64 percent of canvas with generous equal transparent margins. No gradients, lighting, 3D, bevel, shadows, glow, label, letters, numbers, border, tile, button background or other symbols. Original restrained industrial sci-fi interface icon. An isometric wireframe closed cube, thick white edges and a central Y junction, three visible faces. One cube only.",
+      "reference": null
+    },
+    {
+      "id": "ui-construction",
+      "label": "Construire",
+      "family": "interface",
+      "prompt": "Create ONE standalone monochrome HUD pictogram for VoidForge Odyssey. Square 1024x1024 TRANSPARENT background with real alpha. SINGLE centered flat warm-white #F0ECE3 glyph, solid perfectly even color, crisp clean silhouette, thick consistent geometrical strokes, readable at 24 pixels. Occupy central 64 percent of canvas with generous equal transparent margins. No gradients, lighting, 3D, bevel, shadows, glow, label, letters, numbers, border, tile, button background or other symbols. Original restrained industrial sci-fi interface icon. A crossed hammer and open-ended wrench, forming one clear X silhouette. Broad recognisable tool heads.",
+      "reference": null
+    },
+    {
+      "id": "ui-ship",
+      "label": "Vaisseau",
+      "family": "interface",
+      "prompt": "Create ONE standalone monochrome HUD pictogram for VoidForge Odyssey. Square 1024x1024 TRANSPARENT background with real alpha. SINGLE centered flat warm-white #F0ECE3 glyph, solid perfectly even color, crisp clean silhouette, thick consistent geometrical strokes, readable at 24 pixels. Occupy central 64 percent of canvas with generous equal transparent margins. No gradients, lighting, 3D, bevel, shadows, glow, label, letters, numbers, border, tile, button background or other symbols. Original restrained industrial sci-fi interface icon. A flat side silhouette of a compact futuristic utility spacecraft pointing right, broad horizontal body, small raised cabin, short engine tail. Not a rocket pointing up.",
+      "reference": null
+    },
+    {
+      "id": "ui-gps",
+      "label": "GPS / repère",
+      "family": "interface",
+      "prompt": "Create ONE standalone monochrome HUD pictogram for VoidForge Odyssey. Square 1024x1024 TRANSPARENT background with real alpha. SINGLE centered flat warm-white #F0ECE3 glyph, solid perfectly even color, crisp clean silhouette, thick consistent geometrical strokes, readable at 24 pixels. Occupy central 64 percent of canvas with generous equal transparent margins. No gradients, lighting, 3D, bevel, shadows, glow, label, letters, numbers, border, tile, button background or other symbols. Original restrained industrial sci-fi interface icon. One classic map location pin with a circular transparent hole in its upper bulb, tapering to a point below.",
+      "reference": null
+    },
+    {
+      "id": "ui-battery",
+      "label": "Énergie du cyberdeck",
+      "family": "interface",
+      "prompt": "Create ONE standalone monochrome HUD pictogram for VoidForge Odyssey. Square 1024x1024 TRANSPARENT background with real alpha. SINGLE centered flat warm-white #F0ECE3 glyph, solid perfectly even color, crisp clean silhouette, thick consistent geometrical strokes, readable at 24 pixels. Occupy central 64 percent of canvas with generous equal transparent margins. No gradients, lighting, 3D, bevel, shadows, glow, label, letters, numbers, border, tile, button background or other symbols. Original restrained industrial sci-fi interface icon. One horizontal empty battery outline with a small positive terminal on its right. Interior fully transparent, no charge bars; charge fill is added dynamically by the game.",
+      "reference": null
+    },
+    {
+      "id": "ui-chevron",
+      "label": "Menu déroulant / carrousel",
+      "family": "interface",
+      "prompt": "Create ONE standalone monochrome HUD pictogram for VoidForge Odyssey. Square 1024x1024 TRANSPARENT background with real alpha. SINGLE centered flat warm-white #F0ECE3 glyph, solid perfectly even color, crisp clean silhouette, thick consistent geometrical strokes, readable at 24 pixels. Occupy central 64 percent of canvas with generous equal transparent margins. No gradients, lighting, 3D, bevel, shadows, glow, label, letters, numbers, border, tile, button background or other symbols. Original restrained industrial sci-fi interface icon. One thick downward V chevron, two diagonal strokes, symmetrical. No shaft, no circle.",
+      "reference": null
+    },
+    {
+      "id": "ui-plus",
+      "label": "Augmenter / zoom avant",
+      "family": "interface",
+      "prompt": "Create ONE standalone monochrome HUD pictogram for VoidForge Odyssey. Square 1024x1024 TRANSPARENT background with real alpha. SINGLE centered flat warm-white #F0ECE3 glyph, solid perfectly even color, crisp clean silhouette, thick consistent geometrical strokes, readable at 24 pixels. Occupy central 64 percent of canvas with generous equal transparent margins. No gradients, lighting, 3D, bevel, shadows, glow, label, letters, numbers, border, tile, button background or other symbols. Original restrained industrial sci-fi interface icon. One perfectly symmetric thick plus sign, equal length horizontal and vertical bars.",
+      "reference": null
+    },
+    {
+      "id": "ui-minus",
+      "label": "Diminuer / zoom arrière",
+      "family": "interface",
+      "prompt": "Create ONE standalone monochrome HUD pictogram for VoidForge Odyssey. Square 1024x1024 TRANSPARENT background with real alpha. SINGLE centered flat warm-white #F0ECE3 glyph, solid perfectly even color, crisp clean silhouette, thick consistent geometrical strokes, readable at 24 pixels. Occupy central 64 percent of canvas with generous equal transparent margins. No gradients, lighting, 3D, bevel, shadows, glow, label, letters, numbers, border, tile, button background or other symbols. Original restrained industrial sci-fi interface icon. One single horizontal thick straight bar with slightly rounded ends.",
+      "reference": null
+    },
+    {
+      "id": "ui-recenter",
+      "label": "Recentrer / cibler",
+      "family": "interface",
+      "prompt": "Create ONE standalone monochrome HUD pictogram for VoidForge Odyssey. Square 1024x1024 TRANSPARENT background with real alpha. SINGLE centered flat warm-white #F0ECE3 glyph, solid perfectly even color, crisp clean silhouette, thick consistent geometrical strokes, readable at 24 pixels. Occupy central 64 percent of canvas with generous equal transparent margins. No gradients, lighting, 3D, bevel, shadows, glow, label, letters, numbers, border, tile, button background or other symbols. Original restrained industrial sci-fi interface icon. One circular target reticle with transparent center, small central dot and four short cardinal crosshair ticks projecting beyond the circle. Geometric and balanced.",
+      "reference": null
+    },
+    {
+      "id": "ui-power",
+      "label": "Alimentation",
+      "family": "interface",
+      "prompt": "Create ONE standalone monochrome HUD pictogram for VoidForge Odyssey. Square 1024x1024 TRANSPARENT background with real alpha. SINGLE centered flat warm-white #F0ECE3 glyph, solid perfectly even color, crisp clean silhouette, thick consistent geometrical strokes, readable at 24 pixels. Occupy central 64 percent of canvas with generous equal transparent margins. No gradients, lighting, 3D, bevel, shadows, glow, label, letters, numbers, border, tile, button background or other symbols. Original restrained industrial sci-fi interface icon. The standard power on-off glyph, a thick open circular arc with a vertical stroke from top toward center, simple and flat.",
+      "reference": null
+    },
+    {
+      "id": "ui-pause",
+      "label": "Pause",
+      "family": "interface",
+      "prompt": "Create ONE standalone monochrome HUD pictogram for VoidForge Odyssey. Square 1024x1024 TRANSPARENT background with real alpha. SINGLE centered flat warm-white #F0ECE3 glyph, solid perfectly even color, crisp clean silhouette, thick consistent geometrical strokes, readable at 24 pixels. Occupy central 64 percent of canvas with generous equal transparent margins. No gradients, lighting, 3D, bevel, shadows, glow, label, letters, numbers, border, tile, button background or other symbols. Original restrained industrial sci-fi interface icon. Exactly two equal thick vertical parallel bars separated by a transparent gap.",
+      "reference": null
+    },
+    {
+      "id": "ui-check",
+      "label": "Validation / équipé",
+      "family": "interface",
+      "prompt": "Create ONE standalone monochrome HUD pictogram for VoidForge Odyssey. Square 1024x1024 TRANSPARENT background with real alpha. SINGLE centered flat warm-white #F0ECE3 glyph, solid perfectly even color, crisp clean silhouette, thick consistent geometrical strokes, readable at 24 pixels. Occupy central 64 percent of canvas with generous equal transparent margins. No gradients, lighting, 3D, bevel, shadows, glow, label, letters, numbers, border, tile, button background or other symbols. Original restrained industrial sci-fi interface icon. One simple bold check mark, short lower-left stroke joining a longer upper-right stroke.",
+      "reference": null
+    },
+    {
+      "id": "ui-energy",
+      "label": "Puissance électrique",
+      "family": "interface",
+      "prompt": "Create ONE standalone monochrome HUD pictogram for VoidForge Odyssey. Square 1024x1024 TRANSPARENT background with real alpha. SINGLE centered flat warm-white #F0ECE3 glyph, solid perfectly even color, crisp clean silhouette, thick consistent geometrical strokes, readable at 24 pixels. Occupy central 64 percent of canvas with generous equal transparent margins. No gradients, lighting, 3D, bevel, shadows, glow, label, letters, numbers, border, tile, button background or other symbols. Original restrained industrial sci-fi interface icon. One bold angular lightning bolt silhouette, clean and distinctive, vertical orientation.",
+      "reference": null
+    },
+    {
+      "id": "ui-seat",
+      "label": "Assis au cockpit",
+      "family": "interface",
+      "prompt": "Create ONE standalone monochrome HUD pictogram for VoidForge Odyssey. Square 1024x1024 TRANSPARENT background with real alpha. SINGLE centered flat warm-white #F0ECE3 glyph, solid perfectly even color, crisp clean silhouette, thick consistent geometrical strokes, readable at 24 pixels. Occupy central 64 percent of canvas with generous equal transparent margins. No gradients, lighting, 3D, bevel, shadows, glow, label, letters, numbers, border, tile, button background or other symbols. Original restrained industrial sci-fi interface icon. One accessibility-style side silhouette of a seated astronaut at a cockpit: round head, upright torso, bent knees and a simple separate seat outline, no wheelchair circle, no other figures.",
+      "reference": null
+    },
+    {
+      "id": "ui-base",
+      "label": "Repère de base",
+      "family": "interface",
+      "prompt": "Create ONE standalone monochrome HUD pictogram for VoidForge Odyssey. Square 1024x1024 TRANSPARENT background with real alpha. SINGLE centered flat warm-white #F0ECE3 glyph, solid perfectly even color, crisp clean silhouette, thick consistent geometrical strokes, readable at 24 pixels. Occupy central 64 percent of canvas with generous equal transparent margins. No gradients, lighting, 3D, bevel, shadows, glow, label, letters, numbers, border, tile, button background or other symbols. Original restrained industrial sci-fi interface icon. A minimal front-view sci-fi outpost building silhouette with a central raised rectangular tower, tiny antenna mast and two lower side wings. Clear transparent door cutouts.",
+      "reference": null
+    },
+    {
+      "id": "ui-ore",
+      "label": "Repère de minerai",
+      "family": "interface",
+      "prompt": "Create ONE standalone monochrome HUD pictogram for VoidForge Odyssey. Square 1024x1024 TRANSPARENT background with real alpha. SINGLE centered flat warm-white #F0ECE3 glyph, solid perfectly even color, crisp clean silhouette, thick consistent geometrical strokes, readable at 24 pixels. Occupy central 64 percent of canvas with generous equal transparent margins. No gradients, lighting, 3D, bevel, shadows, glow, label, letters, numbers, border, tile, button background or other symbols. Original restrained industrial sci-fi interface icon. One compact pile of exactly three angular rock silhouettes, separated by small transparent gaps, broad irregular facets, flat solid white.",
+      "reference": null
+    },
+    {
+      "id": "ui-beacon",
+      "label": "Balise / cible de carte",
+      "family": "interface",
+      "prompt": "Create ONE standalone monochrome HUD pictogram for VoidForge Odyssey. Square 1024x1024 TRANSPARENT background with real alpha. SINGLE centered flat warm-white #F0ECE3 glyph, solid perfectly even color, crisp clean silhouette, thick consistent geometrical strokes, readable at 24 pixels. Occupy central 64 percent of canvas with generous equal transparent margins. No gradients, lighting, 3D, bevel, shadows, glow, label, letters, numbers, border, tile, button background or other symbols. Original restrained industrial sci-fi interface icon. One outlined vertical diamond waypoint marker, thick white strokes, transparent center. No other markings.",
+      "reference": null
+    },
+    {
+      "id": "ui-arrow",
+      "label": "Flux de recette / direction",
+      "family": "interface",
+      "prompt": "Create ONE standalone monochrome HUD pictogram for VoidForge Odyssey. Square 1024x1024 TRANSPARENT background with real alpha. SINGLE centered flat warm-white #F0ECE3 glyph, solid perfectly even color, crisp clean silhouette, thick consistent geometrical strokes, readable at 24 pixels. Occupy central 64 percent of canvas with generous equal transparent margins. No gradients, lighting, 3D, bevel, shadows, glow, label, letters, numbers, border, tile, button background or other symbols. Original restrained industrial sci-fi interface icon. One thick horizontal right-pointing arrow with short shaft and broad chevron head, one connected solid silhouette.",
+      "reference": null
+    }
+  ]
+}

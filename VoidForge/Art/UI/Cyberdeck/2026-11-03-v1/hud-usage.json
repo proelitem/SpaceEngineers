@@ -1,0 +1,90 @@
+{
+  "inventory": [
+    "tool-drill",
+    "tool-welder",
+    "tool-grinder",
+    "ore-iron",
+    "ore-nickel",
+    "ore-silicon",
+    "ui-inventory",
+    "ui-battery",
+    "ui-chevron",
+    "ui-check"
+  ],
+  "construction": [
+    "block-armor",
+    "block-gyroscope",
+    "block-battery",
+    "block-cockpit",
+    "block-thruster",
+    "component-plates",
+    "ui-chevron",
+    "ui-construction"
+  ],
+  "refinery": [
+    "block-refinery",
+    "ore-iron",
+    "ingot-iron",
+    "ore-nickel",
+    "ui-power",
+    "ui-energy",
+    "ui-arrow",
+    "ui-pause",
+    "ui-inventory",
+    "ui-seat",
+    "ui-check"
+  ],
+  "assembly": [
+    "block-assembler",
+    "component-plates",
+    "component-tubes",
+    "component-circuits",
+    "ingot-iron",
+    "ui-plus",
+    "ui-minus",
+    "ui-pause",
+    "ui-inventory",
+    "ui-seat"
+  ],
+  "map": [
+    "map-asteroid",
+    "map-ship",
+    "map-outpost",
+    "ore-iron",
+    "ui-base",
+    "ui-ore",
+    "ui-gps",
+    "ui-recenter",
+    "ui-plus",
+    "ui-minus",
+    "ui-beacon",
+    "ui-chevron"
+  ],
+  "new_blocks": [
+    "block-refinery",
+    "block-assembler",
+    "block-cargo"
+  ],
+  "shared_navigation": [
+    "ui-inventory",
+    "ui-construction",
+    "ui-ship",
+    "ui-gps"
+  ],
+  "rotations_clockwise_degrees": {
+    "chevron_right": -90,
+    "chevron_left": 90,
+    "arrow_left": 180
+  },
+  "native_ui_primitives": [
+    "text",
+    "quantity",
+    "button backgrounds",
+    "progress bars",
+    "carousel dots",
+    "map grid",
+    "range rings",
+    "guidance line"
+  ],
+  "scope": "visual_assets_only"
+}

@@ -1,0 +1,151 @@
+{
+  "status": "complete",
+  "new_pngs": 36,
+  "expected_pngs": 36,
+  "checks": [
+    {
+      "id": "ore-cobalt",
+      "pass_": true
+    },
+    {
+      "id": "ore-magnesium",
+      "pass_": true
+    },
+    {
+      "id": "ore-silver",
+      "pass_": true
+    },
+    {
+      "id": "ore-gold",
+      "pass_": true
+    },
+    {
+      "id": "ore-platinum",
+      "pass_": true
+    },
+    {
+      "id": "ore-uranium",
+      "pass_": true
+    },
+    {
+      "id": "ore-stone",
+      "pass_": true
+    },
+    {
+      "id": "ore-ice",
+      "pass_": true
+    },
+    {
+      "id": "ingot-nickel",
+      "pass_": true
+    },
+    {
+      "id": "ingot-cobalt",
+      "pass_": true
+    },
+    {
+      "id": "wafer-silicon",
+      "pass_": true
+    },
+    {
+      "id": "powder-magnesium",
+      "pass_": true
+    },
+    {
+      "id": "ingot-silver",
+      "pass_": true
+    },
+    {
+      "id": "ingot-gold",
+      "pass_": true
+    },
+    {
+      "id": "ingot-platinum",
+      "pass_": true
+    },
+    {
+      "id": "ingot-uranium",
+      "pass_": true
+    },
+    {
+      "id": "gravel",
+      "pass_": true
+    },
+    {
+      "id": "scrap-metal",
+      "pass_": true
+    },
+    {
+      "id": "component-construction",
+      "pass_": true
+    },
+    {
+      "id": "component-interior-plate",
+      "pass_": true
+    },
+    {
+      "id": "component-large-tube",
+      "pass_": true
+    },
+    {
+      "id": "component-metal-grid",
+      "pass_": true
+    },
+    {
+      "id": "component-motor",
+      "pass_": true
+    },
+    {
+      "id": "component-display",
+      "pass_": true
+    },
+    {
+      "id": "component-girder",
+      "pass_": true
+    },
+    {
+      "id": "component-glass",
+      "pass_": true
+    },
+    {
+      "id": "component-reactor",
+      "pass_": true
+    },
+    {
+      "id": "component-thruster",
+      "pass_": true
+    },
+    {
+      "id": "component-gravity",
+      "pass_": true
+    },
+    {
+      "id": "component-medical",
+      "pass_": true
+    },
+    {
+      "id": "component-radio",
+      "pass_": true
+    },
+    {
+      "id": "component-detector",
+      "pass_": true
+    },
+    {
+      "id": "component-explosives",
+      "pass_": true
+    },
+    {
+      "id": "component-solar-cell",
+      "pass_": true
+    },
+    {
+      "id": "component-power-cell",
+      "pass_": true
+    },
+    {
+      "id": "component-superconductor",
+      "pass_": true
+    }
+  ]
+}

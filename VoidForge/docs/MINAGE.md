@@ -1,5 +1,11 @@
 # Minage — exigences et suite du prototype J1
 
+Extension actuelle : [économie jouable et Cyberdeck](ECONOMIE_CYBERDECK.md).
+La foreuse collecte maintenant les gisements discrets finis et la pierre des opérations
+Digger confirmées, avec stocks et historique persistants. La génération de veines voxel
+continues selon un profil SE complet, les formes creusables des FBX et le minage monté
+sur vaisseau restent des objectifs distincts décrits ci-dessous.
+
 Décisions de Pierre du 3 novembre 2026. Ce document décrit la cible à réaliser ;
 le prototype J1 valide seulement le creusage solo d'un volume isolé avec Digger.
 Pierre confirme que le creusage fonctionne et que les performances ressenties sont élevées.

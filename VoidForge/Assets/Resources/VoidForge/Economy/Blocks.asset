@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69a56ebb535a694fb07bc7ec7322cbf, type: 3}
+  m_Name: Blocks
+  m_EditorClassIdentifier: Assembly-CSharp::VoidForge.Integration.BlockCatalogue
+  entries:
+  - id: ArmorCube
+    prefab: {fileID: 5969146007402967863, guid: de5358313e4b1a640a06fd5463849a55, type: 3}
+    size: {x: 1, y: 1, z: 1}
+  - id: ArmorSlope
+    prefab: {fileID: 6094192711841930635, guid: b26e71a8d21643e4e9a5f5baff5b9146, type: 3}
+    size: {x: 1, y: 1, z: 1}
+  - id: ArmorCorner
+    prefab: {fileID: 5851194682700958120, guid: 36af815b2190f844d95e225a37d91e10, type: 3}
+    size: {x: 1, y: 1, z: 1}
+  - id: Gyroscope
+    prefab: {fileID: 5941840776259757057, guid: a303cc004a35c374785ae0ba3f022415, type: 3}
+    size: {x: 1, y: 1, z: 1}
+  - id: Battery
+    prefab: {fileID: 7878409866353818913, guid: d2ce972a73db49c479f37eef35a4476f, type: 3}
+    size: {x: 1, y: 1, z: 1}
+  - id: Thruster
+    prefab: {fileID: 663533090291840517, guid: 0a5fa4c39f9213a4692ce81d4dd2ada2, type: 3}
+    size: {x: 1, y: 1, z: 2}
+  - id: Cockpit
+    prefab: {fileID: 5418048455331743737, guid: 448500b74a60b9c41810a0ceb891e5e6, type: 3}
+    size: {x: 2, y: 2, z: 3}
+  - id: Refinery
+    prefab: {fileID: 5726757287481078214, guid: 73092682bc85011418affc6a11b94287, type: 3}
+    size: {x: 1, y: 2, z: 1}
+  - id: Assembler
+    prefab: {fileID: 3208443235764639731, guid: 6cd642e3aae88624d8d5d9e02ee67030, type: 3}
+    size: {x: 2, y: 1, z: 1}
+  - id: Cargo
+    prefab: {fileID: 3418203602086128189, guid: adf017b16ceef2d4c9e6786b7d715fec, type: 3}
+    size: {x: 1, y: 1, z: 1}
+  - id: SolarPanel
+    prefab: {fileID: 1626877302668040752, guid: fc049e7739a2ceb4d9836f1685fdfbef, type: 3}
+    size: {x: 1, y: 1, z: 1}

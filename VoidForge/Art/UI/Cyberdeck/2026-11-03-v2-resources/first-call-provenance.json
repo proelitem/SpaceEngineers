@@ -1,0 +1,6 @@
+{
+  "id": "ore-cobalt",
+  "prompt": "Use case: stylized-concept. Asset: single original 2D inventory sprite for VoidForge Odyssey cyberdeck. Premium coherent semi-realistic industrial sci-fi 3D-rendered icon, crisp silhouette readable at 64px, view from slightly above three-quarter, soft neutral upper-left light, realistic metal/rock texture. Center one object or compact cohesive cluster filling about 72% of square canvas with generous transparent margins. GENUINELY TRANSPARENT alpha background, no floor, no cast shadow outside object, no panel, no frame, no text, no letters, no symbols, no logo, no watermark, no additional items. Original shapes; do not reproduce any other game's art. Subject: cobalt-bearing ore sample, one angular dark charcoal rock with clearly visible cobalt-blue crystalline mineral veins and small steel-gray flecks, raw unprocessed natural rock, no glow.",
+  "mode": "built-in",
+  "note": "Actual first call prompt; remaining prompts exactly as generation-prompts.json."
+}

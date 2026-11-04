@@ -1,0 +1,228 @@
+{
+  "before": {
+    "ore": 3,
+    "refined": 1,
+    "component": 3,
+    "total_icons_all_categories": 39
+  },
+  "missing_before": {
+    "minerais": [
+      {
+        "id": "ore-cobalt",
+        "label": "Minerai de cobalt"
+      },
+      {
+        "id": "ore-magnesium",
+        "label": "Minerai de magnésium"
+      },
+      {
+        "id": "ore-silver",
+        "label": "Minerai d’argent"
+      },
+      {
+        "id": "ore-gold",
+        "label": "Minerai d’or"
+      },
+      {
+        "id": "ore-platinum",
+        "label": "Minerai de platine"
+      },
+      {
+        "id": "ore-uranium",
+        "label": "Minerai d’uranium"
+      },
+      {
+        "id": "ore-stone",
+        "label": "Pierre brute"
+      },
+      {
+        "id": "ore-ice",
+        "label": "Glace"
+      }
+    ],
+    "produits": [
+      {
+        "id": "ingot-nickel",
+        "label": "Lingot de nickel"
+      },
+      {
+        "id": "ingot-cobalt",
+        "label": "Lingot de cobalt"
+      },
+      {
+        "id": "wafer-silicon",
+        "label": "Plaquettes de silicium"
+      },
+      {
+        "id": "powder-magnesium",
+        "label": "Poudre de magnésium"
+      },
+      {
+        "id": "ingot-silver",
+        "label": "Lingot d’argent"
+      },
+      {
+        "id": "ingot-gold",
+        "label": "Lingot d’or"
+      },
+      {
+        "id": "ingot-platinum",
+        "label": "Lingot de platine"
+      },
+      {
+        "id": "ingot-uranium",
+        "label": "Pastilles d’uranium"
+      },
+      {
+        "id": "gravel",
+        "label": "Gravier"
+      }
+    ],
+    "recyclage": [
+      {
+        "id": "scrap-metal",
+        "label": "Ferraille"
+      }
+    ],
+    "recettes": [
+      {
+        "id": "component-construction",
+        "label": "Éléments de construction"
+      },
+      {
+        "id": "component-interior-plate",
+        "label": "Plaque intérieure"
+      },
+      {
+        "id": "component-large-tube",
+        "label": "Grand tube"
+      },
+      {
+        "id": "component-metal-grid",
+        "label": "Grille métallique"
+      },
+      {
+        "id": "component-motor",
+        "label": "Moteur électrique"
+      },
+      {
+        "id": "component-display",
+        "label": "Écran"
+      },
+      {
+        "id": "component-girder",
+        "label": "Poutrelle"
+      },
+      {
+        "id": "component-glass",
+        "label": "Verre renforcé"
+      },
+      {
+        "id": "component-reactor",
+        "label": "Composant de réacteur"
+      },
+      {
+        "id": "component-thruster",
+        "label": "Composant de propulsion"
+      },
+      {
+        "id": "component-gravity",
+        "label": "Composant gravitationnel"
+      },
+      {
+        "id": "component-medical",
+        "label": "Composant médical"
+      },
+      {
+        "id": "component-radio",
+        "label": "Composant radio"
+      },
+      {
+        "id": "component-detector",
+        "label": "Composant de détection"
+      },
+      {
+        "id": "component-explosives",
+        "label": "Charge explosive"
+      },
+      {
+        "id": "component-solar-cell",
+        "label": "Cellule solaire"
+      },
+      {
+        "id": "component-power-cell",
+        "label": "Cellule énergétique"
+      },
+      {
+        "id": "component-superconductor",
+        "label": "Supraconducteur"
+      }
+    ]
+  },
+  "reused_semantics": [
+    {
+      "id": "component-plates",
+      "meaning": "Steel Plate"
+    },
+    {
+      "id": "component-tubes",
+      "meaning": "Small Steel Tube"
+    },
+    {
+      "id": "component-circuits",
+      "meaning": "Computer"
+    }
+  ],
+  "after": {
+    "raw_materials": 11,
+    "refined": 10,
+    "components": 21,
+    "salvage": 1,
+    "tools": 3,
+    "block_reference_variants": 8
+  },
+  "excluded": [
+    {
+      "family": "Prototech",
+      "items": [
+        "Prototech Scrap",
+        "Prototech Frame",
+        "Prototech Cooling Unit",
+        "Prototech Circuitry",
+        "Prototech Machinery",
+        "Prototech Propulsion Unit",
+        "Prototech Capacitor",
+        "Prototech Panel"
+      ],
+      "reason": "Branche industrielle avancée postérieure au socle classique de la feuille de route ; non couverte par ce lot. Frame non fabricable.",
+      "source": "https://spaceengineers.wiki.gg/wiki/Items"
+    },
+    {
+      "family": "Autres fabrications SE",
+      "items": [
+        "Canvas",
+        "Datapad",
+        "Oxygen Bottle",
+        "Hydrogen Bottle",
+        "Medkit",
+        "Powerkit",
+        "outils améliorés",
+        "armes et munitions",
+        "alimentation et agriculture"
+      ],
+      "reason": "Équipement, survie, combat et extensions hors des interfaces et de la chaîne industrielle classique demandées ici.",
+      "source": "https://spaceengineers.wiki.gg/wiki/Items"
+    },
+    {
+      "family": "Objets non fabricables",
+      "items": [
+        "Zone Chip",
+        "Space Credits",
+        "plushies",
+        "consommables commerciaux"
+      ],
+      "reason": "Pas de recette minérale d’assemblage à attribuer.",
+      "source": "https://spaceengineers.wiki.gg/wiki/Items"
+    }
+  ]
+}

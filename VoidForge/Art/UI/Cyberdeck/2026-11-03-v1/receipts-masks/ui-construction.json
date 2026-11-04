@@ -1,0 +1,11 @@
+{
+  "id": "ui-construction",
+  "label": "Construire",
+  "family": "interface-masks",
+  "file": "interface-masks/ui-construction.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-f98ac4ac-61d2-46f4-b282-1a9c0ca75e51.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": false,
+  "coverage": "rgb-luminance"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "ui-inventory",
+  "label": "Inventaire / soute",
+  "family": "interface",
+  "file": "interface/ui-inventory.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-62c46c88-64ab-44a9-ad95-ff77c2301f6b.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": true
+}

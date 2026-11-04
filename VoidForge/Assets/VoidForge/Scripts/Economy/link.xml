@@ -1,0 +1,5 @@
+<linker>
+  <assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+    <type fullname="VoidForge.World.MiningPrototyp*" preserve="fields" />
+  </assembly>
+</linker>

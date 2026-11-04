@@ -126,6 +126,14 @@ vaisseau et l'avatar réseau complet restent à réaliser. Contrats, limites et 
 
 ## Budget de performance Quest 3 (cibles)
 
+La boucle industrielle solo et son état persistant sont maintenant dans `Economy/` :
+`EconomyModel` tient les stocks et transactions ; `EconomyRuntime` raccorde les outils,
+blocs, cockpit et 75 graphiques au Cyberdeck ; `EconomyMiningAdapter` crédite les opérations
+Digger confirmées. Les gisements finis et le registre de production sont sauvegardés.
+Les quantités sont décimales ; le HUD ne possède plus le stock de jeu.
+Voir [le profil actif et la recette](ECONOMIE_CYBERDECK.md). Cette extension ne réplique pas
+encore l'économie ni les excavations ; leurs commandes sont suspendues en session réseau.
+
 - 72 Hz minimum, viser 90 Hz ; une image = 11 à 14 ms.
 - Moins de 150 draw calls, moins de 500 000 triangles par œil.
 - Rendu single-pass instancié, MSAA 4x, pas de HDR, pas de post-traitement au J1.

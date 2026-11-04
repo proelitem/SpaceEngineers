@@ -1,0 +1,11 @@
+{
+  "id": "ui-pause",
+  "label": "Pause",
+  "family": "interface-masks",
+  "file": "interface-masks/ui-pause.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-03623941-2ffd-49e7-a91e-a9f09d5e3d77.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": false,
+  "coverage": "rgb-luminance"
+}

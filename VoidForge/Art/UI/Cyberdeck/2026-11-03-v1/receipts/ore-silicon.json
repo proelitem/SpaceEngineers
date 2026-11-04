@@ -1,0 +1,10 @@
+{
+  "id": "ore-silicon",
+  "label": "Minerai de silicium",
+  "family": "minerais",
+  "file": "minerais/ore-silicon.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-9b84d273-1304-4ba6-9323-a02e206d4d69.png",
+  "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png",
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": true
+}

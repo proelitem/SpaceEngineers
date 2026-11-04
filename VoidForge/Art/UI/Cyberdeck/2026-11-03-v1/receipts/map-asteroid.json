@@ -1,0 +1,10 @@
+{
+  "id": "map-asteroid",
+  "label": "Astéroïde",
+  "family": "carte",
+  "file": "carte/map-asteroid.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-8d1de25b-40d9-4a7a-86c7-4c85bbd73425.png",
+  "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/04-gps-carte.png",
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": true
+}

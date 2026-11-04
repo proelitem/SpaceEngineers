@@ -1,0 +1,619 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9506f7ca9b755504ab95f0edabd73512, type: 3}
+  m_Name: Graphics
+  m_EditorClassIdentifier: Assembly-CSharp::VoidForge.UI.Cyberdeck.CyberdeckAssets
+  icons:
+  - id: ore-iron
+    texture: {fileID: 2800000, guid: 26b39e556a5b5bb488b9dfee5108bacb, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.048644338
+      y: 0.14992025
+      width: 0.90590113
+      height: 0.6897927
+  - id: ore-nickel
+    texture: {fileID: 2800000, guid: 923f599fb5e254d5b073101a879f2a9e, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.073365234
+      y: 0.18500797
+      width: 0.8564593
+      height: 0.6076555
+  - id: ore-silicon
+    texture: {fileID: 2800000, guid: 2d99e4b020425129bfeedc3ae701bc2d, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.036682617
+      y: 0.1570973
+      width: 0.9218501
+      height: 0.6698565
+  - id: ingot-iron
+    texture: {fileID: 2800000, guid: 1e14e841ed8d5381a75c146c259e2a97, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.027113238
+      y: 0.14673047
+      width: 0.94098884
+      height: 0.6905901
+  - id: component-plates
+    texture: {fileID: 2800000, guid: 16540e1c00c354fb863f2128f009b8db, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.06140351
+      y: 0.07017544
+      width: 0.8795853
+      height: 0.77272725
+  - id: component-tubes
+    texture: {fileID: 2800000, guid: 4c93ebb66aee5f4c9724e245360e3d56, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.0661882
+      y: 0.12360447
+      width: 0.8716108
+      height: 0.72408295
+  - id: component-circuits
+    texture: {fileID: 2800000, guid: 6a0b25f531705d928a62405714c01815, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.054226477
+      y: 0.12679426
+      width: 0.8684211
+      height: 0.73285484
+  - id: tool-drill
+    texture: {fileID: 2800000, guid: f8d69caac33b5bff9f5964b4f439f4b8, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.0063795852
+      y: 0.23923445
+      width: 0.9920255
+      height: 0.51913875
+  - id: tool-welder
+    texture: {fileID: 2800000, guid: 84249a19cc615766bdd4ef5aba8d57d5, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.01754386
+      y: 0.15151516
+      width: 0.953748
+      height: 0.6307815
+  - id: tool-grinder
+    texture: {fileID: 2800000, guid: cef81685a16658a0b916c7dfc7359f88, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.019138755
+      y: 0.19457735
+      width: 0.946571
+      height: 0.58373207
+  - id: block-armor
+    texture: {fileID: 2800000, guid: 225f92cbb65d57c4867908894143fe17, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.09090909
+      y: 0.055023924
+      width: 0.81897926
+      height: 0.8819777
+  - id: block-gyroscope
+    texture: {fileID: 2800000, guid: 2578441980a756a98e577c6c330daa47, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.09569378
+      y: 0.05263158
+      width: 0.8062201
+      height: 0.8939394
+  - id: block-battery
+    texture: {fileID: 2800000, guid: 6061664326d85b2796c2ec91672db048, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.10127591
+      y: 0.067783095
+      width: 0.7982456
+      height: 0.8724083
+  - id: block-cockpit
+    texture: {fileID: 2800000, guid: f373074d5e065579b29f8e7934685d3f, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.051834133
+      y: 0.09170654
+      width: 0.8995215
+      height: 0.7950558
+  - id: block-thruster
+    texture: {fileID: 2800000, guid: db50a86c5d6554c7a29d1285d9ff7fcb, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.01754386
+      y: 0.1092504
+      width: 0.94098884
+      height: 0.78229666
+  - id: block-refinery
+    texture: {fileID: 2800000, guid: c7aeefde8c4c50dcb9fe255dcc2fef38, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.21929824
+      y: 0.045454547
+      width: 0.5582137
+      height: 0.9019139
+  - id: block-assembler
+    texture: {fileID: 2800000, guid: 68522049191759749855e3c52668be6e, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.04704944
+      y: 0.17464115
+      width: 0.9066986
+      height: 0.6562998
+  - id: block-cargo
+    texture: {fileID: 2800000, guid: 8d90111f45d253d8b1f894cbbcfa88bb, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.10526316
+      y: 0.07177033
+      width: 0.791866
+      height: 0.8636364
+  - id: map-asteroid
+    texture: {fileID: 2800000, guid: 298a2eb6d64359b7b0c4047f6c3fab09, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.07496013
+      y: 0.09330144
+      width: 0.8516746
+      height: 0.80063796
+  - id: map-ship
+    texture: {fileID: 2800000, guid: 85ac0ed48c9d56af9b7b6db319c93f90, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.068580545
+      y: 0.17304625
+      width: 0.8755981
+      height: 0.64274323
+  - id: map-outpost
+    texture: {fileID: 2800000, guid: 2ca21d08f5535bf09352793445e38fcb, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.05661882
+      y: 0.051834133
+      width: 0.8971292
+      height: 0.9114832
+  - id: ui-inventory
+    texture: {fileID: 2800000, guid: 6eb88287cbd25e81803a20875f2e0d7d, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.18580543
+      y: 0.14194578
+      width: 0.62918663
+      height: 0.7169059
+  - id: ui-construction
+    texture: {fileID: 2800000, guid: 6bf62154d54858f5bd3561b33868fe26, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.1523126
+      y: 0.16985646
+      width: 0.68102074
+      height: 0.6555024
+  - id: ui-ship
+    texture: {fileID: 2800000, guid: cd733e7aeb675615b1bd5a499e3bf189, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.12360447
+      y: 0.34529504
+      width: 0.75279105
+      height: 0.28389156
+  - id: ui-gps
+    texture: {fileID: 2800000, guid: f8fce4524ce1513eaee2d77b5e9e1d5b, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.2631579
+      y: 0.15311004
+      width: 0.47288677
+      height: 0.69776714
+  - id: ui-battery
+    texture: {fileID: 2800000, guid: 0ec815dfd87d5a91997cf79bfc7edbb9, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.13955343
+      y: 0.34449762
+      width: 0.7216906
+      height: 0.3110048
+  - id: ui-chevron
+    texture: {fileID: 2800000, guid: 6b3d33c328e35859ba6b65159a6e8249, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.114832535
+      y: 0.22727273
+      width: 0.7703349
+      height: 0.48883572
+  - id: ui-plus
+    texture: {fileID: 2800000, guid: 929897f1cfb151b4aa807c54673e704e, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.17224881
+      y: 0.17224881
+      width: 0.6555024
+      height: 0.6570973
+  - id: ui-minus
+    texture: {fileID: 2800000, guid: c7f328f6aae8578483f5171d1b485215, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.1491228
+      y: 0.430622
+      width: 0.7017544
+      height: 0.13875598
+  - id: ui-recenter
+    texture: {fileID: 2800000, guid: d4ff1352f93354f6878aa0677ec48de3, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.1275917
+      y: 0.121212125
+      width: 0.74401915
+      height: 0.7599681
+  - id: ui-power
+    texture: {fileID: 2800000, guid: b2a585ef1b3c57a6ae9d9f57b8f9d8b9, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.18421052
+      y: 0.14832535
+      width: 0.62918663
+      height: 0.70414674
+  - id: ui-pause
+    texture: {fileID: 2800000, guid: 60fc816c0df75ab48048a338cb9ec094, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.25039873
+      y: 0.19776714
+      width: 0.50079745
+      height: 0.6052632
+  - id: ui-check
+    texture: {fileID: 2800000, guid: 315b79eb12de5e27bbfd0b411b9431db, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.17783093
+      y: 0.23684211
+      width: 0.64752793
+      height: 0.5167464
+  - id: ui-energy
+    texture: {fileID: 2800000, guid: a2d2433ae6955279826f721e08b55ff4, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.30622008
+      y: 0.15311004
+      width: 0.39154705
+      height: 0.6937799
+  - id: ui-seat
+    texture: {fileID: 2800000, guid: 818d32aea50f5f67b1153fb840c11923, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.16985646
+      y: 0.16826156
+      width: 0.6586922
+      height: 0.64752793
+  - id: ui-base
+    texture: {fileID: 2800000, guid: 174569e6932b565987877ffe38d7e9d0, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.1491228
+      y: 0.16826156
+      width: 0.7017544
+      height: 0.66427433
+  - id: ui-ore
+    texture: {fileID: 2800000, guid: 3aa974edb27e530daa7f65584e42ad0c, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.14433812
+      y: 0.22807017
+      width: 0.7049442
+      height: 0.523126
+  - id: ui-beacon
+    texture: {fileID: 2800000, guid: 6106bae97c625fb5977d306d6a906dcf, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.2599681
+      y: 0.13875598
+      width: 0.4800638
+      height: 0.72248805
+  - id: ui-arrow
+    texture: {fileID: 2800000, guid: 60e018ab9a2f576c9f9a00132d8af067, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.17145136
+      y: 0.22089314
+      width: 0.6562998
+      height: 0.5582137
+  - id: ore-cobalt
+    texture: {fileID: 2800000, guid: cc6f4c0f582458c2942761c3a4b1519b, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.11323764
+      y: 0.1108453
+      width: 0.76076555
+      height: 0.76555026
+  - id: ore-magnesium
+    texture: {fileID: 2800000, guid: 087cbbed89d85a16b5f1c24c816ff6a2, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.086124405
+      y: 0.059808612
+      width: 0.8365231
+      height: 0.877193
+  - id: ore-silver
+    texture: {fileID: 2800000, guid: aa4045777d5350d3994fd37f375af579, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.102073364
+      y: 0.1275917
+      width: 0.7830941
+      height: 0.73923445
+  - id: ore-gold
+    texture: {fileID: 2800000, guid: b35e478188485dfcb9a9669e8fbbc6b5, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.07017544
+      y: 0.09250399
+      width: 0.8516746
+      height: 0.80542266
+  - id: ore-platinum
+    texture: {fileID: 2800000, guid: d55085f4282e5f229abfd65f1ed2fbbe, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.102073364
+      y: 0.07017544
+      width: 0.7982456
+      height: 0.8452951
+  - id: ore-uranium
+    texture: {fileID: 2800000, guid: 23b0132a8ce754e597b05c9889253202, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.10127591
+      y: 0.098086126
+      width: 0.76076555
+      height: 0.7950558
+  - id: ore-stone
+    texture: {fileID: 2800000, guid: 94c4333651475bc994b57e0849a50c00, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.17623605
+      y: 0.18421052
+      width: 0.64433813
+      height: 0.61403507
+  - id: ore-ice
+    texture: {fileID: 2800000, guid: 6da35b17394b571a923796a5b486e3fc, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.057416268
+      y: 0.1307815
+      width: 0.8628389
+      height: 0.7966507
+  - id: ingot-nickel
+    texture: {fileID: 2800000, guid: e6b72a29891e541fa92902833562d1f9, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.044657096
+      y: 0.102073364
+      width: 0.9114832
+      height: 0.73923445
+  - id: ingot-cobalt
+    texture: {fileID: 2800000, guid: 08ed38965c3a562c88666494012313c1, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.04784689
+      y: 0.07575758
+      width: 0.91786283
+      height: 0.7830941
+  - id: wafer-silicon
+    texture: {fileID: 2800000, guid: 35492bffc8a35d6f874a1501eeda6d8e, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.08692185
+      y: 0.121212125
+      width: 0.8301435
+      height: 0.7304625
+  - id: powder-magnesium
+    texture: {fileID: 2800000, guid: a42324d7c47f5e31af068a6bf41e039a, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.13397129
+      y: 0.19617225
+      width: 0.72727275
+      height: 0.59250396
+  - id: ingot-silver
+    texture: {fileID: 2800000, guid: cfdfae6befe0515896ccd4d766afcac7, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.034290273
+      y: 0.059808612
+      width: 0.93141943
+      height: 0.8046252
+  - id: ingot-gold
+    texture: {fileID: 2800000, guid: 60faccb0c24357e9a96e74845635136b, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.059808612
+      y: 0.11323764
+      width: 0.8907496
+      height: 0.73285484
+  - id: ingot-platinum
+    texture: {fileID: 2800000, guid: 2109ca85a1dd5ea7bab718e9a765d92b, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.032695375
+      y: 0.12200957
+      width: 0.9449761
+      height: 0.6419458
+  - id: ingot-uranium
+    texture: {fileID: 2800000, guid: 1a368237abb054b0b0e0b65ff085b099, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.084529504
+      y: 0.09170654
+      width: 0.8181818
+      height: 0.81259966
+  - id: gravel
+    texture: {fileID: 2800000, guid: 782c1b069db55b29980bfb6cbd232c63, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.051834133
+      y: 0.18181819
+      width: 0.88596493
+      height: 0.59250396
+  - id: scrap-metal
+    texture: {fileID: 2800000, guid: 2137b76947ea5f3b91ccd9f161d86c19, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.059011165
+      y: 0.14992025
+      width: 0.83891547
+      height: 0.65948963
+  - id: component-construction
+    texture: {fileID: 2800000, guid: 8f778205ddca507fa2822fd5fbf20661, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.12652439
+      y: 0.06922435
+      width: 0.80106705
+      height: 0.8165138
+  - id: component-interior-plate
+    texture: {fileID: 2800000, guid: 29c2c09ed65f5faba356a03c0e6c6d92, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.19218501
+      y: 0.14673047
+      width: 0.6180223
+      height: 0.7017544
+  - id: component-large-tube
+    texture: {fileID: 2800000, guid: 9b3310893756556a908ed7655b1a7451, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.04704944
+      y: 0.051036682
+      width: 0.90590113
+      height: 0.891547
+  - id: component-metal-grid
+    texture: {fileID: 2800000, guid: 9f70f83bf41b5639b594ba6514f1a66b, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.059011165
+      y: 0.14194578
+      width: 0.8724083
+      height: 0.74242425
+  - id: component-motor
+    texture: {fileID: 2800000, guid: c26ad56a654c58b19adb785e26990701, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.044657096
+      y: 0.05661882
+      width: 0.8939394
+      height: 0.85725677
+  - id: component-display
+    texture: {fileID: 2800000, guid: 3674c81d0dbe57dbb1b558f399aabace, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.0703125
+      y: 0.16699219
+      width: 0.8333333
+      height: 0.7392578
+  - id: component-girder
+    texture: {fileID: 2800000, guid: 97d7d20fccd85408be7166457c4901da, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.123697914
+      y: 0.057617188
+      width: 0.7558594
+      height: 0.85546875
+  - id: component-glass
+    texture: {fileID: 2800000, guid: b35226eb71db504c99a4653a4ef5ef50, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.1108453
+      y: 0.12519936
+      width: 0.7767145
+      height: 0.71291864
+  - id: component-reactor
+    texture: {fileID: 2800000, guid: cd24e95510425c319483593b625aa5aa, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.042264752
+      y: 0.09888357
+      width: 0.9154705
+      height: 0.79585326
+  - id: component-thruster
+    texture: {fileID: 2800000, guid: 1f45902a1bc15431b0ed64501f839f6d, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.07575758
+      y: 0.114035085
+      width: 0.8516746
+      height: 0.80382776
+  - id: component-gravity
+    texture: {fileID: 2800000, guid: c972b42f340b50af9cd4fe48b5bb4c22, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.07097289
+      y: 0.07496013
+      width: 0.8580542
+      height: 0.8500797
+  - id: component-medical
+    texture: {fileID: 2800000, guid: 082b0169a77559a1aca4928842ee184d, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.13567074
+      y: 0.13010843
+      width: 0.73018295
+      height: 0.74061716
+  - id: component-radio
+    texture: {fileID: 2800000, guid: d386cda510415399b7ce65378741b041, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.20898438
+      y: 0.10058594
+      width: 0.5813802
+      height: 0.7705078
+  - id: component-detector
+    texture: {fileID: 2800000, guid: 727353033edf59a1a8c5f96f8e512dd7, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.114035085
+      y: 0.1539075
+      width: 0.7998405
+      height: 0.7200957
+  - id: component-explosives
+    texture: {fileID: 2800000, guid: 1403ef445ddf56879b667e9378420a34, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.09968102
+      y: 0.08931419
+      width: 0.77272725
+      height: 0.7998405
+  - id: component-solar-cell
+    texture: {fileID: 2800000, guid: d89dcfe454a75b1ca8c35f56401965b6, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.059011165
+      y: 0.08851675
+      width: 0.8476874
+      height: 0.7416268
+  - id: component-power-cell
+    texture: {fileID: 2800000, guid: 8a31b5d2ac6c5966800b19683807e743, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.115629986
+      y: 0.1291866
+      width: 0.76555026
+      height: 0.77272725
+  - id: component-superconductor
+    texture: {fileID: 2800000, guid: 87ce7790a83250269eab60e980fb5310, type: 3}
+    uv:
+      serializedVersion: 2
+      x: 0.034290273
+      y: 0.1307815
+      width: 0.9298246
+      height: 0.7432217
+  font: {fileID: 12800000, guid: 28bd53ed5e975c9499a6878b1b1a666a, type: 3}
+  textStyle: 0
+  glyphMaterial: {fileID: 2100000, guid: f3f4ee7c17dcc614d8146829e17ebbbd, type: 2}
+  pointerMaterial: {fileID: 2100000, guid: 779706bc9b277154fa6eceef077fb449, type: 2}

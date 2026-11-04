@@ -1,0 +1,11 @@
+{
+  "id": "ui-energy",
+  "label": "Puissance électrique",
+  "family": "interface-masks",
+  "file": "interface-masks/ui-energy.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-2b074f7e-7ece-46fe-9d68-6992e2ffcc17.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": false,
+  "coverage": "rgb-luminance"
+}

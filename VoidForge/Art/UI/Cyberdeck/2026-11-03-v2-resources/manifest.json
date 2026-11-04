@@ -1,0 +1,1231 @@
+{
+  "count": 54,
+  "new_requested": 36,
+  "new_available": 36,
+  "assets": [
+    {
+      "id": "ore-iron",
+      "label": "Minerai de fer",
+      "family": "minerais",
+      "file": "../2026-11-03-v1/minerais/ore-iron.png",
+      "origin": "existing-v1",
+      "sha256": "dc9b24ee6848435a02e85a4b8bf7fb6ef71c2b2ae7c13415dd6014e7fe2844af"
+    },
+    {
+      "id": "ore-nickel",
+      "label": "Minerai de nickel",
+      "family": "minerais",
+      "file": "../2026-11-03-v1/minerais/ore-nickel.png",
+      "origin": "existing-v1",
+      "sha256": "53eb32e05865970b212da8ddc637bb32bc622cd4f6bd9d4e6786f32c235b23d3"
+    },
+    {
+      "id": "ore-silicon",
+      "label": "Minerai de silicium",
+      "family": "minerais",
+      "file": "../2026-11-03-v1/minerais/ore-silicon.png",
+      "origin": "existing-v1",
+      "sha256": "4979077f39c9b9918b5a546f426999c63c40414d750abac76755bea52426e3c6"
+    },
+    {
+      "id": "ingot-iron",
+      "label": "Lingots de fer",
+      "family": "produits",
+      "file": "../2026-11-03-v1/produits/ingot-iron.png",
+      "origin": "existing-v1",
+      "sha256": "a6f3177c82423322ffcca9689c60679a82558bbf40e5fbc08b715e433d16391a"
+    },
+    {
+      "id": "component-plates",
+      "label": "Plaque d’acier",
+      "family": "recettes",
+      "file": "../2026-11-03-v1/recettes/component-plates.png",
+      "origin": "existing-v1",
+      "sha256": "ff3c36c55d5e5a8ccb1e6e351d1c73a25064805bdf58b5083c1c630bd3d90687"
+    },
+    {
+      "id": "component-tubes",
+      "label": "Petit tube",
+      "family": "recettes",
+      "file": "../2026-11-03-v1/recettes/component-tubes.png",
+      "origin": "existing-v1",
+      "sha256": "e6a5c4e2842006e794f34a1a99a9d392f7035373588a7c4ef26423469370a7ac"
+    },
+    {
+      "id": "component-circuits",
+      "label": "Ordinateur",
+      "family": "recettes",
+      "file": "../2026-11-03-v1/recettes/component-circuits.png",
+      "origin": "existing-v1",
+      "sha256": "21c2efa9d792ac0a41114789d2e557841991ee46e0bb0b06744171548c760b07"
+    },
+    {
+      "id": "tool-drill",
+      "label": "Foreuse à main",
+      "family": "outils",
+      "file": "../2026-11-03-v1/outils/tool-drill.png",
+      "origin": "existing-v1",
+      "sha256": "c7721564a17e3be8d9e7904563dd38d010b3bdf0f9fe81ea80bb9b0012997021"
+    },
+    {
+      "id": "tool-welder",
+      "label": "Soudeuse à main",
+      "family": "outils",
+      "file": "../2026-11-03-v1/outils/tool-welder.png",
+      "origin": "existing-v1",
+      "sha256": "1bed1b95c629d021a4eb87bcd005169738e47140a4ff49f37a9125b0a2411b26"
+    },
+    {
+      "id": "tool-grinder",
+      "label": "Meuleuse à main",
+      "family": "outils",
+      "file": "../2026-11-03-v1/outils/tool-grinder.png",
+      "origin": "existing-v1",
+      "sha256": "b7e30cb94ef97772cb3490cafe4fbccaf765808da2e5125e0998465572563275"
+    },
+    {
+      "id": "block-armor",
+      "label": "Armure légère — référence SE",
+      "family": "blocs",
+      "file": "../2026-11-03-v1/blocs/block-armor.png",
+      "origin": "existing-v1",
+      "sha256": "064408d90ba64ce91ae0b44066e586faa56bb9c18a9efd213fcaab73611927b3"
+    },
+    {
+      "id": "block-gyroscope",
+      "label": "Gyroscope — référence SE",
+      "family": "blocs",
+      "file": "../2026-11-03-v1/blocs/block-gyroscope.png",
+      "origin": "existing-v1",
+      "sha256": "a1452e7559f8dc448559adcab2310e631cf69e427f2c155f5c76a19ff9ad5037"
+    },
+    {
+      "id": "block-battery",
+      "label": "Batterie standard — référence SE",
+      "family": "blocs",
+      "file": "../2026-11-03-v1/blocs/block-battery.png",
+      "origin": "existing-v1",
+      "sha256": "8a2f6f73226a214e28d5d46cafa199e26373c3d78e0810b8d9d836b4a74a499f"
+    },
+    {
+      "id": "block-cockpit",
+      "label": "Cockpit standard — référence SE",
+      "family": "blocs",
+      "file": "../2026-11-03-v1/blocs/block-cockpit.png",
+      "origin": "existing-v1",
+      "sha256": "ae2446683a9bc2cd91c420ed8b1162ee2a6a86ae7b72accd3098b3e1e55414c8"
+    },
+    {
+      "id": "block-thruster",
+      "label": "Petit propulseur ionique — référence SE",
+      "family": "blocs",
+      "file": "../2026-11-03-v1/blocs/block-thruster.png",
+      "origin": "existing-v1",
+      "sha256": "2a2f15c8d0ac261d8bfbae5dc518cd3dd2b2324d7a3f29fcf586f83f683d2bf1"
+    },
+    {
+      "id": "block-refinery",
+      "label": "Raffinerie complète — référence SE",
+      "family": "blocs",
+      "file": "../2026-11-03-v1/blocs/block-refinery.png",
+      "origin": "existing-v1",
+      "sha256": "9d129f8e7042e08aa50448a9a8ce74b6cc90ae2db373c5ad448733f4e6154aa6"
+    },
+    {
+      "id": "block-assembler",
+      "label": "Assembleur complet — référence SE",
+      "family": "blocs",
+      "file": "../2026-11-03-v1/blocs/block-assembler.png",
+      "origin": "existing-v1",
+      "sha256": "dcdc0552d96be6680c92596f3d4a07ea4b6e9953443ee7870e13598877c80679"
+    },
+    {
+      "id": "block-cargo",
+      "label": "Petite soute — référence SE",
+      "family": "blocs",
+      "file": "../2026-11-03-v1/blocs/block-cargo.png",
+      "origin": "existing-v1",
+      "sha256": "2bda3df58087b414daba3b032b388867df3532dab585460e32cf0b4585017bb7"
+    },
+    {
+      "id": "ore-cobalt",
+      "label": "Minerai de cobalt",
+      "family": "minerais",
+      "file": "minerais/ore-cobalt.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-77fceb89-a24c-41e3-86db-e080937e1a83.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "a88b68d5a2136a9239a08a0fc11d5bf48592a587c73034f213476fb05c1d8b76",
+      "bytes": 1446056,
+      "transparent_fraction": 0.6534712524387669,
+      "alpha_bbox": [
+        0,
+        6,
+        1208,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        172,
+        185,
+        1065,
+        1085
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "ore-magnesium",
+      "label": "Minerai de magnésium",
+      "family": "minerais",
+      "file": "minerais/ore-magnesium.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-ae18f512-a1d8-4fd4-86f6-3a9edfe008ac.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "5c2c3912b06e336f05063f57e09c45e50a126e159141240619f1df04b9e5ca81",
+      "bytes": 1942370,
+      "transparent_fraction": 0.586046183313874,
+      "alpha_bbox": [
+        0,
+        21,
+        1220,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        144,
+        114,
+        1121,
+        1143
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "ore-silver",
+      "label": "Minerai d’argent",
+      "family": "minerais",
+      "file": "minerais/ore-silver.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-8ab82655-c449-4f81-a479-2e5d19fdba72.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "064dc0e7895d2712188d65038faca3df580d266dbfbf82a983f1a045a5e155ab",
+      "bytes": 1375601,
+      "transparent_fraction": 0.66330581056091,
+      "alpha_bbox": [
+        0,
+        15,
+        1234,
+        1238
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        160,
+        199,
+        1078,
+        1062
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "ore-gold",
+      "label": "Minerai d’or",
+      "family": "minerais",
+      "file": "minerais/ore-gold.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-382e8052-250b-4c04-96ea-ff5712ae089e.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "5b4486b2d83e17709f79e693c7dc55151d9e2f18758baa27eb6c87a281d5f210",
+      "bytes": 1702893,
+      "transparent_fraction": 0.5984823047905395,
+      "alpha_bbox": [
+        0,
+        0,
+        1234,
+        1254
+      ],
+      "alpha_corner_max": 1,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        122,
+        163,
+        1121,
+        1103
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "ore-platinum",
+      "label": "Minerai de platine",
+      "family": "minerais",
+      "file": "minerais/ore-platinum.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-a7fd22cf-02c3-4285-a63a-1e4460be45a7.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "03a775e4eeb79ace9cda208b0bcc292da3968994d4d177e956b1442a0a917495",
+      "bytes": 1665735,
+      "transparent_fraction": 0.5919596366587049,
+      "alpha_bbox": [
+        0,
+        18,
+        1240,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        163,
+        141,
+        1095,
+        1131
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "ore-uranium",
+      "label": "Minerai d’uranium",
+      "family": "minerais",
+      "file": "minerais/ore-uranium.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-e5b2e9ce-7cea-4a9d-bb7b-a049d6ace458.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "64e1574dd248f1b46cc414f508431fa423c9a9f3261f1c6bd140cb778dfd6a14",
+      "bytes": 1383100,
+      "transparent_fraction": 0.6395273561604461,
+      "alpha_bbox": [
+        0,
+        15,
+        1210,
+        1204
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        160,
+        167,
+        1048,
+        1098
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "ore-stone",
+      "label": "Pierre brute",
+      "family": "minerais",
+      "file": "minerais/ore-stone.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-2815e2c9-37cd-4bb8-821a-26ccb281ea67.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "57ea9b17b5992e732141a1c6bc62287a79144c618318ead1953e38be944dcf28",
+      "bytes": 1002769,
+      "transparent_fraction": 0.7581964189871518,
+      "alpha_bbox": [
+        0,
+        17,
+        1240,
+        1236
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        247,
+        279,
+        1003,
+        997
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "ore-ice",
+      "label": "Glace",
+      "family": "minerais",
+      "file": "minerais/ore-ice.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-9802dd05-f3f7-40f4-97c3-ce13e7be80e5.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "0dbddbfed752b8e084d51f285370a2a2ea79a1cac1b003facdcd9b4e062b58ec",
+      "bytes": 1575454,
+      "transparent_fraction": 0.5988937473450191,
+      "alpha_bbox": [
+        0,
+        0,
+        1236,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        106,
+        125,
+        1119,
+        1056
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "ingot-nickel",
+      "label": "Lingot de nickel",
+      "family": "produits",
+      "file": "produits/ingot-nickel.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-65de2594-6eba-4323-8bde-7fe04b956dc4.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "729c582baace172b9f97e71e7eb01e15478f50dc37393cb6bb1f858fd12800c1",
+      "bytes": 1456354,
+      "transparent_fraction": 0.6180789257470194,
+      "alpha_bbox": [
+        0,
+        4,
+        1253,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        93,
+        236,
+        1162,
+        1090
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "ingot-cobalt",
+      "label": "Lingot de cobalt",
+      "family": "produits",
+      "file": "produits/ingot-cobalt.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-db0ec78d-64cf-476b-9cb1-0215af7d6305.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "4bdafc76b78e0e4e68dc76c9a10725ba480132bc5d2042fdc08590be355cdb90",
+      "bytes": 1375461,
+      "transparent_fraction": 0.5970222242571777,
+      "alpha_bbox": [
+        0,
+        20,
+        1230,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        98,
+        215,
+        1173,
+        1122
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "wafer-silicon",
+      "label": "Plaquettes de silicium",
+      "family": "produits",
+      "file": "produits/wafer-silicon.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-f2d19e5d-ca6d-41bf-bbbf-44ccae47fdda.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "315f3e5eb17970adb8c49a70be2866026dfe4709a369c48ad81f22929110ee64",
+      "bytes": 1258370,
+      "transparent_fraction": 0.5998291909271511,
+      "alpha_bbox": [
+        0,
+        41,
+        1218,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        142,
+        219,
+        1116,
+        1068
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "powder-magnesium",
+      "label": "Poudre de magnésium",
+      "family": "produits",
+      "file": "produits/powder-magnesium.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-8da4491e-0f47-4c36-86b5-3803b5e0bc7f.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "f8a06127a78461822c41f815e100473287c0d0ca771b09271d222db9ceae81ec",
+      "bytes": 1214865,
+      "transparent_fraction": 0.7034669281584416,
+      "alpha_bbox": [
+        0,
+        17,
+        1234,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        198,
+        294,
+        1050,
+        978
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "ingot-silver",
+      "label": "Lingot d’argent",
+      "family": "produits",
+      "file": "produits/ingot-silver.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-5e81d4ba-bf2e-41f4-8d9f-bf17c4757296.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "94e32191d68dd8c1f8a010313d52bbff15d2abc4772a83f36afcf8599b4e5ba2",
+      "bytes": 1473004,
+      "transparent_fraction": 0.593323056808325,
+      "alpha_bbox": [
+        0,
+        20,
+        1226,
+        1250
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        81,
+        208,
+        1173,
+        1141
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "ingot-gold",
+      "label": "Lingot d’or",
+      "family": "produits",
+      "file": "produits/ingot-gold.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-1621e6d6-fe79-4f72-b996-d0f6a65404e5.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "41fe889d642bcbe0adfa77c39e72c27cbfff0fd30067bacb3073b596445ac209",
+      "bytes": 1455834,
+      "transparent_fraction": 0.6178328233226243,
+      "alpha_bbox": [
+        0,
+        73,
+        1253,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        112,
+        229,
+        1155,
+        1075
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "ingot-platinum",
+      "label": "Lingot de platine",
+      "family": "produits",
+      "file": "produits/ingot-platinum.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-8b66180e-5170-43e1-b016-2fa93a19812a.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "3113f1fc861a51235f67151de76468e5916ac9e4446d4fbefe1c8e88acdd8c1f",
+      "bytes": 1066041,
+      "transparent_fraction": 0.6803587372083972,
+      "alpha_bbox": [
+        0,
+        44,
+        1228,
+        1245
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        80,
+        334,
+        1187,
+        1063
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "ingot-uranium",
+      "label": "Pastilles d’uranium",
+      "family": "produits",
+      "file": "produits/ingot-uranium.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-fcd1a6fb-2cbd-48eb-82ca-65b1575f51a5.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "d11e8cdd22795fcbfc93e383ac22cdb055a12d2ca54ac017ee3a0fb10931522f",
+      "bytes": 1444831,
+      "transparent_fraction": 0.5766669464730406,
+      "alpha_bbox": [
+        0,
+        22,
+        1208,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        140,
+        154,
+        1099,
+        1106
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "gravel",
+      "label": "Gravier",
+      "family": "produits",
+      "file": "produits/gravel.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-60a3512b-6c08-4138-be86-2d558ebe14d3.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "370e4675602967a6b65989f497308b060e8985fa8a74265a25b24cb873159104",
+      "bytes": 1448741,
+      "transparent_fraction": 0.5457057352675585,
+      "alpha_bbox": [
+        0,
+        40,
+        1254,
+        1224
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        101,
+        318,
+        1141,
+        990
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "scrap-metal",
+      "label": "Ferraille",
+      "family": "recyclage",
+      "file": "recyclage/scrap-metal.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-316f411b-23b7-46b1-a2db-c13c34acbd29.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "b8eacfc1475b89a69b1b83047369949103146fe7ec70d238bf1aec04e5683178",
+      "bytes": 1237564,
+      "transparent_fraction": 0.6776115473546851,
+      "alpha_bbox": [
+        0,
+        9,
+        1244,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        108,
+        273,
+        1092,
+        1033
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "component-construction",
+      "label": "Éléments de construction",
+      "family": "recettes",
+      "file": "recettes/component-construction.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-6c892ea8-4987-423f-8586-1701b28916dd.png",
+      "width": 1312,
+      "height": 1199,
+      "mode": "RGBA",
+      "sha256": "b0871bf863c4083bfc83d17abade00245c164cb697a8e6fa203ef2e1104ef8fe",
+      "bytes": 1339747,
+      "transparent_fraction": 0.6535603856872597,
+      "alpha_bbox": [
+        0,
+        41,
+        1288,
+        1199
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        200,
+        171,
+        1184,
+        1082
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "component-interior-plate",
+      "label": "Plaque intérieure",
+      "family": "recettes",
+      "file": "recettes/component-interior-plate.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-e4dfec87-62f2-48ef-a804-7576e2ccae36.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "3fb32feb6ab85ce9b1f495508e9819605df5737b2874592d2bb24d5251c6353e",
+      "bytes": 808797,
+      "transparent_fraction": 0.7022822025340283,
+      "alpha_bbox": [
+        0,
+        31,
+        1234,
+        1252
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        270,
+        219,
+        987,
+        1041
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "component-large-tube",
+      "label": "Grand tube",
+      "family": "recettes",
+      "file": "recettes/component-large-tube.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-2633453e-adaf-4a48-8f24-93c03d9c6afb.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "3e508530e746d1aaddb67eab4e928c0057828979444208424a2ad6a12ecb6433",
+      "bytes": 1729949,
+      "transparent_fraction": 0.48578837989565765,
+      "alpha_bbox": [
+        0,
+        38,
+        1168,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        96,
+        109,
+        1158,
+        1153
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "component-metal-grid",
+      "label": "Grille métallique",
+      "family": "recettes",
+      "file": "recettes/component-metal-grid.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-1adcac8a-2729-4a13-bf2b-a912227a2ec3.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "f0825604d80aad9c23de8053ec27155b902cc8fad76bf60c44e272c95ba2d180",
+      "bytes": 1330555,
+      "transparent_fraction": 0.6967668373485548,
+      "alpha_bbox": [
+        33,
+        19,
+        1216,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        110,
+        181,
+        1133,
+        1040
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "component-motor",
+      "label": "Moteur électrique",
+      "family": "recettes",
+      "file": "recettes/component-motor.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-fd507741-29e8-4f57-a78c-5c1b08873a59.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "13475dfc0340c6e98b384502f56e592a30dcc450880f88ddf5a8aa0c5633bf80",
+      "bytes": 1637669,
+      "transparent_fraction": 0.5551250352937586,
+      "alpha_bbox": [
+        0,
+        17,
+        1206,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        93,
+        144,
+        1140,
+        1146
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "component-display",
+      "label": "Écran",
+      "family": "recettes",
+      "file": "recettes/component-display.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-d29880fa-3602-4ffd-9714-ebd21e567939.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "sha256": "0341c450a0ee8146f72a7ddc4063a4004dc50e69537083d3917d23284dd7aa17",
+      "bytes": 1563444,
+      "transparent_fraction": 0.6088263193766276,
+      "alpha_bbox": [
+        51,
+        0,
+        1480,
+        981
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        150,
+        138,
+        1346,
+        811
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "component-girder",
+      "label": "Poutrelle",
+      "family": "recettes",
+      "file": "recettes/component-girder.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-6d4c400c-b40d-42bb-bd1b-974640880e90.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "sha256": "f9ad0ac0b973b056bf4f7f1ee7c36a4a27486e5688bf811c19342a8d6f524518",
+      "bytes": 1730931,
+      "transparent_fraction": 0.6939932505289713,
+      "alpha_bbox": [
+        0,
+        33,
+        1500,
+        1000
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        227,
+        127,
+        1313,
+        928
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "component-glass",
+      "label": "Verre renforcé",
+      "family": "recettes",
+      "file": "recettes/component-glass.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-d8042a34-d95f-476c-8b67-eb84629fc4af.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "b7cda0b7b84787386ebd07356457954604c53abc274543c0bf45fb8a0333dc92",
+      "bytes": 1102935,
+      "transparent_fraction": 0.6391928603588135,
+      "alpha_bbox": [
+        0,
+        15,
+        1236,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        170,
+        235,
+        1081,
+        1065
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "component-reactor",
+      "label": "Composant de réacteur",
+      "family": "recettes",
+      "file": "recettes/component-reactor.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-39085152-7a27-4c1a-a522-9f677d53bbb0.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "21d4c993343603c24830f18ce46f49a801c48ead04a31479f624047d039252cd",
+      "bytes": 1447664,
+      "transparent_fraction": 0.5852938857219895,
+      "alpha_bbox": [
+        88,
+        49,
+        1222,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        91,
+        170,
+        1163,
+        1092
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "component-thruster",
+      "label": "Composant de propulsion",
+      "family": "recettes",
+      "file": "recettes/component-thruster.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-38d24cb9-ac15-4078-937f-a975be706f7f.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "85e13f994dcaa7a596ffa6ba0756980c2092d5b9b0fdf6693d9aa7864b721a01",
+      "bytes": 1661755,
+      "transparent_fraction": 0.5587720570092769,
+      "alpha_bbox": [
+        0,
+        18,
+        1244,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        130,
+        138,
+        1128,
+        1076
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "component-gravity",
+      "label": "Composant gravitationnel",
+      "family": "recettes",
+      "file": "recettes/component-gravity.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-a330cea2-ab21-4dd8-b4c4-618596ec29ad.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "6bbb58244f2a68af5849ea472dadc2c506c573c25d41dd6ea0aff05bfd259b5a",
+      "bytes": 1431545,
+      "transparent_fraction": 0.626256902950431,
+      "alpha_bbox": [
+        0,
+        80,
+        1134,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        124,
+        129,
+        1130,
+        1125
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "component-medical",
+      "label": "Composant médical",
+      "family": "recettes",
+      "file": "recettes/component-medical.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-0946024e-fdd7-419b-b38d-7e643b29c8e2.png",
+      "width": 1312,
+      "height": 1199,
+      "mode": "RGBA",
+      "sha256": "5a153c8b88f6ab3eaaaae245a090dca61c8783615fa09ce21e5e318bc417f171",
+      "bytes": 1276030,
+      "transparent_fraction": 0.6445386399235135,
+      "alpha_bbox": [
+        0,
+        3,
+        1296,
+        1173
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        209,
+        186,
+        1105,
+        1012
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "component-radio",
+      "label": "Composant radio",
+      "family": "recettes",
+      "file": "recettes/component-radio.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-353f74b6-384f-4173-bb68-12ddece8ed1e.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "sha256": "50a90109c31c5610e06f662dcdf0338a5c4bac0b084bb0ffc69a309bd70da479",
+      "bytes": 1712182,
+      "transparent_fraction": 0.7276579538981119,
+      "alpha_bbox": [
+        0,
+        9,
+        1492,
+        1024
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        349,
+        161,
+        1185,
+        892
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "component-detector",
+      "label": "Composant de détection",
+      "family": "recettes",
+      "file": "recettes/component-detector.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-0c6b636e-5f20-4624-a99c-3f0d07f7b607.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "5bb9e5fe2494dcb3ba223ae7a71b8dcd7678f6bb44fc362263802b5ff88966e9",
+      "bytes": 1188894,
+      "transparent_fraction": 0.6726265424326366,
+      "alpha_bbox": [
+        0,
+        17,
+        1192,
+        1222
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        176,
+        191,
+        1113,
+        1028
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "component-explosives",
+      "label": "Charge explosive",
+      "family": "recettes",
+      "file": "recettes/component-explosives.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-7100c9e8-8900-4b03-8242-311aba7c4b7b.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "98daf32158c9803d5312dc7d9a144fbe081dd8fe8bd14057f624441526d666b2",
+      "bytes": 1478147,
+      "transparent_fraction": 0.5861498388569655,
+      "alpha_bbox": [
+        0,
+        7,
+        1210,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        158,
+        172,
+        1062,
+        1109
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "component-solar-cell",
+      "label": "Cellule solaire",
+      "family": "recettes",
+      "file": "recettes/component-solar-cell.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-8568c71e-84d3-498c-9baa-eda5b4f3d9d8.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "e8d5631665bdc332ee62cbccbef362d060d6dc9572f261335ca3951e5bf8e644",
+      "bytes": 1346481,
+      "transparent_fraction": 0.6540791953786161,
+      "alpha_bbox": [
+        0,
+        35,
+        1242,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        109,
+        248,
+        1102,
+        1108
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "component-power-cell",
+      "label": "Cellule énergétique",
+      "family": "recettes",
+      "file": "recettes/component-power-cell.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-66072980-1bbd-4fef-8a41-99fe937f1a15.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "4fb28bf8733ebce79bd4cbce2566dfb6d57b30f6279fa8add13df2bf40ffc1cc",
+      "bytes": 1503763,
+      "transparent_fraction": 0.5912671158830817,
+      "alpha_bbox": [
+        0,
+        23,
+        1244,
+        1254
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        177,
+        155,
+        1074,
+        1060
+      ],
+      "qa_pass": true
+    },
+    {
+      "id": "component-superconductor",
+      "label": "Supraconducteur",
+      "family": "recettes",
+      "file": "recettes/component-superconductor.png",
+      "origin": "new-imagegen",
+      "available": true,
+      "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-29c267ef-2688-4347-bffc-a8254fc7e4a9.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "c6c652f701c79480218ba81fa60e6379d502f3aeeafe0c7f63e3f13895b1e42e",
+      "bytes": 1920552,
+      "transparent_fraction": 0.5265625278216565,
+      "alpha_bbox": [
+        78,
+        101,
+        1174,
+        1222
+      ],
+      "alpha_corner_max": 0,
+      "visible_alpha_threshold": 16,
+      "visible_bbox": [
+        81,
+        196,
+        1171,
+        1052
+      ],
+      "qa_pass": true
+    }
+  ]
+}

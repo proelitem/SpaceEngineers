@@ -1,0 +1,47 @@
+{
+  "target_fidelity_percent": 98,
+  "certified": false,
+  "explanation": "Native live UI, independent ImageGen assets, free typography and actual game states differ from the raster references. RGB error is a diagnostic, not a certified perceptual fidelity score.",
+  "views": [
+    {
+      "view": "inventory",
+      "resolution": [
+        1914,
+        822
+      ],
+      "mean_absolute_rgb_error_0_255": 25.677
+    },
+    {
+      "view": "construction",
+      "resolution": [
+        1914,
+        822
+      ],
+      "mean_absolute_rgb_error_0_255": 26.756
+    },
+    {
+      "view": "refinery",
+      "resolution": [
+        1914,
+        822
+      ],
+      "mean_absolute_rgb_error_0_255": 28.18
+    },
+    {
+      "view": "assembly",
+      "resolution": [
+        1914,
+        822
+      ],
+      "mean_absolute_rgb_error_0_255": 34.375
+    },
+    {
+      "view": "map",
+      "resolution": [
+        1914,
+        822
+      ],
+      "mean_absolute_rgb_error_0_255": 25.855
+    }
+  ]
+}

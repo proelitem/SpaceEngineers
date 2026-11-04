@@ -1,0 +1,11 @@
+{
+  "id": "ui-power",
+  "label": "Alimentation",
+  "family": "interface-masks",
+  "file": "interface-masks/ui-power.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-c2b621f5-4f91-4af1-bfbf-0518d6204589.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": false,
+  "coverage": "rgb-luminance"
+}

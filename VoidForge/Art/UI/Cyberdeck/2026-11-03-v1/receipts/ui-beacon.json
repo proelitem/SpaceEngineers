@@ -1,0 +1,10 @@
+{
+  "id": "ui-beacon",
+  "label": "Balise / cible de carte",
+  "family": "interface",
+  "file": "interface/ui-beacon.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-6e3686c1-c509-4e1a-879a-1ceef9273c93.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": true
+}

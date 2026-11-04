@@ -1,0 +1,10 @@
+{
+  "id": "ui-plus",
+  "label": "Augmenter / zoom avant",
+  "family": "interface",
+  "file": "interface/ui-plus.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-4891029d-3d99-4d8b-8a30-3f74ef99a093.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": true
+}

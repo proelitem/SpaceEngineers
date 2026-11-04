@@ -1,0 +1,10 @@
+{
+  "id": "ui-gps",
+  "label": "GPS / repère",
+  "family": "interface",
+  "file": "interface/ui-gps.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-ded00041-4046-4c09-83fa-69a661c77623.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": true
+}

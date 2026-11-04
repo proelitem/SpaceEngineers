@@ -1,0 +1,10 @@
+{
+  "id": "ui-ship",
+  "label": "Vaisseau",
+  "family": "interface",
+  "file": "interface/ui-ship.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-498a6783-3691-42d8-a543-ca8b64b12b0d.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": true
+}

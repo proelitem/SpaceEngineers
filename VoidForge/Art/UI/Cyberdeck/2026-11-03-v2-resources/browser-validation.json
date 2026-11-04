@@ -1,0 +1,48 @@
+{
+  "success": true,
+  "checks": [
+    {
+      "name": "initial 54 item cards",
+      "pass": true
+    },
+    {
+      "name": "all displayed images load",
+      "pass": true,
+      "actual": []
+    },
+    {
+      "name": "component filter 21",
+      "pass": true
+    },
+    {
+      "name": "motor x3, quantity10 refined66.667/16.667 ore95.238/41.667",
+      "pass": true,
+      "actual": [
+        "66,667 kg",
+        "16,667 kg",
+        "95,238 kg",
+        "41,667 kg"
+      ]
+    },
+    {
+      "name": "reactor stone coproduct credited, no extra iron ore",
+      "pass": true,
+      "actual": "Pierre brute1 428,571 kgMinerai d’argent50 kg"
+    },
+    {
+      "name": "assembler BOM expands to 4190Fe 150Ni 30Co 82Si",
+      "pass": true,
+      "actual": "Lingots de fer4 190 kgLingot de nickel150 kgLingot de cobalt30 kgPlaquettes de silicium82 kg"
+    },
+    {
+      "name": "mobile no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "no script exceptions",
+      "pass": true,
+      "actual": []
+    }
+  ],
+  "errors": []
+}

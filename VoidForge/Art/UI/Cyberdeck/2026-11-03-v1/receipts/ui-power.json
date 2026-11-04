@@ -1,0 +1,10 @@
+{
+  "id": "ui-power",
+  "label": "Alimentation",
+  "family": "interface",
+  "file": "interface/ui-power.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-21dd66fb-aef1-4c18-ae6e-5cc97957b183.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": true
+}

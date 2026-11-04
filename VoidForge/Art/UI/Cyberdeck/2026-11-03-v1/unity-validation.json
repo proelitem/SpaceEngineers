@@ -1,0 +1,14 @@
+{
+  "success": false,
+  "completed": false,
+  "unityVersion": "6000.4.0f1",
+  "renderPipelinePackage": "17.4.0",
+  "shader": "VoidForge/UI/Glyph Luminance Mask",
+  "shader_import_observed": true,
+  "shader_errors": null,
+  "final_ShaderUtil_check_executed": false,
+  "reason": "Auxiliary cold URP project import did not finish its startup within the bounded check. Isolated editor stopped; no gameplay scene changed.",
+  "log": "Logs/hud-mask-import-2.log",
+  "editor_exit_after_stop": -1,
+  "xr_tested": false
+}

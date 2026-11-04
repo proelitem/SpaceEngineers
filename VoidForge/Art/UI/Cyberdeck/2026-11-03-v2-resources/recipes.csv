@@ -1,0 +1,472 @@
+﻿recipe_id,produit,famille,quantite_sortie,efficacite_assembleur,ingredient,nature,quantite_kg,source
+craft-component-plates,Plaque d’acier,component,1,1,ingot-iron,raffine,21,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-plates,Plaque d’acier,component,1,1,ore-iron,minerai_equivalent,30,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-plates,Plaque d’acier,component,1,3,ingot-iron,raffine,7,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-plates,Plaque d’acier,component,1,3,ore-iron,minerai_equivalent,10,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-plates,Plaque d’acier,component,1,10,ingot-iron,raffine,2.1,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-plates,Plaque d’acier,component,1,10,ore-iron,minerai_equivalent,3,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-construction,Éléments de construction,component,1,1,ingot-iron,raffine,8,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-construction,Éléments de construction,component,1,1,ore-iron,minerai_equivalent,11.4285714286,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-construction,Éléments de construction,component,1,3,ingot-iron,raffine,2.66666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-construction,Éléments de construction,component,1,3,ore-iron,minerai_equivalent,3.80952380952,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-construction,Éléments de construction,component,1,10,ingot-iron,raffine,0.8,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-construction,Éléments de construction,component,1,10,ore-iron,minerai_equivalent,1.14285714286,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-interior-plate,Plaque intérieure,component,1,1,ingot-iron,raffine,3,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-interior-plate,Plaque intérieure,component,1,1,ore-iron,minerai_equivalent,4.28571428571,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-interior-plate,Plaque intérieure,component,1,3,ingot-iron,raffine,1,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-interior-plate,Plaque intérieure,component,1,3,ore-iron,minerai_equivalent,1.42857142857,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-interior-plate,Plaque intérieure,component,1,10,ingot-iron,raffine,0.3,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-interior-plate,Plaque intérieure,component,1,10,ore-iron,minerai_equivalent,0.428571428571,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-tubes,Petit tube,component,1,1,ingot-iron,raffine,5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-tubes,Petit tube,component,1,1,ore-iron,minerai_equivalent,7.14285714286,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-tubes,Petit tube,component,1,3,ingot-iron,raffine,1.66666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-tubes,Petit tube,component,1,3,ore-iron,minerai_equivalent,2.38095238095,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-tubes,Petit tube,component,1,10,ingot-iron,raffine,0.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-tubes,Petit tube,component,1,10,ore-iron,minerai_equivalent,0.714285714286,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-large-tube,Grand tube,component,1,1,ingot-iron,raffine,30,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-large-tube,Grand tube,component,1,1,ore-iron,minerai_equivalent,42.8571428571,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-large-tube,Grand tube,component,1,3,ingot-iron,raffine,10,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-large-tube,Grand tube,component,1,3,ore-iron,minerai_equivalent,14.2857142857,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-large-tube,Grand tube,component,1,10,ingot-iron,raffine,3,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-large-tube,Grand tube,component,1,10,ore-iron,minerai_equivalent,4.28571428571,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-metal-grid,Grille métallique,component,1,1,ingot-iron,raffine,12,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-metal-grid,Grille métallique,component,1,1,ingot-nickel,raffine,5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-metal-grid,Grille métallique,component,1,1,ingot-cobalt,raffine,3,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-metal-grid,Grille métallique,component,1,1,ore-iron,minerai_equivalent,17.1428571429,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-metal-grid,Grille métallique,component,1,1,ore-nickel,minerai_equivalent,12.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-metal-grid,Grille métallique,component,1,1,ore-cobalt,minerai_equivalent,10,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-metal-grid,Grille métallique,component,1,3,ingot-iron,raffine,4,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-metal-grid,Grille métallique,component,1,3,ingot-nickel,raffine,1.66666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-metal-grid,Grille métallique,component,1,3,ingot-cobalt,raffine,1,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-metal-grid,Grille métallique,component,1,3,ore-iron,minerai_equivalent,5.71428571429,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-metal-grid,Grille métallique,component,1,3,ore-nickel,minerai_equivalent,4.16666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-metal-grid,Grille métallique,component,1,3,ore-cobalt,minerai_equivalent,3.33333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-metal-grid,Grille métallique,component,1,10,ingot-iron,raffine,1.2,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-metal-grid,Grille métallique,component,1,10,ingot-nickel,raffine,0.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-metal-grid,Grille métallique,component,1,10,ingot-cobalt,raffine,0.3,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-metal-grid,Grille métallique,component,1,10,ore-iron,minerai_equivalent,1.71428571429,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-metal-grid,Grille métallique,component,1,10,ore-nickel,minerai_equivalent,1.25,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-metal-grid,Grille métallique,component,1,10,ore-cobalt,minerai_equivalent,1,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-motor,Moteur électrique,component,1,1,ingot-iron,raffine,20,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-motor,Moteur électrique,component,1,1,ingot-nickel,raffine,5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-motor,Moteur électrique,component,1,1,ore-iron,minerai_equivalent,28.5714285714,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-motor,Moteur électrique,component,1,1,ore-nickel,minerai_equivalent,12.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-motor,Moteur électrique,component,1,3,ingot-iron,raffine,6.66666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-motor,Moteur électrique,component,1,3,ingot-nickel,raffine,1.66666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-motor,Moteur électrique,component,1,3,ore-iron,minerai_equivalent,9.52380952381,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-motor,Moteur électrique,component,1,3,ore-nickel,minerai_equivalent,4.16666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-motor,Moteur électrique,component,1,10,ingot-iron,raffine,2,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-motor,Moteur électrique,component,1,10,ingot-nickel,raffine,0.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-motor,Moteur électrique,component,1,10,ore-iron,minerai_equivalent,2.85714285714,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-motor,Moteur électrique,component,1,10,ore-nickel,minerai_equivalent,1.25,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-circuits,Ordinateur,component,1,1,ingot-iron,raffine,0.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-circuits,Ordinateur,component,1,1,wafer-silicon,raffine,0.2,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-circuits,Ordinateur,component,1,1,ore-iron,minerai_equivalent,0.714285714286,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-circuits,Ordinateur,component,1,1,ore-silicon,minerai_equivalent,0.285714285714,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-circuits,Ordinateur,component,1,3,ingot-iron,raffine,0.166666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-circuits,Ordinateur,component,1,3,wafer-silicon,raffine,0.0666666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-circuits,Ordinateur,component,1,3,ore-iron,minerai_equivalent,0.238095238095,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-circuits,Ordinateur,component,1,3,ore-silicon,minerai_equivalent,0.0952380952381,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-circuits,Ordinateur,component,1,10,ingot-iron,raffine,0.05,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-circuits,Ordinateur,component,1,10,wafer-silicon,raffine,0.02,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-circuits,Ordinateur,component,1,10,ore-iron,minerai_equivalent,0.0714285714286,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-circuits,Ordinateur,component,1,10,ore-silicon,minerai_equivalent,0.0285714285714,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-display,Écran,component,1,1,ingot-iron,raffine,1,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-display,Écran,component,1,1,wafer-silicon,raffine,5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-display,Écran,component,1,1,ore-iron,minerai_equivalent,1.42857142857,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-display,Écran,component,1,1,ore-silicon,minerai_equivalent,7.14285714286,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-display,Écran,component,1,3,ingot-iron,raffine,0.333333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-display,Écran,component,1,3,wafer-silicon,raffine,1.66666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-display,Écran,component,1,3,ore-iron,minerai_equivalent,0.47619047619,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-display,Écran,component,1,3,ore-silicon,minerai_equivalent,2.38095238095,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-display,Écran,component,1,10,ingot-iron,raffine,0.1,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-display,Écran,component,1,10,wafer-silicon,raffine,0.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-display,Écran,component,1,10,ore-iron,minerai_equivalent,0.142857142857,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-display,Écran,component,1,10,ore-silicon,minerai_equivalent,0.714285714286,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-girder,Poutrelle,component,1,1,ingot-iron,raffine,6,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-girder,Poutrelle,component,1,1,ore-iron,minerai_equivalent,8.57142857143,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-girder,Poutrelle,component,1,3,ingot-iron,raffine,2,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-girder,Poutrelle,component,1,3,ore-iron,minerai_equivalent,2.85714285714,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-girder,Poutrelle,component,1,10,ingot-iron,raffine,0.6,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-girder,Poutrelle,component,1,10,ore-iron,minerai_equivalent,0.857142857143,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-glass,Verre renforcé,component,1,1,wafer-silicon,raffine,15,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-glass,Verre renforcé,component,1,1,ore-silicon,minerai_equivalent,21.4285714286,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-glass,Verre renforcé,component,1,3,wafer-silicon,raffine,5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-glass,Verre renforcé,component,1,3,ore-silicon,minerai_equivalent,7.14285714286,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-glass,Verre renforcé,component,1,10,wafer-silicon,raffine,1.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-glass,Verre renforcé,component,1,10,ore-silicon,minerai_equivalent,2.14285714286,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-reactor,Composant de réacteur,component,1,1,ingot-iron,raffine,15,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-reactor,Composant de réacteur,component,1,1,ingot-silver,raffine,5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-reactor,Composant de réacteur,component,1,1,gravel,raffine,20,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-reactor,Composant de réacteur,component,1,1,ore-stone,minerai_equivalent,1428.57142857,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-reactor,Composant de réacteur,component,1,1,ore-silver,minerai_equivalent,50,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-reactor,Composant de réacteur,component,1,3,ingot-iron,raffine,5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-reactor,Composant de réacteur,component,1,3,ingot-silver,raffine,1.66666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-reactor,Composant de réacteur,component,1,3,gravel,raffine,6.66666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-reactor,Composant de réacteur,component,1,3,ore-stone,minerai_equivalent,476.19047619,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-reactor,Composant de réacteur,component,1,3,ore-silver,minerai_equivalent,16.6666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-reactor,Composant de réacteur,component,1,10,ingot-iron,raffine,1.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-reactor,Composant de réacteur,component,1,10,ingot-silver,raffine,0.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-reactor,Composant de réacteur,component,1,10,gravel,raffine,2,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-reactor,Composant de réacteur,component,1,10,ore-stone,minerai_equivalent,142.857142857,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-reactor,Composant de réacteur,component,1,10,ore-silver,minerai_equivalent,5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,1,ingot-iron,raffine,30,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,1,ingot-cobalt,raffine,10,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,1,ingot-gold,raffine,1,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,1,ingot-platinum,raffine,0.4,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,1,ore-iron,minerai_equivalent,42.8571428571,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,1,ore-cobalt,minerai_equivalent,33.3333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,1,ore-gold,minerai_equivalent,100,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,1,ore-platinum,minerai_equivalent,80,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,3,ingot-iron,raffine,10,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,3,ingot-cobalt,raffine,3.33333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,3,ingot-gold,raffine,0.333333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,3,ingot-platinum,raffine,0.133333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,3,ore-iron,minerai_equivalent,14.2857142857,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,3,ore-cobalt,minerai_equivalent,11.1111111111,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,3,ore-gold,minerai_equivalent,33.3333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,3,ore-platinum,minerai_equivalent,26.6666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,10,ingot-iron,raffine,3,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,10,ingot-cobalt,raffine,1,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,10,ingot-gold,raffine,0.1,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,10,ingot-platinum,raffine,0.04,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,10,ore-iron,minerai_equivalent,4.28571428571,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,10,ore-cobalt,minerai_equivalent,3.33333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,10,ore-gold,minerai_equivalent,10,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-thruster,Composant de propulsion,component,1,10,ore-platinum,minerai_equivalent,8,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,1,ingot-iron,raffine,600,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,1,ingot-cobalt,raffine,220,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,1,ingot-silver,raffine,5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,1,ingot-gold,raffine,10,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,1,ore-iron,minerai_equivalent,857.142857143,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,1,ore-cobalt,minerai_equivalent,733.333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,1,ore-silver,minerai_equivalent,50,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,1,ore-gold,minerai_equivalent,1000,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,3,ingot-iron,raffine,200,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,3,ingot-cobalt,raffine,73.3333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,3,ingot-silver,raffine,1.66666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,3,ingot-gold,raffine,3.33333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,3,ore-iron,minerai_equivalent,285.714285714,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,3,ore-cobalt,minerai_equivalent,244.444444444,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,3,ore-silver,minerai_equivalent,16.6666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,3,ore-gold,minerai_equivalent,333.333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,10,ingot-iron,raffine,60,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,10,ingot-cobalt,raffine,22,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,10,ingot-silver,raffine,0.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,10,ingot-gold,raffine,1,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,10,ore-iron,minerai_equivalent,85.7142857143,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,10,ore-cobalt,minerai_equivalent,73.3333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,10,ore-silver,minerai_equivalent,5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-gravity,Composant gravitationnel,component,1,10,ore-gold,minerai_equivalent,100,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-medical,Composant médical,component,1,1,ingot-iron,raffine,60,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-medical,Composant médical,component,1,1,ingot-nickel,raffine,70,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-medical,Composant médical,component,1,1,ingot-silver,raffine,20,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-medical,Composant médical,component,1,1,ore-iron,minerai_equivalent,85.7142857143,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-medical,Composant médical,component,1,1,ore-nickel,minerai_equivalent,175,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-medical,Composant médical,component,1,1,ore-silver,minerai_equivalent,200,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-medical,Composant médical,component,1,3,ingot-iron,raffine,20,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-medical,Composant médical,component,1,3,ingot-nickel,raffine,23.3333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-medical,Composant médical,component,1,3,ingot-silver,raffine,6.66666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-medical,Composant médical,component,1,3,ore-iron,minerai_equivalent,28.5714285714,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-medical,Composant médical,component,1,3,ore-nickel,minerai_equivalent,58.3333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-medical,Composant médical,component,1,3,ore-silver,minerai_equivalent,66.6666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-medical,Composant médical,component,1,10,ingot-iron,raffine,6,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-medical,Composant médical,component,1,10,ingot-nickel,raffine,7,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-medical,Composant médical,component,1,10,ingot-silver,raffine,2,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-medical,Composant médical,component,1,10,ore-iron,minerai_equivalent,8.57142857143,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-medical,Composant médical,component,1,10,ore-nickel,minerai_equivalent,17.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-medical,Composant médical,component,1,10,ore-silver,minerai_equivalent,20,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-radio,Composant radio,component,1,1,ingot-iron,raffine,8,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-radio,Composant radio,component,1,1,wafer-silicon,raffine,1,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-radio,Composant radio,component,1,1,ore-iron,minerai_equivalent,11.4285714286,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-radio,Composant radio,component,1,1,ore-silicon,minerai_equivalent,1.42857142857,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-radio,Composant radio,component,1,3,ingot-iron,raffine,2.66666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-radio,Composant radio,component,1,3,wafer-silicon,raffine,0.333333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-radio,Composant radio,component,1,3,ore-iron,minerai_equivalent,3.80952380952,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-radio,Composant radio,component,1,3,ore-silicon,minerai_equivalent,0.47619047619,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-radio,Composant radio,component,1,10,ingot-iron,raffine,0.8,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-radio,Composant radio,component,1,10,wafer-silicon,raffine,0.1,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-radio,Composant radio,component,1,10,ore-iron,minerai_equivalent,1.14285714286,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-radio,Composant radio,component,1,10,ore-silicon,minerai_equivalent,0.142857142857,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-detector,Composant de détection,component,1,1,ingot-iron,raffine,5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-detector,Composant de détection,component,1,1,ingot-nickel,raffine,15,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-detector,Composant de détection,component,1,1,ore-iron,minerai_equivalent,7.14285714286,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-detector,Composant de détection,component,1,1,ore-nickel,minerai_equivalent,37.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-detector,Composant de détection,component,1,3,ingot-iron,raffine,1.66666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-detector,Composant de détection,component,1,3,ingot-nickel,raffine,5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-detector,Composant de détection,component,1,3,ore-iron,minerai_equivalent,2.38095238095,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-detector,Composant de détection,component,1,3,ore-nickel,minerai_equivalent,12.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-detector,Composant de détection,component,1,10,ingot-iron,raffine,0.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-detector,Composant de détection,component,1,10,ingot-nickel,raffine,1.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-detector,Composant de détection,component,1,10,ore-iron,minerai_equivalent,0.714285714286,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-detector,Composant de détection,component,1,10,ore-nickel,minerai_equivalent,3.75,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-explosives,Charge explosive,component,1,1,wafer-silicon,raffine,0.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-explosives,Charge explosive,component,1,1,powder-magnesium,raffine,2,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-explosives,Charge explosive,component,1,1,ore-silicon,minerai_equivalent,0.714285714286,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-explosives,Charge explosive,component,1,1,ore-magnesium,minerai_equivalent,285.714285714,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-explosives,Charge explosive,component,1,3,wafer-silicon,raffine,0.166666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-explosives,Charge explosive,component,1,3,powder-magnesium,raffine,0.666666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-explosives,Charge explosive,component,1,3,ore-silicon,minerai_equivalent,0.238095238095,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-explosives,Charge explosive,component,1,3,ore-magnesium,minerai_equivalent,95.2380952381,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-explosives,Charge explosive,component,1,10,wafer-silicon,raffine,0.05,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-explosives,Charge explosive,component,1,10,powder-magnesium,raffine,0.2,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-explosives,Charge explosive,component,1,10,ore-silicon,minerai_equivalent,0.0714285714286,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-explosives,Charge explosive,component,1,10,ore-magnesium,minerai_equivalent,28.5714285714,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-solar-cell,Cellule solaire,component,1,1,ingot-nickel,raffine,3,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-solar-cell,Cellule solaire,component,1,1,wafer-silicon,raffine,6,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-solar-cell,Cellule solaire,component,1,1,ore-nickel,minerai_equivalent,7.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-solar-cell,Cellule solaire,component,1,1,ore-silicon,minerai_equivalent,8.57142857143,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-solar-cell,Cellule solaire,component,1,3,ingot-nickel,raffine,1,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-solar-cell,Cellule solaire,component,1,3,wafer-silicon,raffine,2,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-solar-cell,Cellule solaire,component,1,3,ore-nickel,minerai_equivalent,2.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-solar-cell,Cellule solaire,component,1,3,ore-silicon,minerai_equivalent,2.85714285714,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-solar-cell,Cellule solaire,component,1,10,ingot-nickel,raffine,0.3,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-solar-cell,Cellule solaire,component,1,10,wafer-silicon,raffine,0.6,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-solar-cell,Cellule solaire,component,1,10,ore-nickel,minerai_equivalent,0.75,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-solar-cell,Cellule solaire,component,1,10,ore-silicon,minerai_equivalent,0.857142857143,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-power-cell,Cellule énergétique,component,1,1,ingot-iron,raffine,10,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-power-cell,Cellule énergétique,component,1,1,ingot-nickel,raffine,2,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-power-cell,Cellule énergétique,component,1,1,wafer-silicon,raffine,1,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-power-cell,Cellule énergétique,component,1,1,ore-iron,minerai_equivalent,14.2857142857,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-power-cell,Cellule énergétique,component,1,1,ore-nickel,minerai_equivalent,5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-power-cell,Cellule énergétique,component,1,1,ore-silicon,minerai_equivalent,1.42857142857,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-power-cell,Cellule énergétique,component,1,3,ingot-iron,raffine,3.33333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-power-cell,Cellule énergétique,component,1,3,ingot-nickel,raffine,0.666666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-power-cell,Cellule énergétique,component,1,3,wafer-silicon,raffine,0.333333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-power-cell,Cellule énergétique,component,1,3,ore-iron,minerai_equivalent,4.7619047619,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-power-cell,Cellule énergétique,component,1,3,ore-nickel,minerai_equivalent,1.66666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-power-cell,Cellule énergétique,component,1,3,ore-silicon,minerai_equivalent,0.47619047619,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-power-cell,Cellule énergétique,component,1,10,ingot-iron,raffine,1,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-power-cell,Cellule énergétique,component,1,10,ingot-nickel,raffine,0.2,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-power-cell,Cellule énergétique,component,1,10,wafer-silicon,raffine,0.1,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-power-cell,Cellule énergétique,component,1,10,ore-iron,minerai_equivalent,1.42857142857,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-power-cell,Cellule énergétique,component,1,10,ore-nickel,minerai_equivalent,0.5,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-power-cell,Cellule énergétique,component,1,10,ore-silicon,minerai_equivalent,0.142857142857,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-superconductor,Supraconducteur,component,1,1,ingot-iron,raffine,10,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-superconductor,Supraconducteur,component,1,1,ingot-gold,raffine,2,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-superconductor,Supraconducteur,component,1,1,ore-iron,minerai_equivalent,14.2857142857,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-superconductor,Supraconducteur,component,1,1,ore-gold,minerai_equivalent,200,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-superconductor,Supraconducteur,component,1,3,ingot-iron,raffine,3.33333333333,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-superconductor,Supraconducteur,component,1,3,ingot-gold,raffine,0.666666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-superconductor,Supraconducteur,component,1,3,ore-iron,minerai_equivalent,4.7619047619,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-superconductor,Supraconducteur,component,1,3,ore-gold,minerai_equivalent,66.6666666667,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-superconductor,Supraconducteur,component,1,10,ingot-iron,raffine,1,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-superconductor,Supraconducteur,component,1,10,ingot-gold,raffine,0.2,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-superconductor,Supraconducteur,component,1,10,ore-iron,minerai_equivalent,1.42857142857,https://spaceengineers.wiki.gg/wiki/Component
+craft-component-superconductor,Supraconducteur,component,1,10,ore-gold,minerai_equivalent,20,https://spaceengineers.wiki.gg/wiki/Component
+craft-tool-drill,Foreuse à main,tool,1,1,ingot-iron,raffine,8,https://spaceengineers.wiki.gg/wiki/Hand_Drill
+craft-tool-drill,Foreuse à main,tool,1,1,ingot-nickel,raffine,3,https://spaceengineers.wiki.gg/wiki/Hand_Drill
+craft-tool-drill,Foreuse à main,tool,1,1,wafer-silicon,raffine,3,https://spaceengineers.wiki.gg/wiki/Hand_Drill
+craft-tool-drill,Foreuse à main,tool,1,1,ore-iron,minerai_equivalent,11.4285714286,https://spaceengineers.wiki.gg/wiki/Hand_Drill
+craft-tool-drill,Foreuse à main,tool,1,1,ore-nickel,minerai_equivalent,7.5,https://spaceengineers.wiki.gg/wiki/Hand_Drill
+craft-tool-drill,Foreuse à main,tool,1,1,ore-silicon,minerai_equivalent,4.28571428571,https://spaceengineers.wiki.gg/wiki/Hand_Drill
+craft-tool-drill,Foreuse à main,tool,1,3,ingot-iron,raffine,2.66666666667,https://spaceengineers.wiki.gg/wiki/Hand_Drill
+craft-tool-drill,Foreuse à main,tool,1,3,ingot-nickel,raffine,1,https://spaceengineers.wiki.gg/wiki/Hand_Drill
+craft-tool-drill,Foreuse à main,tool,1,3,wafer-silicon,raffine,1,https://spaceengineers.wiki.gg/wiki/Hand_Drill
+craft-tool-drill,Foreuse à main,tool,1,3,ore-iron,minerai_equivalent,3.80952380952,https://spaceengineers.wiki.gg/wiki/Hand_Drill
+craft-tool-drill,Foreuse à main,tool,1,3,ore-nickel,minerai_equivalent,2.5,https://spaceengineers.wiki.gg/wiki/Hand_Drill
+craft-tool-drill,Foreuse à main,tool,1,3,ore-silicon,minerai_equivalent,1.42857142857,https://spaceengineers.wiki.gg/wiki/Hand_Drill
+craft-tool-drill,Foreuse à main,tool,1,10,ingot-iron,raffine,0.8,https://spaceengineers.wiki.gg/wiki/Hand_Drill
+craft-tool-drill,Foreuse à main,tool,1,10,ingot-nickel,raffine,0.3,https://spaceengineers.wiki.gg/wiki/Hand_Drill
+craft-tool-drill,Foreuse à main,tool,1,10,wafer-silicon,raffine,0.3,https://spaceengineers.wiki.gg/wiki/Hand_Drill
+craft-tool-drill,Foreuse à main,tool,1,10,ore-iron,minerai_equivalent,1.14285714286,https://spaceengineers.wiki.gg/wiki/Hand_Drill
+craft-tool-drill,Foreuse à main,tool,1,10,ore-nickel,minerai_equivalent,0.75,https://spaceengineers.wiki.gg/wiki/Hand_Drill
+craft-tool-drill,Foreuse à main,tool,1,10,ore-silicon,minerai_equivalent,0.428571428571,https://spaceengineers.wiki.gg/wiki/Hand_Drill
+craft-tool-welder,Soudeuse à main,tool,1,1,ingot-iron,raffine,5,https://spaceengineers.wiki.gg/wiki/Welder_(Tool)
+craft-tool-welder,Soudeuse à main,tool,1,1,ingot-nickel,raffine,1,https://spaceengineers.wiki.gg/wiki/Welder_(Tool)
+craft-tool-welder,Soudeuse à main,tool,1,1,wafer-silicon,raffine,3,https://spaceengineers.wiki.gg/wiki/Welder_(Tool)
+craft-tool-welder,Soudeuse à main,tool,1,1,ore-iron,minerai_equivalent,7.14285714286,https://spaceengineers.wiki.gg/wiki/Welder_(Tool)
+craft-tool-welder,Soudeuse à main,tool,1,1,ore-nickel,minerai_equivalent,2.5,https://spaceengineers.wiki.gg/wiki/Welder_(Tool)
+craft-tool-welder,Soudeuse à main,tool,1,1,ore-silicon,minerai_equivalent,4.28571428571,https://spaceengineers.wiki.gg/wiki/Welder_(Tool)
+craft-tool-welder,Soudeuse à main,tool,1,3,ingot-iron,raffine,1.66666666667,https://spaceengineers.wiki.gg/wiki/Welder_(Tool)
+craft-tool-welder,Soudeuse à main,tool,1,3,ingot-nickel,raffine,0.333333333333,https://spaceengineers.wiki.gg/wiki/Welder_(Tool)
+craft-tool-welder,Soudeuse à main,tool,1,3,wafer-silicon,raffine,1,https://spaceengineers.wiki.gg/wiki/Welder_(Tool)
+craft-tool-welder,Soudeuse à main,tool,1,3,ore-iron,minerai_equivalent,2.38095238095,https://spaceengineers.wiki.gg/wiki/Welder_(Tool)
+craft-tool-welder,Soudeuse à main,tool,1,3,ore-nickel,minerai_equivalent,0.833333333333,https://spaceengineers.wiki.gg/wiki/Welder_(Tool)
+craft-tool-welder,Soudeuse à main,tool,1,3,ore-silicon,minerai_equivalent,1.42857142857,https://spaceengineers.wiki.gg/wiki/Welder_(Tool)
+craft-tool-welder,Soudeuse à main,tool,1,10,ingot-iron,raffine,0.5,https://spaceengineers.wiki.gg/wiki/Welder_(Tool)
+craft-tool-welder,Soudeuse à main,tool,1,10,ingot-nickel,raffine,0.1,https://spaceengineers.wiki.gg/wiki/Welder_(Tool)
+craft-tool-welder,Soudeuse à main,tool,1,10,wafer-silicon,raffine,0.3,https://spaceengineers.wiki.gg/wiki/Welder_(Tool)
+craft-tool-welder,Soudeuse à main,tool,1,10,ore-iron,minerai_equivalent,0.714285714286,https://spaceengineers.wiki.gg/wiki/Welder_(Tool)
+craft-tool-welder,Soudeuse à main,tool,1,10,ore-nickel,minerai_equivalent,0.25,https://spaceengineers.wiki.gg/wiki/Welder_(Tool)
+craft-tool-welder,Soudeuse à main,tool,1,10,ore-silicon,minerai_equivalent,0.428571428571,https://spaceengineers.wiki.gg/wiki/Welder_(Tool)
+craft-tool-grinder,Meuleuse à main,tool,1,1,ingot-iron,raffine,6,https://spaceengineers.wiki.gg/wiki/Grinder_(Tool)
+craft-tool-grinder,Meuleuse à main,tool,1,1,ingot-nickel,raffine,2,https://spaceengineers.wiki.gg/wiki/Grinder_(Tool)
+craft-tool-grinder,Meuleuse à main,tool,1,1,wafer-silicon,raffine,2,https://spaceengineers.wiki.gg/wiki/Grinder_(Tool)
+craft-tool-grinder,Meuleuse à main,tool,1,1,ore-iron,minerai_equivalent,8.57142857143,https://spaceengineers.wiki.gg/wiki/Grinder_(Tool)
+craft-tool-grinder,Meuleuse à main,tool,1,1,ore-nickel,minerai_equivalent,5,https://spaceengineers.wiki.gg/wiki/Grinder_(Tool)
+craft-tool-grinder,Meuleuse à main,tool,1,1,ore-silicon,minerai_equivalent,2.85714285714,https://spaceengineers.wiki.gg/wiki/Grinder_(Tool)
+craft-tool-grinder,Meuleuse à main,tool,1,3,ingot-iron,raffine,2,https://spaceengineers.wiki.gg/wiki/Grinder_(Tool)
+craft-tool-grinder,Meuleuse à main,tool,1,3,ingot-nickel,raffine,0.666666666667,https://spaceengineers.wiki.gg/wiki/Grinder_(Tool)
+craft-tool-grinder,Meuleuse à main,tool,1,3,wafer-silicon,raffine,0.666666666667,https://spaceengineers.wiki.gg/wiki/Grinder_(Tool)
+craft-tool-grinder,Meuleuse à main,tool,1,3,ore-iron,minerai_equivalent,2.85714285714,https://spaceengineers.wiki.gg/wiki/Grinder_(Tool)
+craft-tool-grinder,Meuleuse à main,tool,1,3,ore-nickel,minerai_equivalent,1.66666666667,https://spaceengineers.wiki.gg/wiki/Grinder_(Tool)
+craft-tool-grinder,Meuleuse à main,tool,1,3,ore-silicon,minerai_equivalent,0.952380952381,https://spaceengineers.wiki.gg/wiki/Grinder_(Tool)
+craft-tool-grinder,Meuleuse à main,tool,1,10,ingot-iron,raffine,0.6,https://spaceengineers.wiki.gg/wiki/Grinder_(Tool)
+craft-tool-grinder,Meuleuse à main,tool,1,10,ingot-nickel,raffine,0.2,https://spaceengineers.wiki.gg/wiki/Grinder_(Tool)
+craft-tool-grinder,Meuleuse à main,tool,1,10,wafer-silicon,raffine,0.2,https://spaceengineers.wiki.gg/wiki/Grinder_(Tool)
+craft-tool-grinder,Meuleuse à main,tool,1,10,ore-iron,minerai_equivalent,0.857142857143,https://spaceengineers.wiki.gg/wiki/Grinder_(Tool)
+craft-tool-grinder,Meuleuse à main,tool,1,10,ore-nickel,minerai_equivalent,0.5,https://spaceengineers.wiki.gg/wiki/Grinder_(Tool)
+craft-tool-grinder,Meuleuse à main,tool,1,10,ore-silicon,minerai_equivalent,0.285714285714,https://spaceengineers.wiki.gg/wiki/Grinder_(Tool)
+craft-block-armor,Armure légère,block,1,1,ingot-iron,raffine,525,https://spaceengineers.wiki.gg/wiki/Light_Armor_Block
+craft-block-armor,Armure légère,block,1,1,ore-iron,minerai_equivalent,750,https://spaceengineers.wiki.gg/wiki/Light_Armor_Block
+craft-block-armor,Armure légère,block,1,3,ingot-iron,raffine,175,https://spaceengineers.wiki.gg/wiki/Light_Armor_Block
+craft-block-armor,Armure légère,block,1,3,ore-iron,minerai_equivalent,250,https://spaceengineers.wiki.gg/wiki/Light_Armor_Block
+craft-block-armor,Armure légère,block,1,10,ingot-iron,raffine,52.5,https://spaceengineers.wiki.gg/wiki/Light_Armor_Block
+craft-block-armor,Armure légère,block,1,10,ore-iron,minerai_equivalent,75,https://spaceengineers.wiki.gg/wiki/Light_Armor_Block
+craft-block-cockpit,Cockpit standard,block,1,1,ingot-iron,raffine,868,https://spaceengineers.wiki.gg/wiki/Cockpit_1
+craft-block-cockpit,Cockpit standard,block,1,1,ingot-nickel,raffine,5,https://spaceengineers.wiki.gg/wiki/Cockpit_1
+craft-block-cockpit,Cockpit standard,block,1,1,wafer-silicon,raffine,960,https://spaceengineers.wiki.gg/wiki/Cockpit_1
+craft-block-cockpit,Cockpit standard,block,1,1,ore-iron,minerai_equivalent,1240,https://spaceengineers.wiki.gg/wiki/Cockpit_1
+craft-block-cockpit,Cockpit standard,block,1,1,ore-nickel,minerai_equivalent,12.5,https://spaceengineers.wiki.gg/wiki/Cockpit_1
+craft-block-cockpit,Cockpit standard,block,1,1,ore-silicon,minerai_equivalent,1371.42857143,https://spaceengineers.wiki.gg/wiki/Cockpit_1
+craft-block-cockpit,Cockpit standard,block,1,3,ingot-iron,raffine,289.333333333,https://spaceengineers.wiki.gg/wiki/Cockpit_1
+craft-block-cockpit,Cockpit standard,block,1,3,ingot-nickel,raffine,1.66666666667,https://spaceengineers.wiki.gg/wiki/Cockpit_1
+craft-block-cockpit,Cockpit standard,block,1,3,wafer-silicon,raffine,320,https://spaceengineers.wiki.gg/wiki/Cockpit_1
+craft-block-cockpit,Cockpit standard,block,1,3,ore-iron,minerai_equivalent,413.333333333,https://spaceengineers.wiki.gg/wiki/Cockpit_1
+craft-block-cockpit,Cockpit standard,block,1,3,ore-nickel,minerai_equivalent,4.16666666667,https://spaceengineers.wiki.gg/wiki/Cockpit_1
+craft-block-cockpit,Cockpit standard,block,1,3,ore-silicon,minerai_equivalent,457.142857143,https://spaceengineers.wiki.gg/wiki/Cockpit_1
+craft-block-cockpit,Cockpit standard,block,1,10,ingot-iron,raffine,86.8,https://spaceengineers.wiki.gg/wiki/Cockpit_1
+craft-block-cockpit,Cockpit standard,block,1,10,ingot-nickel,raffine,0.5,https://spaceengineers.wiki.gg/wiki/Cockpit_1
+craft-block-cockpit,Cockpit standard,block,1,10,wafer-silicon,raffine,96,https://spaceengineers.wiki.gg/wiki/Cockpit_1
+craft-block-cockpit,Cockpit standard,block,1,10,ore-iron,minerai_equivalent,124,https://spaceengineers.wiki.gg/wiki/Cockpit_1
+craft-block-cockpit,Cockpit standard,block,1,10,ore-nickel,minerai_equivalent,1.25,https://spaceengineers.wiki.gg/wiki/Cockpit_1
+craft-block-cockpit,Cockpit standard,block,1,10,ore-silicon,minerai_equivalent,137.142857143,https://spaceengineers.wiki.gg/wiki/Cockpit_1
+craft-block-thruster,Petit propulseur ionique,block,1,1,ingot-iron,raffine,3645,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,1,ingot-cobalt,raffine,800,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,1,ingot-gold,raffine,80,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,1,ingot-platinum,raffine,32,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,1,ore-iron,minerai_equivalent,5207.14285714,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,1,ore-cobalt,minerai_equivalent,2666.66666667,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,1,ore-gold,minerai_equivalent,8000,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,1,ore-platinum,minerai_equivalent,6400,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,3,ingot-iron,raffine,1215,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,3,ingot-cobalt,raffine,266.666666667,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,3,ingot-gold,raffine,26.6666666667,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,3,ingot-platinum,raffine,10.6666666667,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,3,ore-iron,minerai_equivalent,1735.71428571,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,3,ore-cobalt,minerai_equivalent,888.888888889,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,3,ore-gold,minerai_equivalent,2666.66666667,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,3,ore-platinum,minerai_equivalent,2133.33333333,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,10,ingot-iron,raffine,364.5,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,10,ingot-cobalt,raffine,80,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,10,ingot-gold,raffine,8,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,10,ingot-platinum,raffine,3.2,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,10,ore-iron,minerai_equivalent,520.714285714,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,10,ore-cobalt,minerai_equivalent,266.666666667,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,10,ore-gold,minerai_equivalent,800,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-thruster,Petit propulseur ionique,block,1,10,ore-platinum,minerai_equivalent,640,https://spaceengineers.wiki.gg/wiki/Ion_Thruster
+craft-block-gyroscope,Gyroscope,block,1,1,ingot-iron,raffine,13722.5,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,1,ingot-nickel,raffine,270,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,1,ingot-cobalt,raffine,150,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,1,wafer-silicon,raffine,1,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,1,ore-iron,minerai_equivalent,19603.5714286,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,1,ore-nickel,minerai_equivalent,675,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,1,ore-cobalt,minerai_equivalent,500,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,1,ore-silicon,minerai_equivalent,1.42857142857,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,3,ingot-iron,raffine,4574.16666667,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,3,ingot-nickel,raffine,90,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,3,ingot-cobalt,raffine,50,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,3,wafer-silicon,raffine,0.333333333333,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,3,ore-iron,minerai_equivalent,6534.52380952,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,3,ore-nickel,minerai_equivalent,225,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,3,ore-cobalt,minerai_equivalent,166.666666667,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,3,ore-silicon,minerai_equivalent,0.47619047619,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,10,ingot-iron,raffine,1372.25,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,10,ingot-nickel,raffine,27,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,10,ingot-cobalt,raffine,15,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,10,wafer-silicon,raffine,0.1,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,10,ore-iron,minerai_equivalent,1960.35714286,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,10,ore-nickel,minerai_equivalent,67.5,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,10,ore-cobalt,minerai_equivalent,50,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-gyroscope,Gyroscope,block,1,10,ore-silicon,minerai_equivalent,0.142857142857,https://spaceengineers.wiki.gg/wiki/Gyroscope
+craft-block-battery,Batterie standard,block,1,1,ingot-iron,raffine,2732.5,https://spaceengineers.wiki.gg/wiki/Battery
+craft-block-battery,Batterie standard,block,1,1,ingot-nickel,raffine,160,https://spaceengineers.wiki.gg/wiki/Battery
+craft-block-battery,Batterie standard,block,1,1,wafer-silicon,raffine,85,https://spaceengineers.wiki.gg/wiki/Battery
+craft-block-battery,Batterie standard,block,1,1,ore-iron,minerai_equivalent,3903.57142857,https://spaceengineers.wiki.gg/wiki/Battery
+craft-block-battery,Batterie standard,block,1,1,ore-nickel,minerai_equivalent,400,https://spaceengineers.wiki.gg/wiki/Battery
+craft-block-battery,Batterie standard,block,1,1,ore-silicon,minerai_equivalent,121.428571429,https://spaceengineers.wiki.gg/wiki/Battery
+craft-block-battery,Batterie standard,block,1,3,ingot-iron,raffine,910.833333333,https://spaceengineers.wiki.gg/wiki/Battery
+craft-block-battery,Batterie standard,block,1,3,ingot-nickel,raffine,53.3333333333,https://spaceengineers.wiki.gg/wiki/Battery
+craft-block-battery,Batterie standard,block,1,3,wafer-silicon,raffine,28.3333333333,https://spaceengineers.wiki.gg/wiki/Battery
+craft-block-battery,Batterie standard,block,1,3,ore-iron,minerai_equivalent,1301.19047619,https://spaceengineers.wiki.gg/wiki/Battery
+craft-block-battery,Batterie standard,block,1,3,ore-nickel,minerai_equivalent,133.333333333,https://spaceengineers.wiki.gg/wiki/Battery
+craft-block-battery,Batterie standard,block,1,3,ore-silicon,minerai_equivalent,40.4761904762,https://spaceengineers.wiki.gg/wiki/Battery
+craft-block-battery,Batterie standard,block,1,10,ingot-iron,raffine,273.25,https://spaceengineers.wiki.gg/wiki/Battery
+craft-block-battery,Batterie standard,block,1,10,ingot-nickel,raffine,16,https://spaceengineers.wiki.gg/wiki/Battery
+craft-block-battery,Batterie standard,block,1,10,wafer-silicon,raffine,8.5,https://spaceengineers.wiki.gg/wiki/Battery
+craft-block-battery,Batterie standard,block,1,10,ore-iron,minerai_equivalent,390.357142857,https://spaceengineers.wiki.gg/wiki/Battery
+craft-block-battery,Batterie standard,block,1,10,ore-nickel,minerai_equivalent,40,https://spaceengineers.wiki.gg/wiki/Battery
+craft-block-battery,Batterie standard,block,1,10,ore-silicon,minerai_equivalent,12.1428571429,https://spaceengineers.wiki.gg/wiki/Battery
+craft-block-refinery,Raffinerie complète,block,1,1,ingot-iron,raffine,26690,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,1,ingot-nickel,raffine,180,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,1,ingot-cobalt,raffine,60,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,1,wafer-silicon,raffine,4,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,1,ore-iron,minerai_equivalent,38128.5714286,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,1,ore-nickel,minerai_equivalent,450,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,1,ore-cobalt,minerai_equivalent,200,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,1,ore-silicon,minerai_equivalent,5.71428571429,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,3,ingot-iron,raffine,8896.66666667,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,3,ingot-nickel,raffine,60,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,3,ingot-cobalt,raffine,20,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,3,wafer-silicon,raffine,1.33333333333,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,3,ore-iron,minerai_equivalent,12709.5238095,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,3,ore-nickel,minerai_equivalent,150,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,3,ore-cobalt,minerai_equivalent,66.6666666667,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,3,ore-silicon,minerai_equivalent,1.90476190476,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,10,ingot-iron,raffine,2669,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,10,ingot-nickel,raffine,18,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,10,ingot-cobalt,raffine,6,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,10,wafer-silicon,raffine,0.4,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,10,ore-iron,minerai_equivalent,3812.85714286,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,10,ore-nickel,minerai_equivalent,45,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,10,ore-cobalt,minerai_equivalent,20,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-refinery,Raffinerie complète,block,1,10,ore-silicon,minerai_equivalent,0.571428571429,https://spaceengineers.wiki.gg/wiki/Refinery
+craft-block-assembler,Assembleur complet,block,1,1,ingot-iron,raffine,4190,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,1,ingot-nickel,raffine,150,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,1,ingot-cobalt,raffine,30,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,1,wafer-silicon,raffine,82,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,1,ore-iron,minerai_equivalent,5985.71428571,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,1,ore-nickel,minerai_equivalent,375,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,1,ore-cobalt,minerai_equivalent,100,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,1,ore-silicon,minerai_equivalent,117.142857143,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,3,ingot-iron,raffine,1396.66666667,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,3,ingot-nickel,raffine,50,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,3,ingot-cobalt,raffine,10,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,3,wafer-silicon,raffine,27.3333333333,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,3,ore-iron,minerai_equivalent,1995.23809524,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,3,ore-nickel,minerai_equivalent,125,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,3,ore-cobalt,minerai_equivalent,33.3333333333,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,3,ore-silicon,minerai_equivalent,39.0476190476,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,10,ingot-iron,raffine,419,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,10,ingot-nickel,raffine,15,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,10,ingot-cobalt,raffine,3,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,10,wafer-silicon,raffine,8.2,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,10,ore-iron,minerai_equivalent,598.571428571,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,10,ore-nickel,minerai_equivalent,37.5,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,10,ore-cobalt,minerai_equivalent,10,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-assembler,Assembleur complet,block,1,10,ore-silicon,minerai_equivalent,11.7142857143,https://spaceengineers.wiki.gg/wiki/Assembler
+craft-block-cargo,Petite soute,block,1,1,ingot-iron,raffine,670,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,1,ingot-nickel,raffine,40,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,1,ingot-cobalt,raffine,12,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,1,wafer-silicon,raffine,5.4,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,1,ore-iron,minerai_equivalent,957.142857143,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,1,ore-nickel,minerai_equivalent,100,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,1,ore-cobalt,minerai_equivalent,40,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,1,ore-silicon,minerai_equivalent,7.71428571429,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,3,ingot-iron,raffine,223.333333333,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,3,ingot-nickel,raffine,13.3333333333,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,3,ingot-cobalt,raffine,4,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,3,wafer-silicon,raffine,1.8,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,3,ore-iron,minerai_equivalent,319.047619048,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,3,ore-nickel,minerai_equivalent,33.3333333333,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,3,ore-cobalt,minerai_equivalent,13.3333333333,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,3,ore-silicon,minerai_equivalent,2.57142857143,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,10,ingot-iron,raffine,67,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,10,ingot-nickel,raffine,4,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,10,ingot-cobalt,raffine,1.2,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,10,wafer-silicon,raffine,0.54,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,10,ore-iron,minerai_equivalent,95.7142857143,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,10,ore-nickel,minerai_equivalent,10,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,10,ore-cobalt,minerai_equivalent,4,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container
+craft-block-cargo,Petite soute,block,1,10,ore-silicon,minerai_equivalent,0.771428571429,https://spaceengineers.wiki.gg/wiki/Small_Cargo_Container

@@ -1,0 +1,321 @@
+{
+  "date": "2026-11-03",
+  "tool": "image_gen.imagegen",
+  "entries": [
+    {
+      "id": "ore-iron",
+      "file": "minerais/ore-iron.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Match the selected icon's appearance in the supplied wrist inventory image, using it only as a visual style and subject reference; isolate and freshly render the specified one item, never reproduce the screen or text. An irregular chunky dark charcoal iron ore rock with visible rusty ochre iron seams and a few exposed metallic grey facets. Rock, not a metal ingot. Match the FER ore thumbnail in the reference.",
+      "referenced_image_paths": [
+        "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "ore-nickel",
+      "file": "minerais/ore-nickel.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Match the selected icon's appearance in the supplied wrist inventory image, using it only as a visual style and subject reference; isolate and freshly render the specified one item, never reproduce the screen or text. A compact jagged nickel ore rock, distinct silhouette from the iron rock, silvery pewter grey metallic granular inclusions within darker grey matrix, subtle cool desaturated sheen. No orange rust or gold. Match the NICKEL rock in reference.",
+      "referenced_image_paths": [
+        "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "ore-silicon",
+      "file": "minerais/ore-silicon.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Match the selected icon's appearance in the supplied wrist inventory image, using it only as a visual style and subject reference; isolate and freshly render the specified one item, never reproduce the screen or text. One pale smoky grey crystalline silicon-bearing ore cluster, broad angular translucent grey-white facets, a few darker mineral edges, clearly different from dark iron and nickel rocks. No blue gem fantasy glow. Match the SILICIUM thumbnail in reference.",
+      "referenced_image_paths": [
+        "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "ingot-iron",
+      "file": "produits/ingot-iron.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Match the selected icon's appearance in the supplied wrist inventory image, using it only as a visual style and subject reference; isolate and freshly render the specified one item, never reproduce the screen or text. Exactly three silver-grey cast iron ingots stacked in a small stable pyramid, trapezoidal foundry shapes, flat sloping sides, fine realistic brushed cast-metal grain. No text stamps.",
+      "referenced_image_paths": [
+        "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "component-plates",
+      "file": "recettes/component-plates.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Match the selected icon's appearance in the supplied wrist inventory image, using it only as a visual style and subject reference; isolate and freshly render the specified one item, never reproduce the screen or text. A stack of exactly three rectangular machined silver steel construction plates, slightly beveled corners, broad flat faces, very subtle brushed-metal scratches. Compact clear silhouette, no bolts or symbols.",
+      "referenced_image_paths": [
+        "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "component-tubes",
+      "file": "recettes/component-tubes.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Match the selected icon's appearance in the supplied wrist inventory image, using it only as a visual style and subject reference; isolate and freshly render the specified one item, never reproduce the screen or text. Exactly three short thick-walled hollow steel pipes in a triangular bundle, visible dark circular bores at their front ends, silvery brushed steel, cut ends polished, no hoses or wires.",
+      "referenced_image_paths": [
+        "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "component-circuits",
+      "file": "recettes/component-circuits.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Match the selected icon's appearance in the supplied wrist inventory image, using it only as a visual style and subject reference; isolate and freshly render the specified one item, never reproduce the screen or text. A single compact dark emerald green futuristic circuit board seen at three-quarter view with one black square processor, restrained gold contacts and fine silver components. Strong simple silhouette, no legible text, no brand.",
+      "referenced_image_paths": [
+        "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "tool-drill",
+      "file": "outils/tool-drill.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. A compact futuristic handheld mining drill: charcoal rear pistol grip and upper grab handle, amber industrial housing, large spiral conical silver drill bit pointing right. Original powered space engineering tool. Match DRILL in reference.",
+      "referenced_image_paths": [
+        "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "tool-welder",
+      "file": "outils/tool-welder.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. A compact futuristic handheld welding tool: charcoal pistol grip, amber central housing, two parallel short front electrode prongs pointing right and a curved black insulated top cable. Match WELDER in reference.",
+      "referenced_image_paths": [
+        "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "tool-grinder",
+      "file": "outils/tool-grinder.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. A futuristic handheld angle grinder: black rear grip, amber industrial housing and a large clearly visible circular grey abrasive disk with protective curved guard facing the viewer at three-quarter angle. Match GRINDER in reference.",
+      "referenced_image_paths": [
+        "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/01-inventaire.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "block-armor",
+      "file": "blocs/block-armor.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One cubic light armor construction block: ivory flat joining faces, restrained beveled seams, charcoal reinforced corner plates, no exposed machinery. Match the central ARMURE cube in reference. Cubic grid-based building block.",
+      "referenced_image_paths": [
+        "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/02-construction.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "block-gyroscope",
+      "file": "blocs/block-gyroscope.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One cubic gyroscope construction block: charcoal open squared frame, thick inset amber gimbal ring with nested dark metal pivot rings and central spherical rotor, flat cubic mounting faces, match GYROSCOPE in reference.",
+      "referenced_image_paths": [
+        "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/02-construction.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "block-battery",
+      "file": "blocs/block-battery.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One cubic battery construction block with charcoal main housing, amber structural corner frame and inset top, two vertical cyan power cell windows in front; flat cubic joining faces. Match BATTERIE in reference.",
+      "referenced_image_paths": [
+        "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/02-construction.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "block-cockpit",
+      "file": "blocs/block-cockpit.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One compact block-buildable pilot cockpit with angular sloped smoked cyan glass canopy, ivory armor exterior, charcoal base, amber restraint stripe. Isolated cockpit block only, no ship, no astronaut. Match COCKPIT in reference.",
+      "referenced_image_paths": [
+        "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/02-construction.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "block-thruster",
+      "file": "blocs/block-thruster.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One original compact axial spacecraft thruster block, cylindrical charcoal engine core in squared ivory mounting casing, small amber shell accents, broad circular front nozzle with restrained cyan light at center; no exhaust plume. Match PROPULSEUR in reference.",
+      "referenced_image_paths": [
+        "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/02-construction.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "block-refinery",
+      "file": "blocs/block-refinery.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. A COMPACT RECTANGULAR GRID BUILDING BLOCK refinery, tall cuboid ivory and charcoal housing, proportions roughly one cell wide and two cells high. Two vertical smelting canisters visible recessed inside front service opening, a few enclosed amber-lit process pipes, flat continuous top/bottom/side mounting faces so other blocks can be stacked flush. Use the compact ivory orange refinery thumbnail in the old Myrinox reference for industrial visual ideas, simplified and recomposed into an original VoidForge block. No sprawling platform, factory complex, base floor, chimney outside its box, scene or pedestrian railings.",
+      "referenced_image_paths": [
+        "D:/Projets/Trement/MyrinoxPrime/docs/Top-Down-Concept/16a86187-6a27-4899-bf86-c16197a650c0.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "block-assembler",
+      "file": "blocs/block-assembler.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One COMPACT ENCLOSED RECTANGULAR GRID BUILDING BLOCK assembler, squat cuboid ivory charcoal casing roughly two cells wide and one cell high, large dark inset front service bay with one compact robotic fabrication arm and empty metal work bed INSIDE the casing. Amber mechanism accents, small cyan blank status strip. Flat top and side mounting faces, no part protrudes beyond the cuboid block envelope. Inspired by the industrial fabrication machinery in Myrinox reference but recompose into one original VoidForge stackable block. No entire platform, gantry outside the box, factory, loose output items or surrounding scene.",
+      "referenced_image_paths": [
+        "D:/Projets/Trement/MyrinoxPrime/docs/Top-Down-Concept/Module-Assemblers.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "block-cargo",
+      "file": "blocs/block-cargo.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One COMPACT CUBIC CARGO STORAGE GRID BLOCK, closed heavy ivory cuboid shell, charcoal reinforced corner rails, broad flat recessed front hatch with central amber latch, tiny cyan empty status strip; flat top, bottom and side mounting faces. Match the solid compact storage crates in the Myrinox reference, refined into an original VoidForge cargo block. No whole cargo platform, no racks of many crates, no base or scene. Single one-cell cube.",
+      "referenced_image_paths": [
+        "D:/Projets/Trement/MyrinoxPrime/docs/Top-Down-Concept/38fb3e62-2df6-4d9f-b610-e7c5c1515db5.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "map-asteroid",
+      "file": "carte/map-asteroid.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One irregular grey charcoal asteroid rock, boulder shape with a few broad crater-like pits and fracture planes, no ore veins or glow, strong asymmetrical silhouette. Simplified but natural map diorama miniature. Match plain rocks in GPS reference.",
+      "referenced_image_paths": [
+        "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/04-gps-carte.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "map-ship",
+      "file": "carte/map-ship.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One small original space mining utility ship seen in three-quarter isometric view, stout long charcoal body, ivory armored top, two parallel amber rear engine pods, small cyan cockpit front. No weaponry, trail, ground, engine plume or scene. Match player spacecraft in GPS reference.",
+      "referenced_image_paths": [
+        "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/04-gps-carte.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "map-outpost",
+      "file": "carte/map-outpost.png",
+      "prompt": "Create ONE standalone inventory icon for the original game VoidForge Odyssey. Square 1024x1024 canvas, genuinely TRANSPARENT background (alpha), no floor, shadow plane, environment, frame, label, lettering, numbers, watermark or UI panel. The single object is centered with a 12 percent clear transparent margin, fully visible, strong readable silhouette, filling about 76 percent of the canvas. Premium realistic stylized industrial sci-fi game inventory rendering, crisp polished edges, restrained physically plausible metal/rock texture, soft studio light from upper left and subtle cyan rim light, mild three-quarter isometric view, readable at 64 pixels. Use the supplied reference only as a visual design and subject guide. Render the specified object alone, never reproduce a screen, background or text. One small original modular space outpost miniature, squat charcoal cuboid facility with ivory armor panels, two amber accent blocks, one short antenna tower and enclosed docking porch, sparse cyan windows. Compact single map object with no landscape, asteroid or surrounding base. Match AVANT-POSTE in GPS reference.",
+      "referenced_image_paths": [
+        "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/04-gps-carte.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "id": "ui-inventory",
+      "file": "interface-masks/ui-inventory.png",
+      "prompt": "Create a BRAND NEW production single-channel icon MASK IMAGE, flat 2D vector-style graphics. Square 1024 x 1024. Background is EXACT UNIFORM SOLID PURE BLACK #000000 covering the entire opaque canvas. Foreground is EXACT SOLID PURE WHITE #FFFFFF, no ivory or gradients. One isometric wireframe cube with three faces, bold even straight edges, pure black holes inside the three faces and a central Y junction. No background detail inside the cube. This is a luminance mask texture: white is the icon coverage and black is the empty space. Absolutely no alpha transparency, checkerboard, shadows, lighting, gradients, grain, noise, texture, glow, border or text. Only one white geometric symbol on a perfectly black canvas. Sharp precise vector-like edges, anti aliasing only at boundary, equal generous 18 percent margins. It must be a clean untextured digital glyph, not a drawing or a photograph.",
+      "referenced_image_paths": [],
+      "transparent_background": false
+    },
+    {
+      "id": "ui-construction",
+      "file": "interface-masks/ui-construction.png",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. A crossed hammer and open-ended wrench, forming one clear X silhouette. Broad recognisable tool heads.",
+      "referenced_image_paths": [],
+      "transparent_background": false
+    },
+    {
+      "id": "ui-ship",
+      "file": "interface-masks/ui-ship.png",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. A flat side silhouette of a compact futuristic utility spacecraft pointing right, broad horizontal body, small raised cabin, short engine tail. Not a rocket pointing up.",
+      "referenced_image_paths": [],
+      "transparent_background": false
+    },
+    {
+      "id": "ui-gps",
+      "file": "interface-masks/ui-gps.png",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One classic map location pin with a circular pure black hole in its upper bulb, tapering to a point below.",
+      "referenced_image_paths": [],
+      "transparent_background": false
+    },
+    {
+      "id": "ui-battery",
+      "file": "interface-masks/ui-battery.png",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One horizontal empty battery outline with a small positive terminal on its right. Interior fully pure black, no charge bars; charge fill is added dynamically by the game.",
+      "referenced_image_paths": [],
+      "transparent_background": false
+    },
+    {
+      "id": "ui-chevron",
+      "file": "interface-masks/ui-chevron.png",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One thick downward V chevron, two diagonal strokes, symmetrical. No shaft, no circle.",
+      "referenced_image_paths": [],
+      "transparent_background": false
+    },
+    {
+      "id": "ui-plus",
+      "file": "interface-masks/ui-plus.png",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One perfectly symmetric thick plus sign, equal length horizontal and vertical bars.",
+      "referenced_image_paths": [],
+      "transparent_background": false
+    },
+    {
+      "id": "ui-minus",
+      "file": "interface-masks/ui-minus.png",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One single horizontal thick straight bar with slightly rounded ends.",
+      "referenced_image_paths": [],
+      "transparent_background": false
+    },
+    {
+      "id": "ui-recenter",
+      "file": "interface-masks/ui-recenter.png",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One circular target reticle with pure black center, small central dot and four short cardinal crosshair ticks projecting beyond the circle. Geometric and balanced.",
+      "referenced_image_paths": [],
+      "transparent_background": false
+    },
+    {
+      "id": "ui-power",
+      "file": "interface-masks/ui-power.png",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. The standard power on-off glyph, a thick open circular arc with a vertical stroke from top toward center, simple and flat.",
+      "referenced_image_paths": [],
+      "transparent_background": false
+    },
+    {
+      "id": "ui-pause",
+      "file": "interface-masks/ui-pause.png",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. Exactly two equal thick vertical parallel bars separated by a pure black gap.",
+      "referenced_image_paths": [],
+      "transparent_background": false
+    },
+    {
+      "id": "ui-check",
+      "file": "interface-masks/ui-check.png",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One simple bold check mark, short lower-left stroke joining a longer upper-right stroke.",
+      "referenced_image_paths": [],
+      "transparent_background": false
+    },
+    {
+      "id": "ui-energy",
+      "file": "interface-masks/ui-energy.png",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One bold angular lightning bolt silhouette, clean and distinctive, vertical orientation.",
+      "referenced_image_paths": [],
+      "transparent_background": false
+    },
+    {
+      "id": "ui-seat",
+      "file": "interface-masks/ui-seat.png",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One accessibility-style side silhouette of a seated astronaut at a cockpit: round head, upright torso, bent knees and a simple separate seat outline, no wheelchair circle, no other figures.",
+      "referenced_image_paths": [],
+      "transparent_background": false
+    },
+    {
+      "id": "ui-base",
+      "file": "interface-masks/ui-base.png",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. A minimal front-view sci-fi outpost building silhouette with a central raised rectangular tower, tiny antenna mast and two lower side wings. Clear pure black door cutouts.",
+      "referenced_image_paths": [],
+      "transparent_background": false
+    },
+    {
+      "id": "ui-ore",
+      "file": "interface-masks/ui-ore.png",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One compact pile of exactly three angular rock silhouettes, separated by small pure black gaps, broad irregular facets, flat solid pure white.",
+      "referenced_image_paths": [],
+      "transparent_background": false
+    },
+    {
+      "id": "ui-beacon",
+      "file": "interface-masks/ui-beacon.png",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One outlined vertical diamond waypoint marker, thick pure white strokes, pure black center. No other markings.",
+      "referenced_image_paths": [],
+      "transparent_background": false
+    },
+    {
+      "id": "ui-arrow",
+      "file": "interface-masks/ui-arrow.png",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One thick horizontal right-pointing arrow with short shaft and broad chevron head, one connected solid silhouette.",
+      "referenced_image_paths": [],
+      "transparent_background": false
+    }
+  ]
+}

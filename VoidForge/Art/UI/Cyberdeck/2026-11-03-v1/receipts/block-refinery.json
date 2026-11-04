@@ -1,0 +1,10 @@
+{
+  "id": "block-refinery",
+  "label": "Raffinerie",
+  "family": "blocs",
+  "file": "blocs/block-refinery.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-747028d5-7dbf-4cdc-9ccb-23380f11b8f4.png",
+  "reference": "D:/Projets/Trement/MyrinoxPrime/docs/Top-Down-Concept/16a86187-6a27-4899-bf86-c16197a650c0.png",
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": true
+}

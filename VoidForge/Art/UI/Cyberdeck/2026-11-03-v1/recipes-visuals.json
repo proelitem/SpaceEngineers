@@ -1,0 +1,47 @@
+{
+  "status": "illustrative_ui_associations_not_game_recipes",
+  "ratios_and_unknown_ingredients": null,
+  "recipes": [
+    {
+      "id": "refine-iron",
+      "label": "Raffiner le fer",
+      "icon": "ingot-iron",
+      "input_icons": [
+        "ore-iron"
+      ],
+      "output_icon": "ingot-iron"
+    },
+    {
+      "id": "assemble-plates",
+      "label": "Plaques métalliques",
+      "icon": "component-plates",
+      "input_icons": [
+        "ingot-iron"
+      ],
+      "output_icon": "component-plates"
+    },
+    {
+      "id": "assemble-tubes",
+      "label": "Tubes",
+      "icon": "component-tubes",
+      "input_icons": null,
+      "output_icon": "component-tubes"
+    },
+    {
+      "id": "assemble-circuits",
+      "label": "Circuits",
+      "icon": "component-circuits",
+      "input_icons": null,
+      "output_icon": "component-circuits"
+    },
+    {
+      "id": "build-armor",
+      "label": "Construire une armure",
+      "icon": "block-armor",
+      "input_icons": [
+        "component-plates"
+      ],
+      "output_icon": "block-armor"
+    }
+  ]
+}

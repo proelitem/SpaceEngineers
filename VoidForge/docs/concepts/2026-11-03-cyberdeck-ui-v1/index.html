@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VoidForge Odyssey — concepts cyberdeck</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#080e14;color:#f0ece3}*{box-sizing:border-box}body{margin:0;padding:clamp(16px,3vw,48px);max-width:1800px;margin-inline:auto}h1{font-size:clamp(24px,3vw,40px);margin:0 0 8px;letter-spacing:.02em}p{line-height:1.6;color:#b7ccd0;max-width:88ch}nav{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0 20px}button,a.link{font:inherit;border:1px solid #54818c;border-radius:5px;background:#10232b;color:#f0ece3;padding:13px 20px;text-decoration:none;cursor:pointer}button[aria-pressed=true]{background:#ffb43a;color:#10151b;border-color:#ffb43a;font-weight:700}button:focus-visible,a:focus-visible{outline:3px solid #6ddbe5;outline-offset:4px}figure{margin:0;background:#050a0e;border:1px solid #416a74;aspect-ratio:21/9;display:flex;align-items:center;justify-content:center}figure img{display:block;max-width:100%;max-height:100%;object-fit:contain}#description{min-height:3.2em}footer{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}footer span{color:#91a9af;font-size:14px}.eyebrow{color:#6ddbe5;letter-spacing:.18em;font-size:12px;margin:0 0 9px}
+</style>
+<p class="eyebrow">VOIDFORGE ODYSSEY / CYBERDECK</p>
+<h1>Quatre fonctions. Un écran de bras.</h1>
+<p>Concepts pour une dalle de 216 × 92,6 mm, format 21:9. Choisir une vue pour l'afficher ; les commandes représentées dans les images sont illustratives.</p>
+<nav aria-label="Vues du cyberdeck" id="pages"></nav>
+<figure><img id="screen" src="01-inventaire.png" alt="Inventaire : outils à gauche et contenu de soute à droite."></figure>
+<p id="description" aria-live="polite"></p>
+<footer><a class="link" href="README.md">Lire les interactions et les notes techniques</a><a class="link" id="download" href="01-inventaire.png" download>Télécharger cette vue</a><span>Références visuelles · fonctions de jeu à intégrer dans Unity.</span></footer>
+<script>
+const pages=[
+['Inventaire','01-inventaire.png','Outils Drill, Welder et Grinder à gauche ; choix de soute, minerais ou matériaux, icônes, noms et quantités à droite.'],
+['Construction','02-construction.png','Menu dédié : carrousel de cinq blocs, carte active agrandie, dimensions et coût. Sélectionner prépare ensuite le placement dans le monde.'],
+['Vaisseau · Raffinerie','03a-vaisseau-raffinerie.png','Accès depuis le cockpit : activation du module, raffinage, progression, file de traitement et accès à la soute.'],
+['Vaisseau · Assemblage','03b-vaisseau-assemblage.png','Accès depuis le cockpit : recette, composants disponibles, quantité et file de fabrication. Les recettes et valeurs sont illustratives.'],
+['GPS / Carte','04-gps-carte.png','Carte spatiale 3D fondée sur la logique d’entités d’ELANCE-MAP : repères, sélection, distance, coordonnées et recentrage. Adaptation technique à réaliser.']
+];
+const nav=document.querySelector('#pages'),screen=document.querySelector('#screen'),description=document.querySelector('#description'),download=document.querySelector('#download');
+pages.forEach((p,i)=>{const b=document.createElement('button');b.type='button';b.textContent=p[0];b.setAttribute('aria-pressed',i===0?'true':'false');b.addEventListener('click',()=>select(i));nav.append(b)});
+function select(i){const p=pages[i];screen.src=p[1];screen.alt=p[2];description.textContent=p[2];download.href=p[1];[...nav.children].forEach((b,j)=>b.setAttribute('aria-pressed',i===j?'true':'false'))}select(0);
+</script>
+</html>

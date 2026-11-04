@@ -1,0 +1,11 @@
+{
+  "file": "concept-raffinerie-bloc.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-f9df7cd9-15e0-46b2-a391-e51e0d7cea69.png",
+  "tool": "image_gen.imagegen",
+  "prompt": "Edit the supplied VoidForge Odyssey refinery wrist HUD screenshot. Reference image 1 is the exact edit target. Reference image 2 is the replacement refinery BLOCK artwork. Make ONE precise correction: replace the sprawling factory/industrial platform thumbnail inside the left panel above RAFFINERIE 01 with the exact compact tall ivory and charcoal cuboid refinery block shown in reference 2, including its two recessed amber-lit tanks inside a stackable rectangular casing. It should look like a single construction block, not a factory complex or a station module. Fit that block fully inside the left artwork region with generous margins, without covering RAFFINERIE 01 or the ACTIVE control. Preserve the full 21:9 ultrawide layout, dark teal background, all existing French labels, the headers, right processing queue, iron ore to ingots conversion graphic, 62% progress bar, 120 kW status, SOUTE/PAUSE commands and bottom navigation exactly as in reference 1. Keep the three-panel layout and keep VAISSEAU selected amber. No extra panels, no added text, no device or hands, no added decorative imagery. Final opaque widescreen flat UI concept. Do not alter the original screenshot file; output a new revised image.",
+  "referenced_image_paths": [
+    "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/03a-vaisseau-raffinerie.png",
+    "G:/Projets/SpaceEngineers/VoidForge/Art/UI/Cyberdeck/2026-11-03-v1/blocs/block-refinery.png"
+  ],
+  "transparent_background": false
+}

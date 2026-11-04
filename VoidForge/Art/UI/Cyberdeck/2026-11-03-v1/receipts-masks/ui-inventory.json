@@ -1,0 +1,12 @@
+{
+  "id": "ui-inventory",
+  "label": "Inventaire / soute",
+  "family": "interface-masks",
+  "file": "interface-masks/ui-inventory.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-b01eafc9-b017-49d2-aecf-d6ce389d9f89.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": false,
+  "coverage": "rgb-luminance",
+  "prompt": "Create a BRAND NEW production single-channel icon MASK IMAGE, flat 2D vector-style graphics. Square 1024 x 1024. Background is EXACT UNIFORM SOLID PURE BLACK #000000 covering the entire opaque canvas. Foreground is EXACT SOLID PURE WHITE #FFFFFF, no ivory or gradients. One isometric wireframe cube with three faces, bold even straight edges, pure black holes inside the three faces and a central Y junction. No background detail inside the cube. This is a luminance mask texture: white is the icon coverage and black is the empty space. Absolutely no alpha transparency, checkerboard, shadows, lighting, gradients, grain, noise, texture, glow, border or text. Only one white geometric symbol on a perfectly black canvas. Sharp precise vector-like edges, anti aliasing only at boundary, equal generous 18 percent margins. It must be a clean untextured digital glyph, not a drawing or a photograph."
+}

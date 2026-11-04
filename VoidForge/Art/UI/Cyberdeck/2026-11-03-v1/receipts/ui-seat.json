@@ -1,0 +1,10 @@
+{
+  "id": "ui-seat",
+  "label": "Assis au cockpit",
+  "family": "interface",
+  "file": "interface/ui-seat.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-591eb14b-f760-4f36-a64b-fc0e10da0870.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": true
+}

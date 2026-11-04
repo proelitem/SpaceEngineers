@@ -1,0 +1,152 @@
+{
+  "date": "2026-11-03",
+  "tool": "image_gen.imagegen",
+  "status": "replacement_for_rejected_alpha_glyphs",
+  "format": "opaque RGB luminance coverage masks; shader maps white to colored glyph and black to alpha zero",
+  "jobs": [
+    {
+      "id": "ui-inventory",
+      "label": "Inventaire / soute",
+      "family": "interface-masks",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. An isometric wireframe closed cube, thick pure white edges and a central Y junction, three visible faces. One cube only.",
+      "reference": null,
+      "transparent_background": false
+    },
+    {
+      "id": "ui-construction",
+      "label": "Construire",
+      "family": "interface-masks",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. A crossed hammer and open-ended wrench, forming one clear X silhouette. Broad recognisable tool heads.",
+      "reference": null,
+      "transparent_background": false
+    },
+    {
+      "id": "ui-ship",
+      "label": "Vaisseau",
+      "family": "interface-masks",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. A flat side silhouette of a compact futuristic utility spacecraft pointing right, broad horizontal body, small raised cabin, short engine tail. Not a rocket pointing up.",
+      "reference": null,
+      "transparent_background": false
+    },
+    {
+      "id": "ui-gps",
+      "label": "GPS / repère",
+      "family": "interface-masks",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One classic map location pin with a circular pure black hole in its upper bulb, tapering to a point below.",
+      "reference": null,
+      "transparent_background": false
+    },
+    {
+      "id": "ui-battery",
+      "label": "Énergie du cyberdeck",
+      "family": "interface-masks",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One horizontal empty battery outline with a small positive terminal on its right. Interior fully pure black, no charge bars; charge fill is added dynamically by the game.",
+      "reference": null,
+      "transparent_background": false
+    },
+    {
+      "id": "ui-chevron",
+      "label": "Menu déroulant / carrousel",
+      "family": "interface-masks",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One thick downward V chevron, two diagonal strokes, symmetrical. No shaft, no circle.",
+      "reference": null,
+      "transparent_background": false
+    },
+    {
+      "id": "ui-plus",
+      "label": "Augmenter / zoom avant",
+      "family": "interface-masks",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One perfectly symmetric thick plus sign, equal length horizontal and vertical bars.",
+      "reference": null,
+      "transparent_background": false
+    },
+    {
+      "id": "ui-minus",
+      "label": "Diminuer / zoom arrière",
+      "family": "interface-masks",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One single horizontal thick straight bar with slightly rounded ends.",
+      "reference": null,
+      "transparent_background": false
+    },
+    {
+      "id": "ui-recenter",
+      "label": "Recentrer / cibler",
+      "family": "interface-masks",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One circular target reticle with pure black center, small central dot and four short cardinal crosshair ticks projecting beyond the circle. Geometric and balanced.",
+      "reference": null,
+      "transparent_background": false
+    },
+    {
+      "id": "ui-power",
+      "label": "Alimentation",
+      "family": "interface-masks",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. The standard power on-off glyph, a thick open circular arc with a vertical stroke from top toward center, simple and flat.",
+      "reference": null,
+      "transparent_background": false
+    },
+    {
+      "id": "ui-pause",
+      "label": "Pause",
+      "family": "interface-masks",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. Exactly two equal thick vertical parallel bars separated by a pure black gap.",
+      "reference": null,
+      "transparent_background": false
+    },
+    {
+      "id": "ui-check",
+      "label": "Validation / équipé",
+      "family": "interface-masks",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One simple bold check mark, short lower-left stroke joining a longer upper-right stroke.",
+      "reference": null,
+      "transparent_background": false
+    },
+    {
+      "id": "ui-energy",
+      "label": "Puissance électrique",
+      "family": "interface-masks",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One bold angular lightning bolt silhouette, clean and distinctive, vertical orientation.",
+      "reference": null,
+      "transparent_background": false
+    },
+    {
+      "id": "ui-seat",
+      "label": "Assis au cockpit",
+      "family": "interface-masks",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One accessibility-style side silhouette of a seated astronaut at a cockpit: round head, upright torso, bent knees and a simple separate seat outline, no wheelchair circle, no other figures.",
+      "reference": null,
+      "transparent_background": false
+    },
+    {
+      "id": "ui-base",
+      "label": "Repère de base",
+      "family": "interface-masks",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. A minimal front-view sci-fi outpost building silhouette with a central raised rectangular tower, tiny antenna mast and two lower side wings. Clear pure black door cutouts.",
+      "reference": null,
+      "transparent_background": false
+    },
+    {
+      "id": "ui-ore",
+      "label": "Repère de minerai",
+      "family": "interface-masks",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One compact pile of exactly three angular rock silhouettes, separated by small pure black gaps, broad irregular facets, flat solid pure white.",
+      "reference": null,
+      "transparent_background": false
+    },
+    {
+      "id": "ui-beacon",
+      "label": "Balise / cible de carte",
+      "family": "interface-masks",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One outlined vertical diamond waypoint marker, thick pure white strokes, pure black center. No other markings.",
+      "reference": null,
+      "transparent_background": false
+    },
+    {
+      "id": "ui-arrow",
+      "label": "Flux de recette / direction",
+      "family": "interface-masks",
+      "prompt": "Create a BRAND NEW production single-channel HUD icon MASK IMAGE for VoidForge Odyssey, flat 2D vector-style graphics. Square 1024 x 1024 opaque canvas. Background is EXACT UNIFORM SOLID PURE BLACK #000000 over the entire image, foreground is EXACT SOLID PURE WHITE #FFFFFF. This is a luminance coverage mask: white is the glyph, black is all empty space including every gap and interior hole. No transparency, grey background, checkerboard, shadows, lighting, gradients, texture, grain, speckles, glow, bevel, border or text. Sharp precise vector-like edges, anti aliasing only at the boundary. Equal generous 18 percent margins. Clean untextured professional digital pictogram, not a physical object, drawing or photograph. One thick horizontal right-pointing arrow with short shaft and broad chevron head, one connected solid silhouette.",
+      "reference": null,
+      "transparent_background": false
+    }
+  ]
+}

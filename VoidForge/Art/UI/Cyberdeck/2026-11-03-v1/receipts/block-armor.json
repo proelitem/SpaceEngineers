@@ -1,0 +1,10 @@
+{
+  "id": "block-armor",
+  "label": "Armure",
+  "family": "blocs",
+  "file": "blocs/block-armor.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-ef5556ad-c5eb-41e5-94e7-f580b142f1b0.png",
+  "reference": "G:/Projets/SpaceEngineers/VoidForge/docs/concepts/2026-11-03-cyberdeck-ui-v1/02-construction.png",
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": true
+}

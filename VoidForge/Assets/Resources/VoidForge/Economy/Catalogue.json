@@ -1,0 +1,1476 @@
+{
+  "version": "voidforge-economy-1m-v1",
+  "sourceProfile": "se1-classic-industrial-public-reference-20261103",
+  "assemblerEfficiency": 1,
+  "items": [
+    {
+      "id": "ore-iron",
+      "name": "Minerai de fer",
+      "icon": "ore-iron",
+      "family": "minerais",
+      "unit": "kg",
+      "litres": "0.37"
+    },
+    {
+      "id": "ore-nickel",
+      "name": "Minerai de nickel",
+      "icon": "ore-nickel",
+      "family": "minerais",
+      "unit": "kg",
+      "litres": "0.37"
+    },
+    {
+      "id": "ore-silicon",
+      "name": "Minerai de silicium",
+      "icon": "ore-silicon",
+      "family": "minerais",
+      "unit": "kg",
+      "litres": "0.37"
+    },
+    {
+      "id": "ingot-iron",
+      "name": "Lingots de fer",
+      "icon": "ingot-iron",
+      "family": "produits",
+      "unit": "kg",
+      "litres": "0.12"
+    },
+    {
+      "id": "component-plates",
+      "name": "Plaque d’acier",
+      "icon": "component-plates",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-tubes",
+      "name": "Petit tube",
+      "icon": "component-tubes",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-circuits",
+      "name": "Ordinateur",
+      "icon": "component-circuits",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "tool-drill",
+      "name": "Foreuse à main",
+      "icon": "tool-drill",
+      "family": "outils",
+      "unit": "u",
+      "litres": "25"
+    },
+    {
+      "id": "tool-welder",
+      "name": "Soudeuse à main",
+      "icon": "tool-welder",
+      "family": "outils",
+      "unit": "u",
+      "litres": "25"
+    },
+    {
+      "id": "tool-grinder",
+      "name": "Meuleuse à main",
+      "icon": "tool-grinder",
+      "family": "outils",
+      "unit": "u",
+      "litres": "25"
+    },
+    {
+      "id": "ore-cobalt",
+      "name": "Minerai de cobalt",
+      "icon": "ore-cobalt",
+      "family": "minerais",
+      "unit": "kg",
+      "litres": "0.37"
+    },
+    {
+      "id": "ore-magnesium",
+      "name": "Minerai de magnésium",
+      "icon": "ore-magnesium",
+      "family": "minerais",
+      "unit": "kg",
+      "litres": "0.37"
+    },
+    {
+      "id": "ore-silver",
+      "name": "Minerai d’argent",
+      "icon": "ore-silver",
+      "family": "minerais",
+      "unit": "kg",
+      "litres": "0.37"
+    },
+    {
+      "id": "ore-gold",
+      "name": "Minerai d’or",
+      "icon": "ore-gold",
+      "family": "minerais",
+      "unit": "kg",
+      "litres": "0.37"
+    },
+    {
+      "id": "ore-platinum",
+      "name": "Minerai de platine",
+      "icon": "ore-platinum",
+      "family": "minerais",
+      "unit": "kg",
+      "litres": "0.37"
+    },
+    {
+      "id": "ore-uranium",
+      "name": "Minerai d’uranium",
+      "icon": "ore-uranium",
+      "family": "minerais",
+      "unit": "kg",
+      "litres": "0.37"
+    },
+    {
+      "id": "ore-stone",
+      "name": "Pierre brute",
+      "icon": "ore-stone",
+      "family": "minerais",
+      "unit": "kg",
+      "litres": "0.37"
+    },
+    {
+      "id": "ore-ice",
+      "name": "Glace",
+      "icon": "ore-ice",
+      "family": "minerais",
+      "unit": "kg",
+      "litres": "0.37"
+    },
+    {
+      "id": "ingot-nickel",
+      "name": "Lingot de nickel",
+      "icon": "ingot-nickel",
+      "family": "produits",
+      "unit": "kg",
+      "litres": "0.12"
+    },
+    {
+      "id": "ingot-cobalt",
+      "name": "Lingot de cobalt",
+      "icon": "ingot-cobalt",
+      "family": "produits",
+      "unit": "kg",
+      "litres": "0.12"
+    },
+    {
+      "id": "wafer-silicon",
+      "name": "Plaquettes de silicium",
+      "icon": "wafer-silicon",
+      "family": "produits",
+      "unit": "kg",
+      "litres": "0.12"
+    },
+    {
+      "id": "powder-magnesium",
+      "name": "Poudre de magnésium",
+      "icon": "powder-magnesium",
+      "family": "produits",
+      "unit": "kg",
+      "litres": "0.12"
+    },
+    {
+      "id": "ingot-silver",
+      "name": "Lingot d’argent",
+      "icon": "ingot-silver",
+      "family": "produits",
+      "unit": "kg",
+      "litres": "0.12"
+    },
+    {
+      "id": "ingot-gold",
+      "name": "Lingot d’or",
+      "icon": "ingot-gold",
+      "family": "produits",
+      "unit": "kg",
+      "litres": "0.12"
+    },
+    {
+      "id": "ingot-platinum",
+      "name": "Lingot de platine",
+      "icon": "ingot-platinum",
+      "family": "produits",
+      "unit": "kg",
+      "litres": "0.12"
+    },
+    {
+      "id": "ingot-uranium",
+      "name": "Pastilles d’uranium",
+      "icon": "ingot-uranium",
+      "family": "produits",
+      "unit": "kg",
+      "litres": "0.12"
+    },
+    {
+      "id": "gravel",
+      "name": "Gravier",
+      "icon": "gravel",
+      "family": "produits",
+      "unit": "kg",
+      "litres": "0.12"
+    },
+    {
+      "id": "scrap-metal",
+      "name": "Ferraille",
+      "icon": "scrap-metal",
+      "family": "recyclage",
+      "unit": "kg",
+      "litres": "0.37"
+    },
+    {
+      "id": "component-construction",
+      "name": "Éléments de construction",
+      "icon": "component-construction",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-interior-plate",
+      "name": "Plaque intérieure",
+      "icon": "component-interior-plate",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-large-tube",
+      "name": "Grand tube",
+      "icon": "component-large-tube",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-metal-grid",
+      "name": "Grille métallique",
+      "icon": "component-metal-grid",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-motor",
+      "name": "Moteur électrique",
+      "icon": "component-motor",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-display",
+      "name": "Écran",
+      "icon": "component-display",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-girder",
+      "name": "Poutrelle",
+      "icon": "component-girder",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-glass",
+      "name": "Verre renforcé",
+      "icon": "component-glass",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-reactor",
+      "name": "Composant de réacteur",
+      "icon": "component-reactor",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-thruster",
+      "name": "Composant de propulsion",
+      "icon": "component-thruster",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-gravity",
+      "name": "Composant gravitationnel",
+      "icon": "component-gravity",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-medical",
+      "name": "Composant médical",
+      "icon": "component-medical",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-radio",
+      "name": "Composant radio",
+      "icon": "component-radio",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-detector",
+      "name": "Composant de détection",
+      "icon": "component-detector",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-explosives",
+      "name": "Charge explosive",
+      "icon": "component-explosives",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-solar-cell",
+      "name": "Cellule solaire",
+      "icon": "component-solar-cell",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-power-cell",
+      "name": "Cellule énergétique",
+      "icon": "component-power-cell",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    },
+    {
+      "id": "component-superconductor",
+      "name": "Supraconducteur",
+      "icon": "component-superconductor",
+      "family": "recettes",
+      "unit": "u",
+      "litres": "2"
+    }
+  ],
+  "recipes": [
+    {
+      "id": "craft-component-plates",
+      "name": "Plaque d’acier",
+      "icon": "component-plates",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "21"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-plates",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-construction",
+      "name": "Éléments de construction",
+      "icon": "component-construction",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "8"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-construction",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-interior-plate",
+      "name": "Plaque intérieure",
+      "icon": "component-interior-plate",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "3"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-interior-plate",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-tubes",
+      "name": "Petit tube",
+      "icon": "component-tubes",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "5"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-tubes",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-large-tube",
+      "name": "Grand tube",
+      "icon": "component-large-tube",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "30"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-large-tube",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-metal-grid",
+      "name": "Grille métallique",
+      "icon": "component-metal-grid",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "12"
+        },
+        {
+          "id": "ingot-nickel",
+          "amount": "5"
+        },
+        {
+          "id": "ingot-cobalt",
+          "amount": "3"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-metal-grid",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-motor",
+      "name": "Moteur électrique",
+      "icon": "component-motor",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "20"
+        },
+        {
+          "id": "ingot-nickel",
+          "amount": "5"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-motor",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-circuits",
+      "name": "Ordinateur",
+      "icon": "component-circuits",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "0.5"
+        },
+        {
+          "id": "wafer-silicon",
+          "amount": "0.2"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-circuits",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-display",
+      "name": "Écran",
+      "icon": "component-display",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "1"
+        },
+        {
+          "id": "wafer-silicon",
+          "amount": "5"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-display",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-girder",
+      "name": "Poutrelle",
+      "icon": "component-girder",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "6"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-girder",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-glass",
+      "name": "Verre renforcé",
+      "icon": "component-glass",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "wafer-silicon",
+          "amount": "15"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-glass",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-reactor",
+      "name": "Composant de réacteur",
+      "icon": "component-reactor",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "15"
+        },
+        {
+          "id": "ingot-silver",
+          "amount": "5"
+        },
+        {
+          "id": "gravel",
+          "amount": "20"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-reactor",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-thruster",
+      "name": "Composant de propulsion",
+      "icon": "component-thruster",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "30"
+        },
+        {
+          "id": "ingot-cobalt",
+          "amount": "10"
+        },
+        {
+          "id": "ingot-gold",
+          "amount": "1"
+        },
+        {
+          "id": "ingot-platinum",
+          "amount": "0.4"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-thruster",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-gravity",
+      "name": "Composant gravitationnel",
+      "icon": "component-gravity",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "600"
+        },
+        {
+          "id": "ingot-cobalt",
+          "amount": "220"
+        },
+        {
+          "id": "ingot-silver",
+          "amount": "5"
+        },
+        {
+          "id": "ingot-gold",
+          "amount": "10"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-gravity",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-medical",
+      "name": "Composant médical",
+      "icon": "component-medical",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "60"
+        },
+        {
+          "id": "ingot-nickel",
+          "amount": "70"
+        },
+        {
+          "id": "ingot-silver",
+          "amount": "20"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-medical",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-radio",
+      "name": "Composant radio",
+      "icon": "component-radio",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "8"
+        },
+        {
+          "id": "wafer-silicon",
+          "amount": "1"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-radio",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-detector",
+      "name": "Composant de détection",
+      "icon": "component-detector",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "5"
+        },
+        {
+          "id": "ingot-nickel",
+          "amount": "15"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-detector",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-explosives",
+      "name": "Charge explosive",
+      "icon": "component-explosives",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "wafer-silicon",
+          "amount": "0.5"
+        },
+        {
+          "id": "powder-magnesium",
+          "amount": "2"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-explosives",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-solar-cell",
+      "name": "Cellule solaire",
+      "icon": "component-solar-cell",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-nickel",
+          "amount": "3"
+        },
+        {
+          "id": "wafer-silicon",
+          "amount": "6"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-solar-cell",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-power-cell",
+      "name": "Cellule énergétique",
+      "icon": "component-power-cell",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "10"
+        },
+        {
+          "id": "ingot-nickel",
+          "amount": "2"
+        },
+        {
+          "id": "wafer-silicon",
+          "amount": "1"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-power-cell",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-component-superconductor",
+      "name": "Supraconducteur",
+      "icon": "component-superconductor",
+      "machine": "assembler",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "10"
+        },
+        {
+          "id": "ingot-gold",
+          "amount": "2"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "component-superconductor",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-tool-drill",
+      "name": "Foreuse à main",
+      "icon": "tool-drill",
+      "machine": "assembler",
+      "seconds": 5,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "8"
+        },
+        {
+          "id": "ingot-nickel",
+          "amount": "3"
+        },
+        {
+          "id": "wafer-silicon",
+          "amount": "3"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "tool-drill",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-tool-welder",
+      "name": "Soudeuse à main",
+      "icon": "tool-welder",
+      "machine": "assembler",
+      "seconds": 5,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "5"
+        },
+        {
+          "id": "ingot-nickel",
+          "amount": "1"
+        },
+        {
+          "id": "wafer-silicon",
+          "amount": "3"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "tool-welder",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "craft-tool-grinder",
+      "name": "Meuleuse à main",
+      "icon": "tool-grinder",
+      "machine": "assembler",
+      "seconds": 5,
+      "inputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "6"
+        },
+        {
+          "id": "ingot-nickel",
+          "amount": "2"
+        },
+        {
+          "id": "wafer-silicon",
+          "amount": "2"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "tool-grinder",
+          "amount": "1"
+        }
+      ]
+    },
+    {
+      "id": "refine-Fe",
+      "name": "Minerai de fer",
+      "icon": "ore-iron",
+      "machine": "refinery",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ore-iron",
+          "amount": "10"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "7.0"
+        }
+      ]
+    },
+    {
+      "id": "refine-Ni",
+      "name": "Minerai de nickel",
+      "icon": "ore-nickel",
+      "machine": "refinery",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ore-nickel",
+          "amount": "10"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "ingot-nickel",
+          "amount": "4.0"
+        }
+      ]
+    },
+    {
+      "id": "refine-Co",
+      "name": "Minerai de cobalt",
+      "icon": "ore-cobalt",
+      "machine": "refinery",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ore-cobalt",
+          "amount": "10"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "ingot-cobalt",
+          "amount": "3.0"
+        }
+      ]
+    },
+    {
+      "id": "refine-Si",
+      "name": "Minerai de silicium",
+      "icon": "ore-silicon",
+      "machine": "refinery",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ore-silicon",
+          "amount": "10"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "wafer-silicon",
+          "amount": "7.0"
+        }
+      ]
+    },
+    {
+      "id": "refine-Mg",
+      "name": "Minerai de magnésium",
+      "icon": "ore-magnesium",
+      "machine": "refinery",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ore-magnesium",
+          "amount": "10"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "powder-magnesium",
+          "amount": "0.07"
+        }
+      ]
+    },
+    {
+      "id": "refine-Ag",
+      "name": "Minerai d’argent",
+      "icon": "ore-silver",
+      "machine": "refinery",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ore-silver",
+          "amount": "10"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "ingot-silver",
+          "amount": "1.0"
+        }
+      ]
+    },
+    {
+      "id": "refine-Au",
+      "name": "Minerai d’or",
+      "icon": "ore-gold",
+      "machine": "refinery",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ore-gold",
+          "amount": "10"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "ingot-gold",
+          "amount": "0.1"
+        }
+      ]
+    },
+    {
+      "id": "refine-Pt",
+      "name": "Minerai de platine",
+      "icon": "ore-platinum",
+      "machine": "refinery",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ore-platinum",
+          "amount": "10"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "ingot-platinum",
+          "amount": "0.05"
+        }
+      ]
+    },
+    {
+      "id": "refine-U",
+      "name": "Minerai d’uranium",
+      "icon": "ore-uranium",
+      "machine": "refinery",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ore-uranium",
+          "amount": "10"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "ingot-uranium",
+          "amount": "0.1"
+        }
+      ]
+    },
+    {
+      "id": "refine-stone",
+      "name": "Pierre brute",
+      "icon": "ore-stone",
+      "machine": "refinery",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "ore-stone",
+          "amount": "10"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "gravel",
+          "amount": "0.14"
+        },
+        {
+          "id": "ingot-iron",
+          "amount": "0.3"
+        },
+        {
+          "id": "ingot-nickel",
+          "amount": "0.024"
+        },
+        {
+          "id": "wafer-silicon",
+          "amount": "0.04"
+        }
+      ]
+    },
+    {
+      "id": "recycle-scrap",
+      "name": "Ferraille",
+      "icon": "scrap-metal",
+      "machine": "refinery",
+      "seconds": 2,
+      "inputs": [
+        {
+          "id": "scrap-metal",
+          "amount": "10"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "ingot-iron",
+          "amount": "8"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "ArmorCube",
+      "name": "Armure",
+      "icon": "block-armor",
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "components": [
+        {
+          "id": "component-plates",
+          "amount": "4"
+        }
+      ],
+      "batteryKwh": 0,
+      "solarKw": 0
+    },
+    {
+      "id": "ArmorSlope",
+      "name": "Armure inclinée",
+      "icon": "block-armor",
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "components": [
+        {
+          "id": "component-plates",
+          "amount": "3"
+        }
+      ],
+      "batteryKwh": 0,
+      "solarKw": 0
+    },
+    {
+      "id": "ArmorCorner",
+      "name": "Coin d’armure",
+      "icon": "block-armor",
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "components": [
+        {
+          "id": "component-plates",
+          "amount": "2"
+        }
+      ],
+      "batteryKwh": 0,
+      "solarKw": 0
+    },
+    {
+      "id": "Gyroscope",
+      "name": "Gyroscope",
+      "icon": "block-gyroscope",
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "components": [
+        {
+          "id": "component-plates",
+          "amount": "8"
+        },
+        {
+          "id": "component-construction",
+          "amount": "2"
+        },
+        {
+          "id": "component-large-tube",
+          "amount": "1"
+        },
+        {
+          "id": "component-motor",
+          "amount": "2"
+        },
+        {
+          "id": "component-circuits",
+          "amount": "1"
+        }
+      ],
+      "batteryKwh": 0,
+      "solarKw": 0
+    },
+    {
+      "id": "Battery",
+      "name": "Batterie",
+      "icon": "block-battery",
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "components": [
+        {
+          "id": "component-plates",
+          "amount": "6"
+        },
+        {
+          "id": "component-construction",
+          "amount": "2"
+        },
+        {
+          "id": "component-power-cell",
+          "amount": "4"
+        },
+        {
+          "id": "component-circuits",
+          "amount": "1"
+        }
+      ],
+      "batteryKwh": 4,
+      "solarKw": 0
+    },
+    {
+      "id": "Thruster",
+      "name": "Propulseur",
+      "icon": "block-thruster",
+      "x": 1,
+      "y": 1,
+      "z": 2,
+      "components": [
+        {
+          "id": "component-plates",
+          "amount": "6"
+        },
+        {
+          "id": "component-construction",
+          "amount": "4"
+        },
+        {
+          "id": "component-large-tube",
+          "amount": "1"
+        },
+        {
+          "id": "component-thruster",
+          "amount": "1"
+        }
+      ],
+      "batteryKwh": 0,
+      "solarKw": 0
+    },
+    {
+      "id": "Cockpit",
+      "name": "Cockpit",
+      "icon": "block-cockpit",
+      "x": 2,
+      "y": 2,
+      "z": 3,
+      "components": [
+        {
+          "id": "component-plates",
+          "amount": "10"
+        },
+        {
+          "id": "component-construction",
+          "amount": "4"
+        },
+        {
+          "id": "component-motor",
+          "amount": "1"
+        },
+        {
+          "id": "component-display",
+          "amount": "2"
+        },
+        {
+          "id": "component-circuits",
+          "amount": "2"
+        },
+        {
+          "id": "component-glass",
+          "amount": "4"
+        }
+      ],
+      "batteryKwh": 0,
+      "solarKw": 0
+    },
+    {
+      "id": "Refinery",
+      "name": "Raffinerie",
+      "icon": "block-refinery",
+      "x": 1,
+      "y": 2,
+      "z": 1,
+      "components": [
+        {
+          "id": "component-plates",
+          "amount": "20"
+        },
+        {
+          "id": "component-construction",
+          "amount": "8"
+        },
+        {
+          "id": "component-large-tube",
+          "amount": "4"
+        },
+        {
+          "id": "component-motor",
+          "amount": "4"
+        },
+        {
+          "id": "component-circuits",
+          "amount": "2"
+        },
+        {
+          "id": "component-metal-grid",
+          "amount": "1"
+        }
+      ],
+      "batteryKwh": 0,
+      "solarKw": 0
+    },
+    {
+      "id": "Assembler",
+      "name": "Assembleur",
+      "icon": "block-assembler",
+      "x": 2,
+      "y": 1,
+      "z": 1,
+      "components": [
+        {
+          "id": "component-plates",
+          "amount": "12"
+        },
+        {
+          "id": "component-construction",
+          "amount": "6"
+        },
+        {
+          "id": "component-motor",
+          "amount": "2"
+        },
+        {
+          "id": "component-display",
+          "amount": "2"
+        },
+        {
+          "id": "component-circuits",
+          "amount": "4"
+        },
+        {
+          "id": "component-metal-grid",
+          "amount": "1"
+        }
+      ],
+      "batteryKwh": 0,
+      "solarKw": 0
+    },
+    {
+      "id": "Cargo",
+      "name": "Soute",
+      "icon": "block-cargo",
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "components": [
+        {
+          "id": "component-interior-plate",
+          "amount": "6"
+        },
+        {
+          "id": "component-construction",
+          "amount": "4"
+        },
+        {
+          "id": "component-tubes",
+          "amount": "2"
+        },
+        {
+          "id": "component-motor",
+          "amount": "1"
+        },
+        {
+          "id": "component-display",
+          "amount": "1"
+        },
+        {
+          "id": "component-circuits",
+          "amount": "1"
+        }
+      ],
+      "batteryKwh": 0,
+      "solarKw": 0
+    },
+    {
+      "id": "SolarPanel",
+      "name": "Panneau solaire",
+      "icon": "component-solar-cell",
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "components": [
+        {
+          "id": "component-solar-cell",
+          "amount": "4"
+        },
+        {
+          "id": "component-construction",
+          "amount": "2"
+        },
+        {
+          "id": "component-girder",
+          "amount": "2"
+        },
+        {
+          "id": "component-circuits",
+          "amount": "1"
+        }
+      ],
+      "batteryKwh": 0,
+      "solarKw": 40
+    }
+  ]
+}

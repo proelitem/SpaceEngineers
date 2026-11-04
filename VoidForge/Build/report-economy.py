@@ -1,0 +1,14 @@
+"""Gallery of observed native Unity evidence, not a claim of headset validation."""
+from pathlib import Path
+import json,html
+ROOT=Path(__file__).resolve().parents[1]
+OUT=ROOT/'docs/validation/economy-2026-11-03'
+def main():
+ OUT.mkdir(parents=True,exist_ok=True)
+ reports={name:json.loads((OUT/(name+'.json')).read_text(encoding='utf-8-sig')) for name in ['core-validation','unity-validation','game-validation','quest-validation'] if (OUT/(name+'.json')).exists()}
+ views=[('inventory','Inventaire réel'),('construction','Construction'),('refinery','Raffinage'),('assembly','Assemblage'),('map','GPS / Carte'),('device-preview','Cyberdeck dans Main')]
+ buttons=''.join(f'<button data-image="{id}.png">{title}</button>' for id,title in views if (OUT/(id+'.png')).exists())
+ checks=''.join(f'<article><b>{html.escape(name)}</b><p>{"Réussi" if data.get("success") else "Échec / à examiner"} · {len(data.get("checks",[]))} contrôles</p><a href="{name}.json">Rapport complet</a></article>' for name,data in reports.items())
+ OUT.joinpath('index.html').write_text('''<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>VoidForge · Économie intégrée</title><style>body{background:#09171d;color:#edf1ec;font:16px system-ui;margin:30px auto;max-width:1500px;padding:0 20px}h1{font-size:30px}p{line-height:1.6;color:#b8cdd2}a{color:#5eddeb}nav{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0}button{background:#10303a;color:white;border:1px solid #3f8c9a;padding:12px 20px;cursor:pointer;font:inherit;border-radius:5px}button:hover{background:#214854}img{display:block;width:100%;height:auto;border:1px solid #387886;border-radius:8px}.reports{display:flex;gap:20px;flex-wrap:wrap}article{background:#102a33;padding:20px;flex:1;min-width:200px}small{color:#f9b954}</style><small>VOIDFORGE ODYSSEY · RECETTE UNITY 6000.4</small><h1>Économie & Cyberdeck intégrés</h1><p>Stocks distincts, minerais finis, transferts, raffinage, assemblage, construction et sauvegarde. Les cinq menus ci-dessous rendent les données du moteur d’économie pendant les contrôles Unity ; la vue du Cyberdeck provient du Play de Main. La recette sur casque est distincte.</p><p><a href="../../ECONOMIE_CYBERDECK.md">Procédure de jeu et limites</a> · <a href="../../../Art/UI/Cyberdeck/2026-11-03-v2-resources/index.html">Catalogue graphique de référence</a></p><nav>'''+buttons+'''</nav><img id="view" src="inventory.png" alt="HUD natif Unity avec stocks réels"><h2>Preuves</h2><div class="reports">'''+checks+'''</div><script>document.querySelectorAll('button').forEach(b=>b.onclick=()=>{document.querySelector('#view').src=b.dataset.image;document.querySelector('#view').alt=b.textContent;});</script></html>''',encoding='utf-8')
+ print(OUT/'index.html')
+if __name__=='__main__':main()

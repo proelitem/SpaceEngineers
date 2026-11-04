@@ -1,0 +1,11 @@
+{
+  "id": "ui-recenter",
+  "label": "Recentrer / cibler",
+  "family": "interface-masks",
+  "file": "interface-masks/ui-recenter.png",
+  "source": "G:\\AI\\Codex\\home\\generated_images\\01a1a1f8-9cc2-7a80-8f64-b92e453a0830\\exec-cb7b1c5e-ee2f-4afd-8452-7f37c99d8740.png",
+  "reference": null,
+  "tool": "image_gen.imagegen",
+  "transparent_background_requested": false,
+  "coverage": "rgb-luminance"
+}
