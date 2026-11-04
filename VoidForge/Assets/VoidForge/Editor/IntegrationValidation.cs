@@ -20,6 +20,8 @@ namespace VoidForge.Editor
             public float rightHandErrorMeters, headErrorMeters;
             public float screenStandOffMeters;
             public bool beltMount, anatomicalCurl, discSpindle, palmSideScreen, cyberdeckRecall;
+            public bool anatomicalAssets, constantToolSize, oneSelectedThighTool, visorView;
+            public float sleeveContactGapMeters;
         }
         static void Require(bool value, string message) { if (!value) throw new InvalidOperationException("Integration validation: " + message); }
         static Transform Bone(Transform root, string name) => root.GetComponentsInChildren<Transform>(true).First(t => t.name == name);
@@ -37,18 +39,26 @@ namespace VoidForge.Editor
                 var left = camera.parent.Find("LeftHand"); var right = camera.parent.Find("RightHand");
                 left.localPosition = new Vector3(-.25f,-.25f,.3f);
                 right.localPosition = new Vector3(.25f,-.25f,.3f);
+                Vector3 neutralRight = right.position;
                 equipment.Bind(player.GetComponent<PlayerInputProvider>());
                 result.handTools = equipment.tools.Length;
+                ValidateHandAssets(equipment.astronaut.avatar);
+                result.anatomicalAssets = true;
                 Require(result.handTools == 3, "three tools required");
                 foreach (var tool in equipment.tools)
                 {
-                    var hips = Bone(equipment.astronaut.avatar, "Hips");
-                    Require(tool.transform.parent.parent == hips, "holster must follow the hips");
-                    Require(Vector3.Distance(tool.primaryGrip.position, hips.position) < .42f &&
-                        Mathf.Abs(tool.primaryGrip.position.y - hips.position.y) < .05f, "belt handle height/reach");
+                    equipment.SelectTool(tool);
+                    var holster = tool.transform.parent.GetComponent<ThighToolHolster>();
+                    Require(holster != null && holster.thigh.name == "RightUpLeg", "right thigh holster required");
+                    holster.Refresh();
+                    Require(equipment.tools.Count(t=>t.gameObject.activeSelf)==1, "only the selected tool may be visible");
                     Require(tool.tip.position.y < tool.primaryGrip.position.y - .1f, "stowed working end must point down");
                     var parent = tool.transform.parent; var position = tool.transform.localPosition; var rotation = tool.transform.localRotation;
-                    equipment.Take(tool);
+                    float scale = tool.transform.lossyScale.magnitude;
+                    float length = Vector3.Distance(tool.primaryGrip.position, tool.tip.position);
+                    Require(length > .12f && length < .8f, "authored tool size must remain in metres");
+                    equipment.Grab(tool);
+                    Require(Mathf.Abs(tool.transform.lossyScale.magnitude-scale)<.001f && Mathf.Abs(Vector3.Distance(tool.primaryGrip.position,tool.tip.position)-length)<.001f, "grab changes physical tool size");
                     Require(player.GetComponent<PlayerInputProvider>().RightGripConsumed, "grip ownership while held");
                     Require(Vector3.Distance(tool.primaryGrip.position, right.position) < .0001f, "primary grip alignment: " + tool.kind);
                     Require(Quaternion.Angle(tool.primaryGrip.rotation, right.rotation) < .01f, "primary grip orientation");
@@ -72,21 +82,30 @@ namespace VoidForge.Editor
                         result.discSpindle = true;
                     }
                     equipment.Release();
+                    for(int cycle=0;cycle<8;cycle++)
+                    {
+                        equipment.Grab(tool);equipment.Release();
+                        Require(Mathf.Abs(tool.transform.lossyScale.magnitude-scale)<.001f && Mathf.Abs(Vector3.Distance(tool.primaryGrip.position,tool.tip.position)-length)<.001f, "scale drift after repeated grab/release");
+                        Require(tool.gameObject.activeSelf, "selected tool disappears after release");
+                    }
                     Require(!player.GetComponent<PlayerInputProvider>().RightGripConsumed, "grip ownership released");
                     Require(!tool.IsOperating && !tool.IsHeld && tool.transform.parent == parent &&
                         Vector3.Distance(tool.transform.localPosition, position) < .0001f && Quaternion.Angle(tool.transform.localRotation, rotation) < .01f, "release to holster");
                 }
                 result.gripAlignment = result.tipForward = result.returnToHolster = true;
                 result.beltMount = true;
+                result.constantToolSize = result.oneSelectedThighTool = true;
                 equipment.Take(equipment.tools[1]);
                 equipment.ProcessInput(true, true, 0, 1, 0);
-                Require(equipment.Held == equipment.tools[1] && !equipment.Held.IsOperating, "cyberdeck recall waits for grip");
+                Require(equipment.Held == null && equipment.Selected == equipment.tools[1], "cyberdeck must select thigh tool without grabbing");
+                right.position=equipment.Selected.primaryGrip.position;
                 equipment.ProcessInput(true, true, 1, 1, 0);
-                Require(equipment.Held != null && equipment.Held.IsOperating, "recalled tool grip confirmation");
+                Require(equipment.Held != null && equipment.Held.IsOperating, "selected tool proximity grip");
                 equipment.ProcessInput(true, true, 0, 0, 0);
                 Require(equipment.Held == null, "recalled tool returns to belt");
                 result.cyberdeckRecall = true;
-                Vector3 savedRight = right.position;
+                equipment.SelectTool(equipment.tools[0]);
+                Vector3 savedRight = neutralRight;
                 right.position = equipment.tools[0].primaryGrip.position;
                 equipment.ProcessInput(true, true, 1, 1, 0);
                 Require(equipment.Held == equipment.tools[0], "proximity grab");
@@ -138,8 +157,9 @@ namespace VoidForge.Editor
                 var mount = deck.GetComponent<WristDisplayMount>();
                 Require(mount != null, "post-IK wrist mount missing");
                 result.screenStandOffMeters = mount.standOff;
-                Require(mount.standOff >= .06f && mount.standOff < .20f, "screen must stay close to the sleeve");
                 mount.Refresh();
+                result.sleeveContactGapMeters = mount.ContactGapMeters;
+                Require(mount.sleeveSamples.Length>0 && Mathf.Abs(mount.ContactGapMeters)<=.002f, "cyberdeck back must contact the skinned sleeve within 2 mm");
                 palm = Vector3.ProjectOnPlane(palm, (mount.forearm.position - leftWrist.position).normalized).normalized;
                 Vector3 screenNormal = screenFilter.transform.TransformDirection(screenFilter.sharedMesh.normals[0]).normalized;
                 Require(Vector3.Dot(screenNormal, palm) > .99f, "screen must face the palm side after VRIK");
@@ -154,7 +174,9 @@ namespace VoidForge.Editor
                 Require(Vector3.Distance(camera.position, deck.screen.bounds.center) > .12f, "reading screen too close to eyes");
                 player.transform.SetPositionAndRotation(new Vector3(2,3,4), Quaternion.Euler(0,90,0));
                 equipment.astronaut.UpdatePose(true);
-                Require(Vector3.Distance(equipment.astronaut.headTarget.position, camera.position) < .0001f, "recenter head target");
+                Require(Vector3.Distance(equipment.astronaut.headTarget.position, camera.TransformPoint(equipment.astronaut.headFromView)) < .0001f, "recenter visor view anchor");
+                Require(equipment.astronaut.headFromView.z < -.04f, "tracked view must be outside the front visor");
+                result.visorView = true;
                 Require(Vector3.Distance(equipment.astronaut.rightTarget.position, right.TransformPoint(equipment.astronaut.wristFromController)) < .0001f, "recenter wrist target");
                 result.recenter = true;
 
@@ -210,6 +232,19 @@ namespace VoidForge.Editor
             }
             foreach (var values in curl) Array.Clear(values, 0, values.Length);
             fingers.GetType().GetMethod("RestoreRest").Invoke(fingers, null);
+        }
+
+        static void ValidateHandAssets(Transform avatar)
+        {
+            foreach(var side in new[]{"Left","Right"})
+            {
+                string prefix=side=="Left"?"L":"R";
+                var wrist=Bone(avatar,side+"Hand");
+                Vector3 fingers=(Bone(avatar,prefix+"MiddleFinger1").position-wrist.position).normalized;
+                Vector3 thumb=Vector3.ProjectOnPlane(Bone(avatar,prefix+"Thumb1").position-wrist.position,fingers);
+                Vector3 medial=Vector3.ProjectOnPlane(avatar.position-wrist.position,fingers);
+                Require(Vector3.Dot(thumb,medial)<0,side+" glove thumb must point laterally with palms forward at rest");
+            }
         }
     }
 }

@@ -12,6 +12,7 @@ namespace VoidForge.Integration
         public LocalAstronaut astronaut;
         public TextMesh instructions;
         public HandTool Held { get; private set; }
+        public HandTool Selected { get; private set; }
         public bool Ready { get; private set; }
         public Transform RightController { get; private set; }
         PlayerInputProvider input;
@@ -40,6 +41,7 @@ namespace VoidForge.Integration
             foreach (var tool in tools) tool.RememberHome();
             astronaut.Bind(head, left, RightController);
             Ready = true;
+            SelectTool(tools[0]);
             Debug.Log("[VoidForge Integration] XR equipment bound: astronaut, left wrist, 3 hand tools.");
         }
 
@@ -75,10 +77,11 @@ namespace VoidForge.Integration
                 float distance = .18f;
                 foreach (var tool in tools)
                 {
+                    if (tool != Selected || !tool.gameObject.activeInHierarchy) continue;
                     float d = Vector3.Distance(tool.primaryGrip.position, socket.position);
                     if (d < distance) { distance = d; nearest = tool; }
                 }
-                if (nearest != null) Take(nearest);
+                if (nearest != null) Grab(nearest);
             }
             if (grip > .7f && Held != null) awaitingGrip = false;
             if (Held != null) Held.Operate(awaitingGrip ? 0 : trigger);
@@ -96,13 +99,25 @@ namespace VoidForge.Integration
             }
         }
 
-        public void Take(HandTool tool)
+        // Compatibility with the Cyberdeck adapter: selection stocks the thigh holster.
+        // Only a proximity grab can move that tool into the tracked hand.
+        public void Take(HandTool tool) => SelectTool(tool);
+
+        public bool SelectTool(HandTool tool)
         {
-            if (!Ready || tool == null || !System.Array.Exists(tools, t => t == tool)) return;
+            if (!Ready || tool == null || !System.Array.Exists(tools, t => t == tool)) return false;
+            if (Selected == tool) return true;
+            Release();
+            Selected = tool;
+            foreach (var candidate in tools) candidate.gameObject.SetActive(candidate == Selected);
+            return true;
+        }
+
+        public void Grab(HandTool tool)
+        {
+            if (!Ready || tool == null || tool != Selected) return;
             Release();
             Held = tool;
-            // Cyberdeck selection may arrive with an open hand. Wait for the first squeeze
-            // before enabling the trigger/release gesture shared with belt grabs.
             awaitingGrip = true;
             input.RightGripConsumed = true;
             Held.Hold(socket);

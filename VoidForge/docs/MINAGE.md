@@ -73,3 +73,15 @@ le prototype reste solo et se réinitialise au lancement.
 
 Suivi : [feuille de route](ROADMAP.md), [architecture](ARCHITECTURE.md),
 [recette J1](TEST_J1.md) et [preuves du prototype](../Hermes_Works/Jalons/J1_ASSETS.md).
+
+## État de la nouvelle scène — 4 novembre 2026
+
+L'extension [INTEGRATION_03](SURVIE.md) convertit les douze formes des assets en SDF et
+rend les 64 astéroïdes accessibles au minage Digger par conversion à proximité. Deux
+veines continues au maximum par astéroïde sont générées de manière reproductible ;
+les indices de matériau servent au rendu et à la collecte. Un vrai Play vérifie pierre,
+fer/minerais, recul du collider, sauvegarde et rechargement sans crédit doublé.
+
+Le profil numérique est original VoidForge : **l'équivalence exacte avec les paramètres
+Space Engineers reste non certifiée**. Le minage depuis un vaisseau, la réplication et
+les mesures de performance en casque restent ouverts. Les sources Keen restent exclues.

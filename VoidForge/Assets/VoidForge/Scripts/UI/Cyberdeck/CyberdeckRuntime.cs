@@ -20,6 +20,18 @@ namespace VoidForge.UI.Cyberdeck
         int pendingTool = -1;
         bool gripArmed;
         float wristScale;
+        Action<string> viewAction;
+
+        public void ReleaseInterface()
+        {
+            StopAllCoroutines();
+            if(hud!=null)
+            {
+                hud.State.EquipRequested-=Equip;
+                if(viewAction!=null)hud.ActionInvoked-=viewAction;
+            }
+            enabled=false;
+        }
         static MonoBehaviour Find(string name) => FindObjectsByType<MonoBehaviour>(FindObjectsInactive.Exclude, FindObjectsSortMode.None)
             .FirstOrDefault(b => b != null && b.GetType().FullName == name);
         static object Field(object o, string name) => o == null ? null : o.GetType().GetField(name)?.GetValue(o);
@@ -65,7 +77,8 @@ namespace VoidForge.UI.Cyberdeck
             hud.State.EquipRequested += Equip;
             hud.BlockAvailable = id => EconomyRuntime.Active != null && EconomyRuntime.Active.Ready ? EconomyRuntime.Active.BlockSupported(id) : CatalogueEntry(id) is object entry && (bool)Property(entry, "Available");
             hud.BlockSize = id => EconomyRuntime.Active != null && EconomyRuntime.Active.Ready ? EconomyRuntime.Active.BlockSize(id) : CatalogueEntry(id) is object entry && Field(entry, "size") is Vector3Int size ? size : Vector3Int.one;
-            hud.ActionInvoked += id => { if (id == "expand" || id == "collapse") Resize(); };
+            viewAction = id => { if (id == "expand" || id == "collapse") Resize(); };
+            hud.ActionInvoked += viewAction;
             var pointer = hud.gameObject.AddComponent<CyberdeckPointer>();
             pointer.hud = hud;
             pointer.rightController = Property(equipment, "RightController") as Transform;

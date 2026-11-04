@@ -22,6 +22,9 @@ namespace VoidForge.Economy
         public EconomyWorld World {get;private set;}
         public BlockCatalogue Catalogue {get;private set;}
         public bool Ready => World!=null;
+        public Transform GridTransform => grid;
+        public void RefreshWorldInstances() => SyncWorld();
+        public void DetachInterface() => Detach();
         public bool Seated => seat!=null;
         public bool NetworkLocked => NetworkManager.Singleton!=null&&NetworkManager.Singleton.IsListening;
         public Vector3 gridOrigin=new Vector3(-5,-2,0);

@@ -13,7 +13,7 @@ namespace VoidForge.Integration
         public bool IsHeld { get; private set; }
         public bool IsOperating { get; private set; }
         Transform home;
-        Vector3 homePosition;
+        Vector3 homePosition, homeScale;
         Quaternion homeRotation;
         Quaternion movingRest;
         float phase;
@@ -22,6 +22,7 @@ namespace VoidForge.Integration
         {
             home = transform.parent;
             homePosition = transform.localPosition;
+            homeScale = transform.localScale;
             homeRotation = transform.localRotation;
             if (movingPart != null) movingRest = movingPart.localRotation;
         }
@@ -39,6 +40,7 @@ namespace VoidForge.Integration
         {
             IsHeld = IsOperating = false;
             transform.SetParent(home, false);
+            transform.localScale = homeScale;
             transform.SetLocalPositionAndRotation(homePosition, homeRotation);
             if (movingPart != null) movingPart.localRotation = movingRest;
         }

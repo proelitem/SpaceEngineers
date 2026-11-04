@@ -169,3 +169,29 @@ Suivi et preuves : [Intégration 02](../Hermes_Works/Jalons/INTEGRATION_02.md).
 | Portée assis/debout et prises sur les trois outils | À tester par Pierre après correction |
 | Visibilité/lisibilité du cyberdeck et confort | À tester par Pierre après correction |
 | Performance de cette version et réseau | À tester par Pierre ; aucun résultat instrumenté ajouté |
+
+## Recette INTEGRATION_03 — 4 novembre 2026
+
+Le retour de Pierre invalide le montage des mains et du cyberdeck de la passe précédente,
+ainsi que le rangement des outils en usage réel. Les nouveaux résultats ci-dessous ont
+une portée géométrique/automatisée ; la validation J1 portée du 3 novembre reste distincte.
+Procédure : [SURVIE.md](SURVIE.md), preuves : [jalon 03](../Hermes_Works/Jalons/INTEGRATION_03.md).
+
+| À tester | Résultat |
+|---|---|
+| Compilation et ressources | OK : génération Unity sortie 0 ; douze SDF de maillages et nouvelle scène Main |
+| Mains, prises et échelle | OK géométrique : vraie résolution VRIK, huit doigts longs fermant vers la paume, huit cycles de prise/rangement par outil sans dérive ; rendu relu |
+| Sélection Cyberdeck → cuisse droite | OK dans Main : seul outil sélectionné visible, aucune prise distante ; portée réelle à tester par Pierre |
+| Cyberdeck collé à la manche | OK géométrique : appui après skinning à -1 mm ; deux sangles et deux pieds omis du dérivé ; rendu relu, à tester par Pierre en casque |
+| Vue extérieure de visière | Repère et recentrage vérifiés ; absence de casque dans l'aperçu ; à tester par Pierre en casque |
+| Scène nettoyée et atelier | OK en Play : absence de sphère et présentoir, 64 astéroïdes, quatre plateformes et quatre machines sans chevauchement |
+| Plans bleus et soudage | OK en Play : fondation libre, grille adjacente, collision/occupation refusées, aucun coût à la pose, coût réel au soudage, refus si composants manquants |
+| Minage, minerais, collider | OK en Play : deux excavations, vraie collecte par matériau, collider creusé de 0,624759 m |
+| Sauvegarde/rechargement | OK : second Play, stocks/plans/trous restaurés sans collecte en double ; sur Quest, huit identifiants de blocs et stocks sac/soute conservés après redémarrage |
+| Registre économique | OK : 55 contrôles .NET ; 35 contrôles du nouveau Main, sans exception pendant les deux chargements et leur sortie |
+| GPS cadre et chevron | Liaison et directions hors champ vérifiées ; cadre, lisibilité et stéréo à tester par Pierre |
+| APK et logcat 03 | OK : build Success, APK 12 / 134 893 741 octets, ARM64 minSdk 32/target 36 ; installation Success, deux lancements COLD ; captures 35,428 s et 35,363 s sans défaut Unity/AndroidRuntime/XR_ERROR, cinq marqueurs prêts aux deux lancements ; casque porté non vérifié |
+| Contrôles et locomotion de cette tranche | À tester par Pierre |
+| Confort et performance de cette tranche | À tester par Pierre ; aucun FPS Quest certifié par le Play éditeur |
+| Réseau à plusieurs appareils | À tester par Pierre ; économie et excavations de cette tranche suspendues en session réseau |
+| Équivalence numérique des veines avec SE | Non certifiée ; profil original documenté, aucun fichier Keen utilisé |

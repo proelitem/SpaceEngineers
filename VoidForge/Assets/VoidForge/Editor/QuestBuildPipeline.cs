@@ -11,7 +11,7 @@ namespace VoidForge.Editor
     /// <summary>
     /// Build de l'APK Quest 3.
     /// Menu : VoidForge > 3. Construire l'APK Quest 3 (ou la variante développement).
-    /// Ligne de commande : -executeMethod VoidForge.Editor.QuestBuildPipeline.BuildBatch [-vfDev] [-vfOutput chemin.apk]
+    /// Ligne de commande : -executeMethod VoidForge.Editor.QuestBuildPipeline.BuildBatch [-vfDev] [-vfNoProfiler] [-vfOutput chemin.apk]
     /// </summary>
     public static class QuestBuildPipeline
     {
@@ -56,7 +56,13 @@ namespace VoidForge.Editor
         private static void Build(string output, bool development, bool batch)
         {
 #if VF_LOCAL_DIGGER
-            if (!File.Exists(MiningPrototypeBuilder.PrefabPath)) MiningPrototypeBuilder.BuildBatch();
+            var survival = Resources.Load<VoidForge.Integration.SurvivalSettings>(VoidForge.Integration.SurvivalSettings.Resource);
+            if (survival != null && VoidForge.Integration.SurvivalSettings.Supported)
+            {
+                if (survival.asteroidField == null || survival.hologram == null)
+                    throw new InvalidOperationException("Survival dependencies missing; run SurvivalWorkshop and its Play validation before building.");
+            }
+            else if (!File.Exists(MiningPrototypeBuilder.PrefabPath)) MiningPrototypeBuilder.BuildBatch();
             else MiningPrototypeBuilder.ValidateBatch();
 #endif
             if (!File.Exists(MainSceneBuilder.ScenePath))
@@ -81,6 +87,8 @@ namespace VoidForge.Editor
                     ? BuildOptions.Development | BuildOptions.AllowDebugging | BuildOptions.ConnectWithProfiler
                     : BuildOptions.None,
             };
+            if (Array.IndexOf(Environment.GetCommandLineArgs(), "-vfNoProfiler") >= 0)
+                options.options &= ~BuildOptions.ConnectWithProfiler;
 
             // Isole aussi les builds par menu d'un GRADLE_USER_HOME hérité d'un autre projet.
             string previousGradleHome = Environment.GetEnvironmentVariable("GRADLE_USER_HOME");

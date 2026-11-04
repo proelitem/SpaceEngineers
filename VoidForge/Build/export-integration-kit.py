@@ -28,15 +28,16 @@ for key, path in assets.items():
     bpy.ops.object.delete(use_global=False)
     bpy.ops.import_scene.gltf(filepath=str(path))
     objects = list(bpy.context.scene.objects)
-    # First-person wrist display: omit only the two fastening straps from the derivative.
+    # First-person wrist display mounts directly against the sleeve, without fastening
+    # straps or the two 21 mm raised saddle feet. Preserve the source GLB intact.
     # The artist's GLB/Blender source remains untouched.
-    omitted = [o.name for o in objects if key == 'Cyberdeck' and 'Strap' in o.name]
+    omitted = [o.name for o in objects if key == 'Cyberdeck' and ('Strap' in o.name or 'Saddle' in o.name)]
     for ob in list(objects):
         if ob.name in omitted:
             bpy.data.objects.remove(ob, do_unlink=True)
             objects.remove(ob)
-    if key == 'Cyberdeck' and len(omitted) != 2:
-        raise RuntimeError(f'Expected two cyberdeck straps, found {omitted}')
+    if key == 'Cyberdeck' and (sum('Strap' in name for name in omitted) != 2 or sum('Saddle' in name for name in omitted) != 2):
+        raise RuntimeError(f'Expected two straps and two raised saddle feet, found {omitted}')
     # Combine by material at export to keep mobile renderer counts bounded.
     # Keep the screen and its anchor separate for the future wrist interface.
     meshes = [o for o in objects if o.type == 'MESH' and 'ScreenBlank' not in o.name]

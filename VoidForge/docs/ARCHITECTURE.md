@@ -138,3 +138,29 @@ encore l'économie ni les excavations ; leurs commandes sont suspendues en sessi
 - Moins de 150 draw calls, moins de 500 000 triangles par œil.
 - Rendu single-pass instancié, MSAA 4x, pas de HDR, pas de post-traitement au J1.
 - Au J4 : fusion de maillages (greedy meshing) pour les grilles de plus de 200 blocs.
+
+## Extension de scène du 4 novembre — INTEGRATION_03
+
+La scène active est sélectionnée par `Resources/VoidForge/Survival/Settings` avec les
+symboles locaux Digger/économie. `GameBootstrap` charge le champ creusable ; la sphère
+J1 et le présentoir ne sont plus instanciés. La scène Main générée conserve étoiles,
+rig XR et réseau. Les dépendances locales absentes gardent le repli du rig J1.
+
+- `ThighToolHolster` suit la cuisse après VRIK sans son échelle d'import. `EquipmentRig`
+  sépare sélection et prise ; `HandTool` restaure aussi l'échelle au rangement.
+- `WristDisplayMount` suit des points de la peau de la manche après le solveur.
+  La vue suivie est le repère extérieur de la visière ; le corps s'y recale.
+- `MinableAsteroidField` garde les LOD des assets à distance, crée les colliders/meshes
+  Digger à proximité et encode les veines dans leurs vrais indices de matériau.
+  `OreDigOperation` compte la matière retirée par matériau, hors bords de chunks partagés.
+  Les accès Terrain sont préparés sur main avant la phase worker Digger.
+- `ConstructionSystem` conserve plans, grilles et repères physiques : premier plan libre,
+  suivants adjacents, vérification des collisions, consommation à la fin du soudage.
+- `SurvivalSession` pilote le registre économique existant et une sauvegarde atomique
+  commune aux stocks, plans, poses et excavations. `SurvivalDeckAdapter` reprend le HUD
+  via les ports publics de transfert d'interface et de rafraîchissement.
+- `GpsTargetGuide` dessine le cadre à la profondeur de l'entité et le chevron hors champ.
+
+La tranche reste solo, avec grilles statiques et économie globale. Les paramètres
+numériques de veines sont originaux ; l'équivalence Space Engineers reste non certifiée.
+Contrats, dépendances, limites et procédure : [SURVIE.md](SURVIE.md).

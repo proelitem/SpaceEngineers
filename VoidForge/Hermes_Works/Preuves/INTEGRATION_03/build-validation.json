@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "unity": "6000.4.0f1",
+  "buildTarget": "Android ARM64 IL2CPP",
+  "versionCode": 12,
+  "minSdk": 32,
+  "targetSdk": 36,
+  "development": true,
+  "connectWithProfiler": false,
+  "apk": {
+    "sha256": "8C76AE7857F71916BAE1000EBB94F731C81682244D05636BEC60C53CFC1D7103",
+    "bytes": 134893741,
+    "path": "G:\\Projets\\SpaceEngineers\\VoidForge\\Builds\\VoidForge-Quest3-integration03-dev.apk",
+    "package": "package: name='com.proelitem.voidforge' versionCode='12' versionName='1.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'"
+  },
+  "reportedBuildSeconds": 3146,
+  "rawLog": "Logs/survival-quest3.log",
+  "cSharpCompilerErrors": [],
+  "nonfatalImportWarning": "URP package test TraceRays.urtshader: UnityShaderCompiler IPC timeout 0x80000008; import/build continued to Success.",
+  "sourcePublicationManifest": "Library/SurvivalPublication/files.json"
+}

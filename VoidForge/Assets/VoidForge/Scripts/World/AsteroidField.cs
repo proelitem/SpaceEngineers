@@ -19,6 +19,7 @@ namespace VoidForge.World
 
         private void Awake()
         {
+            if (VoidForge.Integration.SurvivalSettings.Supported && Resources.Load<VoidForge.Integration.SurvivalSettings>(VoidForge.Integration.SurvivalSettings.Resource) != null) return;
             if (transform.childCount > 0) return; // déjà généré dans la scène
             Generate();
         }

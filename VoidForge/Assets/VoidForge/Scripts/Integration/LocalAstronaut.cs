@@ -11,6 +11,7 @@ namespace VoidForge.Integration
     {
         public Transform avatar, headTarget, leftTarget, rightTarget;
         public Vector3 restHead;
+        public Vector3 headFromView;
         public Quaternion headRotation, leftRotation, rightRotation;
         public Vector3 wristFromController = new Vector3(.025f, -.015f, -.07f);
         Transform head, left, right;
@@ -39,7 +40,7 @@ namespace VoidForge.Integration
             fingers.GetType().GetField("readControllers").SetValue(fingers, false);
             leftCurl = (float[])fingers.GetType().GetField("leftCurl").GetValue(fingers);
             rightCurl = (float[])fingers.GetType().GetField("rightCurl").GetValue(fingers);
-            renderers = avatar.GetComponentsInChildren<Renderer>();
+            renderers = Array.FindAll(avatar.GetComponentsInChildren<Renderer>(), r => r.GetComponentInParent<HandTool>() == null);
             bound = true;
             UpdatePose(false);
             foreach (var controller in new[] { left, right })
@@ -62,7 +63,7 @@ namespace VoidForge.Integration
             Vector3 forward = Vector3.ProjectOnPlane(head.forward, Vector3.up);
             if (forward.sqrMagnitude > .01f) avatar.rotation = Quaternion.LookRotation(forward, Vector3.up);
             avatar.position = head.position - avatar.rotation * restHead;
-            headTarget.SetPositionAndRotation(head.position, head.rotation * headRotation);
+            headTarget.SetPositionAndRotation(head.TransformPoint(headFromView), head.rotation * headRotation);
             var leftOffset = wristFromController; leftOffset.x = -leftOffset.x;
             leftTarget.SetPositionAndRotation(left.TransformPoint(leftOffset), left.rotation * leftRotation);
             rightTarget.SetPositionAndRotation(right.TransformPoint(wristFromController), right.rotation * rightRotation);

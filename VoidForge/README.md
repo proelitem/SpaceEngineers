@@ -12,6 +12,13 @@ avec OpenXR, URP et Netcode for GameObjects. L'éditeur retenu pour la recette l
 
 ## État : APK J1 construit, installé et lancé sur Quest 3
 
+**Scène active du 4 novembre :** la passe [Survie / intégration 03](docs/SURVIE.md)
+remplace les présentoirs par une base sur quatre blocs, 64 astéroïdes convertibles
+en volumes Digger avec minerais et des plans de construction soudables. Elle corrige
+le placement des mains, le contact du cyberdeck et le rangement des outils à la
+cuisse droite. [Résultats et limites de cette passe](Hermes_Works/Jalons/INTEGRATION_03.md).
+Les descriptions de première intégration ci-dessous conservent leur portée historique.
+
 Recette des 2 et 3 novembre 2026 : packages résolus, compilation C# réussie, configuration
 XR et scène générées. L'APK final développement `Builds/VoidForge-Quest3-dev.apk`
 (versionCode 6) est installé sur le Quest 3 ; lancement et capture de 30 secondes

@@ -15,6 +15,7 @@ d'origine ; Obsidian doit les exposer par liens ou liens symboliques.
 | Recette | [Grille J1](../docs/TEST_J1.md) |
 | Première intégration | [Avatar, poignet, outils et blocs](../docs/INTEGRATION.md) et [preuves](Jalons/INTEGRATION_01.md) |
 | Corrections de recette | [Ceinture, doigts, cyberdeck et disque](Jalons/INTEGRATION_02.md) |
+| Scène de départ et nouvelle recette | [Minage, atelier et plans soudables](../docs/SURVIE.md) et [INTEGRATION_03](Jalons/INTEGRATION_03.md) |
 | Construction | [Build Quest 3](../docs/BUILD_QUEST3.md) |
 | Provenance | [Crédits](../CREDITS.md) et [licence MIT](../LICENSE) |
 | Gouvernance | [Consignes](../AGENTS.md) |

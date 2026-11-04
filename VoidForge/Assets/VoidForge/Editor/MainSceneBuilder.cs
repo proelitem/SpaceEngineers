@@ -53,8 +53,11 @@ namespace VoidForge.Editor
             starfield.AddComponent<MeshRenderer>().sharedMaterial = MaterialLibrary.Star;
             starfield.AddComponent<Starfield>();
 
-            var asteroids = new GameObject("AsteroidField");
-            asteroids.AddComponent<AsteroidField>();
+            if (!VoidForge.Integration.SurvivalSettings.Supported || Resources.Load<VoidForge.Integration.SurvivalSettings>(VoidForge.Integration.SurvivalSettings.Resource) == null)
+            {
+                var asteroids = new GameObject("AsteroidField");
+                asteroids.AddComponent<AsteroidField>();
+            }
 
             BuildNetwork();
 

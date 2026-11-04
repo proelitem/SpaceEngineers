@@ -30,3 +30,13 @@ On s'arrête à chaque jalon pour validation sur le Quest 3 avant de continuer.
 J1 → test en casque → M1 (court) → J2 → M2 → J3 → M3 → J4 → J5 → M4.
 Le multijoueur est intégré au fil des jalons plutôt qu'à la fin, pour éviter de refaire la
 construction et le vaisseau en version réseau après coup.
+
+## Extension autorisée le 4 novembre : INTEGRATION_03
+
+Recette corrective des mains/du poignet/des outils et nouvelle scène solo : atelier
+sur quatre blocs, astéroïdes issus des assets, veines voxel, GPS et plans bleus soudables.
+Le Play de Main valide 35 contrôles, dont collecte et restauration sans duplication.
+Cette tranche prépare la construction ; elle ne clôt pas J2 ni les jalons réseau.
+APK 12 installé sur Quest : deux captures de plus de 35 s sans défaut relevé et
+persistance des huit blocs/stocks vérifiée. L'essai porté de cette nouvelle tranche
+reste à suivre dans [INTEGRATION_03](../Hermes_Works/Jalons/INTEGRATION_03.md).

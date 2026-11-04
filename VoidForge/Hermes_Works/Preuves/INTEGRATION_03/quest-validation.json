@@ -1,0 +1,53 @@
+{
+  "success": true,
+  "serial": "2G0YC5ZF7H060B",
+  "headsetWorn": false,
+  "apk": {
+    "sha256": "8C76AE7857F71916BAE1000EBB94F731C81682244D05636BEC60C53CFC1D7103",
+    "path": "G:\\Projets\\SpaceEngineers\\VoidForge\\Builds\\VoidForge-Quest3-integration03-dev.apk",
+    "package": "package: name='com.proelitem.voidforge' versionCode='12' versionName='1.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'",
+    "bytes": 134893741
+  },
+  "install": true,
+  "captures": [
+    {
+      "name": "cold",
+      "pid": "20665",
+      "seconds": 35.4275561,
+      "alive": true,
+      "markers": {
+        "asteroids": true,
+        "equipment": true,
+        "workshop": true,
+        "hud": true,
+        "voxel": true
+      },
+      "exceptionsOrErrors": [],
+      "success": true,
+      "log": "G:\\Projets\\SpaceEngineers\\VoidForge\\Logs\\quest-survival-20261104-032940-cold-unity.log"
+    },
+    {
+      "name": "restart",
+      "pid": "21128",
+      "seconds": 35.3628837,
+      "alive": true,
+      "markers": {
+        "asteroids": true,
+        "equipment": true,
+        "workshop": true,
+        "hud": true,
+        "voxel": true
+      },
+      "exceptionsOrErrors": [],
+      "success": true,
+      "log": "G:\\Projets\\SpaceEngineers\\VoidForge\\Logs\\quest-survival-20261104-032940-restart-unity.log"
+    }
+  ],
+  "saveReadable": true,
+  "devicePersistenceVerified": true,
+  "logBufferOriginal": "256K",
+  "logBufferDuringCapture": "4M",
+  "savedBlocks": 8,
+  "oreProfile": "voidforge-asteroid-veins-v1",
+  "logBufferRestored": true
+}

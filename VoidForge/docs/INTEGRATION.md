@@ -1,5 +1,11 @@
 # Première intégration des ressources — 3 novembre 2026
 
+**État actuel du 4 novembre :** voir [SURVIE.md](SURVIE.md) et
+[INTEGRATION_03](../Hermes_Works/Jalons/INTEGRATION_03.md). La scène active dispose
+des machines du producteur Économie/UI, de la sélection d'un outil à la cuisse,
+du minage des formes d'assets et de plans soudables. Les présentoirs et la sphère
+d'essai décrits dans cette première passe sont absents de ce parcours.
+
 Extension demandée par Pierre après la recette J1 : astronaute FinalIK, cyberdeck au
 poignet, outils à main et premiers blocs. Cette passe prépare une scène locale jouable.
 La recette J1 précédente ne vaut pas validation en casque de ces nouveaux éléments.

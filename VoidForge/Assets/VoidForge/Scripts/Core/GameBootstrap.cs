@@ -27,6 +27,16 @@ namespace VoidForge.Core
         private void Start()
         {
             VoidForge.Integration.IntegrationBootstrap.Create(FindFirstObjectByType<PlayerInputProvider>());
+            var survival = Resources.Load<VoidForge.Integration.SurvivalSettings>(VoidForge.Integration.SurvivalSettings.Resource);
+            if (survival != null && survival.asteroidField != null && VoidForge.Integration.SurvivalSettings.Supported)
+            {
+                var decoration = FindFirstObjectByType<VoidForge.World.AsteroidField>();
+                if (decoration != null) decoration.gameObject.SetActive(false);
+                if (survival.asteroidField != null) Instantiate(survival.asteroidField);
+                return;
+            }
+            if (FindFirstObjectByType<VoidForge.World.AsteroidField>() == null)
+                new GameObject("AsteroidField").AddComponent<VoidForge.World.AsteroidField>();
             var mining = Resources.Load<GameObject>("VoidForge/LocalMiningPrototype");
             if (mining != null)
             {

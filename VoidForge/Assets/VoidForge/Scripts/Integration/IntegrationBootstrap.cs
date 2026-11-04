@@ -17,20 +17,6 @@ namespace VoidForge.Integration
             }
             var instance = Object.Instantiate(equipment, player.transform);
             instance.GetComponent<EquipmentRig>().Bind(player);
-            var catalogue = Resources.Load<BlockCatalogue>("VoidForge/Integration/BlockCatalogue");
-            if (catalogue == null) return;
-            var grid = new GameObject("IntegrationBlockGrid").AddComponent<BlockGrid>();
-            grid.catalogue = catalogue;
-            grid.transform.position = new Vector3(3f, -1f, 5f);
-            grid.TryPlace("ArmorCube", Vector3Int.zero, Quaternion.identity, out _);
-            grid.TryPlace("ArmorSlope", Vector3Int.right, Quaternion.identity, out _);
-            grid.TryPlace("ArmorCorner", new Vector3Int(2, 0, 0), Quaternion.identity, out _);
-            grid.TryPlace("Gyroscope", new Vector3Int(0, 0, 2), Quaternion.identity, out _);
-            grid.TryPlace("Battery", new Vector3Int(2, 0, 2), Quaternion.identity, out _);
-            grid.TryPlace("Thruster", new Vector3Int(4, 0, 2), Quaternion.identity, out _);
-            grid.TryPlace("Cockpit", new Vector3Int(6, 0, 2), Quaternion.identity, out _);
-            grid.TryPlace("DrillR", new Vector3Int(-8, 0, 0), Quaternion.identity, out _);
-            Debug.Log($"[VoidForge Integration] Local block display: {grid.OccupiedCount} occupied cells; refinery/assembler/cargo pending.");
         }
     }
 }

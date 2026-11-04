@@ -109,3 +109,25 @@ dans la scène (champ *Address*), avant le build. Le menu au poignet du J5 rempl
 - **Build Gradle en échec** : installe les modules Android par Unity Hub plutôt qu'un SDK externe.
 - **Images/s basses** : passe en build 3b, branche le *Profiler* (`ConnectWithProfiler` est activé),
   vérifie que le mode de rendu est *Single Pass Instanced* et que le MSAA est 4x.
+
+## Recette de la scène Survie — intégration 03
+
+Préparer les dépendances locales et régénérer la scène selon [SURVIE.md](SURVIE.md).
+Ne pas ouvrir un second éditeur sur le même projet. Depuis le dossier VoidForge :
+
+```powershell
+$env:GRADLE_USER_HOME = Join-Path $PWD 'Library/GradleUserHome'
+$env:BEE_BUILD_THREADS = '4'
+& 'D:/Unity/6000.4.0f1/Editor/Unity.exe' -batchmode -nographics -quit -projectPath $PWD -buildTarget Android -executeMethod VoidForge.Editor.QuestBuildPipeline.BuildBatch -vfDev -vfNoProfiler -vfOutput (Join-Path $PWD 'Builds/VoidForge-Quest3-integration03-dev.apk') -logFile (Join-Path $PWD 'Logs/survival-quest3.log')
+./Build/check-survival-quest.ps1 -Serial 2G0YC5ZF7H060B -Install -Restart
+```
+
+`-vfNoProfiler` conserve le build développement et retire seulement l'autoconnexion
+Profiler. Le contrôle USB utilise le SDK du module Android Unity, installe l'APK,
+capture au moins 35 secondes de journaux après chacun des deux lancements et compare
+le registre sauvegardé lorsqu'il est lisible. Son rapport est
+`Hermes_Works/Preuves/INTEGRATION_03/quest-validation.json`.
+La recette avec `-Restart` exige cette comparaison. La lecture passe directement
+par le shell ADB ; le tampon main est agrandi temporairement à 4 Mio et sa taille
+initiale est rétablie à la fin, y compris en cas d'échec.
+Ce contrôle sans casque porté ne certifie pas l'ergonomie ni les performances VR.
