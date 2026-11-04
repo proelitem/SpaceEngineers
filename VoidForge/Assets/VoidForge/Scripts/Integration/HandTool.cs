@@ -8,6 +8,8 @@ namespace VoidForge.Integration
     {
         public HandToolKind kind;
         public Transform primaryGrip, tip, movingPart;
+        // Axis in the moving part's rest frame, calibrated from the imported geometry.
+        public Vector3 spinAxisLocal = Vector3.forward;
         public bool IsHeld { get; private set; }
         public bool IsOperating { get; private set; }
         Transform home;
@@ -46,8 +48,13 @@ namespace VoidForge.Integration
             IsOperating = IsHeld && trigger > .55f;
             if (!IsOperating || movingPart == null || kind == HandToolKind.Welder) return;
             phase = (phase + Time.deltaTime * 1440f) % 360f;
-            movingPart.rotation = Quaternion.AngleAxis(phase,
-                kind == HandToolKind.Grinder ? transform.right : tip.forward) * (movingPart.parent.rotation * movingRest);
+            SetRotationPhase(phase);
+        }
+
+        public void SetRotationPhase(float degrees)
+        {
+            if (movingPart != null && kind != HandToolKind.Welder)
+                movingPart.localRotation = movingRest * Quaternion.AngleAxis(degrees, spinAxisLocal);
         }
     }
 }

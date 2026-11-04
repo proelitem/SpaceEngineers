@@ -6,6 +6,7 @@ import bpy
 p = argparse.ArgumentParser()
 p.add_argument('--project-root', required=True)
 p.add_argument('--source-root', required=True)
+p.add_argument('--only', choices=['Cyberdeck'])
 args = p.parse_args(sys.argv[sys.argv.index('--') + 1:])
 project, source = Path(args.project_root).resolve(), Path(args.source_root).resolve()
 out = project / 'Assets/VoidForge/Art/Kit'
@@ -16,14 +17,26 @@ assets = {k: source / 'meshy_output/voidforge-kit-20261103-v2/exports' / (v + '.
     'Cyberdeck': 'cyberdeck_clean_blank'}.items()}
 assets.update({k.title(): source / f'meshy_output/voidforge-kit-20261103/fitted/{k}/{k}.glb'
                for k in ('cockpit', 'thruster', 'battery')})
-report = {'assets': []}
+manifest = out / 'kit-materials.json'
+report = json.loads(manifest.read_text(encoding='utf-8')) if args.only else {'assets': []}
 for key, path in assets.items():
+    if args.only and key != args.only:
+        continue
     if not path.is_file():
         raise FileNotFoundError(path)
     bpy.ops.object.select_all(action='SELECT')
     bpy.ops.object.delete(use_global=False)
     bpy.ops.import_scene.gltf(filepath=str(path))
     objects = list(bpy.context.scene.objects)
+    # First-person wrist display: omit only the two fastening straps from the derivative.
+    # The artist's GLB/Blender source remains untouched.
+    omitted = [o.name for o in objects if key == 'Cyberdeck' and 'Strap' in o.name]
+    for ob in list(objects):
+        if ob.name in omitted:
+            bpy.data.objects.remove(ob, do_unlink=True)
+            objects.remove(ob)
+    if key == 'Cyberdeck' and len(omitted) != 2:
+        raise RuntimeError(f'Expected two cyberdeck straps, found {omitted}')
     # Combine by material at export to keep mobile renderer counts bounded.
     # Keep the screen and its anchor separate for the future wrist interface.
     meshes = [o for o in objects if o.type == 'MESH' and 'ScreenBlank' not in o.name]
@@ -58,7 +71,12 @@ for key, path in assets.items():
     bpy.ops.export_scene.fbx(filepath=str(out / (key + '.fbx')), use_selection=True,
         object_types={'MESH', 'EMPTY'}, apply_unit_scale=True, bake_space_transform=False,
         axis_forward='-Z', axis_up='Y', use_custom_props=False, bake_anim=False, path_mode='STRIP')
-    report['assets'].append({'id': key, 'source': str(path.relative_to(source)).replace('\\', '/'),
-        'sha256': hashlib.sha256(path.read_bytes()).hexdigest(), 'materials': mats})
+    entry = {'id': key, 'source': str(path.relative_to(source)).replace('\\', '/'),
+        'sha256': hashlib.sha256(path.read_bytes()).hexdigest(), 'materials': sorted(mats, key=lambda m: m['name'])}
+    if omitted:
+        entry['omittedParts'] = omitted
+    index = next((i for i, e in enumerate(report['assets']) if e['id'] == key), None)
+    if index is None: report['assets'].append(entry)
+    else: report['assets'][index] = entry
 (out / 'kit-materials.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
 print('VF_INTEGRATION_EXPORT_OK', len(report['assets']))

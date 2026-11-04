@@ -18,6 +18,7 @@ namespace VoidForge.Integration
         Transform head, left, socket;
         bool gripLatched;
         bool waitingForRelease;
+        bool awaitingGrip;
         HandTool lastInstruction;
         bool messageSet;
         public bool HasTrackedRightHand => Tracked(XRNode.RightHand);
@@ -62,7 +63,11 @@ namespace VoidForge.Integration
                 waitingForRelease = true;
                 return;
             }
-            if (grip < .25f) { gripLatched = false; waitingForRelease = false; Release(); }
+            if (grip < .25f)
+            {
+                gripLatched = false; waitingForRelease = false;
+                if (!awaitingGrip) Release();
+            }
             if (grip > .7f && !gripLatched && !waitingForRelease)
             {
                 gripLatched = true;
@@ -75,7 +80,8 @@ namespace VoidForge.Integration
                 }
                 if (nearest != null) Take(nearest);
             }
-            if (Held != null) Held.Operate(trigger);
+            if (grip > .7f && Held != null) awaitingGrip = false;
+            if (Held != null) Held.Operate(awaitingGrip ? 0 : trigger);
             astronaut.SetGrip(Held != null, trigger, leftGrip);
             if (instructions != null && (!messageSet || lastInstruction != Held))
             {
@@ -85,15 +91,19 @@ namespace VoidForge.Integration
                     : Held.kind == HandToolKind.Grinder ? "MEULEUSE — gâchette : rotation / démontage à venir"
                     : "SOUDEUSE — prise prête / soudage à venir";
                 instructions.text = Held == null
-                    ? "OUTILS — approcher la main droite\nMaintenir grip : prendre / relâcher : ranger"
+                    ? "CEINTURE — approcher la main droite\nMaintenir grip : prendre / relâcher : ranger"
                     : action + "\nGrip gauche : freiner / relâcher grip droit : ranger";
             }
         }
 
         public void Take(HandTool tool)
         {
+            if (!Ready || tool == null || !System.Array.Exists(tools, t => t == tool)) return;
             Release();
             Held = tool;
+            // Cyberdeck selection may arrive with an open hand. Wait for the first squeeze
+            // before enabling the trigger/release gesture shared with belt grabs.
+            awaitingGrip = true;
             input.RightGripConsumed = true;
             Held.Hold(socket);
         }
@@ -101,6 +111,7 @@ namespace VoidForge.Integration
         {
             if (Held != null) Held.ReturnHome();
             Held = null;
+            awaitingGrip = false;
             if (input != null) input.RightGripConsumed = false;
             if (astronaut != null) astronaut.SetGrip(false, 0, 0);
         }

@@ -15,7 +15,7 @@ La recette J1 précédente ne vaut pas validation en casque de ces nouveaux él�
 | Cockpit, propulseur, batterie v1 | `meshy_output/voidforge-kit-20261103/fitted/` | Enveloppes et pivots normalisés ; cockpit extérieur uniquement |
 | DRILL-R | `Assets/ThirdParty/ToolAssets/Ship/DRILL-R/Drill-R.prefab` | Trois LOD conservés, enveloppe de réservation 2 × 2 × 4 cellules |
 | Raffinerie, assembleur, soute | Ressources en production | Identifiants `Refinery`, `Assembler`, `Cargo`, indisponibles tant que le prefab manque |
-| Interface cyberdeck | Ressources en production | Texture/RenderTexture via `CyberdeckSurface.SetDisplay`, sans image de maquette imposée |
+| Interface cyberdeck | Livraison producteur `Resources/VoidForge/Cyberdeck/Hud` | Attachement automatique à `CyberdeckSurface.hudAnchor` ; `Take(HandTool)` partagé avec la ceinture |
 
 Les scripts et ressources de l'astronaute sont une dépendance d'une autre livraison
 encore en cours. Ne pas committer ses fichiers inconnus au titre de cette intégration.
@@ -74,13 +74,18 @@ Les cartes PBR supplémentaires du kit v1 restent à qualifier.
   le dos de la main vers l'extérieur, avec un décalage initial du poignet de 25 mm vers
   l'extérieur, 15 mm vers le bas et 70 mm en arrière de la prise.
   Relâcher sous 0,25 range l'outil à son emplacement. Pas de lancer physique en apesanteur.
-  Les outils rangés suivent la tête et son orientation horizontale pour rester accessibles.
+  Les trois poignées rangées suivent les hanches (`Hips`) à la ceinture : foreuse à droite,
+  meuleuse devant, soudeuse à gauche. Les pointes descendent hors du torse. La portée assise
+  et les déformations du bassin restent à vérifier en casque.
+  `Take(HandTool)` reste le raccourci des boutons du cyberdeck : avec une main ouverte,
+  l'outil attend le premier grip, sans activer la gâchette ; relâcher après ce grip le range.
 - **Entrées** : grip droit consommé uniquement pendant une prise. Le grip gauche permet
   toujours de freiner ; sans outil, les deux grips freinent comme au J1. Perte de suivi
   de la tête/main droite ou perte de focus : arrêt et rangement ; il faut relâcher avant
   de reprendre. La recette vise deux manettes suivies, sans mode à une seule manette.
 - **Doigts** : pose initiale de fermeture adaptée à une poignée industrielle et index
-  animé par la gâchette. Les repères secondaires sont conservés, sans prise à deux mains
+  animé par la gâchette. Les axes des trente articulations sont recalibrés côté paume dans
+  la copie intégrée ; le prefab source de l'astronaute reste intact. Les repères secondaires sont conservés, sans prise à deux mains
   dans cette passe. Le placement exact des doigts reste à régler en casque.
 - **Foreuse** : la gâchette droite commande le prototype Digger depuis la pointe réelle,
   à 1 m maximum. Les deux autres outils ne creusent pas. Sans équipement intégré, le
@@ -89,6 +94,8 @@ Les cartes PBR supplémentaires du kit v1 restent à qualifier.
 - **Meuleuse et soudeuse** : prise et signal d'activation initial ; aucune récupération
   de composants, réparation ou recette simulée. La foreuse et le disque ont une rotation ;
   le soudage reste indiqué comme indisponible dans les consignes d'essai.
+  Le disque tourne autour de sa normale locale et de son centre géométrique, mesurés
+  dans le mesh importé ; un pivot intermédiaire corrige l'origine décentrée du FBX.
 - **Blocs** : assemblage de démonstration chargé près de la zone voxel, à droite ; DRILL-R
   est présenté à gauche. La grille refuse chevauchements, rotations hors multiples de
   90 degrés et ressources absentes. Les armures ont des colliders convexes de leur forme ;
@@ -98,14 +105,22 @@ La grille est un socle local, sans menu de construction, sauvegarde, autorité r
 masse de vaisseau ou fonctionnement des blocs techniques. Le cockpit n'est pas pilotable.
 L'avatar et l'équipement ne remplacent pas encore l'avatar réseau J1 tête/mains.
 
-Le cyberdeck est fixé sur le dessus de l'avant-bras gauche près du poignet. Dalle active
+Le cyberdeck est fixé sur la face intérieure de l'avant-bras gauche, côté paume, près du poignet. Dalle active
 216 × 92,571 mm, zone sûre 200 × 85,714 mm, ratio 21:9. La pose et la lisibilité doivent
-être vérifiées avec les futures interfaces en casque ; cette livraison laisse la dalle vide.
+être vérifiées avec l'interface en casque. La dalle matérielle reste indépendante du HUD :
+le prefab du producteur s'y attache lorsqu'il est disponible ; `SetDisplay` conserve le
+contrat Texture/RenderTexture pour une autre surface éventuelle.
 Le montage utilise la normale réelle du maillage d'écran et son axe UV horizontal,
 sans supposer que le root du FBX possède déjà les axes d'une interface Unity.
 La distance à l'axe de l'avant-bras est mesurée sur le maillage skinné dans l'emprise
-du boîtier, puis augmentée de 40 mm pour le support et la déformation de la manche.
+du boîtier sur toute sa circonférence, puis augmentée de 40 mm pour le support et la
+déformation de la manche. `WristDisplayMount` recalcule le côté paume après VRIK
+(ordre 10010, contre 9998 pour le solveur local), en projetant la normale anatomique
+sur le plan transversal de l'avant-bras. Le boîtier reste parenté à l'avant-bras.
 Le repère HUD est lui aussi calibré : avant = normale sortante, droite = U croissant.
+Les deux sangles sont omises uniquement de l'export Unity dérivé ; les GLB/Blender sources
+sont conservés. Pour reconvertir cette seule ressource :
+`Build/stage-integration-kit.ps1 -Only Cyberdeck`.
 
 ## Vérification
 
@@ -114,7 +129,13 @@ alignement des trois poignées et pointes, activation/rangement, transitions sim
 perte/reprise du tracking et de focus, partage du grip avec le freinage, politique de colliders,
 matériaux URP, support au poignet, véritable résolution VRIK et cibles après recentrage,
 catalogue et occupation d'une pièce de plusieurs cellules tournée de 90 degrés.
+La recette corrective vérifie aussi la hauteur des poignées à la ceinture, les pointes
+vers le bas, la fermeture des huit doigts longs vers la paume, le rappel d'un outil main
+ouverte et l'invariance du plan/centre du disque lors d'un quart de tour en main.
 Rapport local : `Logs/integration-validation.json`.
 
 Les résultats effectivement observés, l'APK et la recette USB sont consignés dans
-`Hermes_Works/Jalons/INTEGRATION_01.md`. Les limites casque restent explicitement ouvertes.
+`Hermes_Works/Jalons/INTEGRATION_01.md` puis `Hermes_Works/Jalons/INTEGRATION_02.md`.
+Le retour de Pierre sur la première version (doigts inversés, écran caché et mauvais axe
+de disque) motive cette correction ; les vérifications géométriques ne remplacent pas sa
+nouvelle recette portée en casque.

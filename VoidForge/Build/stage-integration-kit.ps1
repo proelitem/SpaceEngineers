@@ -1,7 +1,8 @@
 param(
     [string] $ProjectRoot = (Join-Path $PSScriptRoot '..'),
     [string] $SourceRoot = $ProjectRoot,
-    [string] $BlenderPath = 'C:\Program Files\Blender Foundation\Blender 5.2\blender.exe'
+    [string] $BlenderPath = 'C:\Program Files\Blender Foundation\Blender 5.2\blender.exe',
+    [ValidateSet('Cyberdeck')] [string] $Only
 )
 $ErrorActionPreference = 'Stop'
 $project = (Resolve-Path -LiteralPath $ProjectRoot).Path
@@ -27,10 +28,11 @@ try {
     $arguments = @('--background','--factory-startup','--offline-mode','--disable-autoexec',
         '-t','4','--python-exit-code','1','--python',"`"$PSScriptRoot\export-integration-kit.py`"",
         '--','--project-root',"`"$project`"",'--source-root',"`"$source`"")
+    if ($Only) { $arguments += @('--only', $Only) }
     $process = Start-Process -FilePath $BlenderPath -ArgumentList $arguments -WindowStyle Hidden -PassThru -Wait `
         -RedirectStandardOutput "$project\Logs\integration-export.log" -RedirectStandardError "$project\Logs\integration-export-error.log"
     if ($process.ExitCode -ne 0) { throw "Conversion locale echouee : Logs/integration-export.log (code $($process.ExitCode))." }
-    Write-Output 'Huit modeles convertis localement ; sources inchangees, aucune generation payante.'
+    Write-Output 'Conversion locale terminee ; sources inchangees, aucune generation payante.'
 } finally {
     foreach ($name in $previous.Keys) { [Environment]::SetEnvironmentVariable($name, $previous[$name], 'Process') }
 }

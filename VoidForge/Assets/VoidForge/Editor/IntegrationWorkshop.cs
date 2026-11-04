@@ -118,6 +118,7 @@ namespace VoidForge.Editor
                 localAvatar.headRotation = Quaternion.Inverse(avatar.transform.rotation) * head.rotation;
                 localAvatar.leftRotation = WristRotation(avatar.transform, true);
                 localAvatar.rightRotation = WristRotation(avatar.transform, false);
+                ConfigureFingerCurl(avatar);
                 RemoveLocalHead(avatar);
                 var deck = Model(Kit + "/Cyberdeck.fbx", null);
                 var wrist = Find(avatar.transform, "LeftHand");
@@ -131,13 +132,14 @@ namespace VoidForge.Editor
                 Vector3 normal = screenTransform.TransformDirection(screenMesh.normals[0]).normalized;
                 Vector3 horizontal = ScreenHorizontal(screenTransform, screenMesh);
                 var nativeFrame = Quaternion.LookRotation(normal, Vector3.Cross(normal, horizontal));
-                var desiredFrame = Quaternion.LookRotation(dorsal, Vector3.Cross(dorsal, along));
+                Vector3 facing = -dorsal; // Inside of the forearm, on the palm side.
+                var desiredFrame = Quaternion.LookRotation(facing, Vector3.Cross(facing, along));
                 deck.transform.rotation = desiredFrame * Quaternion.Inverse(nativeFrame) * deck.transform.rotation;
-                float standOff = ForearmStandOff(avatar, wrist.position + along * .10f, along, dorsal);
-                deck.transform.position += wrist.position + along * .10f + dorsal * standOff - screenTransform.GetComponent<Renderer>().bounds.center;
+                float standOff = ForearmStandOff(avatar, forearm, wrist.position + along * .10f, along);
+                deck.transform.position += wrist.position + along * .10f + facing * standOff - screenTransform.GetComponent<Renderer>().bounds.center;
                 Debug.Log($"[VoidForge Integration] Cyberdeck screen stand-off: {standOff:0.000} m from forearm axis.");
-                if (Vector3.Dot(screenTransform.TransformDirection(screenMesh.normals[0]).normalized, dorsal) < .99f)
-                    throw new InvalidOperationException("Cyberdeck visible screen must face the dorsal forearm.");
+                if (Vector3.Dot(screenTransform.TransformDirection(screenMesh.normals[0]).normalized, facing) < .99f)
+                    throw new InvalidOperationException("Cyberdeck screen must face the palm side of the forearm.");
                 deck.transform.SetParent(forearm, true);
                 var surface = deck.AddComponent<CyberdeckSurface>();
                 surface.hudAnchor = Suffix(deck.transform, "HUDAnchor");
@@ -145,17 +147,24 @@ namespace VoidForge.Editor
                 surface.hudAnchor.rotation = Quaternion.LookRotation(screenNormal,
                     Vector3.Cross(screenNormal, ScreenHorizontal(screenTransform, screenMesh)));
                 surface.screen = Suffix(deck.transform, "ScreenBlank").GetComponent<Renderer>();
+                var mount = deck.AddComponent<WristDisplayMount>();
+                mount.surface = surface; mount.wrist = wrist; mount.forearm = forearm;
+                mount.middle = Find(avatar.transform, "LMiddleFinger1"); mount.thumb = Find(avatar.transform, "LThumb1");
+                mount.standOff = standOff;
+                mount.Refresh();
 
                 string[] ids = { "MiningDrill", "Grinder", "Welder" };
                 equipment.tools = new HandTool[ids.Length];
                 for (int i = 0; i < ids.Length; i++)
                 {
                     var holster = new GameObject(ids[i] + "Holster").transform;
-                    holster.SetParent(root.transform, false);
-                    holster.localPosition = new Vector3((i - 1) * .28f, -.32f, .42f);
-                    holster.localRotation = Quaternion.Euler(30, 0, 0);
+                    var hips = Find(avatar.transform, "Hips");
+                    holster.SetParent(hips, false);
+                    float side = i == 0 ? 1 : i == 1 ? 0 : -1;
+                    holster.SetPositionAndRotation(hips.position + avatar.transform.rotation * new Vector3(side * .27f, -.02f, side == 0 ? .28f : .19f),
+                        avatar.transform.rotation * Quaternion.LookRotation(new Vector3(side * .2f, -1, .15f), Vector3.forward));
                     var toolRoot = new GameObject(ids[i]);
-                    toolRoot.transform.SetParent(holster, false);
+                    toolRoot.transform.SetParent(root.transform, false);
                     var model = Model($"Assets/VoidForge/Art/HandTools/{ids[i]}/VF_{ids[i]}.fbx", toolRoot.transform);
                     var tool = toolRoot.AddComponent<HandTool>();
                     tool.kind = (HandToolKind)i;
@@ -168,21 +177,70 @@ namespace VoidForge.Editor
                     var gripFrame = Quaternion.LookRotation(physicalForward, sourceGrip.forward);
                     tool.primaryGrip = ToolFrame(toolRoot.transform, sourceGrip, gripFrame, "CalibratedGrip");
                     tool.tip = ToolFrame(toolRoot.transform, sourceTip, gripFrame, "CalibratedTip");
+                    tool.spinAxisLocal = tool.movingPart.InverseTransformDirection(physicalForward);
+                    if (tool.kind == HandToolKind.Grinder) ConfigureDisc(tool);
                     var bounds = BoundsOf(model);
                     var collider = toolRoot.AddComponent<BoxCollider>();
                     collider.center = toolRoot.transform.InverseTransformPoint(bounds.center);
                     collider.size = bounds.size; collider.isTrigger = true;
                     var body = toolRoot.AddComponent<Rigidbody>(); body.isKinematic = true; body.useGravity = false;
+                    // Seat the handle at belt height; keep the working end pointing down, clear of the torso.
+                    toolRoot.transform.rotation = holster.rotation * Quaternion.Inverse(tool.primaryGrip.rotation);
+                    toolRoot.transform.position += holster.position - tool.primaryGrip.position;
+                    toolRoot.transform.SetParent(holster, true);
                     equipment.tools[i] = tool;
                 }
                 var label = new GameObject("EquipmentInstructions");
                 label.transform.SetParent(root.transform, false);
                 label.transform.localPosition = new Vector3(0, -.48f, .6f);
-                equipment.instructions = MakeText(label, "OUTILS — grip droit à proximité", .003f);
+                equipment.instructions = MakeText(label, "CEINTURE — grip droit à proximité", .003f);
                 root.SetActive(true);
                 PrefabUtility.SaveAsPrefabAsset(root, Output + "/Equipment.prefab");
             }
             finally { Object.DestroyImmediate(root); }
+        }
+
+        static void ConfigureDisc(HandTool tool)
+        {
+            var mesh = tool.movingPart.GetComponent<MeshFilter>().sharedMesh;
+            var size = mesh.bounds.size;
+            Vector3 axis = size.x < size.y && size.x < size.z ? Vector3.right :
+                size.y < size.z ? Vector3.up : Vector3.forward;
+            // The delivered assembly pivot is offset from the disc centre. Centre the spindle,
+            // preserving the geometry and the FBX; rotating around its old origin makes it orbit.
+            var spindle = new GameObject("DiscSpindle").transform;
+            spindle.SetParent(tool.movingPart.parent, false);
+            spindle.SetPositionAndRotation(tool.movingPart.TransformPoint(mesh.bounds.center), tool.movingPart.rotation);
+            tool.movingPart.SetParent(spindle, true);
+            tool.movingPart = spindle;
+            tool.spinAxisLocal = axis;
+        }
+
+        static void ConfigureFingerCurl(GameObject avatar)
+        {
+            // Calibrate only the integrated clone, leaving the concurrently authored avatar intact.
+            var component = avatar.GetComponents<MonoBehaviour>().First(c => c.GetType().FullName == "VoidForge.Avatars.AstronautFingerPose");
+            var serialized = new SerializedObject(component);
+            var joints = serialized.FindProperty("joints");
+            if (joints == null || joints.arraySize != 30) throw new InvalidOperationException("Expected thirty finger joints.");
+            for (int i = 0; i < joints.arraySize; i++)
+            {
+                var joint = joints.GetArrayElementAtIndex(i);
+                bool left = joint.FindPropertyRelative("side").intValue == 0;
+                string prefix = left ? "L" : "R";
+                var wrist = Find(avatar.transform, left ? "LeftHand" : "RightHand");
+                var middle = Find(avatar.transform, prefix + "MiddleFinger1");
+                Vector3 palm = Vector3.Cross((middle.position - wrist.position).normalized,
+                    Find(avatar.transform, prefix + "Thumb1").position - wrist.position).normalized * (left ? -1 : 1);
+                var bone = (Transform)joint.FindPropertyRelative("bone").objectReferenceValue;
+                Vector3 direction = bone.childCount > 0 ? bone.GetChild(0).position - bone.position : bone.position - bone.parent.position;
+                Vector3 toward = palm;
+                if (joint.FindPropertyRelative("finger").intValue == 0) toward += (middle.position - bone.position).normalized;
+                Vector3 axis = Vector3.Cross(direction.normalized, toward).normalized;
+                if (axis.sqrMagnitude < .5f) throw new InvalidOperationException("Degenerate anatomical finger axis: " + bone.name);
+                joint.FindPropertyRelative("axis").vector3Value = bone.InverseTransformDirection(axis);
+            }
+            serialized.ApplyModifiedPropertiesWithoutUndo();
         }
 
         static Quaternion WristRotation(Transform avatar, bool left)
@@ -217,24 +275,29 @@ namespace VoidForge.Editor
             return screen.TransformDirection(high / highs - low / lows).normalized;
         }
 
-        static float ForearmStandOff(GameObject avatar, Vector3 center, Vector3 along, Vector3 dorsal)
+        static float ForearmStandOff(GameObject avatar, Transform forearm, Vector3 center, Vector3 along)
         {
             float height = .04f;
-            Vector3 across = Vector3.Cross(dorsal, along).normalized;
             foreach (var renderer in avatar.GetComponentsInChildren<SkinnedMeshRenderer>())
             {
                 var baked = new Mesh();
                 renderer.BakeMesh(baked, true);
-                foreach (var vertex in baked.vertices)
+                var vertices = baked.vertices;
+                var weights = renderer.sharedMesh.boneWeights;
+                var sleeve = renderer.bones.Select(b => b == forearm || (b != null && b.IsChildOf(forearm))).ToArray();
+                for (int i = 0; i < vertices.Length; i++)
                 {
-                    Vector3 delta = renderer.transform.TransformPoint(vertex) - center;
-                    if (delta.sqrMagnitude < .09f && Mathf.Abs(Vector3.Dot(delta, along)) < .125f &&
-                        Mathf.Abs(Vector3.Dot(delta, across)) < .08f)
-                        height = Mathf.Max(height, Vector3.Dot(delta, dorsal));
+                    var w = weights[i];
+                    float influence = (sleeve[w.boneIndex0] ? w.weight0 : 0) + (sleeve[w.boneIndex1] ? w.weight1 : 0) +
+                        (sleeve[w.boneIndex2] ? w.weight2 : 0) + (sleeve[w.boneIndex3] ? w.weight3 : 0);
+                    if (influence < .25f) continue; // Nearby torso/other-arm vertices are not sleeve thickness.
+                    Vector3 delta = renderer.transform.TransformPoint(vertices[i]) - center;
+                    if (delta.sqrMagnitude < .09f && Mathf.Abs(Vector3.Dot(delta, along)) < .125f)
+                        height = Mathf.Max(height, Vector3.ProjectOnPlane(delta, along).magnitude);
                 }
                 Object.DestroyImmediate(baked);
             }
-            return height + .04f; // Space for the housing/straps and deformation of the armoured sleeve.
+            return height + .04f; // Space for the housing and deformation of the armoured sleeve.
         }
 
         static void RemoveLocalHead(GameObject avatar)

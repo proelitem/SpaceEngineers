@@ -53,6 +53,13 @@ APK local de cette passe : `Builds/VoidForge-Quest3-integration-dev.apk` (code 9
 installé et démarré sur Quest 3 ; initialisation et logcat vérifiés. Ergonomie et
 performances de cette nouvelle intégration à tester par Pierre.
 
+Correctif de recette : outils à la ceinture avec rappel cyberdeck conservé, fermeture
+des doigts vers la paume, dalle côté paume sans sangles et disque de meuleuse recentré.
+APK `Builds/VoidForge-Quest3-integration02-dev.apk` (**code 10**) installé et lancé sur
+Quest ; capture de **33,973 s** sans exception. Prises et visibilité corrigées à retester
+en casque. Une exception Digger à la sortie du Play éditeur reste ouverte, distincte
+de cette capture Quest : [preuves et limites](Hermes_Works/Jalons/INTEGRATION_02.md).
+
 ## Démarrage rapide
 
 1. Installer Unity 6000.4.0f1 avec les modules Android (Unity Hub).

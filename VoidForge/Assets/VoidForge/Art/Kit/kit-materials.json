@@ -190,6 +190,19 @@
       "sha256": "dcec7e62fdea543ce50ca68d30cfb0fe268fb915b1419f037f8deaa09722d8a7",
       "materials": [
         {
+          "name": "Cyberdeck_VFv2_Amber",
+          "color": [
+            0.6938717365264893,
+            0.30054378509521484,
+            0.009721217676997185,
+            1.0
+          ],
+          "metallic": 0.20000000298023224,
+          "roughness": 0.41999998688697815,
+          "texture": "",
+          "unlit": false
+        },
+        {
           "name": "Cyberdeck_VFv2_Graphite",
           "color": [
             0.03560131415724754,
@@ -203,15 +216,15 @@
           "unlit": false
         },
         {
-          "name": "Cyberdeck_VFv2_Amber",
+          "name": "Cyberdeck_VFv2_Ivory",
           "color": [
-            0.6938717365264893,
-            0.30054378509521484,
-            0.009721217676997185,
+            0.68668532371521,
+            0.637596845626831,
+            0.5520114302635193,
             1.0
           ],
-          "metallic": 0.20000000298023224,
-          "roughness": 0.41999998688697815,
+          "metallic": 0.11999999731779099,
+          "roughness": 0.47999998927116394,
           "texture": "",
           "unlit": false
         },
@@ -227,20 +240,11 @@
           "roughness": 1.0,
           "texture": "",
           "unlit": true
-        },
-        {
-          "name": "Cyberdeck_VFv2_Ivory",
-          "color": [
-            0.68668532371521,
-            0.637596845626831,
-            0.5520114302635193,
-            1.0
-          ],
-          "metallic": 0.11999999731779099,
-          "roughness": 0.47999998927116394,
-          "texture": "",
-          "unlit": false
         }
+      ],
+      "omittedParts": [
+        "VFv2_Cyberdeck_Strap",
+        "VFv2_Cyberdeck_Strap.001"
       ]
     },
     {

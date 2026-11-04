@@ -46,11 +46,16 @@
   dans la livraison assets. Worktree de cette livraison : .worktrees/assets-mining-20261103,
   branche codex/voidforge-assets-mining-20261103 ; aucun cache Unity partagé avec lui.
 
-- Integration 01 : APK code 9 installe ; liaison XR, 3 outils, 8 blocs/35 cellules et
-  SELFTEST Digger verifies sur Quest, sans exception au demarrage. Voir le jalon INTEGRATION_01.
+- Equipement : APK correctif code 10 installe ; liaison XR, 3 outils, 8 blocs/35 cellules,
+  HUD et SELFTEST Digger verifies sur Quest ; capture 33,973 s sans exception. Voir INTEGRATION_02.
   Le corps/poignet local charge Resources/VoidForge/Integration/Equipment ; garder les
   dependances locales de l'astronaute/FinalIK et leurs .meta. Les fichiers producteurs
   encore inconnus (avatar, manifest/verrou, Art/UI, meshy_output, ROADMAP) restent hors
-  du commit de cette passe. La recompilation initiale a pris 4056 s ; conserver Library/Bee.
+  du commit de cette passe. Builds longs (3727 s rapportes pour le correctif) : conserver Library/Bee.
   CyberdeckSurface expose la dalle/repere HUD ; Refinery/Assembler/Cargo restent indisponibles.
-  Unity principal ferme. Prises/confort/rendu/performance de cette version a tester par Pierre.
+  Ceinture sur Hips, doigts calibres cote paume, WristDisplayMount apres VRIK (10010 apres
+  9998), dalle 0,1241188 m de l axe, sangles omises, disque sur pivot recentre. Take attend
+  le premier grip avant activation, puis relachement pour ranger ; MiningPrototype lit IsOperating.
+  Unity principal ferme. Portee/prises/lisibilite/confort/performance a retester par Pierre.
+  Exception Digger a la sortie Play ouverte : get_internalHeightmapResolution can only be
+  called from the main thread (Logs/cyberdeck-game-1.log) ; absente de la capture Quest.

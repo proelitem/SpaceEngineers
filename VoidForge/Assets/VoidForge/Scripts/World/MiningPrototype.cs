@@ -82,7 +82,7 @@ namespace VoidForge.World
                 _beam.SetPosition(1, hit.point);
             }
             if (hitZone && !_busy && !digger.IsRunningAsync && Time.unscaledTime >= _nextDig &&
-                _input.Actions.RightTrigger.ReadValue<float>() > 0.55f)
+                (tool != null ? tool.IsOperating : _input.Actions.RightTrigger.ReadValue<float>() > 0.55f))
             {
                 _nextDig = Time.unscaledTime + 0.25f;
                 _ = DigAt(hit.point - hit.normal * 0.15f);

@@ -111,6 +111,13 @@ une prise ; `PlayerInputProvider.RightGripConsumed` évite de freiner avec cette
 entrée. Le grip gauche conserve le freinage. `IntegrationBootstrap` charge les prefabs
 Resources depuis `GameBootstrap` ; l'absence de dépendances locales conserve le rig J1.
 
+Les étuis sont enfants de `Hips`, avec une poignée à hauteur de ceinture. Le rappel
+par cyberdeck utilise la même méthode `Take` que la prise de proximité : il attend le
+premier grip avant d'autoriser l'activation, puis son relâchement range l'outil.
+Le générateur calibre les axes de fermeture vers la paume dans la copie intégrée de
+l'avatar. Le cyberdeck fait face à la paume, ses sangles sont omises de l'export dérivé.
+Le disque utilise un pivot intermédiaire centré sur le maillage et son axe local mesuré.
+
 `BlockCatalogue` réserve les identifiants des blocs disponibles et en production.
 `BlockGrid` vérifie l'occupation entière et les rotations de grille avant instanciation.
 L'assemblage de démonstration demeure local ; les RPC de construction, la physique de

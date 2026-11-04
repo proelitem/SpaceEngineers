@@ -24,6 +24,7 @@ namespace VoidForge.Editor
             var hmd = player.GetComponentInChildren<Camera>();
             var left = hmd.transform.parent.Find("LeftHand"); var right = hmd.transform.parent.Find("RightHand");
             left.localPosition = new Vector3(-.28f,-.35f,.3f);
+            left.localRotation = Quaternion.Euler(-30,0,75); // Turn the inner wrist towards the eyes.
             right.localPosition = new Vector3(.28f,-.35f,.35f);
             equipment.Bind(player.GetComponent<PlayerInputProvider>());
             equipment.astronaut.UpdatePose(true);
@@ -37,6 +38,7 @@ namespace VoidForge.Editor
             for (int i = 0; i < 10; i++) solver.GetType().GetMethod("Update", Type.EmptyTypes).Invoke(solver, null);
             var fingers = avatar.GetComponents<MonoBehaviour>().First(c => c.GetType().FullName == "VoidForge.Avatars.AstronautFingerPose");
             fingers.GetType().GetMethod("ApplyPose").Invoke(fingers, null);
+            equipment.GetComponentInChildren<WristDisplayMount>().Refresh();
             RenderSettings.ambientLight = new Color(.45f,.45f,.45f);
             var sun = new GameObject("PreviewSun").AddComponent<Light>(); sun.type = LightType.Directional;
             sun.intensity = 2f; sun.transform.rotation = Quaternion.Euler(35,-40,0);
@@ -50,12 +52,20 @@ namespace VoidForge.Editor
             equipment.instructions.gameObject.SetActive(false);
             Capture(camera, new Vector3(.7f,-.15f,.6f), new Vector3(.3f,-.35f,.4f), 45, "right-grip");
             Capture(camera, new Vector3(-.05f,-.12f,.65f), new Vector3(.28f,-.35f,.35f), 42, "right-grip-inside");
+            equipment.Take(equipment.tools[1]);
+            equipment.Held.gameObject.SetActive(true);
+            equipment.tools[0].gameObject.SetActive(false);
+            equipment.Held.SetRotationPhase(0);
+            Capture(camera, new Vector3(.7f,-.12f,.65f), new Vector3(.28f,-.35f,.5f), 45, "grinder-disc-0");
+            equipment.Held.SetRotationPhase(90);
+            Capture(camera, new Vector3(.7f,-.12f,.65f), new Vector3(.28f,-.35f,.5f), 45, "grinder-disc-90");
             equipment.Held.gameObject.SetActive(false);
             var deck = equipment.GetComponentInChildren<CyberdeckSurface>();
             var screen = deck.screen.bounds.center;
             var filter = deck.screen.GetComponent<MeshFilter>();
             Vector3 screenNormal = filter.transform.TransformDirection(filter.sharedMesh.normals[0]).normalized;
-            Capture(camera, screen + screenNormal * .42f + Vector3.up * .06f, screen, 50, "left-wrist");
+            Capture(camera, screen + screenNormal * .24f + Vector3.up * .02f, screen, 60, "left-wrist");
+            Capture(camera, hmd.transform.position, screen, 65, "wrist-from-eyes");
             Object.DestroyImmediate(player); Object.DestroyImmediate(camera.gameObject); Object.DestroyImmediate(sun.gameObject);
             Debug.Log("VF_INTEGRATION_PREVIEWS Builds/IntegrationPreview");
         }

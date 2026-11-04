@@ -1,0 +1,23 @@
+{
+    "unity": "6000.4.0f1",
+    "handTools": 3,
+    "availableBlocks": 8,
+    "pendingBlocks": 3,
+    "occupiedTestCells": 2,
+    "gripAlignment": true,
+    "tipForward": true,
+    "returnToHolster": true,
+    "urpMaterials": true,
+    "wristMount": true,
+    "recenter": true,
+    "finalIK": true,
+    "simulatedTrackingSafety": true,
+    "rightHandErrorMeters": 2.682209014892578e-7,
+    "headErrorMeters": 2.6656007889869218e-7,
+    "screenStandOffMeters": 0.12411879748106003,
+    "beltMount": true,
+    "anatomicalCurl": true,
+    "discSpindle": true,
+    "palmSideScreen": true,
+    "cyberdeckRecall": true
+}

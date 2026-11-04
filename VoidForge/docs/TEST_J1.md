@@ -148,3 +148,24 @@ Procédure et preuves : [INTEGRATION.md](INTEGRATION.md),
 | Avatar et cyberdeck en casque | À tester par Pierre : proportions, confort, occlusion, tracking, recentrage, orientation et future lisibilité |
 | Nouvelle intégration et performance | À tester par Pierre ; aucune mesure CPU/GPU/FPS ou mémoire sur casque porté pour cette passe |
 | Réseau et fonctions des blocs/outils | À tester par Pierre pour le réseau J1 ; équipement non répliqué. Soudage, démontage, menus de construction et physique de vaisseau non implémentés |
+
+## Recette corrective de l'équipement
+
+Pierre signale sur l'intégration 01 : emplacement souhaité à la ceinture, fermeture des
+doigts inversée, cyberdeck derrière le bras et sangles inutiles, mauvais axe du disque.
+Ces défauts visuels ne sont pas couverts par le succès de compilation/démarrage précédent.
+Suivi et preuves : [Intégration 02](../Hermes_Works/Jalons/INTEGRATION_02.md).
+
+| À tester | Résultat |
+| --- | --- |
+| Fixation et rangement à la ceinture | OK dans Unity : 3 étuis sur Hips, poignées à moins de 42 cm du bassin, pointes vers le bas ; prise/rangement contrôlés |
+| Fermeture des doigts vers la paume | OK dans Unity : 8 doigts longs se ferment vers la paume (> 10 mm à 65 %) ; 30 axes recalibrés. Pouces et contact exact aux poignées à tester par Pierre |
+| Cyberdeck côté paume, sans sangles | OK après vrai VRIK et dans la posture de lecture ; décalage de dalle 0,1241188 m depuis l'axe du bras, écran visible dans l'aperçu depuis les yeux ; deux sangles omises du dérivé |
+| Axe et centre du disque en rotation | OK dans Unity : quart de tour en main, plan conservé et centre stable à moins de 0,1 mm ; aperçus examinés |
+| Rappel cyberdeck, confirmation grip et rangement | OK pour le contrat partagé : rappel main ouverte sans activation, premier grip puis relâchement pour ranger ; interface producteur distincte |
+| HUD en Play et journal global | 10 assertions HUD réussies sur le montage final ; journal non exempt d'erreurs : exception Digger à la sortie Play, `get_internalHeightmapResolution can only be called from the main thread` ; voir le jalon correctif |
+| Compilation, APK et démarrage | OK : Unity code 0, APK 10 / 124 641 831 octets, ARM64 minSdk 32/target 36 ; installation Success et lancement COLD Status: ok |
+| Logcat de cette correction | OK : 33,973 s, live + tampon examinés, 0 exception/E-F Unity/AndroidRuntime/XR_ERROR ; équipement, cinq vues HUD, 35 cellules et SELFTEST collider +0,649 m confirmés. Réveils ADB périodiques, casque porté non vérifié |
+| Portée assis/debout et prises sur les trois outils | À tester par Pierre après correction |
+| Visibilité/lisibilité du cyberdeck et confort | À tester par Pierre après correction |
+| Performance de cette version et réseau | À tester par Pierre ; aucun résultat instrumenté ajouté |
